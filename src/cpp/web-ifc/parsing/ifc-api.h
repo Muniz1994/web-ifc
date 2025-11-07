@@ -89,9 +89,9 @@ std::vector<T> arguments;
 };
 
 
-IfcRawLine GetRawLineData(webifc::parsing::IfcLoader* loader, int modelID, webifc::manager::ModelManager& manager, uint32_t expressID);
+IfcRawLine GetRawLineData(webifc::parsing::IfcLoader* loader, webifc::manager::ModelManager* manager, uint32_t expressID);
 
-std::vector<IfcRawLine> GetRawLinesData(webifc::parsing::IfcLoader* loader, int modelID, webifc::manager::ModelManager& manager, std::vector<uint32_t> expressIDs);
+std::vector<IfcRawLine> GetRawLinesData(webifc::parsing::IfcLoader* loader, webifc::manager::ModelManager* manager, std::vector<uint32_t> expressIDs);
 
 void GetLine(int modelID, std::vector<int> expressIDs, bool flatten=false, bool inverse=false, std::optional<std::string> inversePropKey=std::nullopt);
 

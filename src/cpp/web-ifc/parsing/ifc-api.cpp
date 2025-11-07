@@ -63,7 +63,7 @@ static IfcSimpleValueVariant ReadValue(webifc::parsing::IfcLoader* loader, webif
  * @return        An IfcArgumentList (std::vector<IfcArgument>)
  * containing all parsed arguments.
  */
-IfcArgumentList GetArgs(webifc::parsing::IfcLoader* loader, webifc::manager::ModelManager& manager)
+IfcArgumentList GetArgs(webifc::parsing::IfcLoader* loader, webifc::manager::ModelManager* manager)
 {
     IfcArgumentList arguments;
     bool endOfList = false;
@@ -109,7 +109,7 @@ IfcArgumentList GetArgs(webifc::parsing::IfcLoader* loader, webifc::manager::Mod
 
             loader->StepBack();
             auto s = loader->GetStringArgument();
-            auto typeCode = manager.GetSchemaManager().IfcTypeToTypeCode(s);
+            auto typeCode = manager->GetSchemaManager().IfcTypeToTypeCode(s);
 
             // Insert the typecode
             obj.insert({ "typecode", IfcSimpleValueVariant(typeCode) }); // 'typeCode' is uint32_t
@@ -154,11 +154,9 @@ IfcArgumentList GetArgs(webifc::parsing::IfcLoader* loader, webifc::manager::Mod
 }
 
 // Original GetLine from wasm api
-IfcRawLine GetRawLineData(webifc::parsing::IfcLoader* loader, int modelID, webifc::manager::ModelManager& manager, uint32_t expressID)
+IfcRawLine GetRawLineData(webifc::parsing::IfcLoader* loader, webifc::manager::ModelManager* manager, uint32_t expressID)
 {
 
-    if (!manager.IsModelOpen(modelID))
-        return IfcRawLine();
     if (!loader->IsValidExpressID(expressID))
         return IfcRawLine();
     uint32_t lineType = loader->GetLineType(expressID);
@@ -177,15 +175,16 @@ IfcRawLine GetRawLineData(webifc::parsing::IfcLoader* loader, int modelID, webif
 };
 
 // Original GetLines from wasm api
-std::vector<IfcRawLine> GetRawLinesData(webifc::parsing::IfcLoader* loader, int modelID, webifc::manager::ModelManager& manager, std::vector<uint32_t> expressIDs)
+std::vector<IfcRawLine> GetRawLinesData(webifc::parsing::IfcLoader* loader, webifc::manager::ModelManager* manager, std::vector<uint32_t> expressIDs)
 {
     std::vector<IfcRawLine> result;
 
     for (auto i : expressIDs)
     {
-        result.push_back(GetRawLineData(loader, modelID, manager, i));
+        result.push_back(GetRawLineData(loader, manager, i));
     }
 
     return result;
 }
+
 
