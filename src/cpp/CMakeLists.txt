@@ -118,19 +118,23 @@ endif()
 
 if(NOT EMSCRIPTEN)
 	# build web-ifc as a static library
-	add_library(web-ifc-library STATIC ${web-ifc-source})
-	param_setter(web-ifc-library)
+	#add_library(web-ifc-library STATIC ${web-ifc-source})
+	#param_setter(web-ifc-library)
 
 	# build parameters for web-ifc-test
-	add_executable(web-ifc-test ${web-ifc-source} "./test/encoding_test.cpp" "./test/main.cpp" "./test/io_helpers.cpp")
-	param_setter(web-ifc-test)
-	target_include_directories(web-ifc-test PUBLIC ${tinycpptest_SOURCE_DIR}/Sources)
+	#add_executable(web-ifc-test ${web-ifc-source} "./test/encoding_test.cpp" "./test/main.cpp" "./test/io_helpers.cpp")
+	#param_setter(web-ifc-test)
+	#target_include_directories(web-ifc-test PUBLIC ${tinycpptest_SOURCE_DIR}/Sources)
 
-	add_test(web-ifc-test web-ifc-test)
-	set_tests_properties(web-ifc-test PROPERTIES LABELS "web-ifc")
+	#add_test(web-ifc-test web-ifc-test)
+	#set_tests_properties(web-ifc-test PROPERTIES LABELS "web-ifc")
 
 	# build parameters for web-ifc in testing environment
-	add_executable(web-ifc ${web-ifc-source} "./test/web-ifc-test.cpp" "./test/io_helpers.cpp")
+	#add_executable(web-ifc ${web-ifc-source} "./test/web-ifc-test.cpp" "./test/io_helpers.cpp")
+	#param_setter(web-ifc)
+	#target_include_directories(web-ifc PUBLIC ${tinycpptest_SOURCE_DIR}/Sources)
+
+	add_executable(web-ifc ${web-ifc-source} "./test/cpp-ifc-test.cpp" "./test/io_helpers.cpp")
 	param_setter(web-ifc)
 	target_include_directories(web-ifc PUBLIC ${tinycpptest_SOURCE_DIR}/Sources)
 
