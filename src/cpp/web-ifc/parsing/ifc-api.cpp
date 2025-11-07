@@ -153,27 +153,39 @@ IfcArgumentList GetArgs(webifc::parsing::IfcLoader* loader, webifc::manager::Mod
     return arguments;
 }
 
-
-void GetRawLineData(int modelID, std::vector<int> expressIDs)
+// Original GetLine from wasm api
+IfcRawLine GetRawLineData(webifc::parsing::IfcLoader* loader, int modelID, webifc::manager::ModelManager& manager, uint32_t expressID)
 {
-    auto loader = manager.GetIfcLoader(modelID);
+
     if (!manager.IsModelOpen(modelID))
-        return emscripten::val::object();
+        return IfcRawLine();
     if (!loader->IsValidExpressID(expressID))
-        return emscripten::val::object();
+        return IfcRawLine();
     uint32_t lineType = loader->GetLineType(expressID);
     if (lineType == 0)
-        return emscripten::val::object();
+        return IfcRawLine();
 
     loader->MoveToArgumentOffset(expressID, 0);
 
-    auto arguments = GetArgs(modelID);
+    auto arguments = GetArgs(loader,manager);
 
-    auto retVal = emscripten::val::object();
-    retVal.set(emscripten::val("ID"), expressID);
-    retVal.set(emscripten::val("type"), lineType);
-    retVal.set(emscripten::val("arguments"), arguments);
+    IfcRawLine retVal;
+    retVal.ID = expressID;
+    retVal.type = lineType;
+    retVal.arguments = arguments;
     return retVal;
 };
 
-void GetRawLinesData(int modelID, std::vector<int> expressIDs);
+// Original GetLines from wasm api
+std::vector<IfcRawLine> GetRawLinesData(webifc::parsing::IfcLoader* loader, int modelID, webifc::manager::ModelManager& manager, std::vector<uint32_t> expressIDs)
+{
+    std::vector<IfcRawLine> result;
+
+    for (auto i : expressIDs)
+    {
+        result.push_back(GetRawLineData(loader, modelID, manager, i));
+    }
+
+    return result;
+}
+

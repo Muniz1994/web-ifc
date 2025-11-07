@@ -65,6 +65,20 @@ struct IfcArgument {
     IfcArgument() : value(std::monostate{}) {}
 };
 
+struct IfcRawLine;
+
+using IfcRawLineObject = std::unordered_map<std::string, IfcRawLine>;
+
+struct IfcRawLine {
+
+    std::optional<uint32_t> ID;
+    std::optional<uint32_t> type;
+    IfcArgument arguments;
+
+    // Default constructor for EMPTY ($)
+    IfcRawLine() : arguments(std::monostate{}), ID(std::nullopt), type(std::nullopt) {}
+};
+
 
 template <typename T>
 struct RawLineData
@@ -75,9 +89,9 @@ std::vector<T> arguments;
 };
 
 
-void GetRawLineData(int modelID, std::vector<int> expressIDs);
+IfcRawLine GetRawLineData(webifc::parsing::IfcLoader* loader, int modelID, webifc::manager::ModelManager& manager, uint32_t expressID);
 
-void GetRawLinesData(int modelID, std::vector<int> expressIDs);
+std::vector<IfcRawLine> GetRawLinesData(webifc::parsing::IfcLoader* loader, int modelID, webifc::manager::ModelManager& manager, std::vector<uint32_t> expressIDs);
 
 void GetLine(int modelID, std::vector<int> expressIDs, bool flatten=false, bool inverse=false, std::optional<std::string> inversePropKey=std::nullopt);
 
