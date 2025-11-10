@@ -258,8 +258,9 @@ types.forEach((type) => {
         } else if (type.typeName == "string") { // Assuming 'string' is a possible typeName
             cppTypeName = "std::string";
         } else {
-
+            
             cppTypeName = type.typeName; // Assumes it's another class/struct name
+            //console.log(cppTypeName);
         }
         // TS: export class ${type.name} { type: number=${typeNum}; constructor(public value: Array<${type.typeName}>) {} };
         // C++:

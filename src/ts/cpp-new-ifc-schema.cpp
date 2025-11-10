@@ -4882,7 +4882,6 @@ public:
     const int type = 1560379544;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcModulusOfLinearSubgradeReactionMeasure> LinearStiffnessByLengthX;
     std::optional<IfcModulusOfLinearSubgradeReactionMeasure> LinearStiffnessByLengthY;
     std::optional<IfcModulusOfLinearSubgradeReactionMeasure> LinearStiffnessByLengthZ;
@@ -4909,7 +4908,6 @@ public:
     const int type = 3367102660;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcModulusOfSubgradeReactionMeasure> LinearStiffnessByAreaX;
     std::optional<IfcModulusOfSubgradeReactionMeasure> LinearStiffnessByAreaY;
     std::optional<IfcModulusOfSubgradeReactionMeasure> LinearStiffnessByAreaZ;
@@ -4930,7 +4928,6 @@ public:
     const int type = 1387855156;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcLinearStiffnessMeasure> LinearStiffnessX;
     std::optional<IfcLinearStiffnessMeasure> LinearStiffnessY;
     std::optional<IfcLinearStiffnessMeasure> LinearStiffnessZ;
@@ -4957,13 +4954,6 @@ public:
     const int type = 2069777674;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcLinearStiffnessMeasure> LinearStiffnessX;
-    std::optional<IfcLinearStiffnessMeasure> LinearStiffnessY;
-    std::optional<IfcLinearStiffnessMeasure> LinearStiffnessZ;
-    std::optional<IfcRotationalStiffnessMeasure> RotationalStiffnessX;
-    std::optional<IfcRotationalStiffnessMeasure> RotationalStiffnessY;
-    std::optional<IfcRotationalStiffnessMeasure> RotationalStiffnessZ;
     std::optional<IfcWarpingMomentMeasure> WarpingStiffness;
 
     // Constructor
@@ -5299,12 +5289,6 @@ public:
     const int type = 602808272;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcAppliedValueSelect> AppliedValue;
-    std::optional<std::variant<IfcMeasureWithUnit>> UnitBasis;
-    std::optional<IfcDateTimeSelect> ApplicableDate;
-    std::optional<IfcDateTimeSelect> FixedUntilDate;
     IfcLabel CostType;
     std::optional<IfcText> Condition;
 
@@ -5599,12 +5583,6 @@ public:
     const int type = 1648886627;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcAppliedValueSelect> AppliedValue;
-    std::optional<std::variant<IfcMeasureWithUnit>> UnitBasis;
-    std::optional<IfcDateTimeSelect> ApplicableDate;
-    std::optional<IfcDateTimeSelect> FixedUntilDate;
     IfcLabel ImpactType;
     IfcEnvironmentalImpactCategoryEnum Category;
     std::optional<IfcLabel> UserDefinedCategory;
@@ -5645,9 +5623,6 @@ public:
     const int type = 2242383968;
 
 
-    std::optional<IfcLabel> Location;
-    std::optional<IfcIdentifier> ItemReference;
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcExternallyDefinedHatchStyle(const std::optional<IfcLabel>& Location_, const std::optional<IfcIdentifier>& ItemReference_, const std::optional<IfcLabel>& Name_)
@@ -5662,9 +5637,6 @@ public:
     const int type = 1040185647;
 
 
-    std::optional<IfcLabel> Location;
-    std::optional<IfcIdentifier> ItemReference;
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcExternallyDefinedSurfaceStyle(const std::optional<IfcLabel>& Location_, const std::optional<IfcIdentifier>& ItemReference_, const std::optional<IfcLabel>& Name_)
@@ -5679,9 +5651,6 @@ public:
     const int type = 3207319532;
 
 
-    std::optional<IfcLabel> Location;
-    std::optional<IfcIdentifier> ItemReference;
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcExternallyDefinedSymbol(const std::optional<IfcLabel>& Location_, const std::optional<IfcIdentifier>& ItemReference_, const std::optional<IfcLabel>& Name_)
@@ -5696,9 +5665,6 @@ public:
     const int type = 3548104201;
 
 
-    std::optional<IfcLabel> Location;
-    std::optional<IfcIdentifier> ItemReference;
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcExternallyDefinedTextFont(const std::optional<IfcLabel>& Location_, const std::optional<IfcIdentifier>& ItemReference_, const std::optional<IfcLabel>& Name_)
@@ -5780,9 +5746,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcLibraryInformation>>> ReferenceIntoLibrary;
 
-    std::optional<IfcLabel> Location;
-    std::optional<IfcIdentifier> ItemReference;
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcLibraryReference(const std::optional<IfcLabel>& Location_, const std::optional<IfcIdentifier>& ItemReference_, const std::optional<IfcLabel>& Name_)
@@ -6006,7 +5969,6 @@ public:
     const int type = 4256014907;
 
 
-    std::variant<IfcMaterial> Material;
     std::optional<IfcDynamicViscosityMeasure> DynamicViscosity;
     std::optional<IfcModulusOfElasticityMeasure> YoungModulus;
     std::optional<IfcModulusOfElasticityMeasure> ShearModulus;
@@ -6031,12 +5993,6 @@ public:
     const int type = 677618848;
 
 
-    std::variant<IfcMaterial> Material;
-    std::optional<IfcDynamicViscosityMeasure> DynamicViscosity;
-    std::optional<IfcModulusOfElasticityMeasure> YoungModulus;
-    std::optional<IfcModulusOfElasticityMeasure> ShearModulus;
-    std::optional<IfcPositiveRatioMeasure> PoissonRatio;
-    std::optional<IfcThermalExpansionCoefficientMeasure> ThermalExpansionCoefficient;
     std::optional<IfcPressureMeasure> YieldStress;
     std::optional<IfcPressureMeasure> UltimateStress;
     std::optional<IfcPositiveRatioMeasure> UltimateStrain;
@@ -6065,13 +6021,6 @@ public:
     const int type = 3368373690;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    IfcConstraintEnum ConstraintGrade;
-    std::optional<IfcLabel> ConstraintSource;
-    std::optional<IfcActorSelect> CreatingActor;
-    std::optional<IfcDateTimeSelect> CreationTime;
-    std::optional<IfcLabel> UserDefinedGrade;
     IfcBenchmarkEnum Benchmark;
     std::optional<IfcLabel> ValueSource;
     IfcMetricValueSelect DataValue;
@@ -6142,13 +6091,6 @@ public:
     const int type = 2251480897;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    IfcConstraintEnum ConstraintGrade;
-    std::optional<IfcLabel> ConstraintSource;
-    std::optional<IfcActorSelect> CreatingActor;
-    std::optional<IfcDateTimeSelect> CreationTime;
-    std::optional<IfcLabel> UserDefinedGrade;
     std::optional<std::variant<IfcMetric>> BenchmarkValues;
     std::optional<std::variant<IfcMetric>> ResultValues;
     IfcObjectiveEnum ObjectiveQualifier;
@@ -6171,7 +6113,6 @@ public:
     const int type = 1227763645;
 
 
-    std::variant<IfcMaterial> Material;
     std::optional<IfcPositiveRatioMeasure> VisibleTransmittance;
     std::optional<IfcPositiveRatioMeasure> SolarTransmittance;
     std::optional<IfcPositiveRatioMeasure> ThermalIrTransmittance;
@@ -6353,8 +6294,6 @@ public:
     const int type = 2226359599;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
     std::optional<std::variant<IfcNamedUnit>> Unit;
 
     // Constructor
@@ -6371,9 +6310,6 @@ public:
     const int type = 3355820592;
 
 
-    std::optional<IfcAddressTypeEnum> Purpose;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> UserDefinedPurpose;
     std::optional<IfcLabel> InternalLocation;
     std::optional<std::vector<IfcLabel>> AddressLines;
     std::optional<IfcLabel> PostalBox;
@@ -6418,7 +6354,6 @@ public:
     const int type = 990879717;
 
 
-    IfcLabel Name;
 
     // Constructor
     explicit IfcPreDefinedSymbol(IfcLabel Name_)
@@ -6433,7 +6368,6 @@ public:
     const int type = 3213052703;
 
 
-    IfcLabel Name;
 
     // Constructor
     explicit IfcPreDefinedTerminatorSymbol(IfcLabel Name_)
@@ -6448,7 +6382,6 @@ public:
     const int type = 1775413392;
 
 
-    IfcLabel Name;
 
     // Constructor
     explicit IfcPreDefinedTextFont(IfcLabel Name_)
@@ -6485,10 +6418,6 @@ public:
     const int type = 1304840413;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    std::vector<IfcLayeredItem> AssignedItems;
-    std::optional<IfcIdentifier> Identifier;
     std::variant<logical> LayerOn;
     std::variant<logical> LayerFrozen;
     std::variant<logical> LayerBlocked;
@@ -6563,7 +6492,6 @@ public:
     const int type = 2267347899;
 
 
-    std::variant<IfcMaterial> Material;
     std::optional<IfcSpecificHeatCapacityMeasure> SpecificHeatCapacity;
     std::optional<IfcPositiveRatioMeasure> N20Content;
     std::optional<IfcPositiveRatioMeasure> COContent;
@@ -6709,9 +6637,6 @@ public:
     const int type = 2044713172;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcNamedUnit>> Unit;
     IfcAreaMeasure AreaValue;
 
     // Constructor
@@ -6728,9 +6653,6 @@ public:
     const int type = 2093928680;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcNamedUnit>> Unit;
     IfcCountMeasure CountValue;
 
     // Constructor
@@ -6747,9 +6669,6 @@ public:
     const int type = 931644368;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcNamedUnit>> Unit;
     IfcLengthMeasure LengthValue;
 
     // Constructor
@@ -6766,9 +6685,6 @@ public:
     const int type = 3252649465;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcNamedUnit>> Unit;
     IfcTimeMeasure TimeValue;
 
     // Constructor
@@ -6785,9 +6701,6 @@ public:
     const int type = 2405470396;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcNamedUnit>> Unit;
     IfcVolumeMeasure VolumeValue;
 
     // Constructor
@@ -6804,9 +6717,6 @@ public:
     const int type = 825690147;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcNamedUnit>> Unit;
     IfcMassMeasure WeightValue;
 
     // Constructor
@@ -6968,8 +6878,6 @@ public:
     const int type = 3679540991;
 
 
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcProfileDef>> ProfileDefinition;
     std::optional<IfcPositiveLengthMeasure> Thickness;
     std::optional<IfcPositiveLengthMeasure> RibHeight;
     std::optional<IfcPositiveLengthMeasure> RibWidth;
@@ -7016,7 +6924,6 @@ public:
     const int type = 448429030;
 
 
-    IfcUnitEnum UnitType;
     std::optional<IfcSIPrefix> Prefix;
     IfcSIUnitName Name;
 
@@ -7106,10 +7013,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcShapeAspect>>> OfShapeAspect;
 
-    std::variant<IfcRepresentationContext> ContextOfItems;
-    std::optional<IfcLabel> RepresentationIdentifier;
-    std::optional<IfcLabel> RepresentationType;
-    std::vector<std::variant<IfcRepresentationItem>> Items;
 
     // Constructor
     explicit IfcShapeModel(const std::variant<IfcRepresentationContext>& ContextOfItems_, const std::optional<IfcLabel>& RepresentationIdentifier_, const std::optional<IfcLabel>& RepresentationType_, const std::vector<std::variant<IfcRepresentationItem>>& Items_)
@@ -7124,10 +7027,6 @@ public:
     const int type = 4240577450;
 
 
-    std::variant<IfcRepresentationContext> ContextOfItems;
-    std::optional<IfcLabel> RepresentationIdentifier;
-    std::optional<IfcLabel> RepresentationType;
-    std::vector<std::variant<IfcRepresentationItem>> Items;
 
     // Constructor
     explicit IfcShapeRepresentation(const std::variant<IfcRepresentationContext>& ContextOfItems_, const std::optional<IfcLabel>& RepresentationIdentifier_, const std::optional<IfcLabel>& RepresentationType_, const std::vector<std::variant<IfcRepresentationItem>>& Items_)
@@ -7142,8 +7041,6 @@ public:
     const int type = 3692461612;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcSimpleProperty(IfcIdentifier Name_, const std::optional<IfcText>& Description_)
@@ -7190,7 +7087,6 @@ public:
     const int type = 2525727697;
 
 
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcStructuralLoadStatic(const std::optional<IfcLabel>& Name_)
@@ -7205,7 +7101,6 @@ public:
     const int type = 3408363356;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcThermodynamicTemperatureMeasure> DeltaT_Constant;
     std::optional<IfcThermodynamicTemperatureMeasure> DeltaT_Y;
     std::optional<IfcThermodynamicTemperatureMeasure> DeltaT_Z;
@@ -7226,10 +7121,6 @@ public:
     const int type = 2830218821;
 
 
-    std::variant<IfcRepresentationContext> ContextOfItems;
-    std::optional<IfcLabel> RepresentationIdentifier;
-    std::optional<IfcLabel> RepresentationType;
-    std::vector<std::variant<IfcRepresentationItem>> Items;
 
     // Constructor
     explicit IfcStyleModel(const std::variant<IfcRepresentationContext>& ContextOfItems_, const std::optional<IfcLabel>& RepresentationIdentifier_, const std::optional<IfcLabel>& RepresentationType_, const std::vector<std::variant<IfcRepresentationItem>>& Items_)
@@ -7264,10 +7155,6 @@ public:
     const int type = 3049322572;
 
 
-    std::variant<IfcRepresentationContext> ContextOfItems;
-    std::optional<IfcLabel> RepresentationIdentifier;
-    std::optional<IfcLabel> RepresentationType;
-    std::vector<std::variant<IfcRepresentationItem>> Items;
 
     // Constructor
     explicit IfcStyledRepresentation(const std::variant<IfcRepresentationContext>& ContextOfItems_, const std::optional<IfcLabel>& RepresentationIdentifier_, const std::optional<IfcLabel>& RepresentationType_, const std::vector<std::variant<IfcRepresentationItem>>& Items_)
@@ -7282,7 +7169,6 @@ public:
     const int type = 1300840506;
 
 
-    std::optional<IfcLabel> Name;
     IfcSurfaceSide Side;
     std::vector<IfcSurfaceStyleElementSelect> Styles;
 
@@ -7373,13 +7259,13 @@ public:
     const int type = 626085974;
 
 
-    std::variant<boolean> RepeatS;
-    std::variant<boolean> RepeatT;
+    std::variant<bool> RepeatS;
+    std::variant<bool> RepeatT;
     IfcSurfaceTextureEnum TextureType;
     std::optional<std::variant<IfcCartesianTransformationOperator2D>> TextureTransform;
 
     // Constructor
-    explicit IfcSurfaceTexture(const std::variant<boolean>& RepeatS_, const std::variant<boolean>& RepeatT_, IfcSurfaceTextureEnum TextureType_, const std::optional<std::variant<IfcCartesianTransformationOperator2D>>& TextureTransform_)
+    explicit IfcSurfaceTexture(const std::variant<bool>& RepeatS_, const std::variant<bool>& RepeatT_, IfcSurfaceTextureEnum TextureType_, const std::optional<std::variant<IfcCartesianTransformationOperator2D>>& TextureTransform_)
         : IfcLineObject()
         , RepeatS(RepeatS_)
         , RepeatT(RepeatT_)
@@ -7395,7 +7281,6 @@ public:
     const int type = 1290481447;
 
 
-    std::optional<IfcLabel> Name;
     IfcSymbolStyleSelect StyleOfSymbol;
 
     // Constructor
@@ -7412,11 +7297,11 @@ public:
     const int type = 985171141;
 
 
-    std::variant<string> Name;
+    std::variant<std::string> Name;
     std::vector<std::variant<IfcTableRow>> Rows;
 
     // Constructor
-    explicit IfcTable(const std::variant<string>& Name_, const std::vector<std::variant<IfcTableRow>>& Rows_)
+    explicit IfcTable(const std::variant<std::string>& Name_, const std::vector<std::variant<IfcTableRow>>& Rows_)
         : IfcLineObject()
         , Name(Name_)
         , Rows(Rows_)
@@ -7432,10 +7317,10 @@ public:
     std::optional<std::variant<IfcTable>> OfTable;
 
     std::vector<IfcValue> RowCells;
-    std::variant<boolean> IsHeading;
+    std::variant<bool> IsHeading;
 
     // Constructor
-    explicit IfcTableRow(const std::vector<IfcValue>& RowCells_, const std::variant<boolean>& IsHeading_)
+    explicit IfcTableRow(const std::vector<IfcValue>& RowCells_, const std::variant<bool>& IsHeading_)
         : IfcLineObject()
         , RowCells(RowCells_)
         , IsHeading(IsHeading_)
@@ -7449,9 +7334,6 @@ public:
     const int type = 912023232;
 
 
-    std::optional<IfcAddressTypeEnum> Purpose;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> UserDefinedPurpose;
     std::optional<std::vector<IfcLabel>> TelephoneNumbers;
     std::optional<std::vector<IfcLabel>> FacsimileNumbers;
     std::optional<IfcLabel> PagerNumber;
@@ -7476,7 +7358,6 @@ public:
     const int type = 1447204868;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcCharacterStyleSelect> TextCharacterAppearance;
     std::optional<IfcTextStyleSelect> TextStyle;
     IfcTextFontSelect TextFontStyle;
@@ -7497,7 +7378,6 @@ public:
     const int type = 1983826977;
 
 
-    IfcLabel Name;
     std::optional<std::vector<IfcTextFontName>> FontFamily;
     std::optional<IfcFontStyle> FontStyle;
     std::optional<IfcFontVariant> FontVariant;
@@ -7657,7 +7537,6 @@ public:
     const int type = 3317419933;
 
 
-    std::variant<IfcMaterial> Material;
     std::optional<IfcSpecificHeatCapacityMeasure> SpecificHeatCapacity;
     std::optional<IfcThermodynamicTemperatureMeasure> BoilingPoint;
     std::optional<IfcThermodynamicTemperatureMeasure> FreezingPoint;
@@ -7759,10 +7638,6 @@ public:
     const int type = 1735638870;
 
 
-    std::variant<IfcRepresentationContext> ContextOfItems;
-    std::optional<IfcLabel> RepresentationIdentifier;
-    std::optional<IfcLabel> RepresentationType;
-    std::vector<std::variant<IfcRepresentationItem>> Items;
 
     // Constructor
     explicit IfcTopologyRepresentation(const std::variant<IfcRepresentationContext>& ContextOfItems_, const std::optional<IfcLabel>& RepresentationIdentifier_, const std::optional<IfcLabel>& RepresentationType_, const std::vector<std::variant<IfcRepresentationItem>>& Items_)
@@ -7859,8 +7734,7 @@ public:
     const int type = 1065908215;
 
 
-    std::variant<IfcMaterial> Material;
-    std::optional<std::variant<boolean>> IsPotable;
+    std::optional<std::variant<bool>> IsPotable;
     std::optional<IfcIonConcentrationMeasure> Hardness;
     std::optional<IfcIonConcentrationMeasure> AlkalinityConcentration;
     std::optional<IfcIonConcentrationMeasure> AcidityConcentration;
@@ -7869,7 +7743,7 @@ public:
     std::optional<IfcNormalisedRatioMeasure> DissolvedSolidsContent;
 
     // Constructor
-    explicit IfcWaterProperties(const std::variant<IfcMaterial>& Material_, const std::optional<std::variant<boolean>>& IsPotable_, const std::optional<IfcIonConcentrationMeasure>& Hardness_, const std::optional<IfcIonConcentrationMeasure>& AlkalinityConcentration_, const std::optional<IfcIonConcentrationMeasure>& AcidityConcentration_, const std::optional<IfcNormalisedRatioMeasure>& ImpuritiesContent_, const std::optional<IfcPHMeasure>& PHLevel_, const std::optional<IfcNormalisedRatioMeasure>& DissolvedSolidsContent_)
+    explicit IfcWaterProperties(const std::variant<IfcMaterial>& Material_, const std::optional<std::variant<bool>>& IsPotable_, const std::optional<IfcIonConcentrationMeasure>& Hardness_, const std::optional<IfcIonConcentrationMeasure>& AlkalinityConcentration_, const std::optional<IfcIonConcentrationMeasure>& AcidityConcentration_, const std::optional<IfcNormalisedRatioMeasure>& ImpuritiesContent_, const std::optional<IfcPHMeasure>& PHLevel_, const std::optional<IfcNormalisedRatioMeasure>& DissolvedSolidsContent_)
         : IfcMaterialProperties(Material_)
         , IsPotable(IsPotable_)
         , Hardness(Hardness_)
@@ -7888,9 +7762,6 @@ public:
     const int type = 2442683028;
 
 
-    std::optional<std::variant<IfcRepresentationItem>> Item;
-    std::vector<std::variant<IfcPresentationStyleAssignment>> Styles;
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcAnnotationOccurrence(const std::optional<std::variant<IfcRepresentationItem>>& Item_, const std::vector<std::variant<IfcPresentationStyleAssignment>>& Styles_, const std::optional<IfcLabel>& Name_)
@@ -7905,9 +7776,6 @@ public:
     const int type = 962685235;
 
 
-    std::optional<std::variant<IfcRepresentationItem>> Item;
-    std::vector<std::variant<IfcPresentationStyleAssignment>> Styles;
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcAnnotationSurfaceOccurrence(const std::optional<std::variant<IfcRepresentationItem>>& Item_, const std::vector<std::variant<IfcPresentationStyleAssignment>>& Styles_, const std::optional<IfcLabel>& Name_)
@@ -7922,9 +7790,6 @@ public:
     const int type = 3612888222;
 
 
-    std::optional<std::variant<IfcRepresentationItem>> Item;
-    std::vector<std::variant<IfcPresentationStyleAssignment>> Styles;
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcAnnotationSymbolOccurrence(const std::optional<std::variant<IfcRepresentationItem>>& Item_, const std::vector<std::variant<IfcPresentationStyleAssignment>>& Styles_, const std::optional<IfcLabel>& Name_)
@@ -7939,9 +7804,6 @@ public:
     const int type = 2297822566;
 
 
-    std::optional<std::variant<IfcRepresentationItem>> Item;
-    std::vector<std::variant<IfcPresentationStyleAssignment>> Styles;
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcAnnotationTextOccurrence(const std::optional<std::variant<IfcRepresentationItem>>& Item_, const std::vector<std::variant<IfcPresentationStyleAssignment>>& Styles_, const std::optional<IfcLabel>& Name_)
@@ -7956,8 +7818,6 @@ public:
     const int type = 3798115385;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
     std::variant<IfcCurve> OuterCurve;
 
     // Constructor
@@ -7974,8 +7834,6 @@ public:
     const int type = 1310608509;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
     std::variant<IfcBoundedCurve> Curve;
 
     // Constructor
@@ -7992,9 +7850,6 @@ public:
     const int type = 2705031697;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcCurve> OuterCurve;
     std::vector<std::variant<IfcCurve>> InnerCurves;
 
     // Constructor
@@ -8011,15 +7866,11 @@ public:
     const int type = 616511568;
 
 
-    std::variant<boolean> RepeatS;
-    std::variant<boolean> RepeatT;
-    IfcSurfaceTextureEnum TextureType;
-    std::optional<std::variant<IfcCartesianTransformationOperator2D>> TextureTransform;
     IfcIdentifier RasterFormat;
-    std::variant<boolean> RasterCode;
+    std::variant<bool> RasterCode;
 
     // Constructor
-    explicit IfcBlobTexture(const std::variant<boolean>& RepeatS_, const std::variant<boolean>& RepeatT_, IfcSurfaceTextureEnum TextureType_, const std::optional<std::variant<IfcCartesianTransformationOperator2D>>& TextureTransform_, IfcIdentifier RasterFormat_, const std::variant<boolean>& RasterCode_)
+    explicit IfcBlobTexture(const std::variant<bool>& RepeatS_, const std::variant<bool>& RepeatT_, IfcSurfaceTextureEnum TextureType_, const std::optional<std::variant<IfcCartesianTransformationOperator2D>>& TextureTransform_, IfcIdentifier RasterFormat_, const std::variant<bool>& RasterCode_)
         : IfcSurfaceTexture(RepeatS_, RepeatT_, TextureType_, TextureTransform_)
         , RasterFormat(RasterFormat_)
         , RasterCode(RasterCode_)
@@ -8033,9 +7884,6 @@ public:
     const int type = 3150382593;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcBoundedCurve> Curve;
     IfcPositiveLengthMeasure Thickness;
 
     // Constructor
@@ -8052,9 +7900,6 @@ public:
     const int type = 647927063;
 
 
-    std::optional<IfcLabel> Location;
-    std::optional<IfcIdentifier> ItemReference;
-    std::optional<IfcLabel> Name;
     std::optional<std::variant<IfcClassification>> ReferencedSource;
 
     // Constructor
@@ -8071,7 +7916,6 @@ public:
     const int type = 776857604;
 
 
-    std::optional<IfcLabel> Name;
     IfcNormalisedRatioMeasure Red;
     IfcNormalisedRatioMeasure Green;
     IfcNormalisedRatioMeasure Blue;
@@ -8092,8 +7936,6 @@ public:
     const int type = 2542286263;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Description;
     IfcIdentifier UsageName;
     std::vector<std::variant<IfcProperty>> HasProperties;
 
@@ -8112,8 +7954,6 @@ public:
     const int type = 1485152156;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
     std::vector<std::variant<IfcProfileDef>> Profiles;
     std::optional<IfcLabel> Label;
 
@@ -8166,8 +8006,6 @@ public:
     const int type = 45288368;
 
 
-    IfcPointOrVertexPoint PointOnRelatingElement;
-    std::optional<IfcPointOrVertexPoint> PointOnRelatedElement;
     std::optional<IfcLengthMeasure> EccentricityInX;
     std::optional<IfcLengthMeasure> EccentricityInY;
     std::optional<IfcLengthMeasure> EccentricityInZ;
@@ -8188,8 +8026,6 @@ public:
     const int type = 3050246964;
 
 
-    std::variant<IfcDimensionalExponents> Dimensions;
-    IfcUnitEnum UnitType;
     IfcLabel Name;
 
     // Constructor
@@ -8206,8 +8042,6 @@ public:
     const int type = 2889183280;
 
 
-    std::variant<IfcDimensionalExponents> Dimensions;
-    IfcUnitEnum UnitType;
     IfcLabel Name;
     std::variant<IfcMeasureWithUnit> ConversionFactor;
 
@@ -8226,7 +8060,6 @@ public:
     const int type = 3800577675;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcCurveFontOrScaledCurveFontSelect> CurveFont;
     std::optional<IfcSizeSelect> CurveWidth;
     std::optional<IfcColour> CurveColour;
@@ -8247,8 +8080,6 @@ public:
     const int type = 3632507154;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
     std::variant<IfcProfileDef> ParentProfile;
     std::variant<IfcCartesianTransformationOperator2D> Operator;
     std::optional<IfcLabel> Label;
@@ -8269,10 +8100,6 @@ public:
     const int type = 2273265877;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::variant<IfcDraughtingCallout> RelatingDraughtingCallout;
-    std::variant<IfcDraughtingCallout> RelatedDraughtingCallout;
 
     // Constructor
     explicit IfcDimensionCalloutRelationship(const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::variant<IfcDraughtingCallout>& RelatingDraughtingCallout_, const std::variant<IfcDraughtingCallout>& RelatedDraughtingCallout_)
@@ -8287,10 +8114,6 @@ public:
     const int type = 1694125774;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::variant<IfcDraughtingCallout> RelatingDraughtingCallout;
-    std::variant<IfcDraughtingCallout> RelatedDraughtingCallout;
 
     // Constructor
     explicit IfcDimensionPair(const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::variant<IfcDraughtingCallout>& RelatingDraughtingCallout_, const std::variant<IfcDraughtingCallout>& RelatedDraughtingCallout_)
@@ -8306,9 +8129,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcDocumentInformation>>> ReferenceToDocument;
 
-    std::optional<IfcLabel> Location;
-    std::optional<IfcIdentifier> ItemReference;
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcDocumentReference(const std::optional<IfcLabel>& Location_, const std::optional<IfcIdentifier>& ItemReference_, const std::optional<IfcLabel>& Name_)
@@ -8323,7 +8143,6 @@ public:
     const int type = 4170525392;
 
 
-    IfcLabel Name;
 
     // Constructor
     explicit IfcDraughtingPreDefinedTextFont(IfcLabel Name_)
@@ -8356,13 +8175,11 @@ public:
     const int type = 476780140;
 
 
-    std::variant<IfcVertex> EdgeStart;
-    std::variant<IfcVertex> EdgeEnd;
     std::variant<IfcCurve> EdgeGeometry;
-    std::variant<boolean> SameSense;
+    std::variant<bool> SameSense;
 
     // Constructor
-    explicit IfcEdgeCurve(const std::variant<IfcVertex>& EdgeStart_, const std::variant<IfcVertex>& EdgeEnd_, const std::variant<IfcCurve>& EdgeGeometry_, const std::variant<boolean>& SameSense_)
+    explicit IfcEdgeCurve(const std::variant<IfcVertex>& EdgeStart_, const std::variant<IfcVertex>& EdgeEnd_, const std::variant<IfcCurve>& EdgeGeometry_, const std::variant<bool>& SameSense_)
         : IfcEdge(EdgeStart_, EdgeEnd_)
         , EdgeGeometry(EdgeGeometry_)
         , SameSense(SameSense_)
@@ -8376,7 +8193,6 @@ public:
     const int type = 1860660968;
 
 
-    std::variant<IfcMaterial> Material;
     std::vector<std::variant<IfcProperty>> ExtendedProperties;
     std::optional<IfcText> Description;
     IfcLabel Name;
@@ -8414,10 +8230,10 @@ public:
 
 
     std::variant<IfcLoop> Bound;
-    std::variant<boolean> Orientation;
+    std::variant<bool> Orientation;
 
     // Constructor
-    explicit IfcFaceBound(const std::variant<IfcLoop>& Bound_, const std::variant<boolean>& Orientation_)
+    explicit IfcFaceBound(const std::variant<IfcLoop>& Bound_, const std::variant<bool>& Orientation_)
         : IfcTopologicalRepresentationItem()
         , Bound(Bound_)
         , Orientation(Orientation_)
@@ -8431,11 +8247,9 @@ public:
     const int type = 803316827;
 
 
-    std::variant<IfcLoop> Bound;
-    std::variant<boolean> Orientation;
 
     // Constructor
-    explicit IfcFaceOuterBound(const std::variant<IfcLoop>& Bound_, const std::variant<boolean>& Orientation_)
+    explicit IfcFaceOuterBound(const std::variant<IfcLoop>& Bound_, const std::variant<bool>& Orientation_)
         : IfcFaceBound(Bound_, Orientation_)
     {
         // Constructor body (if needed)
@@ -8447,12 +8261,11 @@ public:
     const int type = 3008276851;
 
 
-    std::vector<std::variant<IfcFaceBound>> Bounds;
     std::variant<IfcSurface> FaceSurface;
-    std::variant<boolean> SameSense;
+    std::variant<bool> SameSense;
 
     // Constructor
-    explicit IfcFaceSurface(const std::vector<std::variant<IfcFaceBound>>& Bounds_, const std::variant<IfcSurface>& FaceSurface_, const std::variant<boolean>& SameSense_)
+    explicit IfcFaceSurface(const std::vector<std::variant<IfcFaceBound>>& Bounds_, const std::variant<IfcSurface>& FaceSurface_, const std::variant<bool>& SameSense_)
         : IfcFace(Bounds_)
         , FaceSurface(FaceSurface_)
         , SameSense(SameSense_)
@@ -8466,7 +8279,6 @@ public:
     const int type = 4219587988;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcForceMeasure> TensionFailureX;
     std::optional<IfcForceMeasure> TensionFailureY;
     std::optional<IfcForceMeasure> TensionFailureZ;
@@ -8493,7 +8305,6 @@ public:
     const int type = 738692330;
 
 
-    std::optional<IfcLabel> Name;
     std::vector<IfcFillStyleSelect> FillStyles;
 
     // Constructor
@@ -8510,7 +8321,6 @@ public:
     const int type = 3857492461;
 
 
-    std::variant<IfcMaterial> Material;
     std::optional<IfcThermodynamicTemperatureMeasure> CombustionTemperature;
     std::optional<IfcPositiveRatioMeasure> CarbonContent;
     std::optional<IfcHeatingValueMeasure> LowerHeatingValue;
@@ -8533,7 +8343,6 @@ public:
     const int type = 803998398;
 
 
-    std::variant<IfcMaterial> Material;
     std::optional<IfcMolecularWeightMeasure> MolecularWeight;
     std::optional<IfcNormalisedRatioMeasure> Porosity;
     std::optional<IfcMassDensityMeasure> MassDensity;
@@ -8554,8 +8363,6 @@ public:
     const int type = 1446786286;
 
 
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcProfileDef>> ProfileDefinition;
     std::optional<IfcMassPerLengthMeasure> PhysicalWeight;
     std::optional<IfcPositiveLengthMeasure> Perimeter;
     std::optional<IfcPositiveLengthMeasure> MinimumPlateThickness;
@@ -8581,8 +8388,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcGeometricRepresentationSubContext>>> HasSubContexts;
 
-    std::optional<IfcLabel> ContextIdentifier;
-    std::optional<IfcLabel> ContextType;
     IfcDimensionCount CoordinateSpaceDimension;
     std::optional<std::variant<double>> Precision;
     IfcAxis2Placement WorldCoordinateSystem;
@@ -8619,8 +8424,6 @@ public:
     const int type = 4142052618;
 
 
-    std::optional<IfcLabel> ContextIdentifier;
-    std::optional<IfcLabel> ContextType;
     std::variant<IfcGeometricRepresentationContext> ParentContext;
     std::optional<IfcPositiveRatioMeasure> TargetScale;
     IfcGeometricProjectionEnum TargetView;
@@ -8678,10 +8481,10 @@ public:
 
 
     std::variant<IfcSurface> BaseSurface;
-    std::variant<boolean> AgreementFlag;
+    std::variant<bool> AgreementFlag;
 
     // Constructor
-    explicit IfcHalfSpaceSolid(const std::variant<IfcSurface>& BaseSurface_, const std::variant<boolean>& AgreementFlag_)
+    explicit IfcHalfSpaceSolid(const std::variant<IfcSurface>& BaseSurface_, const std::variant<bool>& AgreementFlag_)
         : IfcGeometricRepresentationItem()
         , BaseSurface(BaseSurface_)
         , AgreementFlag(AgreementFlag_)
@@ -8695,7 +8498,6 @@ public:
     const int type = 2445078500;
 
 
-    std::variant<IfcMaterial> Material;
     std::optional<IfcPositiveRatioMeasure> UpperVaporResistanceFactor;
     std::optional<IfcPositiveRatioMeasure> LowerVaporResistanceFactor;
     std::optional<IfcIsothermalMoistureCapacityMeasure> IsothermalMoistureCapacity;
@@ -8720,14 +8522,10 @@ public:
     const int type = 3905492369;
 
 
-    std::variant<boolean> RepeatS;
-    std::variant<boolean> RepeatT;
-    IfcSurfaceTextureEnum TextureType;
-    std::optional<std::variant<IfcCartesianTransformationOperator2D>> TextureTransform;
     IfcIdentifier UrlReference;
 
     // Constructor
-    explicit IfcImageTexture(const std::variant<boolean>& RepeatS_, const std::variant<boolean>& RepeatT_, IfcSurfaceTextureEnum TextureType_, const std::optional<std::variant<IfcCartesianTransformationOperator2D>>& TextureTransform_, IfcIdentifier UrlReference_)
+    explicit IfcImageTexture(const std::variant<bool>& RepeatS_, const std::variant<bool>& RepeatT_, IfcSurfaceTextureEnum TextureType_, const std::optional<std::variant<IfcCartesianTransformationOperator2D>>& TextureTransform_, IfcIdentifier UrlReference_)
         : IfcSurfaceTexture(RepeatS_, RepeatT_, TextureType_, TextureTransform_)
         , UrlReference(UrlReference_)
     {
@@ -8740,14 +8538,6 @@ public:
     const int type = 3741457305;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    IfcDateTimeSelect StartTime;
-    IfcDateTimeSelect EndTime;
-    IfcTimeSeriesDataTypeEnum TimeSeriesDataType;
-    IfcDataOriginEnum DataOrigin;
-    std::optional<IfcLabel> UserDefinedDataOrigin;
-    std::optional<IfcUnit> Unit;
     std::vector<std::variant<IfcIrregularTimeSeriesValue>> Values;
 
     // Constructor
@@ -8786,10 +8576,6 @@ public:
     const int type = 125510826;
 
 
-    std::optional<IfcLabel> Name;
-    std::variant<IfcColourRgb> LightColour;
-    std::optional<IfcNormalisedRatioMeasure> AmbientIntensity;
-    std::optional<IfcNormalisedRatioMeasure> Intensity;
 
     // Constructor
     explicit IfcLightSourceAmbient(const std::optional<IfcLabel>& Name_, const std::variant<IfcColourRgb>& LightColour_, const std::optional<IfcNormalisedRatioMeasure>& AmbientIntensity_, const std::optional<IfcNormalisedRatioMeasure>& Intensity_)
@@ -8804,10 +8590,6 @@ public:
     const int type = 2604431987;
 
 
-    std::optional<IfcLabel> Name;
-    std::variant<IfcColourRgb> LightColour;
-    std::optional<IfcNormalisedRatioMeasure> AmbientIntensity;
-    std::optional<IfcNormalisedRatioMeasure> Intensity;
     std::variant<IfcDirection> Orientation;
 
     // Constructor
@@ -8824,10 +8606,6 @@ public:
     const int type = 4266656042;
 
 
-    std::optional<IfcLabel> Name;
-    std::variant<IfcColourRgb> LightColour;
-    std::optional<IfcNormalisedRatioMeasure> AmbientIntensity;
-    std::optional<IfcNormalisedRatioMeasure> Intensity;
     std::variant<IfcAxis2Placement3D> Position;
     std::optional<std::variant<IfcColourRgb>> ColourAppearance;
     IfcThermodynamicTemperatureMeasure ColourTemperature;
@@ -8854,10 +8632,6 @@ public:
     const int type = 1520743889;
 
 
-    std::optional<IfcLabel> Name;
-    std::variant<IfcColourRgb> LightColour;
-    std::optional<IfcNormalisedRatioMeasure> AmbientIntensity;
-    std::optional<IfcNormalisedRatioMeasure> Intensity;
     std::variant<IfcCartesianPoint> Position;
     IfcPositiveLengthMeasure Radius;
     IfcReal ConstantAttenuation;
@@ -8882,15 +8656,6 @@ public:
     const int type = 3422422726;
 
 
-    std::optional<IfcLabel> Name;
-    std::variant<IfcColourRgb> LightColour;
-    std::optional<IfcNormalisedRatioMeasure> AmbientIntensity;
-    std::optional<IfcNormalisedRatioMeasure> Intensity;
-    std::variant<IfcCartesianPoint> Position;
-    IfcPositiveLengthMeasure Radius;
-    IfcReal ConstantAttenuation;
-    IfcReal DistanceAttenuation;
-    IfcReal QuadricAttenuation;
     std::variant<IfcDirection> Orientation;
     std::optional<IfcReal> ConcentrationExponent;
     IfcPositivePlaneAngleMeasure SpreadAngle;
@@ -8963,9 +8728,6 @@ public:
     const int type = 2022407955;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcRepresentation>> Representations;
     std::variant<IfcMaterial> RepresentedMaterial;
 
     // Constructor
@@ -8982,12 +8744,6 @@ public:
     const int type = 1430189142;
 
 
-    std::variant<IfcMaterial> Material;
-    std::optional<IfcDynamicViscosityMeasure> DynamicViscosity;
-    std::optional<IfcModulusOfElasticityMeasure> YoungModulus;
-    std::optional<IfcModulusOfElasticityMeasure> ShearModulus;
-    std::optional<IfcPositiveRatioMeasure> PoissonRatio;
-    std::optional<IfcThermalExpansionCoefficientMeasure> ThermalExpansionCoefficient;
     std::optional<IfcPressureMeasure> CompressiveStrength;
     std::optional<IfcPositiveLengthMeasure> MaxAggregateSize;
     std::optional<IfcText> AdmixturesDescription;
@@ -9018,10 +8774,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelDecomposes>>> Decomposes;
     std::optional<std::vector<std::variant<IfcRelAssociates>>> HasAssociations;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcObjectDefinition(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -9052,7 +8804,6 @@ public:
     const int type = 2665983363;
 
 
-    std::vector<std::variant<IfcFace>> CfsFaces;
 
     // Constructor
     explicit IfcOpenShell(const std::vector<std::variant<IfcFace>>& CfsFaces_)
@@ -9068,10 +8819,10 @@ public:
 
 
     std::variant<IfcEdge> EdgeElement;
-    std::variant<boolean> Orientation;
+    std::variant<bool> Orientation;
 
     // Constructor
-    explicit IfcOrientedEdge(const std::variant<IfcEdge>& EdgeElement_, const std::variant<boolean>& Orientation_)
+    explicit IfcOrientedEdge(const std::variant<IfcEdge>& EdgeElement_, const std::variant<bool>& Orientation_)
         : IfcEdge(EdgeStart_, EdgeEnd_)
         , EdgeElement(EdgeElement_)
         , Orientation(Orientation_)
@@ -9085,8 +8836,6 @@ public:
     const int type = 2529465313;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
     std::variant<IfcAxis2Placement2D> Position;
 
     // Constructor
@@ -9119,8 +8868,6 @@ public:
     const int type = 3021840470;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcPhysicalQuantity>> HasQuantities;
     IfcLabel Discrimination;
     std::optional<IfcLabel> Quality;
@@ -9143,17 +8890,13 @@ public:
     const int type = 597895409;
 
 
-    std::variant<boolean> RepeatS;
-    std::variant<boolean> RepeatT;
-    IfcSurfaceTextureEnum TextureType;
-    std::optional<std::variant<IfcCartesianTransformationOperator2D>> TextureTransform;
     IfcInteger Width;
     IfcInteger Height;
     IfcInteger ColourComponents;
     std::vector<std::variant<double>> Pixel;
 
     // Constructor
-    explicit IfcPixelTexture(const std::variant<boolean>& RepeatS_, const std::variant<boolean>& RepeatT_, IfcSurfaceTextureEnum TextureType_, const std::optional<std::variant<IfcCartesianTransformationOperator2D>>& TextureTransform_, IfcInteger Width_, IfcInteger Height_, IfcInteger ColourComponents_, const std::vector<std::variant<double>>& Pixel_)
+    explicit IfcPixelTexture(const std::variant<bool>& RepeatS_, const std::variant<bool>& RepeatT_, IfcSurfaceTextureEnum TextureType_, const std::optional<std::variant<IfcCartesianTransformationOperator2D>>& TextureTransform_, IfcInteger Width_, IfcInteger Height_, IfcInteger ColourComponents_, const std::vector<std::variant<double>>& Pixel_)
         : IfcSurfaceTexture(RepeatS_, RepeatT_, TextureType_, TextureTransform_)
         , Width(Width_)
         , Height(Height_)
@@ -9271,13 +9014,11 @@ public:
     const int type = 2775532180;
 
 
-    std::variant<IfcSurface> BaseSurface;
-    std::variant<boolean> AgreementFlag;
     std::variant<IfcAxis2Placement3D> Position;
     std::variant<IfcBoundedCurve> PolygonalBoundary;
 
     // Constructor
-    explicit IfcPolygonalBoundedHalfSpace(const std::variant<IfcSurface>& BaseSurface_, const std::variant<boolean>& AgreementFlag_, const std::variant<IfcAxis2Placement3D>& Position_, const std::variant<IfcBoundedCurve>& PolygonalBoundary_)
+    explicit IfcPolygonalBoundedHalfSpace(const std::variant<IfcSurface>& BaseSurface_, const std::variant<bool>& AgreementFlag_, const std::variant<IfcAxis2Placement3D>& Position_, const std::variant<IfcBoundedCurve>& PolygonalBoundary_)
         : IfcHalfSpaceSolid(BaseSurface_, AgreementFlag_)
         , Position(Position_)
         , PolygonalBoundary(PolygonalBoundary_)
@@ -9291,7 +9032,6 @@ public:
     const int type = 759155922;
 
 
-    IfcLabel Name;
 
     // Constructor
     explicit IfcPreDefinedColour(IfcLabel Name_)
@@ -9306,7 +9046,6 @@ public:
     const int type = 2559016684;
 
 
-    IfcLabel Name;
 
     // Constructor
     explicit IfcPreDefinedCurveFont(IfcLabel Name_)
@@ -9321,7 +9060,6 @@ public:
     const int type = 433424934;
 
 
-    IfcLabel Name;
 
     // Constructor
     explicit IfcPreDefinedDimensionSymbol(IfcLabel Name_)
@@ -9336,7 +9074,6 @@ public:
     const int type = 179317114;
 
 
-    IfcLabel Name;
 
     // Constructor
     explicit IfcPreDefinedPointMarkerSymbol(IfcLabel Name_)
@@ -9353,9 +9090,6 @@ public:
     std::optional<std::vector<std::variant<IfcProduct>>> ShapeOfProduct;
     std::optional<std::vector<std::variant<IfcShapeAspect>>> HasShapeAspects;
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcRepresentation>> Representations;
 
     // Constructor
     explicit IfcProductDefinitionShape(const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::vector<std::variant<IfcRepresentation>>& Representations_)
@@ -9370,8 +9104,6 @@ public:
     const int type = 871118103;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Description;
     std::optional<IfcValue> UpperBoundValue;
     std::optional<IfcValue> LowerBoundValue;
     std::optional<IfcUnit> Unit;
@@ -9393,10 +9125,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelAssociates>>> HasAssociations;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcPropertyDefinition(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -9411,8 +9139,6 @@ public:
     const int type = 4166981789;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Description;
     std::vector<IfcValue> EnumerationValues;
     std::optional<std::variant<IfcPropertyEnumeration>> EnumerationReference;
 
@@ -9431,8 +9157,6 @@ public:
     const int type = 2752243245;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Description;
     std::vector<IfcValue> ListValues;
     std::optional<IfcUnit> Unit;
 
@@ -9451,8 +9175,6 @@ public:
     const int type = 941946838;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Description;
     std::optional<IfcLabel> UsageName;
     IfcObjectReferenceSelect PropertyReference;
 
@@ -9473,10 +9195,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelDefinesByProperties>>> PropertyDefinitionOf;
     std::optional<std::vector<std::variant<IfcTypeObject>>> DefinesType;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcPropertySetDefinition(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -9491,8 +9209,6 @@ public:
     const int type = 3650150729;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Description;
     std::optional<IfcValue> NominalValue;
     std::optional<IfcUnit> Unit;
 
@@ -9511,8 +9227,6 @@ public:
     const int type = 110355661;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Description;
     std::vector<IfcValue> DefiningValues;
     std::vector<IfcValue> DefinedValues;
     std::optional<IfcText> Expression;
@@ -9537,9 +9251,6 @@ public:
     const int type = 3615266464;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcAxis2Placement2D> Position;
     IfcPositiveLengthMeasure XDim;
     IfcPositiveLengthMeasure YDim;
 
@@ -9558,14 +9269,6 @@ public:
     const int type = 3413951693;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    IfcDateTimeSelect StartTime;
-    IfcDateTimeSelect EndTime;
-    IfcTimeSeriesDataTypeEnum TimeSeriesDataType;
-    IfcDataOriginEnum DataOrigin;
-    std::optional<IfcLabel> UserDefinedDataOrigin;
-    std::optional<IfcUnit> Unit;
     IfcTimeMeasure TimeStep;
     std::vector<std::variant<IfcTimeSeriesValue>> Values;
 
@@ -9584,10 +9287,6 @@ public:
     const int type = 3765753017;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcLabel> DefinitionType;
     std::vector<std::variant<IfcSectionReinforcementProperties>> ReinforcementSectionDefinitions;
 
@@ -9606,10 +9305,6 @@ public:
     const int type = 478536968;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcRelationship(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -9624,11 +9319,6 @@ public:
     const int type = 2778083089;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcAxis2Placement2D> Position;
-    IfcPositiveLengthMeasure XDim;
-    IfcPositiveLengthMeasure YDim;
     IfcPositiveLengthMeasure RoundingRadius;
 
     // Constructor
@@ -9665,10 +9355,6 @@ public:
     const int type = 2411513650;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     IfcServiceLifeFactorTypeEnum PredefinedType;
     std::optional<IfcMeasureValue> UpperValue;
     IfcMeasureValue MostUsedValue;
@@ -9707,7 +9393,6 @@ public:
     const int type = 2609359061;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcLengthMeasure> SlippageX;
     std::optional<IfcLengthMeasure> SlippageY;
     std::optional<IfcLengthMeasure> SlippageZ;
@@ -9742,10 +9427,6 @@ public:
     const int type = 2485662743;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     IfcBoolean IsAttenuating;
     std::optional<IfcSoundScaleEnum> SoundScale;
     std::vector<std::variant<IfcSoundValue>> SoundValues;
@@ -9766,10 +9447,6 @@ public:
     const int type = 1202362311;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<std::variant<IfcTimeSeries>> SoundLevelTimeSeries;
     IfcFrequencyMeasure Frequency;
     std::optional<IfcDerivedMeasureValue> SoundLevelSingleValue;
@@ -9790,10 +9467,6 @@ public:
     const int type = 390701378;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcPositiveRatioMeasure> ApplicableValueRatio;
     IfcThermalLoadSourceEnum ThermalLoadSource;
     IfcPropertySourceEnum PropertySource;
@@ -9828,7 +9501,6 @@ public:
     const int type = 1595516126;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcLinearForceMeasure> LinearForceX;
     std::optional<IfcLinearForceMeasure> LinearForceY;
     std::optional<IfcLinearForceMeasure> LinearForceZ;
@@ -9855,7 +9527,6 @@ public:
     const int type = 2668620305;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcPlanarForceMeasure> PlanarForceX;
     std::optional<IfcPlanarForceMeasure> PlanarForceY;
     std::optional<IfcPlanarForceMeasure> PlanarForceZ;
@@ -9876,7 +9547,6 @@ public:
     const int type = 2473145415;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcLengthMeasure> DisplacementX;
     std::optional<IfcLengthMeasure> DisplacementY;
     std::optional<IfcLengthMeasure> DisplacementZ;
@@ -9903,13 +9573,6 @@ public:
     const int type = 1973038258;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcLengthMeasure> DisplacementX;
-    std::optional<IfcLengthMeasure> DisplacementY;
-    std::optional<IfcLengthMeasure> DisplacementZ;
-    std::optional<IfcPlaneAngleMeasure> RotationalDisplacementRX;
-    std::optional<IfcPlaneAngleMeasure> RotationalDisplacementRY;
-    std::optional<IfcPlaneAngleMeasure> RotationalDisplacementRZ;
     std::optional<IfcCurvatureMeasure> Distortion;
 
     // Constructor
@@ -9926,7 +9589,6 @@ public:
     const int type = 1597423693;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcForceMeasure> ForceX;
     std::optional<IfcForceMeasure> ForceY;
     std::optional<IfcForceMeasure> ForceZ;
@@ -9953,13 +9615,6 @@ public:
     const int type = 1190533807;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcForceMeasure> ForceX;
-    std::optional<IfcForceMeasure> ForceY;
-    std::optional<IfcForceMeasure> ForceZ;
-    std::optional<IfcTorqueMeasure> MomentX;
-    std::optional<IfcTorqueMeasure> MomentY;
-    std::optional<IfcTorqueMeasure> MomentZ;
     std::optional<IfcWarpingMomentMeasure> WarpingMoment;
 
     // Constructor
@@ -9976,13 +9631,6 @@ public:
     const int type = 3843319758;
 
 
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcProfileDef>> ProfileDefinition;
-    std::optional<IfcMassPerLengthMeasure> PhysicalWeight;
-    std::optional<IfcPositiveLengthMeasure> Perimeter;
-    std::optional<IfcPositiveLengthMeasure> MinimumPlateThickness;
-    std::optional<IfcPositiveLengthMeasure> MaximumPlateThickness;
-    std::optional<IfcAreaMeasure> CrossSectionArea;
     std::optional<IfcMomentOfInertiaMeasure> TorsionalConstantX;
     std::optional<IfcMomentOfInertiaMeasure> MomentOfInertiaYZ;
     std::optional<IfcMomentOfInertiaMeasure> MomentOfInertiaY;
@@ -10029,29 +9677,6 @@ public:
     const int type = 3653947884;
 
 
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcProfileDef>> ProfileDefinition;
-    std::optional<IfcMassPerLengthMeasure> PhysicalWeight;
-    std::optional<IfcPositiveLengthMeasure> Perimeter;
-    std::optional<IfcPositiveLengthMeasure> MinimumPlateThickness;
-    std::optional<IfcPositiveLengthMeasure> MaximumPlateThickness;
-    std::optional<IfcAreaMeasure> CrossSectionArea;
-    std::optional<IfcMomentOfInertiaMeasure> TorsionalConstantX;
-    std::optional<IfcMomentOfInertiaMeasure> MomentOfInertiaYZ;
-    std::optional<IfcMomentOfInertiaMeasure> MomentOfInertiaY;
-    std::optional<IfcMomentOfInertiaMeasure> MomentOfInertiaZ;
-    std::optional<IfcWarpingConstantMeasure> WarpingConstant;
-    std::optional<IfcLengthMeasure> ShearCentreZ;
-    std::optional<IfcLengthMeasure> ShearCentreY;
-    std::optional<IfcAreaMeasure> ShearDeformationAreaZ;
-    std::optional<IfcAreaMeasure> ShearDeformationAreaY;
-    std::optional<IfcSectionModulusMeasure> MaximumSectionModulusY;
-    std::optional<IfcSectionModulusMeasure> MinimumSectionModulusY;
-    std::optional<IfcSectionModulusMeasure> MaximumSectionModulusZ;
-    std::optional<IfcSectionModulusMeasure> MinimumSectionModulusZ;
-    std::optional<IfcSectionModulusMeasure> TorsionalSectionModulus;
-    std::optional<IfcLengthMeasure> CentreOfGravityInX;
-    std::optional<IfcLengthMeasure> CentreOfGravityInY;
     std::optional<IfcAreaMeasure> ShearAreaZ;
     std::optional<IfcAreaMeasure> ShearAreaY;
     std::optional<IfcPositiveRatioMeasure> PlasticShapeFactorY;
@@ -10074,8 +9699,6 @@ public:
     const int type = 2233826070;
 
 
-    std::variant<IfcVertex> EdgeStart;
-    std::variant<IfcVertex> EdgeEnd;
     std::variant<IfcEdge> ParentEdge;
 
     // Constructor
@@ -10106,7 +9729,6 @@ public:
     const int type = 1878645084;
 
 
-    std::variant<IfcColourRgb> SurfaceColour;
     std::optional<IfcNormalisedRatioMeasure> Transparency;
     std::optional<IfcColourOrFactor> DiffuseColour;
     std::optional<IfcColourOrFactor> TransmissionColour;
@@ -10197,9 +9819,6 @@ public:
     const int type = 3071757647;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcAxis2Placement2D> Position;
     IfcPositiveLengthMeasure Depth;
     IfcPositiveLengthMeasure FlangeWidth;
     IfcPositiveLengthMeasure WebThickness;
@@ -10234,9 +9853,6 @@ public:
     const int type = 3028897424;
 
 
-    std::optional<std::variant<IfcRepresentationItem>> Item;
-    std::vector<std::variant<IfcPresentationStyleAssignment>> Styles;
-    std::optional<IfcLabel> Name;
     std::variant<IfcAnnotationCurveOccurrence> AnnotatedCurve;
 
     // Constructor
@@ -10273,9 +9889,6 @@ public:
     const int type = 3124975700;
 
 
-    IfcPresentableText Literal;
-    IfcAxis2Placement Placement;
-    IfcTextPath Path;
     std::variant<IfcPlanarExtent> Extent;
     IfcBoxAlignment BoxAlignment;
 
@@ -10294,9 +9907,6 @@ public:
     const int type = 2715220739;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcAxis2Placement2D> Position;
     IfcPositiveLengthMeasure BottomXDim;
     IfcPositiveLengthMeasure TopXDim;
     IfcPositiveLengthMeasure YDim;
@@ -10319,7 +9929,6 @@ public:
     const int type = 1345879162;
 
 
-    std::variant<IfcVector> RepeatFactor;
     std::variant<IfcVector> SecondRepeatFactor;
 
     // Constructor
@@ -10337,10 +9946,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelDefinesByType>>> ObjectTypeOf;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcLabel> ApplicableOccurrence;
     std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
 
@@ -10359,12 +9964,6 @@ public:
     const int type = 2347495698;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
     std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
     std::optional<IfcLabel> Tag;
 
@@ -10383,9 +9982,6 @@ public:
     const int type = 427810014;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcAxis2Placement2D> Position;
     IfcPositiveLengthMeasure Depth;
     IfcPositiveLengthMeasure FlangeWidth;
     IfcPositiveLengthMeasure WebThickness;
@@ -10450,10 +10046,6 @@ public:
     const int type = 336235671;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcPositiveLengthMeasure> LiningDepth;
     std::optional<IfcPositiveLengthMeasure> LiningThickness;
     std::optional<IfcPositiveLengthMeasure> TransomThickness;
@@ -10486,10 +10078,6 @@ public:
     const int type = 512836454;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     IfcWindowPanelOperationEnum OperationType;
     IfcWindowPanelPositionEnum PanelPosition;
     std::optional<IfcPositiveLengthMeasure> FrameDepth;
@@ -10514,21 +10102,13 @@ public:
     const int type = 1299126871;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
     IfcWindowStyleConstructionEnum ConstructionType;
     IfcWindowStyleOperationEnum OperationType;
-    std::variant<boolean> ParameterTakesPrecedence;
-    std::variant<boolean> Sizeable;
+    std::variant<bool> ParameterTakesPrecedence;
+    std::variant<bool> Sizeable;
 
     // Constructor
-    explicit IfcWindowStyle(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, IfcWindowStyleConstructionEnum ConstructionType_, IfcWindowStyleOperationEnum OperationType_, const std::variant<boolean>& ParameterTakesPrecedence_, const std::variant<boolean>& Sizeable_)
+    explicit IfcWindowStyle(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, IfcWindowStyleConstructionEnum ConstructionType_, IfcWindowStyleOperationEnum OperationType_, const std::variant<bool>& ParameterTakesPrecedence_, const std::variant<bool>& Sizeable_)
         : IfcTypeProduct(GlobalId_, OwnerHistory_, Name_, Description_, ApplicableOccurrence_, HasPropertySets_, RepresentationMaps_, Tag_)
         , ConstructionType(ConstructionType_)
         , OperationType(OperationType_)
@@ -10544,9 +10124,6 @@ public:
     const int type = 2543172580;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcAxis2Placement2D> Position;
     IfcPositiveLengthMeasure Depth;
     IfcPositiveLengthMeasure FlangeWidth;
     IfcPositiveLengthMeasure WebThickness;
@@ -10573,9 +10150,6 @@ public:
     const int type = 3288037868;
 
 
-    std::optional<std::variant<IfcRepresentationItem>> Item;
-    std::vector<std::variant<IfcPresentationStyleAssignment>> Styles;
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcAnnotationCurveOccurrence(const std::optional<std::variant<IfcRepresentationItem>>& Item_, const std::vector<std::variant<IfcPresentationStyleAssignment>>& Styles_, const std::optional<IfcLabel>& Name_)
@@ -10608,9 +10182,6 @@ public:
     const int type = 2265737646;
 
 
-    std::optional<std::variant<IfcRepresentationItem>> Item;
-    std::vector<std::variant<IfcPresentationStyleAssignment>> Styles;
-    std::optional<IfcLabel> Name;
     std::optional<std::variant<IfcPoint>> FillStyleTarget;
     std::optional<IfcGlobalOrLocalEnum> GlobalOrLocal;
 
@@ -10647,7 +10218,6 @@ public:
     const int type = 4261334040;
 
 
-    std::variant<IfcCartesianPoint> Location;
     std::optional<std::variant<IfcDirection>> Axis;
 
     // Constructor
@@ -10664,7 +10234,6 @@ public:
     const int type = 3125803723;
 
 
-    std::variant<IfcCartesianPoint> Location;
     std::optional<std::variant<IfcDirection>> RefDirection;
 
     // Constructor
@@ -10681,7 +10250,6 @@ public:
     const int type = 2740243338;
 
 
-    std::variant<IfcCartesianPoint> Location;
     std::optional<std::variant<IfcDirection>> Axis;
     std::optional<std::variant<IfcDirection>> RefDirection;
 
@@ -10756,12 +10324,10 @@ public:
     const int type = 2713105998;
 
 
-    std::variant<IfcSurface> BaseSurface;
-    std::variant<boolean> AgreementFlag;
     std::variant<IfcBoundingBox> Enclosure;
 
     // Constructor
-    explicit IfcBoxedHalfSpace(const std::variant<IfcSurface>& BaseSurface_, const std::variant<boolean>& AgreementFlag_, const std::variant<IfcBoundingBox>& Enclosure_)
+    explicit IfcBoxedHalfSpace(const std::variant<IfcSurface>& BaseSurface_, const std::variant<bool>& AgreementFlag_, const std::variant<IfcBoundingBox>& Enclosure_)
         : IfcHalfSpaceSolid(BaseSurface_, AgreementFlag_)
         , Enclosure(Enclosure_)
     {
@@ -10774,9 +10340,6 @@ public:
     const int type = 2898889636;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcAxis2Placement2D> Position;
     IfcPositiveLengthMeasure Depth;
     IfcPositiveLengthMeasure Width;
     IfcPositiveLengthMeasure WallThickness;
@@ -10841,10 +10404,6 @@ public:
     const int type = 3749851601;
 
 
-    std::optional<std::variant<IfcDirection>> Axis1;
-    std::optional<std::variant<IfcDirection>> Axis2;
-    std::variant<IfcCartesianPoint> LocalOrigin;
-    std::optional<std::variant<double>> Scale;
 
     // Constructor
     explicit IfcCartesianTransformationOperator2D(const std::optional<std::variant<IfcDirection>>& Axis1_, const std::optional<std::variant<IfcDirection>>& Axis2_, const std::variant<IfcCartesianPoint>& LocalOrigin_, const std::optional<std::variant<double>>& Scale_)
@@ -10859,10 +10418,6 @@ public:
     const int type = 3486308946;
 
 
-    std::optional<std::variant<IfcDirection>> Axis1;
-    std::optional<std::variant<IfcDirection>> Axis2;
-    std::variant<IfcCartesianPoint> LocalOrigin;
-    std::optional<std::variant<double>> Scale;
     std::optional<std::variant<double>> Scale2;
 
     // Constructor
@@ -10879,10 +10434,6 @@ public:
     const int type = 3331915920;
 
 
-    std::optional<std::variant<IfcDirection>> Axis1;
-    std::optional<std::variant<IfcDirection>> Axis2;
-    std::variant<IfcCartesianPoint> LocalOrigin;
-    std::optional<std::variant<double>> Scale;
     std::optional<std::variant<IfcDirection>> Axis3;
 
     // Constructor
@@ -10899,11 +10450,6 @@ public:
     const int type = 1416205885;
 
 
-    std::optional<std::variant<IfcDirection>> Axis1;
-    std::optional<std::variant<IfcDirection>> Axis2;
-    std::variant<IfcCartesianPoint> LocalOrigin;
-    std::optional<std::variant<double>> Scale;
-    std::optional<std::variant<IfcDirection>> Axis3;
     std::optional<std::variant<double>> Scale2;
     std::optional<std::variant<double>> Scale3;
 
@@ -10922,9 +10468,6 @@ public:
     const int type = 1383045692;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcAxis2Placement2D> Position;
     IfcPositiveLengthMeasure Radius;
 
     // Constructor
@@ -10941,7 +10484,6 @@ public:
     const int type = 2205249479;
 
 
-    std::vector<std::variant<IfcFace>> CfsFaces;
 
     // Constructor
     explicit IfcClosedShell(const std::vector<std::variant<IfcFace>>& CfsFaces_)
@@ -10958,11 +10500,11 @@ public:
     std::optional<std::vector<std::variant<IfcCompositeCurve>>> UsingCurves;
 
     IfcTransitionCode Transition;
-    std::variant<boolean> SameSense;
+    std::variant<bool> SameSense;
     std::variant<IfcCurve> ParentCurve;
 
     // Constructor
-    explicit IfcCompositeCurveSegment(IfcTransitionCode Transition_, const std::variant<boolean>& SameSense_, const std::variant<IfcCurve>& ParentCurve_)
+    explicit IfcCompositeCurveSegment(IfcTransitionCode Transition_, const std::variant<bool>& SameSense_, const std::variant<IfcCurve>& ParentCurve_)
         : IfcGeometricRepresentationItem()
         , Transition(Transition_)
         , SameSense(SameSense_)
@@ -10977,9 +10519,6 @@ public:
     const int type = 4133800736;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcAxis2Placement2D> Position;
     IfcPositiveLengthMeasure OverallHeight;
     IfcPositiveLengthMeasure BaseWidth2;
     std::optional<IfcPositiveLengthMeasure> Radius;
@@ -11018,9 +10557,6 @@ public:
     const int type = 194851669;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcAxis2Placement2D> Position;
     IfcPositiveLengthMeasure OverallHeight;
     IfcPositiveLengthMeasure HeadWidth;
     std::optional<IfcPositiveLengthMeasure> Radius;
@@ -11138,9 +10674,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcTerminatorSymbol>>> AnnotatedBySymbols;
 
-    std::optional<std::variant<IfcRepresentationItem>> Item;
-    std::vector<std::variant<IfcPresentationStyleAssignment>> Styles;
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcDimensionCurve(const std::optional<std::variant<IfcRepresentationItem>>& Item_, const std::vector<std::variant<IfcPresentationStyleAssignment>>& Styles_, const std::optional<IfcLabel>& Name_)
@@ -11155,10 +10688,6 @@ public:
     const int type = 4054601972;
 
 
-    std::optional<std::variant<IfcRepresentationItem>> Item;
-    std::vector<std::variant<IfcPresentationStyleAssignment>> Styles;
-    std::optional<IfcLabel> Name;
-    std::variant<IfcAnnotationCurveOccurrence> AnnotatedCurve;
     IfcDimensionExtentUsage Role;
 
     // Constructor
@@ -11191,10 +10720,6 @@ public:
     const int type = 2963535650;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcPositiveLengthMeasure> LiningDepth;
     std::optional<IfcPositiveLengthMeasure> LiningThickness;
     std::optional<IfcPositiveLengthMeasure> ThresholdDepth;
@@ -11231,10 +10756,6 @@ public:
     const int type = 1714330368;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcPositiveLengthMeasure> PanelDepth;
     IfcDoorPanelOperationEnum PanelOperation;
     std::optional<IfcNormalisedRatioMeasure> PanelWidth;
@@ -11259,21 +10780,13 @@ public:
     const int type = 526551008;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
     IfcDoorStyleOperationEnum OperationType;
     IfcDoorStyleConstructionEnum ConstructionType;
-    std::variant<boolean> ParameterTakesPrecedence;
-    std::variant<boolean> Sizeable;
+    std::variant<bool> ParameterTakesPrecedence;
+    std::variant<bool> Sizeable;
 
     // Constructor
-    explicit IfcDoorStyle(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, IfcDoorStyleOperationEnum OperationType_, IfcDoorStyleConstructionEnum ConstructionType_, const std::variant<boolean>& ParameterTakesPrecedence_, const std::variant<boolean>& Sizeable_)
+    explicit IfcDoorStyle(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, IfcDoorStyleOperationEnum OperationType_, IfcDoorStyleConstructionEnum ConstructionType_, const std::variant<bool>& ParameterTakesPrecedence_, const std::variant<bool>& Sizeable_)
         : IfcTypeProduct(GlobalId_, OwnerHistory_, Name_, Description_, ApplicableOccurrence_, HasPropertySets_, RepresentationMaps_, Tag_)
         , OperationType(OperationType_)
         , ConstructionType(ConstructionType_)
@@ -11307,7 +10820,6 @@ public:
     const int type = 445594917;
 
 
-    IfcLabel Name;
 
     // Constructor
     explicit IfcDraughtingPreDefinedColour(IfcLabel Name_)
@@ -11322,7 +10834,6 @@ public:
     const int type = 4006246654;
 
 
-    IfcLabel Name;
 
     // Constructor
     explicit IfcDraughtingPreDefinedCurveFont(IfcLabel Name_)
@@ -11353,10 +10864,6 @@ public:
     const int type = 1883228015;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcLabel> MethodOfMeasurement;
     std::vector<std::variant<IfcPhysicalQuantity>> Quantities;
 
@@ -11375,14 +10882,6 @@ public:
     const int type = 339256511;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
     std::optional<IfcLabel> ElementType;
 
     // Constructor
@@ -11415,9 +10914,6 @@ public:
     const int type = 2835456948;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcAxis2Placement2D> Position;
     IfcPositiveLengthMeasure SemiAxis1;
     IfcPositiveLengthMeasure SemiAxis2;
 
@@ -11436,10 +10932,6 @@ public:
     const int type = 80994333;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcEnergySequenceEnum> EnergySequence;
     std::optional<IfcLabel> UserDefinedEnergySequence;
 
@@ -11458,8 +10950,6 @@ public:
     const int type = 477187591;
 
 
-    std::variant<IfcProfileDef> SweptArea;
-    std::variant<IfcAxis2Placement3D> Position;
     std::variant<IfcDirection> ExtrudedDirection;
     IfcPositiveLengthMeasure Depth;
 
@@ -11554,10 +11044,6 @@ public:
     const int type = 3455213021;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     IfcPropertySourceEnum PropertySource;
     std::optional<std::variant<IfcTimeSeries>> FlowConditionTimeSeries;
     std::optional<std::variant<IfcTimeSeries>> VelocityTimeSeries;
@@ -11602,15 +11088,6 @@ public:
     const int type = 4238390223;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFurnishingElementType(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -11625,15 +11102,6 @@ public:
     const int type = 1268542332;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcAssemblyPlaceEnum AssemblyPlace;
 
     // Constructor
@@ -11650,7 +11118,6 @@ public:
     const int type = 987898635;
 
 
-    std::vector<IfcGeometricSetSelect> Elements;
 
     // Constructor
     explicit IfcGeometricCurveSet(const std::vector<IfcGeometricSetSelect>& Elements_)
@@ -11665,9 +11132,6 @@ public:
     const int type = 1484403080;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcAxis2Placement2D> Position;
     IfcPositiveLengthMeasure OverallWidth;
     IfcPositiveLengthMeasure OverallDepth;
     IfcPositiveLengthMeasure WebThickness;
@@ -11692,9 +11156,6 @@ public:
     const int type = 572779678;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcAxis2Placement2D> Position;
     IfcPositiveLengthMeasure Depth;
     std::optional<IfcPositiveLengthMeasure> Width;
     IfcPositiveLengthMeasure Thickness;
@@ -11760,10 +11221,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelDefines>>> IsDefinedBy;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcLabel> ObjectType;
 
     // Constructor
@@ -11822,10 +11279,6 @@ public:
     const int type = 3566463478;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     IfcPermeableCoveringOperationEnum OperationType;
     IfcWindowPanelPositionEnum PanelPosition;
     std::optional<IfcPositiveLengthMeasure> FrameDepth;
@@ -11850,8 +11303,6 @@ public:
     const int type = 603570806;
 
 
-    IfcLengthMeasure SizeInX;
-    IfcLengthMeasure SizeInY;
     IfcAxis2Placement Placement;
 
     // Constructor
@@ -11868,7 +11319,6 @@ public:
     const int type = 220341763;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
 
     // Constructor
     explicit IfcPlane(const std::variant<IfcAxis2Placement3D>& Position_)
@@ -11886,11 +11336,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelSequence>>> IsSuccessorFrom;
     std::optional<std::vector<std::variant<IfcRelSequence>>> IsPredecessorTo;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
 
     // Constructor
     explicit IfcProcess(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_)
@@ -11906,11 +11351,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelAssignsToProduct>>> ReferencedBy;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
     std::optional<std::variant<IfcProductRepresentation>> Representation;
 
@@ -11929,11 +11369,6 @@ public:
     const int type = 103090709;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<IfcLabel> LongName;
     std::optional<IfcLabel> Phase;
     std::vector<std::variant<IfcRepresentationContext>> RepresentationContexts;
@@ -11956,9 +11391,6 @@ public:
     const int type = 4194566429;
 
 
-    std::optional<std::variant<IfcRepresentationItem>> Item;
-    std::vector<std::variant<IfcPresentationStyleAssignment>> Styles;
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcProjectionCurve(const std::optional<std::variant<IfcRepresentationItem>>& Item_, const std::vector<std::variant<IfcPresentationStyleAssignment>>& Styles_, const std::optional<IfcLabel>& Name_)
@@ -11973,10 +11405,6 @@ public:
     const int type = 1451395588;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcProperty>> HasProperties;
 
     // Constructor
@@ -11993,13 +11421,6 @@ public:
     const int type = 3219374653;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     IfcObjectTypeEnum ProxyType;
     std::optional<IfcLabel> Tag;
 
@@ -12018,11 +11439,6 @@ public:
     const int type = 2770003689;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcAxis2Placement2D> Position;
-    IfcPositiveLengthMeasure XDim;
-    IfcPositiveLengthMeasure YDim;
     IfcPositiveLengthMeasure WallThickness;
     std::optional<IfcPositiveLengthMeasure> InnerFilletRadius;
     std::optional<IfcPositiveLengthMeasure> OuterFilletRadius;
@@ -12043,7 +11459,6 @@ public:
     const int type = 2798486643;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
     IfcPositiveLengthMeasure XLength;
     IfcPositiveLengthMeasure YLength;
     IfcPositiveLengthMeasure Height;
@@ -12069,11 +11484,11 @@ public:
     IfcParameterValue V1;
     IfcParameterValue U2;
     IfcParameterValue V2;
-    std::variant<boolean> Usense;
-    std::variant<boolean> Vsense;
+    std::variant<bool> Usense;
+    std::variant<bool> Vsense;
 
     // Constructor
-    explicit IfcRectangularTrimmedSurface(const std::variant<IfcSurface>& BasisSurface_, IfcParameterValue U1_, IfcParameterValue V1_, IfcParameterValue U2_, IfcParameterValue V2_, const std::variant<boolean>& Usense_, const std::variant<boolean>& Vsense_)
+    explicit IfcRectangularTrimmedSurface(const std::variant<IfcSurface>& BasisSurface_, IfcParameterValue U1_, IfcParameterValue V1_, IfcParameterValue U2_, IfcParameterValue V2_, const std::variant<bool>& Usense_, const std::variant<bool>& Vsense_)
         : IfcBoundedSurface()
         , BasisSurface(BasisSurface_)
         , U1(U1_)
@@ -12092,10 +11507,6 @@ public:
     const int type = 3939117080;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
     std::optional<IfcObjectTypeEnum> RelatedObjectsType;
 
@@ -12114,12 +11525,6 @@ public:
     const int type = 1683148259;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcObjectTypeEnum> RelatedObjectsType;
     std::variant<IfcActor> RelatingActor;
     std::optional<std::variant<IfcActorRole>> ActingRole;
 
@@ -12138,12 +11543,6 @@ public:
     const int type = 2495723537;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcObjectTypeEnum> RelatedObjectsType;
     std::variant<IfcControl> RelatingControl;
 
     // Constructor
@@ -12160,12 +11559,6 @@ public:
     const int type = 1307041759;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcObjectTypeEnum> RelatedObjectsType;
     std::variant<IfcGroup> RelatingGroup;
 
     // Constructor
@@ -12182,12 +11575,6 @@ public:
     const int type = 4278684876;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcObjectTypeEnum> RelatedObjectsType;
     std::variant<IfcProcess> RelatingProcess;
     std::optional<std::variant<IfcMeasureWithUnit>> QuantityInProcess;
 
@@ -12206,12 +11593,6 @@ public:
     const int type = 2857406711;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcObjectTypeEnum> RelatedObjectsType;
     std::variant<IfcProduct> RelatingProduct;
 
     // Constructor
@@ -12228,13 +11609,6 @@ public:
     const int type = 3372526763;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcObjectTypeEnum> RelatedObjectsType;
-    std::variant<IfcControl> RelatingControl;
 
     // Constructor
     explicit IfcRelAssignsToProjectOrder(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::vector<std::variant<IfcObjectDefinition>>& RelatedObjects_, const std::optional<IfcObjectTypeEnum>& RelatedObjectsType_, const std::variant<IfcControl>& RelatingControl_)
@@ -12249,12 +11623,6 @@ public:
     const int type = 205026976;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcObjectTypeEnum> RelatedObjectsType;
     std::variant<IfcResource> RelatingResource;
 
     // Constructor
@@ -12271,10 +11639,6 @@ public:
     const int type = 1865459582;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcRoot>> RelatedObjects;
 
     // Constructor
@@ -12291,11 +11655,6 @@ public:
     const int type = 1327628568;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcRoot>> RelatedObjects;
     std::variant<IfcAppliedValue> RelatingAppliedValue;
 
     // Constructor
@@ -12312,11 +11671,6 @@ public:
     const int type = 4095574036;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcRoot>> RelatedObjects;
     std::variant<IfcApproval> RelatingApproval;
 
     // Constructor
@@ -12333,11 +11687,6 @@ public:
     const int type = 919958153;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcRoot>> RelatedObjects;
     IfcClassificationNotationSelect RelatingClassification;
 
     // Constructor
@@ -12354,11 +11703,6 @@ public:
     const int type = 2728634034;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcRoot>> RelatedObjects;
     IfcLabel Intent;
     std::variant<IfcConstraint> RelatingConstraint;
 
@@ -12377,11 +11721,6 @@ public:
     const int type = 982818633;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcRoot>> RelatedObjects;
     IfcDocumentSelect RelatingDocument;
 
     // Constructor
@@ -12398,11 +11737,6 @@ public:
     const int type = 3840914261;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcRoot>> RelatedObjects;
     IfcLibrarySelect RelatingLibrary;
 
     // Constructor
@@ -12419,11 +11753,6 @@ public:
     const int type = 2655215786;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcRoot>> RelatedObjects;
     IfcMaterialSelect RelatingMaterial;
 
     // Constructor
@@ -12440,11 +11769,6 @@ public:
     const int type = 2851387026;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcRoot>> RelatedObjects;
     std::variant<IfcProfileProperties> RelatingProfileProperties;
     std::optional<std::variant<IfcShapeAspect>> ProfileSectionLocation;
     std::optional<IfcOrientationSelect> ProfileOrientation;
@@ -12465,10 +11789,6 @@ public:
     const int type = 826625072;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcRelConnects(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -12483,10 +11803,6 @@ public:
     const int type = 1204542856;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<std::variant<IfcConnectionGeometry>> ConnectionGeometry;
     std::variant<IfcElement> RelatingElement;
     std::variant<IfcElement> RelatedElement;
@@ -12507,13 +11823,6 @@ public:
     const int type = 3945020480;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcConnectionGeometry>> ConnectionGeometry;
-    std::variant<IfcElement> RelatingElement;
-    std::variant<IfcElement> RelatedElement;
     std::optional<std::vector<std::variant<double>>> RelatingPriorities;
     std::optional<std::vector<std::variant<double>>> RelatedPriorities;
     IfcConnectionTypeEnum RelatedConnectionType;
@@ -12536,10 +11845,6 @@ public:
     const int type = 4201705270;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcPort> RelatingPort;
     std::variant<IfcElement> RelatedElement;
 
@@ -12558,10 +11863,6 @@ public:
     const int type = 3190031847;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcPort> RelatingPort;
     std::variant<IfcPort> RelatedPort;
     std::optional<std::variant<IfcElement>> RealizingElement;
@@ -12582,10 +11883,6 @@ public:
     const int type = 2127690289;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     IfcStructuralActivityAssignmentSelect RelatingElement;
     std::variant<IfcStructuralActivity> RelatedStructuralActivity;
 
@@ -12604,10 +11901,6 @@ public:
     const int type = 3912681535;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcElement> RelatingElement;
     std::variant<IfcStructuralMember> RelatedStructuralMember;
 
@@ -12626,10 +11919,6 @@ public:
     const int type = 1638771189;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcStructuralMember> RelatingStructuralMember;
     std::variant<IfcStructuralConnection> RelatedStructuralConnection;
     std::optional<std::variant<IfcBoundaryCondition>> AppliedCondition;
@@ -12656,16 +11945,6 @@ public:
     const int type = 504942748;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::variant<IfcStructuralMember> RelatingStructuralMember;
-    std::variant<IfcStructuralConnection> RelatedStructuralConnection;
-    std::optional<std::variant<IfcBoundaryCondition>> AppliedCondition;
-    std::optional<std::variant<IfcStructuralConnectionCondition>> AdditionalConditions;
-    std::optional<IfcLengthMeasure> SupportedLength;
-    std::optional<std::variant<IfcAxis2Placement3D>> ConditionCoordinateSystem;
     std::variant<IfcConnectionGeometry> ConnectionConstraint;
 
     // Constructor
@@ -12682,13 +11961,6 @@ public:
     const int type = 3678494232;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcConnectionGeometry>> ConnectionGeometry;
-    std::variant<IfcElement> RelatingElement;
-    std::variant<IfcElement> RelatedElement;
     std::vector<std::variant<IfcElement>> RealizingElements;
     std::optional<IfcLabel> ConnectionType;
 
@@ -12707,10 +11979,6 @@ public:
     const int type = 3242617779;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcProduct>> RelatedElements;
     std::variant<IfcSpatialStructureElement> RelatingStructure;
 
@@ -12729,10 +11997,6 @@ public:
     const int type = 886880790;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcElement> RelatingBuildingElement;
     std::vector<std::variant<IfcCovering>> RelatedCoverings;
 
@@ -12751,10 +12015,6 @@ public:
     const int type = 2802773753;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcSpace> RelatedSpace;
     std::vector<std::variant<IfcCovering>> RelatedCoverings;
 
@@ -12773,10 +12033,6 @@ public:
     const int type = 2551354335;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcObjectDefinition> RelatingObject;
     std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
 
@@ -12795,10 +12051,6 @@ public:
     const int type = 693640335;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcObject>> RelatedObjects;
 
     // Constructor
@@ -12815,11 +12067,6 @@ public:
     const int type = 4186316022;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObject>> RelatedObjects;
     std::variant<IfcPropertySetDefinition> RelatingPropertyDefinition;
 
     // Constructor
@@ -12836,11 +12083,6 @@ public:
     const int type = 781010003;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObject>> RelatedObjects;
     std::variant<IfcTypeObject> RelatingType;
 
     // Constructor
@@ -12857,10 +12099,6 @@ public:
     const int type = 3940055652;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcOpeningElement> RelatingOpeningElement;
     std::variant<IfcElement> RelatedBuildingElement;
 
@@ -12879,10 +12117,6 @@ public:
     const int type = 279856033;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcDistributionControlElement>> RelatedControlElements;
     std::variant<IfcDistributionFlowElement> RelatingFlowElement;
 
@@ -12901,10 +12135,6 @@ public:
     const int type = 4189434867;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcCountMeasure> DailyInteraction;
     std::optional<IfcNormalisedRatioMeasure> ImportanceRating;
     std::optional<std::variant<IfcSpatialStructureElement>> LocationOfInteraction;
@@ -12929,12 +12159,6 @@ public:
     const int type = 3268803585;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::variant<IfcObjectDefinition> RelatingObject;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
 
     // Constructor
     explicit IfcRelNests(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::variant<IfcObjectDefinition>& RelatingObject_, const std::vector<std::variant<IfcObjectDefinition>>& RelatedObjects_)
@@ -12949,14 +12173,6 @@ public:
     const int type = 2051452291;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcObjectTypeEnum> RelatedObjectsType;
-    std::variant<IfcActor> RelatingActor;
-    std::optional<std::variant<IfcActorRole>> ActingRole;
 
     // Constructor
     explicit IfcRelOccupiesSpaces(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::vector<std::variant<IfcObjectDefinition>>& RelatedObjects_, const std::optional<IfcObjectTypeEnum>& RelatedObjectsType_, const std::variant<IfcActor>& RelatingActor_, const std::optional<std::variant<IfcActorRole>>& ActingRole_)
@@ -12971,12 +12187,6 @@ public:
     const int type = 202636808;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObject>> RelatedObjects;
-    std::variant<IfcPropertySetDefinition> RelatingPropertyDefinition;
     std::vector<std::variant<IfcProperty>> OverridingProperties;
 
     // Constructor
@@ -12993,10 +12203,6 @@ public:
     const int type = 750771296;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcElement> RelatingElement;
     std::variant<IfcFeatureElementAddition> RelatedFeatureElement;
 
@@ -13015,10 +12221,6 @@ public:
     const int type = 1245217292;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcProduct>> RelatedElements;
     std::variant<IfcSpatialStructureElement> RelatingStructure;
 
@@ -13037,13 +12239,6 @@ public:
     const int type = 1058617721;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcObjectTypeEnum> RelatedObjectsType;
-    std::variant<IfcControl> RelatingControl;
 
     // Constructor
     explicit IfcRelSchedulesCostItems(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::vector<std::variant<IfcObjectDefinition>>& RelatedObjects_, const std::optional<IfcObjectTypeEnum>& RelatedObjectsType_, const std::variant<IfcControl>& RelatingControl_)
@@ -13058,10 +12253,6 @@ public:
     const int type = 4122056220;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcProcess> RelatingProcess;
     std::variant<IfcProcess> RelatedProcess;
     IfcTimeMeasure TimeLag;
@@ -13084,10 +12275,6 @@ public:
     const int type = 366585022;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcSystem> RelatingSystem;
     std::vector<std::variant<IfcSpatialStructureElement>> RelatedBuildings;
 
@@ -13106,10 +12293,6 @@ public:
     const int type = 3451746338;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcSpace> RelatingSpace;
     std::optional<std::variant<IfcElement>> RelatedBuildingElement;
     std::optional<std::variant<IfcConnectionGeometry>> ConnectionGeometry;
@@ -13134,10 +12317,6 @@ public:
     const int type = 1401173127;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcElement> RelatingBuildingElement;
     std::variant<IfcFeatureElementSubtraction> RelatedOpeningElement;
 
@@ -13157,11 +12336,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelAssignsToResource>>> ResourceOf;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
 
     // Constructor
     explicit IfcResource(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_)
@@ -13176,8 +12350,6 @@ public:
     const int type = 1856042241;
 
 
-    std::variant<IfcProfileDef> SweptArea;
-    std::variant<IfcAxis2Placement3D> Position;
     std::variant<IfcAxis1Placement> Axis;
     IfcPlaneAngleMeasure Angle;
 
@@ -13196,7 +12368,6 @@ public:
     const int type = 4158566097;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
     IfcPositiveLengthMeasure Height;
     IfcPositiveLengthMeasure BottomRadius;
 
@@ -13215,7 +12386,6 @@ public:
     const int type = 3626867408;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
     IfcPositiveLengthMeasure Height;
     IfcPositiveLengthMeasure Radius;
 
@@ -13237,13 +12407,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelServicesBuildings>>> ServicedBySystems;
     std::optional<std::vector<std::variant<IfcRelContainedInSpatialStructure>>> ContainsElements;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     std::optional<IfcLabel> LongName;
     IfcElementCompositionEnum CompositionType;
 
@@ -13262,15 +12425,6 @@ public:
     const int type = 3893378262;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcSpatialStructureElementType(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -13285,7 +12439,6 @@ public:
     const int type = 451544542;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
     IfcPositiveLengthMeasure Radius;
 
     // Constructor
@@ -13303,13 +12456,6 @@ public:
 
     std::optional<std::variant<IfcRelConnectsStructuralActivity>> AssignedToStructuralItem;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     std::variant<IfcStructuralLoad> AppliedLoad;
     IfcGlobalOrLocalEnum GlobalOrLocal;
 
@@ -13329,13 +12475,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelConnectsStructuralActivity>>> AssignedStructuralActivity;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
 
     // Constructor
     explicit IfcStructuralItem(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_)
@@ -13352,13 +12491,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelConnectsStructuralElement>>> ReferencesElement;
     std::optional<std::vector<std::variant<IfcRelConnectsStructuralMember>>> ConnectedBy;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
 
     // Constructor
     explicit IfcStructuralMember(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_)
@@ -13374,15 +12506,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcStructuralAction>>> Causes;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
 
     // Constructor
     explicit IfcStructuralReaction(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_)
@@ -13397,13 +12520,6 @@ public:
     const int type = 3979015343;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     IfcStructuralSurfaceTypeEnum PredefinedType;
     std::optional<IfcPositiveLengthMeasure> Thickness;
 
@@ -13422,15 +12538,6 @@ public:
     const int type = 2218152070;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    IfcStructuralSurfaceTypeEnum PredefinedType;
-    std::optional<IfcPositiveLengthMeasure> Thickness;
     std::vector<IfcPositiveLengthMeasure> SubsequentThickness;
     std::variant<IfcShapeAspect> VaryingThicknessLocation;
 
@@ -13449,7 +12556,6 @@ public:
     const int type = 4070609034;
 
 
-    std::vector<IfcDraughtingCalloutElement> Contents;
 
     // Constructor
     explicit IfcStructuredDimensionCallout(const std::vector<IfcDraughtingCalloutElement>& Contents_)
@@ -13464,8 +12570,6 @@ public:
     const int type = 2028607225;
 
 
-    std::variant<IfcProfileDef> SweptArea;
-    std::variant<IfcAxis2Placement3D> Position;
     std::variant<IfcCurve> Directrix;
     IfcParameterValue StartParam;
     IfcParameterValue EndParam;
@@ -13488,8 +12592,6 @@ public:
     const int type = 2809605785;
 
 
-    std::variant<IfcProfileDef> SweptCurve;
-    std::variant<IfcAxis2Placement3D> Position;
     std::variant<IfcDirection> ExtrudedDirection;
     IfcLengthMeasure Depth;
 
@@ -13508,8 +12610,6 @@ public:
     const int type = 4124788165;
 
 
-    std::variant<IfcProfileDef> SweptCurve;
-    std::variant<IfcAxis2Placement3D> Position;
     std::variant<IfcAxis1Placement> AxisPosition;
 
     // Constructor
@@ -13526,15 +12626,6 @@ public:
     const int type = 1580310250;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcSystemFurnitureElementType(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -13549,19 +12640,14 @@ public:
     const int type = 3473067441;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcIdentifier TaskId;
     std::optional<IfcLabel> Status;
     std::optional<IfcLabel> WorkMethod;
-    std::variant<boolean> IsMilestone;
+    std::variant<bool> IsMilestone;
     std::optional<std::variant<double>> Priority;
 
     // Constructor
-    explicit IfcTask(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, IfcIdentifier TaskId_, const std::optional<IfcLabel>& Status_, const std::optional<IfcLabel>& WorkMethod_, const std::variant<boolean>& IsMilestone_, const std::optional<std::variant<double>>& Priority_)
+    explicit IfcTask(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, IfcIdentifier TaskId_, const std::optional<IfcLabel>& Status_, const std::optional<IfcLabel>& WorkMethod_, const std::variant<bool>& IsMilestone_, const std::optional<std::variant<double>>& Priority_)
         : IfcProcess(GlobalId_, OwnerHistory_, Name_, Description_, ObjectType_)
         , TaskId(TaskId_)
         , Status(Status_)
@@ -13578,15 +12664,6 @@ public:
     const int type = 2097647324;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcTransportElementTypeEnum PredefinedType;
 
     // Constructor
@@ -13604,11 +12681,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelAssignsToActor>>> IsActingUpon;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcActorSelect TheActor;
 
     // Constructor
@@ -13626,13 +12698,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelContainedInSpatialStructure>>> ContainedInStructure;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
 
     // Constructor
     explicit IfcAnnotation(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_)
@@ -13647,14 +12712,6 @@ public:
     const int type = 3207858831;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcAxis2Placement2D> Position;
-    IfcPositiveLengthMeasure OverallWidth;
-    IfcPositiveLengthMeasure OverallDepth;
-    IfcPositiveLengthMeasure WebThickness;
-    IfcPositiveLengthMeasure FlangeThickness;
-    std::optional<IfcPositiveLengthMeasure> FilletRadius;
     IfcPositiveLengthMeasure TopFlangeWidth;
     std::optional<IfcPositiveLengthMeasure> TopFlangeThickness;
     std::optional<IfcPositiveLengthMeasure> TopFlangeFilletRadius;
@@ -13677,7 +12734,6 @@ public:
     const int type = 1334484129;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
     IfcPositiveLengthMeasure XLength;
     IfcPositiveLengthMeasure YLength;
     IfcPositiveLengthMeasure ZLength;
@@ -13698,9 +12754,6 @@ public:
     const int type = 3649129432;
 
 
-    IfcBooleanOperator Operator;
-    IfcBooleanOperand FirstOperand;
-    IfcBooleanOperand SecondOperand;
 
     // Constructor
     explicit IfcBooleanClippingResult(IfcBooleanOperator Operator_, IfcBooleanOperand FirstOperand_, IfcBooleanOperand SecondOperand_)
@@ -13729,15 +12782,6 @@ public:
     const int type = 4031249490;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
-    IfcElementCompositionEnum CompositionType;
     std::optional<IfcLengthMeasure> ElevationOfRefHeight;
     std::optional<IfcLengthMeasure> ElevationOfTerrain;
     std::optional<std::variant<IfcPostalAddress>> BuildingAddress;
@@ -13758,15 +12802,6 @@ public:
     const int type = 1950629157;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcBuildingElementType(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -13781,15 +12816,6 @@ public:
     const int type = 3124254112;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
-    IfcElementCompositionEnum CompositionType;
     std::optional<IfcLengthMeasure> Elevation;
 
     // Constructor
@@ -13806,10 +12832,6 @@ public:
     const int type = 2937912522;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcAxis2Placement2D> Position;
-    IfcPositiveLengthMeasure Radius;
     IfcPositiveLengthMeasure WallThickness;
 
     // Constructor
@@ -13826,15 +12848,6 @@ public:
     const int type = 300633059;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcColumnTypeEnum PredefinedType;
 
     // Constructor
@@ -13885,11 +12898,6 @@ public:
     const int type = 2559216714;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<IfcIdentifier> ResourceIdentifier;
     std::optional<IfcLabel> ResourceGroup;
     std::optional<IfcResourceConsumptionEnum> ResourceConsumption;
@@ -13913,11 +12921,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelAssignsToControl>>> Controls;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
 
     // Constructor
     explicit IfcControl(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_)
@@ -13932,11 +12935,6 @@ public:
     const int type = 3895139033;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
 
     // Constructor
     explicit IfcCostItem(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_)
@@ -13951,11 +12949,6 @@ public:
     const int type = 1419761937;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<IfcActorSelect> SubmittedBy;
     std::optional<IfcActorSelect> PreparedBy;
     std::optional<IfcDateTimeSelect> SubmittedOn;
@@ -13986,15 +12979,6 @@ public:
     const int type = 1916426348;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCoveringTypeEnum PredefinedType;
 
     // Constructor
@@ -14011,15 +12995,6 @@ public:
     const int type = 3295246426;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> ResourceIdentifier;
-    std::optional<IfcLabel> ResourceGroup;
-    std::optional<IfcResourceConsumptionEnum> ResourceConsumption;
-    std::optional<std::variant<IfcMeasureWithUnit>> BaseQuantity;
 
     // Constructor
     explicit IfcCrewResource(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<IfcIdentifier>& ResourceIdentifier_, const std::optional<IfcLabel>& ResourceGroup_, const std::optional<IfcResourceConsumptionEnum>& ResourceConsumption_, const std::optional<std::variant<IfcMeasureWithUnit>>& BaseQuantity_)
@@ -14034,15 +13009,6 @@ public:
     const int type = 1457835157;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCurtainWallTypeEnum PredefinedType;
 
     // Constructor
@@ -14059,7 +13025,6 @@ public:
     const int type = 681481545;
 
 
-    std::vector<IfcDraughtingCalloutElement> Contents;
 
     // Constructor
     explicit IfcDimensionCurveDirectedCallout(const std::vector<IfcDraughtingCalloutElement>& Contents_)
@@ -14074,15 +13039,6 @@ public:
     const int type = 3256556792;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcDistributionElementType(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -14097,15 +13053,6 @@ public:
     const int type = 3849074793;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcDistributionFlowElementType(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -14120,12 +13067,6 @@ public:
     const int type = 360485395;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcEnergySequenceEnum> EnergySequence;
-    std::optional<IfcLabel> UserDefinedEnergySequence;
     std::optional<IfcElectricCurrentEnum> ElectricCurrentType;
     IfcElectricVoltageMeasure InputVoltage;
     IfcFrequencyMeasure InputFrequency;
@@ -14168,13 +13109,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelConnectsElements>>> ConnectedFrom;
     std::optional<std::vector<std::variant<IfcRelContainedInSpatialStructure>>> ContainedInStructure;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     std::optional<IfcIdentifier> Tag;
 
     // Constructor
@@ -14191,14 +13125,6 @@ public:
     const int type = 4123344466;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcAssemblyPlaceEnum> AssemblyPlace;
     IfcElementAssemblyTypeEnum PredefinedType;
 
@@ -14217,14 +13143,6 @@ public:
     const int type = 1623761950;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcElementComponent(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -14239,15 +13157,6 @@ public:
     const int type = 2590856083;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcElementComponentType(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -14262,7 +13171,6 @@ public:
     const int type = 1704287377;
 
 
-    IfcAxis2Placement Position;
     IfcPositiveLengthMeasure SemiAxis1;
     IfcPositiveLengthMeasure SemiAxis2;
 
@@ -14281,15 +13189,6 @@ public:
     const int type = 2107101300;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcEnergyConversionDeviceType(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -14304,14 +13203,6 @@ public:
     const int type = 1962604670;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcEquipmentElement(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -14326,11 +13217,6 @@ public:
     const int type = 3272907226;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
 
     // Constructor
     explicit IfcEquipmentStandard(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_)
@@ -14345,15 +13231,6 @@ public:
     const int type = 3174744832;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcEvaporativeCoolerTypeEnum PredefinedType;
 
     // Constructor
@@ -14370,15 +13247,6 @@ public:
     const int type = 3390157468;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcEvaporatorTypeEnum PredefinedType;
 
     // Constructor
@@ -14395,7 +13263,6 @@ public:
     const int type = 807026263;
 
 
-    std::variant<IfcClosedShell> Outer;
 
     // Constructor
     explicit IfcFacetedBrep(const std::variant<IfcClosedShell>& Outer_)
@@ -14410,7 +13277,6 @@ public:
     const int type = 3737207727;
 
 
-    std::variant<IfcClosedShell> Outer;
     std::vector<std::variant<IfcClosedShell>> Voids;
 
     // Constructor
@@ -14427,14 +13293,6 @@ public:
     const int type = 647756555;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFastener(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -14449,15 +13307,6 @@ public:
     const int type = 2489546625;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFastenerType(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -14472,14 +13321,6 @@ public:
     const int type = 2827207264;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFeatureElement(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -14495,14 +13336,6 @@ public:
 
     std::optional<std::variant<IfcRelProjectsElement>> ProjectsElements;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFeatureElementAddition(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -14518,14 +13351,6 @@ public:
 
     std::optional<std::variant<IfcRelVoidsElement>> VoidsElements;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFeatureElementSubtraction(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -14540,15 +13365,6 @@ public:
     const int type = 3907093117;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFlowControllerType(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -14563,15 +13379,6 @@ public:
     const int type = 3198132628;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFlowFittingType(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -14586,15 +13393,6 @@ public:
     const int type = 3815607619;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcFlowMeterTypeEnum PredefinedType;
 
     // Constructor
@@ -14611,15 +13409,6 @@ public:
     const int type = 1482959167;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFlowMovingDeviceType(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -14634,15 +13423,6 @@ public:
     const int type = 1834744321;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFlowSegmentType(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -14657,15 +13437,6 @@ public:
     const int type = 1339347760;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFlowStorageDeviceType(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -14680,15 +13451,6 @@ public:
     const int type = 2297155007;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFlowTerminalType(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -14703,15 +13465,6 @@ public:
     const int type = 3009222698;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFlowTreatmentDeviceType(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -14726,14 +13479,6 @@ public:
     const int type = 263784265;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFurnishingElement(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -14748,11 +13493,6 @@ public:
     const int type = 814719939;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
 
     // Constructor
     explicit IfcFurnitureStandard(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_)
@@ -14767,15 +13507,6 @@ public:
     const int type = 200128114;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcGasTerminalTypeEnum PredefinedType;
 
     // Constructor
@@ -14793,13 +13524,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelContainedInSpatialStructure>>> ContainedInStructure;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     std::vector<std::variant<IfcGridAxis>> UAxes;
     std::vector<std::variant<IfcGridAxis>> VAxes;
     std::optional<std::vector<std::variant<IfcGridAxis>>> WAxes;
@@ -14821,11 +13545,6 @@ public:
 
     std::optional<std::variant<IfcRelAssignsToGroup>> IsGroupedBy;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
 
     // Constructor
     explicit IfcGroup(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_)
@@ -14840,15 +13559,6 @@ public:
     const int type = 1251058090;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcHeatExchangerTypeEnum PredefinedType;
 
     // Constructor
@@ -14865,15 +13575,6 @@ public:
     const int type = 1806887404;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcHumidifierTypeEnum PredefinedType;
 
     // Constructor
@@ -14890,11 +13591,6 @@ public:
     const int type = 2391368822;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcInventoryTypeEnum InventoryType;
     IfcActorSelect Jurisdiction;
     std::vector<std::variant<IfcPerson>> ResponsiblePersons;
@@ -14921,15 +13617,6 @@ public:
     const int type = 4288270099;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcJunctionBoxTypeEnum PredefinedType;
 
     // Constructor
@@ -14946,15 +13633,6 @@ public:
     const int type = 3827777499;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> ResourceIdentifier;
-    std::optional<IfcLabel> ResourceGroup;
-    std::optional<IfcResourceConsumptionEnum> ResourceConsumption;
-    std::optional<std::variant<IfcMeasureWithUnit>> BaseQuantity;
     std::optional<IfcText> SkillSet;
 
     // Constructor
@@ -14971,15 +13649,6 @@ public:
     const int type = 1051575348;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcLampTypeEnum PredefinedType;
 
     // Constructor
@@ -14996,15 +13665,6 @@ public:
     const int type = 1161773419;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcLightFixtureTypeEnum PredefinedType;
 
     // Constructor
@@ -15021,7 +13681,6 @@ public:
     const int type = 2506943328;
 
 
-    std::vector<IfcDraughtingCalloutElement> Contents;
 
     // Constructor
     explicit IfcLinearDimension(const std::vector<IfcDraughtingCalloutElement>& Contents_)
@@ -15036,14 +13695,6 @@ public:
     const int type = 377706215;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcPositiveLengthMeasure> NominalDiameter;
     std::optional<IfcPositiveLengthMeasure> NominalLength;
 
@@ -15062,15 +13713,6 @@ public:
     const int type = 2108223431;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcMechanicalFastenerType(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -15085,15 +13727,6 @@ public:
     const int type = 3181161470;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcMemberTypeEnum PredefinedType;
 
     // Constructor
@@ -15110,15 +13743,6 @@ public:
     const int type = 977012517;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcMotorConnectionTypeEnum PredefinedType;
 
     // Constructor
@@ -15135,22 +13759,12 @@ public:
     const int type = 1916936684;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    IfcIdentifier TaskId;
-    std::optional<IfcLabel> Status;
-    std::optional<IfcLabel> WorkMethod;
-    std::variant<boolean> IsMilestone;
-    std::optional<std::variant<double>> Priority;
     std::variant<IfcSpatialStructureElement> MoveFrom;
     std::variant<IfcSpatialStructureElement> MoveTo;
     std::optional<std::vector<IfcText>> PunchList;
 
     // Constructor
-    explicit IfcMove(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, IfcIdentifier TaskId_, const std::optional<IfcLabel>& Status_, const std::optional<IfcLabel>& WorkMethod_, const std::variant<boolean>& IsMilestone_, const std::optional<std::variant<double>>& Priority_, const std::variant<IfcSpatialStructureElement>& MoveFrom_, const std::variant<IfcSpatialStructureElement>& MoveTo_, const std::optional<std::vector<IfcText>>& PunchList_)
+    explicit IfcMove(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, IfcIdentifier TaskId_, const std::optional<IfcLabel>& Status_, const std::optional<IfcLabel>& WorkMethod_, const std::variant<bool>& IsMilestone_, const std::optional<std::variant<double>>& Priority_, const std::variant<IfcSpatialStructureElement>& MoveFrom_, const std::variant<IfcSpatialStructureElement>& MoveTo_, const std::optional<std::vector<IfcText>>& PunchList_)
         : IfcTask(GlobalId_, OwnerHistory_, Name_, Description_, ObjectType_, TaskId_, Status_, WorkMethod_, IsMilestone_, Priority_)
         , MoveFrom(MoveFrom_)
         , MoveTo(MoveTo_)
@@ -15165,12 +13779,6 @@ public:
     const int type = 4143007308;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    IfcActorSelect TheActor;
     IfcOccupantTypeEnum PredefinedType;
 
     // Constructor
@@ -15188,14 +13796,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelFillsElement>>> HasFillings;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcOpeningElement(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -15210,20 +13810,10 @@ public:
     const int type = 3425660407;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    IfcIdentifier TaskId;
-    std::optional<IfcLabel> Status;
-    std::optional<IfcLabel> WorkMethod;
-    std::variant<boolean> IsMilestone;
-    std::optional<std::variant<double>> Priority;
     IfcIdentifier ActionID;
 
     // Constructor
-    explicit IfcOrderAction(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, IfcIdentifier TaskId_, const std::optional<IfcLabel>& Status_, const std::optional<IfcLabel>& WorkMethod_, const std::variant<boolean>& IsMilestone_, const std::optional<std::variant<double>>& Priority_, IfcIdentifier ActionID_)
+    explicit IfcOrderAction(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, IfcIdentifier TaskId_, const std::optional<IfcLabel>& Status_, const std::optional<IfcLabel>& WorkMethod_, const std::variant<bool>& IsMilestone_, const std::optional<std::variant<double>>& Priority_, IfcIdentifier ActionID_)
         : IfcTask(GlobalId_, OwnerHistory_, Name_, Description_, ObjectType_, TaskId_, Status_, WorkMethod_, IsMilestone_, Priority_)
         , ActionID(ActionID_)
     {
@@ -15236,15 +13826,6 @@ public:
     const int type = 2837617999;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcOutletTypeEnum PredefinedType;
 
     // Constructor
@@ -15261,11 +13842,6 @@ public:
     const int type = 2382730787;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcLabel LifeCyclePhase;
 
     // Constructor
@@ -15282,11 +13858,6 @@ public:
     const int type = 3327091369;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcIdentifier PermitID;
 
     // Constructor
@@ -15303,15 +13874,6 @@ public:
     const int type = 804291784;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcPipeFittingTypeEnum PredefinedType;
 
     // Constructor
@@ -15328,15 +13890,6 @@ public:
     const int type = 4231323485;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcPipeSegmentTypeEnum PredefinedType;
 
     // Constructor
@@ -15353,15 +13906,6 @@ public:
     const int type = 4017108033;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcPlateTypeEnum PredefinedType;
 
     // Constructor
@@ -15397,13 +13941,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelConnectsPorts>>> ConnectedFrom;
     std::optional<std::vector<std::variant<IfcRelConnectsPorts>>> ConnectedTo;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
 
     // Constructor
     explicit IfcPort(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_)
@@ -15418,11 +13955,6 @@ public:
     const int type = 2744685151;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcIdentifier ProcedureID;
     IfcProcedureTypeEnum ProcedureType;
     std::optional<IfcLabel> UserDefinedProcedureType;
@@ -15443,11 +13975,6 @@ public:
     const int type = 2904328755;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcIdentifier ID;
     IfcProjectOrderTypeEnum PredefinedType;
     std::optional<IfcLabel> Status;
@@ -15468,11 +13995,6 @@ public:
     const int type = 3642467123;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::vector<std::variant<IfcRelAssignsToProjectOrder>> Records;
     IfcProjectOrderRecordTypeEnum PredefinedType;
 
@@ -15491,14 +14013,6 @@ public:
     const int type = 3651124850;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcProjectionElement(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -15513,15 +14027,6 @@ public:
     const int type = 1842657554;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcProtectiveDeviceTypeEnum PredefinedType;
 
     // Constructor
@@ -15538,15 +14043,6 @@ public:
     const int type = 2250791053;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcPumpTypeEnum PredefinedType;
 
     // Constructor
@@ -15563,7 +14059,6 @@ public:
     const int type = 3248260540;
 
 
-    std::vector<IfcDraughtingCalloutElement> Contents;
 
     // Constructor
     explicit IfcRadiusDimension(const std::vector<IfcDraughtingCalloutElement>& Contents_)
@@ -15578,15 +14073,6 @@ public:
     const int type = 2893384427;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcRailingTypeEnum PredefinedType;
 
     // Constructor
@@ -15603,15 +14089,6 @@ public:
     const int type = 2324767716;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcRampFlightTypeEnum PredefinedType;
 
     // Constructor
@@ -15628,12 +14105,6 @@ public:
     const int type = 160246688;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::variant<IfcObjectDefinition> RelatingObject;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
 
     // Constructor
     explicit IfcRelAggregates(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::variant<IfcObjectDefinition>& RelatingObject_, const std::vector<std::variant<IfcObjectDefinition>>& RelatedObjects_)
@@ -15648,13 +14119,6 @@ public:
     const int type = 2863920197;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcObjectTypeEnum> RelatedObjectsType;
-    std::variant<IfcControl> RelatingControl;
     std::optional<std::variant<IfcScheduleTimeControl>> TimeForTask;
 
     // Constructor
@@ -15671,15 +14135,6 @@ public:
     const int type = 1768891740;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSanitaryTerminalTypeEnum PredefinedType;
 
     // Constructor
@@ -15697,11 +14152,6 @@ public:
 
     std::optional<std::variant<IfcRelAssignsTasks>> ScheduleTimeControlAssigned;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<IfcDateTimeSelect> ActualStart;
     std::optional<IfcDateTimeSelect> EarlyStart;
     std::optional<IfcDateTimeSelect> LateStart;
@@ -15715,14 +14165,14 @@ public:
     std::optional<IfcTimeMeasure> RemainingTime;
     std::optional<IfcTimeMeasure> FreeFloat;
     std::optional<IfcTimeMeasure> TotalFloat;
-    std::optional<std::variant<boolean>> IsCritical;
+    std::optional<std::variant<bool>> IsCritical;
     std::optional<IfcDateTimeSelect> StatusTime;
     std::optional<IfcTimeMeasure> StartFloat;
     std::optional<IfcTimeMeasure> FinishFloat;
     std::optional<IfcPositiveRatioMeasure> Completion;
 
     // Constructor
-    explicit IfcScheduleTimeControl(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<IfcDateTimeSelect>& ActualStart_, const std::optional<IfcDateTimeSelect>& EarlyStart_, const std::optional<IfcDateTimeSelect>& LateStart_, const std::optional<IfcDateTimeSelect>& ScheduleStart_, const std::optional<IfcDateTimeSelect>& ActualFinish_, const std::optional<IfcDateTimeSelect>& EarlyFinish_, const std::optional<IfcDateTimeSelect>& LateFinish_, const std::optional<IfcDateTimeSelect>& ScheduleFinish_, const std::optional<IfcTimeMeasure>& ScheduleDuration_, const std::optional<IfcTimeMeasure>& ActualDuration_, const std::optional<IfcTimeMeasure>& RemainingTime_, const std::optional<IfcTimeMeasure>& FreeFloat_, const std::optional<IfcTimeMeasure>& TotalFloat_, const std::optional<std::variant<boolean>>& IsCritical_, const std::optional<IfcDateTimeSelect>& StatusTime_, const std::optional<IfcTimeMeasure>& StartFloat_, const std::optional<IfcTimeMeasure>& FinishFloat_, const std::optional<IfcPositiveRatioMeasure>& Completion_)
+    explicit IfcScheduleTimeControl(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<IfcDateTimeSelect>& ActualStart_, const std::optional<IfcDateTimeSelect>& EarlyStart_, const std::optional<IfcDateTimeSelect>& LateStart_, const std::optional<IfcDateTimeSelect>& ScheduleStart_, const std::optional<IfcDateTimeSelect>& ActualFinish_, const std::optional<IfcDateTimeSelect>& EarlyFinish_, const std::optional<IfcDateTimeSelect>& LateFinish_, const std::optional<IfcDateTimeSelect>& ScheduleFinish_, const std::optional<IfcTimeMeasure>& ScheduleDuration_, const std::optional<IfcTimeMeasure>& ActualDuration_, const std::optional<IfcTimeMeasure>& RemainingTime_, const std::optional<IfcTimeMeasure>& FreeFloat_, const std::optional<IfcTimeMeasure>& TotalFloat_, const std::optional<std::variant<bool>>& IsCritical_, const std::optional<IfcDateTimeSelect>& StatusTime_, const std::optional<IfcTimeMeasure>& StartFloat_, const std::optional<IfcTimeMeasure>& FinishFloat_, const std::optional<IfcPositiveRatioMeasure>& Completion_)
         : IfcControl(GlobalId_, OwnerHistory_, Name_, Description_, ObjectType_)
         , ActualStart(ActualStart_)
         , EarlyStart(EarlyStart_)
@@ -15752,11 +14202,6 @@ public:
     const int type = 4105383287;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcServiceLifeTypeEnum ServiceLifeType;
     IfcTimeMeasure ServiceLifeDuration;
 
@@ -15775,15 +14220,6 @@ public:
     const int type = 4097777520;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
-    IfcElementCompositionEnum CompositionType;
     std::optional<IfcCompoundPlaneAngleMeasure> RefLatitude;
     std::optional<IfcCompoundPlaneAngleMeasure> RefLongitude;
     std::optional<IfcLengthMeasure> RefElevation;
@@ -15808,15 +14244,6 @@ public:
     const int type = 2533589738;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSlabTypeEnum PredefinedType;
 
     // Constructor
@@ -15835,15 +14262,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelCoversSpaces>>> HasCoverings;
     std::optional<std::vector<std::variant<IfcRelSpaceBoundary>>> BoundedBy;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
-    IfcElementCompositionEnum CompositionType;
     IfcInternalOrExternalEnum InteriorOrExteriorSpace;
     std::optional<IfcLengthMeasure> ElevationWithFlooring;
 
@@ -15862,15 +14280,6 @@ public:
     const int type = 1305183839;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSpaceHeaterTypeEnum PredefinedType;
 
     // Constructor
@@ -15889,11 +14298,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelInteractionRequirements>>> HasInteractionReqsFrom;
     std::optional<std::vector<std::variant<IfcRelInteractionRequirements>>> HasInteractionReqsTo;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcIdentifier SpaceProgramIdentifier;
     std::optional<IfcAreaMeasure> MaxRequiredArea;
     std::optional<IfcAreaMeasure> MinRequiredArea;
@@ -15918,15 +14322,6 @@ public:
     const int type = 3812236995;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSpaceTypeEnum PredefinedType;
 
     // Constructor
@@ -15943,15 +14338,6 @@ public:
     const int type = 3112655638;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcStackTerminalTypeEnum PredefinedType;
 
     // Constructor
@@ -15968,15 +14354,6 @@ public:
     const int type = 1039846685;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcStairFlightTypeEnum PredefinedType;
 
     // Constructor
@@ -15993,20 +14370,11 @@ public:
     const int type = 682877961;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
-    std::variant<boolean> DestabilizingLoad;
+    std::variant<bool> DestabilizingLoad;
     std::optional<std::variant<IfcStructuralReaction>> CausedBy;
 
     // Constructor
-    explicit IfcStructuralAction(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_, const std::variant<boolean>& DestabilizingLoad_, const std::optional<std::variant<IfcStructuralReaction>>& CausedBy_)
+    explicit IfcStructuralAction(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_, const std::variant<bool>& DestabilizingLoad_, const std::optional<std::variant<IfcStructuralReaction>>& CausedBy_)
         : IfcStructuralActivity(GlobalId_, OwnerHistory_, Name_, Description_, ObjectType_, ObjectPlacement_, Representation_, AppliedLoad_, GlobalOrLocal_)
         , DestabilizingLoad(DestabilizingLoad_)
         , CausedBy(CausedBy_)
@@ -16021,13 +14389,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelConnectsStructuralMember>>> ConnectsStructuralMembers;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     std::optional<std::variant<IfcBoundaryCondition>> AppliedCondition;
 
     // Constructor
@@ -16044,14 +14405,6 @@ public:
     const int type = 4243806635;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<std::variant<IfcBoundaryCondition>> AppliedCondition;
 
     // Constructor
     explicit IfcStructuralCurveConnection(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<std::variant<IfcBoundaryCondition>>& AppliedCondition_)
@@ -16066,13 +14419,6 @@ public:
     const int type = 214636428;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     IfcStructuralCurveTypeEnum PredefinedType;
 
     // Constructor
@@ -16089,14 +14435,6 @@ public:
     const int type = 2445595289;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    IfcStructuralCurveTypeEnum PredefinedType;
 
     // Constructor
     explicit IfcStructuralCurveMemberVarying(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, IfcStructuralCurveTypeEnum PredefinedType_)
@@ -16111,21 +14449,10 @@ public:
     const int type = 1807405624;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
-    std::variant<boolean> DestabilizingLoad;
-    std::optional<std::variant<IfcStructuralReaction>> CausedBy;
     IfcProjectedOrTrueLengthEnum ProjectedOrTrue;
 
     // Constructor
-    explicit IfcStructuralLinearAction(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_, const std::variant<boolean>& DestabilizingLoad_, const std::optional<std::variant<IfcStructuralReaction>>& CausedBy_, IfcProjectedOrTrueLengthEnum ProjectedOrTrue_)
+    explicit IfcStructuralLinearAction(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_, const std::variant<bool>& DestabilizingLoad_, const std::optional<std::variant<IfcStructuralReaction>>& CausedBy_, IfcProjectedOrTrueLengthEnum ProjectedOrTrue_)
         : IfcStructuralAction(GlobalId_, OwnerHistory_, Name_, Description_, ObjectType_, ObjectPlacement_, Representation_, AppliedLoad_, GlobalOrLocal_, DestabilizingLoad_, CausedBy_)
         , ProjectedOrTrue(ProjectedOrTrue_)
     {
@@ -16138,23 +14465,11 @@ public:
     const int type = 1721250024;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
-    std::variant<boolean> DestabilizingLoad;
-    std::optional<std::variant<IfcStructuralReaction>> CausedBy;
-    IfcProjectedOrTrueLengthEnum ProjectedOrTrue;
     std::variant<IfcShapeAspect> VaryingAppliedLoadLocation;
     std::vector<std::variant<IfcStructuralLoad>> SubsequentAppliedLoads;
 
     // Constructor
-    explicit IfcStructuralLinearActionVarying(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_, const std::variant<boolean>& DestabilizingLoad_, const std::optional<std::variant<IfcStructuralReaction>>& CausedBy_, IfcProjectedOrTrueLengthEnum ProjectedOrTrue_, const std::variant<IfcShapeAspect>& VaryingAppliedLoadLocation_, const std::vector<std::variant<IfcStructuralLoad>>& SubsequentAppliedLoads_)
+    explicit IfcStructuralLinearActionVarying(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_, const std::variant<bool>& DestabilizingLoad_, const std::optional<std::variant<IfcStructuralReaction>>& CausedBy_, IfcProjectedOrTrueLengthEnum ProjectedOrTrue_, const std::variant<IfcShapeAspect>& VaryingAppliedLoadLocation_, const std::vector<std::variant<IfcStructuralLoad>>& SubsequentAppliedLoads_)
         : IfcStructuralLinearAction(GlobalId_, OwnerHistory_, Name_, Description_, ObjectType_, ObjectPlacement_, Representation_, AppliedLoad_, GlobalOrLocal_, DestabilizingLoad_, CausedBy_, ProjectedOrTrue_)
         , VaryingAppliedLoadLocation(VaryingAppliedLoadLocation_)
         , SubsequentAppliedLoads(SubsequentAppliedLoads_)
@@ -16170,11 +14485,6 @@ public:
     std::optional<std::vector<std::variant<IfcStructuralResultGroup>>> SourceOfResultGroup;
     std::optional<std::vector<std::variant<IfcStructuralAnalysisModel>>> LoadGroupFor;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcLoadGroupTypeEnum PredefinedType;
     IfcActionTypeEnum ActionType;
     IfcActionSourceTypeEnum ActionSource;
@@ -16199,21 +14509,10 @@ public:
     const int type = 1621171031;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
-    std::variant<boolean> DestabilizingLoad;
-    std::optional<std::variant<IfcStructuralReaction>> CausedBy;
     IfcProjectedOrTrueLengthEnum ProjectedOrTrue;
 
     // Constructor
-    explicit IfcStructuralPlanarAction(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_, const std::variant<boolean>& DestabilizingLoad_, const std::optional<std::variant<IfcStructuralReaction>>& CausedBy_, IfcProjectedOrTrueLengthEnum ProjectedOrTrue_)
+    explicit IfcStructuralPlanarAction(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_, const std::variant<bool>& DestabilizingLoad_, const std::optional<std::variant<IfcStructuralReaction>>& CausedBy_, IfcProjectedOrTrueLengthEnum ProjectedOrTrue_)
         : IfcStructuralAction(GlobalId_, OwnerHistory_, Name_, Description_, ObjectType_, ObjectPlacement_, Representation_, AppliedLoad_, GlobalOrLocal_, DestabilizingLoad_, CausedBy_)
         , ProjectedOrTrue(ProjectedOrTrue_)
     {
@@ -16226,23 +14525,11 @@ public:
     const int type = 3987759626;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
-    std::variant<boolean> DestabilizingLoad;
-    std::optional<std::variant<IfcStructuralReaction>> CausedBy;
-    IfcProjectedOrTrueLengthEnum ProjectedOrTrue;
     std::variant<IfcShapeAspect> VaryingAppliedLoadLocation;
     std::vector<std::variant<IfcStructuralLoad>> SubsequentAppliedLoads;
 
     // Constructor
-    explicit IfcStructuralPlanarActionVarying(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_, const std::variant<boolean>& DestabilizingLoad_, const std::optional<std::variant<IfcStructuralReaction>>& CausedBy_, IfcProjectedOrTrueLengthEnum ProjectedOrTrue_, const std::variant<IfcShapeAspect>& VaryingAppliedLoadLocation_, const std::vector<std::variant<IfcStructuralLoad>>& SubsequentAppliedLoads_)
+    explicit IfcStructuralPlanarActionVarying(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_, const std::variant<bool>& DestabilizingLoad_, const std::optional<std::variant<IfcStructuralReaction>>& CausedBy_, IfcProjectedOrTrueLengthEnum ProjectedOrTrue_, const std::variant<IfcShapeAspect>& VaryingAppliedLoadLocation_, const std::vector<std::variant<IfcStructuralLoad>>& SubsequentAppliedLoads_)
         : IfcStructuralPlanarAction(GlobalId_, OwnerHistory_, Name_, Description_, ObjectType_, ObjectPlacement_, Representation_, AppliedLoad_, GlobalOrLocal_, DestabilizingLoad_, CausedBy_, ProjectedOrTrue_)
         , VaryingAppliedLoadLocation(VaryingAppliedLoadLocation_)
         , SubsequentAppliedLoads(SubsequentAppliedLoads_)
@@ -16256,20 +14543,9 @@ public:
     const int type = 2082059205;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
-    std::variant<boolean> DestabilizingLoad;
-    std::optional<std::variant<IfcStructuralReaction>> CausedBy;
 
     // Constructor
-    explicit IfcStructuralPointAction(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_, const std::variant<boolean>& DestabilizingLoad_, const std::optional<std::variant<IfcStructuralReaction>>& CausedBy_)
+    explicit IfcStructuralPointAction(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_, const std::variant<bool>& DestabilizingLoad_, const std::optional<std::variant<IfcStructuralReaction>>& CausedBy_)
         : IfcStructuralAction(GlobalId_, OwnerHistory_, Name_, Description_, ObjectType_, ObjectPlacement_, Representation_, AppliedLoad_, GlobalOrLocal_, DestabilizingLoad_, CausedBy_)
     {
         // Constructor body (if needed)
@@ -16281,14 +14557,6 @@ public:
     const int type = 734778138;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<std::variant<IfcBoundaryCondition>> AppliedCondition;
 
     // Constructor
     explicit IfcStructuralPointConnection(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<std::variant<IfcBoundaryCondition>>& AppliedCondition_)
@@ -16303,15 +14571,6 @@ public:
     const int type = 1235345126;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
 
     // Constructor
     explicit IfcStructuralPointReaction(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_)
@@ -16327,17 +14586,12 @@ public:
 
     std::optional<std::vector<std::variant<IfcStructuralAnalysisModel>>> ResultGroupFor;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcAnalysisTheoryTypeEnum TheoryType;
     std::optional<std::variant<IfcStructuralLoadGroup>> ResultForLoadGroup;
-    std::variant<boolean> IsLinear;
+    std::variant<bool> IsLinear;
 
     // Constructor
-    explicit IfcStructuralResultGroup(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, IfcAnalysisTheoryTypeEnum TheoryType_, const std::optional<std::variant<IfcStructuralLoadGroup>>& ResultForLoadGroup_, const std::variant<boolean>& IsLinear_)
+    explicit IfcStructuralResultGroup(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, IfcAnalysisTheoryTypeEnum TheoryType_, const std::optional<std::variant<IfcStructuralLoadGroup>>& ResultForLoadGroup_, const std::variant<bool>& IsLinear_)
         : IfcGroup(GlobalId_, OwnerHistory_, Name_, Description_, ObjectType_)
         , TheoryType(TheoryType_)
         , ResultForLoadGroup(ResultForLoadGroup_)
@@ -16352,14 +14606,6 @@ public:
     const int type = 1975003073;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<std::variant<IfcBoundaryCondition>> AppliedCondition;
 
     // Constructor
     explicit IfcStructuralSurfaceConnection(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<std::variant<IfcBoundaryCondition>>& AppliedCondition_)
@@ -16374,15 +14620,6 @@ public:
     const int type = 148013059;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> ResourceIdentifier;
-    std::optional<IfcLabel> ResourceGroup;
-    std::optional<IfcResourceConsumptionEnum> ResourceConsumption;
-    std::optional<std::variant<IfcMeasureWithUnit>> BaseQuantity;
     std::optional<IfcActorSelect> SubContractor;
     std::optional<IfcText> JobDescription;
 
@@ -16401,15 +14638,6 @@ public:
     const int type = 2315554128;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSwitchingDeviceTypeEnum PredefinedType;
 
     // Constructor
@@ -16427,11 +14655,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelServicesBuildings>>> ServicesBuildings;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
 
     // Constructor
     explicit IfcSystem(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_)
@@ -16446,15 +14669,6 @@ public:
     const int type = 5716631;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcTankTypeEnum PredefinedType;
 
     // Constructor
@@ -16471,11 +14685,6 @@ public:
     const int type = 1637806684;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<std::vector<IfcDateTimeSelect>> ApplicableDates;
     IfcTimeSeriesScheduleTypeEnum TimeSeriesScheduleType;
     std::variant<IfcTimeSeries> TimeSeries;
@@ -16496,15 +14705,6 @@ public:
     const int type = 1692211062;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcTransformerTypeEnum PredefinedType;
 
     // Constructor
@@ -16521,14 +14721,6 @@ public:
     const int type = 1620046519;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcTransportElementTypeEnum> OperationType;
     std::optional<IfcMassMeasure> CapacityByWeight;
     std::optional<IfcCountMeasure> CapacityByNumber;
@@ -16552,11 +14744,11 @@ public:
     std::variant<IfcCurve> BasisCurve;
     std::vector<IfcTrimmingSelect> Trim1;
     std::vector<IfcTrimmingSelect> Trim2;
-    std::variant<boolean> SenseAgreement;
+    std::variant<bool> SenseAgreement;
     IfcTrimmingPreference MasterRepresentation;
 
     // Constructor
-    explicit IfcTrimmedCurve(const std::variant<IfcCurve>& BasisCurve_, const std::vector<IfcTrimmingSelect>& Trim1_, const std::vector<IfcTrimmingSelect>& Trim2_, const std::variant<boolean>& SenseAgreement_, IfcTrimmingPreference MasterRepresentation_)
+    explicit IfcTrimmedCurve(const std::variant<IfcCurve>& BasisCurve_, const std::vector<IfcTrimmingSelect>& Trim1_, const std::vector<IfcTrimmingSelect>& Trim2_, const std::variant<bool>& SenseAgreement_, IfcTrimmingPreference MasterRepresentation_)
         : IfcBoundedCurve()
         , BasisCurve(BasisCurve_)
         , Trim1(Trim1_)
@@ -16573,15 +14765,6 @@ public:
     const int type = 1600972822;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcTubeBundleTypeEnum PredefinedType;
 
     // Constructor
@@ -16598,15 +14781,6 @@ public:
     const int type = 1911125066;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcUnitaryEquipmentTypeEnum PredefinedType;
 
     // Constructor
@@ -16623,15 +14797,6 @@ public:
     const int type = 728799441;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcValveTypeEnum PredefinedType;
 
     // Constructor
@@ -16648,14 +14813,6 @@ public:
     const int type = 2769231204;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcVirtualElement(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -16670,15 +14827,6 @@ public:
     const int type = 1898987631;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcWallTypeEnum PredefinedType;
 
     // Constructor
@@ -16695,15 +14843,6 @@ public:
     const int type = 1133259667;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcWasteTerminalTypeEnum PredefinedType;
 
     // Constructor
@@ -16720,11 +14859,6 @@ public:
     const int type = 1028945134;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcIdentifier Identifier;
     IfcDateTimeSelect CreationDate;
     std::optional<std::vector<std::variant<IfcPerson>>> Creators;
@@ -16759,21 +14893,6 @@ public:
     const int type = 4218914973;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    IfcIdentifier Identifier;
-    IfcDateTimeSelect CreationDate;
-    std::optional<std::vector<std::variant<IfcPerson>>> Creators;
-    std::optional<IfcLabel> Purpose;
-    std::optional<IfcTimeMeasure> Duration;
-    std::optional<IfcTimeMeasure> TotalFloat;
-    IfcDateTimeSelect StartTime;
-    std::optional<IfcDateTimeSelect> FinishTime;
-    std::optional<IfcWorkControlTypeEnum> WorkControlType;
-    std::optional<IfcLabel> UserDefinedControlType;
 
     // Constructor
     explicit IfcWorkPlan(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, IfcIdentifier Identifier_, IfcDateTimeSelect CreationDate_, const std::optional<std::vector<std::variant<IfcPerson>>>& Creators_, const std::optional<IfcLabel>& Purpose_, const std::optional<IfcTimeMeasure>& Duration_, const std::optional<IfcTimeMeasure>& TotalFloat_, IfcDateTimeSelect StartTime_, const std::optional<IfcDateTimeSelect>& FinishTime_, const std::optional<IfcWorkControlTypeEnum>& WorkControlType_, const std::optional<IfcLabel>& UserDefinedControlType_)
@@ -16788,21 +14907,6 @@ public:
     const int type = 3342526732;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    IfcIdentifier Identifier;
-    IfcDateTimeSelect CreationDate;
-    std::optional<std::vector<std::variant<IfcPerson>>> Creators;
-    std::optional<IfcLabel> Purpose;
-    std::optional<IfcTimeMeasure> Duration;
-    std::optional<IfcTimeMeasure> TotalFloat;
-    IfcDateTimeSelect StartTime;
-    std::optional<IfcDateTimeSelect> FinishTime;
-    std::optional<IfcWorkControlTypeEnum> WorkControlType;
-    std::optional<IfcLabel> UserDefinedControlType;
 
     // Constructor
     explicit IfcWorkSchedule(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, IfcIdentifier Identifier_, IfcDateTimeSelect CreationDate_, const std::optional<std::vector<std::variant<IfcPerson>>>& Creators_, const std::optional<IfcLabel>& Purpose_, const std::optional<IfcTimeMeasure>& Duration_, const std::optional<IfcTimeMeasure>& TotalFloat_, IfcDateTimeSelect StartTime_, const std::optional<IfcDateTimeSelect>& FinishTime_, const std::optional<IfcWorkControlTypeEnum>& WorkControlType_, const std::optional<IfcLabel>& UserDefinedControlType_)
@@ -16817,11 +14921,6 @@ public:
     const int type = 1033361043;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
 
     // Constructor
     explicit IfcZone(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_)
@@ -16836,8 +14935,6 @@ public:
     const int type = 1213861670;
 
 
-    std::vector<std::variant<IfcCompositeCurveSegment>> Segments;
-    std::variant<logical> SelfIntersect;
 
     // Constructor
     explicit Ifc2DCompositeCurve(const std::vector<std::variant<IfcCompositeCurveSegment>>& Segments_, const std::variant<logical>& SelfIntersect_)
@@ -16852,11 +14949,6 @@ public:
     const int type = 3821786052;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcIdentifier RequestID;
 
     // Constructor
@@ -16873,15 +14965,6 @@ public:
     const int type = 1411407467;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcAirTerminalBoxTypeEnum PredefinedType;
 
     // Constructor
@@ -16898,15 +14981,6 @@ public:
     const int type = 3352864051;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcAirTerminalTypeEnum PredefinedType;
 
     // Constructor
@@ -16923,15 +14997,6 @@ public:
     const int type = 1871374353;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcAirToAirHeatRecoveryTypeEnum PredefinedType;
 
     // Constructor
@@ -16948,7 +15013,6 @@ public:
     const int type = 2470393545;
 
 
-    std::vector<IfcDraughtingCalloutElement> Contents;
 
     // Constructor
     explicit IfcAngularDimension(const std::vector<IfcDraughtingCalloutElement>& Contents_)
@@ -16963,11 +15027,6 @@ public:
     const int type = 3460190687;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcIdentifier AssetID;
     std::variant<IfcCostValue> OriginalValue;
     std::variant<IfcCostValue> CurrentValue;
@@ -17024,15 +15083,6 @@ public:
     const int type = 819618141;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcBeamTypeEnum PredefinedType;
 
     // Constructor
@@ -17049,11 +15099,6 @@ public:
     const int type = 1916977116;
 
 
-    std::variant<double> Degree;
-    std::vector<std::variant<IfcCartesianPoint>> ControlPointsList;
-    IfcBSplineCurveForm CurveForm;
-    std::variant<logical> ClosedCurve;
-    std::variant<logical> SelfIntersect;
 
     // Constructor
     explicit IfcBezierCurve(const std::variant<double>& Degree_, const std::vector<std::variant<IfcCartesianPoint>>& ControlPointsList_, IfcBSplineCurveForm CurveForm_, const std::variant<logical>& ClosedCurve_, const std::variant<logical>& SelfIntersect_)
@@ -17068,15 +15113,6 @@ public:
     const int type = 231477066;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcBoilerTypeEnum PredefinedType;
 
     // Constructor
@@ -17093,14 +15129,6 @@ public:
     const int type = 3299480353;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcBuildingElement(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -17115,14 +15143,6 @@ public:
     const int type = 52481810;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcBuildingElementComponent(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -17137,14 +15157,6 @@ public:
     const int type = 2979338954;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcBuildingElementPart(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -17159,14 +15171,6 @@ public:
     const int type = 1095909175;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcElementCompositionEnum> CompositionType;
 
     // Constructor
@@ -17183,15 +15187,6 @@ public:
     const int type = 1909888760;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcBuildingElementProxyTypeEnum PredefinedType;
 
     // Constructor
@@ -17208,15 +15203,6 @@ public:
     const int type = 395041908;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCableCarrierFittingTypeEnum PredefinedType;
 
     // Constructor
@@ -17233,15 +15219,6 @@ public:
     const int type = 3293546465;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCableCarrierSegmentTypeEnum PredefinedType;
 
     // Constructor
@@ -17258,15 +15235,6 @@ public:
     const int type = 1285652485;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCableSegmentTypeEnum PredefinedType;
 
     // Constructor
@@ -17283,15 +15251,6 @@ public:
     const int type = 2951183804;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcChillerTypeEnum PredefinedType;
 
     // Constructor
@@ -17308,7 +15267,6 @@ public:
     const int type = 2611217952;
 
 
-    IfcAxis2Placement Position;
     IfcPositiveLengthMeasure Radius;
 
     // Constructor
@@ -17325,15 +15283,6 @@ public:
     const int type = 2301859152;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCoilTypeEnum PredefinedType;
 
     // Constructor
@@ -17350,14 +15299,6 @@ public:
     const int type = 843113511;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcColumn(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -17372,15 +15313,6 @@ public:
     const int type = 3850581409;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCompressorTypeEnum PredefinedType;
 
     // Constructor
@@ -17397,15 +15329,6 @@ public:
     const int type = 2816379211;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCondenserTypeEnum PredefinedType;
 
     // Constructor
@@ -17422,11 +15345,6 @@ public:
     const int type = 2188551683;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
 
     // Constructor
     explicit IfcCondition(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_)
@@ -17441,11 +15359,6 @@ public:
     const int type = 1163958913;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcConditionCriterionSelect Criterion;
     IfcDateTimeSelect CriterionDateTime;
 
@@ -17464,15 +15377,6 @@ public:
     const int type = 3898045240;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> ResourceIdentifier;
-    std::optional<IfcLabel> ResourceGroup;
-    std::optional<IfcResourceConsumptionEnum> ResourceConsumption;
-    std::optional<std::variant<IfcMeasureWithUnit>> BaseQuantity;
 
     // Constructor
     explicit IfcConstructionEquipmentResource(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<IfcIdentifier>& ResourceIdentifier_, const std::optional<IfcLabel>& ResourceGroup_, const std::optional<IfcResourceConsumptionEnum>& ResourceConsumption_, const std::optional<std::variant<IfcMeasureWithUnit>>& BaseQuantity_)
@@ -17487,15 +15391,6 @@ public:
     const int type = 1060000209;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> ResourceIdentifier;
-    std::optional<IfcLabel> ResourceGroup;
-    std::optional<IfcResourceConsumptionEnum> ResourceConsumption;
-    std::optional<std::variant<IfcMeasureWithUnit>> BaseQuantity;
     std::optional<std::vector<IfcActorSelect>> Suppliers;
     std::optional<IfcRatioMeasure> UsageRatio;
 
@@ -17514,15 +15409,6 @@ public:
     const int type = 488727124;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> ResourceIdentifier;
-    std::optional<IfcLabel> ResourceGroup;
-    std::optional<IfcResourceConsumptionEnum> ResourceConsumption;
-    std::optional<std::variant<IfcMeasureWithUnit>> BaseQuantity;
 
     // Constructor
     explicit IfcConstructionProductResource(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<IfcIdentifier>& ResourceIdentifier_, const std::optional<IfcLabel>& ResourceGroup_, const std::optional<IfcResourceConsumptionEnum>& ResourceConsumption_, const std::optional<std::variant<IfcMeasureWithUnit>>& BaseQuantity_)
@@ -17537,15 +15423,6 @@ public:
     const int type = 335055490;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCooledBeamTypeEnum PredefinedType;
 
     // Constructor
@@ -17562,15 +15439,6 @@ public:
     const int type = 2954562838;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCoolingTowerTypeEnum PredefinedType;
 
     // Constructor
@@ -17589,14 +15457,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelCoversSpaces>>> CoversSpaces;
     std::optional<std::vector<std::variant<IfcRelCoversBldgElements>>> Covers;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCoveringTypeEnum> PredefinedType;
 
     // Constructor
@@ -17613,14 +15473,6 @@ public:
     const int type = 3495092785;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcCurtainWall(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -17635,15 +15487,6 @@ public:
     const int type = 3961806047;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcDamperTypeEnum PredefinedType;
 
     // Constructor
@@ -17660,7 +15503,6 @@ public:
     const int type = 4147604152;
 
 
-    std::vector<IfcDraughtingCalloutElement> Contents;
 
     // Constructor
     explicit IfcDiameterDimension(const std::vector<IfcDraughtingCalloutElement>& Contents_)
@@ -17675,14 +15517,6 @@ public:
     const int type = 1335981549;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcDiscreteAccessory(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -17697,15 +15531,6 @@ public:
     const int type = 2635815018;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcDiscreteAccessoryType(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -17720,15 +15545,6 @@ public:
     const int type = 1599208980;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcDistributionChamberElementTypeEnum PredefinedType;
 
     // Constructor
@@ -17745,15 +15561,6 @@ public:
     const int type = 2063403501;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcDistributionControlElementType(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -17768,14 +15575,6 @@ public:
     const int type = 1945004755;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcDistributionElement(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -17791,14 +15590,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelFlowControlElements>>> HasControlElements;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcDistributionFlowElement(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -17813,13 +15604,6 @@ public:
     const int type = 3041715199;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     std::optional<IfcFlowDirectionEnum> FlowDirection;
 
     // Constructor
@@ -17836,14 +15620,6 @@ public:
     const int type = 395920057;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcPositiveLengthMeasure> OverallHeight;
     std::optional<IfcPositiveLengthMeasure> OverallWidth;
 
@@ -17862,15 +15638,6 @@ public:
     const int type = 869906466;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcDuctFittingTypeEnum PredefinedType;
 
     // Constructor
@@ -17887,15 +15654,6 @@ public:
     const int type = 3760055223;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcDuctSegmentTypeEnum PredefinedType;
 
     // Constructor
@@ -17912,15 +15670,6 @@ public:
     const int type = 2030761528;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcDuctSilencerTypeEnum PredefinedType;
 
     // Constructor
@@ -17937,14 +15686,6 @@ public:
     const int type = 855621170;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcPositiveLengthMeasure> FeatureLength;
 
     // Constructor
@@ -17961,15 +15702,6 @@ public:
     const int type = 663422040;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcElectricApplianceTypeEnum PredefinedType;
 
     // Constructor
@@ -17986,15 +15718,6 @@ public:
     const int type = 3277789161;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcElectricFlowStorageDeviceTypeEnum PredefinedType;
 
     // Constructor
@@ -18011,15 +15734,6 @@ public:
     const int type = 1534661035;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcElectricGeneratorTypeEnum PredefinedType;
 
     // Constructor
@@ -18036,15 +15750,6 @@ public:
     const int type = 1365060375;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcElectricHeaterTypeEnum PredefinedType;
 
     // Constructor
@@ -18061,15 +15766,6 @@ public:
     const int type = 1217240411;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcElectricMotorTypeEnum PredefinedType;
 
     // Constructor
@@ -18086,15 +15782,6 @@ public:
     const int type = 712377611;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcElectricTimeControlTypeEnum PredefinedType;
 
     // Constructor
@@ -18111,11 +15798,6 @@ public:
     const int type = 1634875225;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
 
     // Constructor
     explicit IfcElectricalCircuit(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_)
@@ -18130,14 +15812,6 @@ public:
     const int type = 857184966;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcElectricalElement(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -18152,14 +15826,6 @@ public:
     const int type = 1658829314;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcEnergyConversionDevice(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -18174,15 +15840,6 @@ public:
     const int type = 346874300;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcFanTypeEnum PredefinedType;
 
     // Constructor
@@ -18199,15 +15856,6 @@ public:
     const int type = 1810631287;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcFilterTypeEnum PredefinedType;
 
     // Constructor
@@ -18224,15 +15872,6 @@ public:
     const int type = 4222183408;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcFireSuppressionTerminalTypeEnum PredefinedType;
 
     // Constructor
@@ -18249,14 +15888,6 @@ public:
     const int type = 2058353004;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFlowController(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -18271,14 +15902,6 @@ public:
     const int type = 4278956645;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFlowFitting(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -18293,15 +15916,6 @@ public:
     const int type = 4037862832;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcFlowInstrumentTypeEnum PredefinedType;
 
     // Constructor
@@ -18318,14 +15932,6 @@ public:
     const int type = 3132237377;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFlowMovingDevice(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -18340,14 +15946,6 @@ public:
     const int type = 987401354;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFlowSegment(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -18362,14 +15960,6 @@ public:
     const int type = 707683696;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFlowStorageDevice(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -18384,14 +15974,6 @@ public:
     const int type = 2223149337;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFlowTerminal(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -18406,14 +15988,6 @@ public:
     const int type = 3508470533;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFlowTreatmentDevice(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -18428,14 +16002,6 @@ public:
     const int type = 900683007;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     IfcFootingTypeEnum PredefinedType;
 
     // Constructor
@@ -18452,14 +16018,6 @@ public:
     const int type = 1073191201;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcMember(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -18474,14 +16032,6 @@ public:
     const int type = 1687234759;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     IfcPileTypeEnum PredefinedType;
     std::optional<IfcPileConstructionEnum> ConstructionType;
 
@@ -18500,14 +16050,6 @@ public:
     const int type = 3171933400;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcPlate(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -18522,14 +16064,6 @@ public:
     const int type = 2262370178;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcRailingTypeEnum> PredefinedType;
 
     // Constructor
@@ -18546,14 +16080,6 @@ public:
     const int type = 3024970846;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     IfcRampTypeEnum ShapeType;
 
     // Constructor
@@ -18570,14 +16096,6 @@ public:
     const int type = 3283111854;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcRampFlight(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -18592,11 +16110,6 @@ public:
     const int type = 3055160366;
 
 
-    std::variant<double> Degree;
-    std::vector<std::variant<IfcCartesianPoint>> ControlPointsList;
-    IfcBSplineCurveForm CurveForm;
-    std::variant<logical> ClosedCurve;
-    std::variant<logical> SelfIntersect;
     std::vector<std::variant<double>> WeightsData;
 
     // Constructor
@@ -18613,14 +16126,6 @@ public:
     const int type = 3027567501;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcLabel> SteelGrade;
 
     // Constructor
@@ -18637,15 +16142,6 @@ public:
     const int type = 2320036040;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcLabel> SteelGrade;
     std::optional<IfcPositiveLengthMeasure> MeshLength;
     std::optional<IfcPositiveLengthMeasure> MeshWidth;
     IfcPositiveLengthMeasure LongitudinalBarNominalDiameter;
@@ -18676,14 +16172,6 @@ public:
     const int type = 2016517767;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     IfcRoofTypeEnum ShapeType;
 
     // Constructor
@@ -18700,15 +16188,6 @@ public:
     const int type = 1376911519;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcPositiveLengthMeasure> FeatureLength;
     std::optional<IfcPositiveLengthMeasure> Radius;
 
     // Constructor
@@ -18725,15 +16204,6 @@ public:
     const int type = 1783015770;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSensorTypeEnum PredefinedType;
 
     // Constructor
@@ -18750,14 +16220,6 @@ public:
     const int type = 1529196076;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcSlabTypeEnum> PredefinedType;
 
     // Constructor
@@ -18774,14 +16236,6 @@ public:
     const int type = 331165859;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     IfcStairTypeEnum ShapeType;
 
     // Constructor
@@ -18798,14 +16252,6 @@ public:
     const int type = 4252922144;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<std::variant<double>> NumberOfRiser;
     std::optional<std::variant<double>> NumberOfTreads;
     std::optional<IfcPositiveLengthMeasure> RiserHeight;
@@ -18828,11 +16274,6 @@ public:
     const int type = 2515109513;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcAnalysisModelTypeEnum PredefinedType;
     std::optional<std::variant<IfcAxis2Placement3D>> OrientationOf2DPlane;
     std::optional<std::vector<std::variant<IfcStructuralLoadGroup>>> LoadedBy;
@@ -18855,15 +16296,6 @@ public:
     const int type = 3824725483;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcLabel> SteelGrade;
     IfcTendonTypeEnum PredefinedType;
     IfcPositiveLengthMeasure NominalDiameter;
     IfcAreaMeasure CrossSectionArea;
@@ -18894,15 +16326,6 @@ public:
     const int type = 2347447852;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcLabel> SteelGrade;
 
     // Constructor
     explicit IfcTendonAnchor(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_, const std::optional<IfcLabel>& SteelGrade_)
@@ -18917,15 +16340,6 @@ public:
     const int type = 3313531582;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcVibrationIsolatorTypeEnum PredefinedType;
 
     // Constructor
@@ -18942,14 +16356,6 @@ public:
     const int type = 2391406946;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcWall(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -18964,14 +16370,6 @@ public:
     const int type = 3512223829;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcWallStandardCase(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -18986,14 +16384,6 @@ public:
     const int type = 3304561284;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcPositiveLengthMeasure> OverallHeight;
     std::optional<IfcPositiveLengthMeasure> OverallWidth;
 
@@ -19012,15 +16402,6 @@ public:
     const int type = 2874132201;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcActuatorTypeEnum PredefinedType;
 
     // Constructor
@@ -19037,15 +16418,6 @@ public:
     const int type = 3001207471;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcAlarmTypeEnum PredefinedType;
 
     // Constructor
@@ -19062,14 +16434,6 @@ public:
     const int type = 753842376;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcBeam(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -19084,15 +16448,6 @@ public:
     const int type = 2454782716;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcPositiveLengthMeasure> FeatureLength;
     std::optional<IfcPositiveLengthMeasure> Width;
     std::optional<IfcPositiveLengthMeasure> Height;
 
@@ -19111,15 +16466,6 @@ public:
     const int type = 578613899;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcControllerTypeEnum PredefinedType;
 
     // Constructor
@@ -19136,14 +16482,6 @@ public:
     const int type = 1052013943;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcDistributionChamberElement(IfcGloballyUniqueId GlobalId_, const std::variant<IfcOwnerHistory>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -19159,14 +16497,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelFlowControlElements>>> AssignedToFlowElement;
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcIdentifier> ControlElementId;
 
     // Constructor
@@ -19183,14 +16513,6 @@ public:
     const int type = 3700593921;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     IfcElectricDistributionPointFunctionEnum DistributionPointFunction;
     std::optional<IfcLabel> UserDefinedFunction;
 
@@ -19209,15 +16531,6 @@ public:
     const int type = 979691226;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::variant<IfcOwnerHistory> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcLabel> SteelGrade;
     IfcPositiveLengthMeasure NominalDiameter;
     IfcAreaMeasure CrossSectionArea;
     std::optional<IfcPositiveLengthMeasure> BarLength;
@@ -25062,7 +22375,6 @@ public:
     const int type = 1560379544;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcModulusOfTranslationalSubgradeReactionSelect> TranslationalStiffnessByLengthX;
     std::optional<IfcModulusOfTranslationalSubgradeReactionSelect> TranslationalStiffnessByLengthY;
     std::optional<IfcModulusOfTranslationalSubgradeReactionSelect> TranslationalStiffnessByLengthZ;
@@ -25089,7 +22401,6 @@ public:
     const int type = 3367102660;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcModulusOfSubgradeReactionSelect> TranslationalStiffnessByAreaX;
     std::optional<IfcModulusOfSubgradeReactionSelect> TranslationalStiffnessByAreaY;
     std::optional<IfcModulusOfSubgradeReactionSelect> TranslationalStiffnessByAreaZ;
@@ -25110,7 +22421,6 @@ public:
     const int type = 1387855156;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcTranslationalStiffnessSelect> TranslationalStiffnessX;
     std::optional<IfcTranslationalStiffnessSelect> TranslationalStiffnessY;
     std::optional<IfcTranslationalStiffnessSelect> TranslationalStiffnessZ;
@@ -25137,13 +22447,6 @@ public:
     const int type = 2069777674;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcTranslationalStiffnessSelect> TranslationalStiffnessX;
-    std::optional<IfcTranslationalStiffnessSelect> TranslationalStiffnessY;
-    std::optional<IfcTranslationalStiffnessSelect> TranslationalStiffnessZ;
-    std::optional<IfcRotationalStiffnessSelect> RotationalStiffnessX;
-    std::optional<IfcRotationalStiffnessSelect> RotationalStiffnessY;
-    std::optional<IfcRotationalStiffnessSelect> RotationalStiffnessZ;
     std::optional<IfcWarpingStiffnessSelect> WarpingStiffness;
 
     // Constructor
@@ -25299,16 +22602,6 @@ public:
     const int type = 602808272;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcAppliedValueSelect> AppliedValue;
-    std::optional<std::variant<IfcMeasureWithUnit>> UnitBasis;
-    std::optional<IfcDate> ApplicableDate;
-    std::optional<IfcDate> FixedUntilDate;
-    std::optional<IfcLabel> Category;
-    std::optional<IfcLabel> Condition;
-    std::optional<IfcArithmeticOperatorEnum> ArithmeticOperator;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> Components;
 
     // Constructor
     explicit IfcCostValue(const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcAppliedValueSelect>& AppliedValue_, const std::optional<std::variant<IfcMeasureWithUnit>>& UnitBasis_, const std::optional<IfcDate>& ApplicableDate_, const std::optional<IfcDate>& FixedUntilDate_, const std::optional<IfcLabel>& Category_, const std::optional<IfcLabel>& Condition_, const std::optional<IfcArithmeticOperatorEnum>& ArithmeticOperator_, const std::optional<std::vector<std::variant<IfcAppliedValue>>>& Components_)
@@ -25424,9 +22717,6 @@ public:
     const int type = 2242383968;
 
 
-    std::optional<IfcURIReference> Location;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcExternallyDefinedHatchStyle(const std::optional<IfcURIReference>& Location_, const std::optional<IfcIdentifier>& Identification_, const std::optional<IfcLabel>& Name_)
@@ -25441,9 +22731,6 @@ public:
     const int type = 1040185647;
 
 
-    std::optional<IfcURIReference> Location;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcExternallyDefinedSurfaceStyle(const std::optional<IfcURIReference>& Location_, const std::optional<IfcIdentifier>& Identification_, const std::optional<IfcLabel>& Name_)
@@ -25458,9 +22745,6 @@ public:
     const int type = 3548104201;
 
 
-    std::optional<IfcURIReference> Location;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcExternallyDefinedTextFont(const std::optional<IfcURIReference>& Location_, const std::optional<IfcIdentifier>& Identification_, const std::optional<IfcLabel>& Name_)
@@ -25546,9 +22830,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelAssociatesLibrary>>> LibraryRefForObjects;
 
-    std::optional<IfcURIReference> Location;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcLabel> Name;
     std::optional<IfcText> Description;
     std::optional<IfcLanguageId> Language;
     std::optional<std::variant<IfcLibraryInformation>> ReferencedLibrary;
@@ -25607,8 +22888,6 @@ public:
     const int type = 3057273783;
 
 
-    IfcCoordinateReferenceSystemSelect SourceCRS;
-    std::variant<IfcCoordinateReferenceSystem> TargetCRS;
     IfcLengthMeasure Eastings;
     IfcLengthMeasure Northings;
     IfcLengthMeasure OrthogonalHeight;
@@ -25719,13 +22998,6 @@ public:
     const int type = 1847252529;
 
 
-    std::optional<std::variant<IfcMaterial>> Material;
-    IfcNonNegativeLengthMeasure LayerThickness;
-    std::optional<IfcLogical> IsVentilated;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> Category;
-    std::optional<IfcInteger> Priority;
     IfcLayerSetDirectionEnum OffsetDirection;
     IfcLengthMeasure OffsetValues;
 
@@ -25809,12 +23081,6 @@ public:
     const int type = 552965576;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcMaterial>> Material;
-    std::variant<IfcProfileDef> Profile;
-    std::optional<IfcInteger> Priority;
-    std::optional<IfcLabel> Category;
     IfcLengthMeasure OffsetValues;
 
     // Constructor
@@ -25864,13 +23130,6 @@ public:
     const int type = 3368373690;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    IfcConstraintEnum ConstraintGrade;
-    std::optional<IfcLabel> ConstraintSource;
-    std::optional<IfcActorSelect> CreatingActor;
-    std::optional<IfcDateTime> CreationTime;
-    std::optional<IfcLabel> UserDefinedGrade;
     IfcBenchmarkEnum Benchmark;
     std::optional<IfcLabel> ValueSource;
     std::optional<IfcMetricValueSelect> DataValue;
@@ -25943,13 +23202,6 @@ public:
     const int type = 2251480897;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    IfcConstraintEnum ConstraintGrade;
-    std::optional<IfcLabel> ConstraintSource;
-    std::optional<IfcActorSelect> CreatingActor;
-    std::optional<IfcDateTime> CreationTime;
-    std::optional<IfcLabel> UserDefinedGrade;
     std::optional<std::vector<std::variant<IfcConstraint>>> BenchmarkValues;
     std::optional<IfcLogicalOperatorEnum> LogicalAggregator;
     IfcObjectiveEnum ObjectiveQualifier;
@@ -26100,8 +23352,6 @@ public:
     const int type = 2226359599;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
     std::optional<std::variant<IfcNamedUnit>> Unit;
 
     // Constructor
@@ -26118,9 +23368,6 @@ public:
     const int type = 3355820592;
 
 
-    std::optional<IfcAddressTypeEnum> Purpose;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> UserDefinedPurpose;
     std::optional<IfcLabel> InternalLocation;
     std::optional<std::vector<IfcLabel>> AddressLines;
     std::optional<IfcLabel> PostalBox;
@@ -26185,10 +23432,6 @@ public:
     const int type = 1304840413;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    std::vector<IfcLayeredItem> AssignedItems;
-    std::optional<IfcIdentifier> Identifier;
     IfcLogical LayerOn;
     IfcLogical LayerFrozen;
     IfcLogical LayerBlocked;
@@ -26283,10 +23526,6 @@ public:
     const int type = 3843373140;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> GeodeticDatum;
-    std::optional<IfcIdentifier> VerticalDatum;
     std::optional<IfcIdentifier> MapProjection;
     std::optional<IfcIdentifier> MapZone;
     std::optional<std::variant<IfcNamedUnit>> MapUnit;
@@ -26342,9 +23581,6 @@ public:
     const int type = 2044713172;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcNamedUnit>> Unit;
     IfcAreaMeasure AreaValue;
     std::optional<IfcLabel> Formula;
 
@@ -26363,9 +23599,6 @@ public:
     const int type = 2093928680;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcNamedUnit>> Unit;
     IfcCountMeasure CountValue;
     std::optional<IfcLabel> Formula;
 
@@ -26384,9 +23617,6 @@ public:
     const int type = 931644368;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcNamedUnit>> Unit;
     IfcLengthMeasure LengthValue;
     std::optional<IfcLabel> Formula;
 
@@ -26405,9 +23635,6 @@ public:
     const int type = 3252649465;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcNamedUnit>> Unit;
     IfcTimeMeasure TimeValue;
     std::optional<IfcLabel> Formula;
 
@@ -26426,9 +23653,6 @@ public:
     const int type = 2405470396;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcNamedUnit>> Unit;
     IfcVolumeMeasure VolumeValue;
     std::optional<IfcLabel> Formula;
 
@@ -26447,9 +23671,6 @@ public:
     const int type = 825690147;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcNamedUnit>> Unit;
     IfcMassMeasure WeightValue;
     std::optional<IfcLabel> Formula;
 
@@ -26642,7 +23863,6 @@ public:
     const int type = 448429030;
 
 
-    IfcUnitEnum UnitType;
     std::optional<IfcSIPrefix> Prefix;
     IfcSIUnitName Name;
 
@@ -26706,10 +23926,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcShapeAspect>>> OfShapeAspect;
 
-    std::variant<IfcRepresentationContext> ContextOfItems;
-    std::optional<IfcLabel> RepresentationIdentifier;
-    std::optional<IfcLabel> RepresentationType;
-    std::vector<std::variant<IfcRepresentationItem>> Items;
 
     // Constructor
     explicit IfcShapeModel(const std::variant<IfcRepresentationContext>& ContextOfItems_, const std::optional<IfcLabel>& RepresentationIdentifier_, const std::optional<IfcLabel>& RepresentationType_, const std::vector<std::variant<IfcRepresentationItem>>& Items_)
@@ -26724,10 +23940,6 @@ public:
     const int type = 4240577450;
 
 
-    std::variant<IfcRepresentationContext> ContextOfItems;
-    std::optional<IfcLabel> RepresentationIdentifier;
-    std::optional<IfcLabel> RepresentationType;
-    std::vector<std::variant<IfcRepresentationItem>> Items;
 
     // Constructor
     explicit IfcShapeRepresentation(const std::variant<IfcRepresentationContext>& ContextOfItems_, const std::optional<IfcLabel>& RepresentationIdentifier_, const std::optional<IfcLabel>& RepresentationType_, const std::vector<std::variant<IfcRepresentationItem>>& Items_)
@@ -26774,7 +23986,6 @@ public:
     const int type = 3478079324;
 
 
-    std::optional<IfcLabel> Name;
     std::vector<std::variant<IfcStructuralLoadOrResult>> Values;
     std::optional<std::vector<std::vector<IfcLengthMeasure>>> Locations;
 
@@ -26793,7 +24004,6 @@ public:
     const int type = 609421318;
 
 
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcStructuralLoadOrResult(const std::optional<IfcLabel>& Name_)
@@ -26808,7 +24018,6 @@ public:
     const int type = 2525727697;
 
 
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcStructuralLoadStatic(const std::optional<IfcLabel>& Name_)
@@ -26823,7 +24032,6 @@ public:
     const int type = 3408363356;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcThermodynamicTemperatureMeasure> DeltaTConstant;
     std::optional<IfcThermodynamicTemperatureMeasure> DeltaTY;
     std::optional<IfcThermodynamicTemperatureMeasure> DeltaTZ;
@@ -26844,10 +24052,6 @@ public:
     const int type = 2830218821;
 
 
-    std::variant<IfcRepresentationContext> ContextOfItems;
-    std::optional<IfcLabel> RepresentationIdentifier;
-    std::optional<IfcLabel> RepresentationType;
-    std::vector<std::variant<IfcRepresentationItem>> Items;
 
     // Constructor
     explicit IfcStyleModel(const std::variant<IfcRepresentationContext>& ContextOfItems_, const std::optional<IfcLabel>& RepresentationIdentifier_, const std::optional<IfcLabel>& RepresentationType_, const std::vector<std::variant<IfcRepresentationItem>>& Items_)
@@ -26882,10 +24086,6 @@ public:
     const int type = 3049322572;
 
 
-    std::variant<IfcRepresentationContext> ContextOfItems;
-    std::optional<IfcLabel> RepresentationIdentifier;
-    std::optional<IfcLabel> RepresentationType;
-    std::vector<std::variant<IfcRepresentationItem>> Items;
 
     // Constructor
     explicit IfcStyledRepresentation(const std::variant<IfcRepresentationContext>& ContextOfItems_, const std::optional<IfcLabel>& RepresentationIdentifier_, const std::optional<IfcLabel>& RepresentationType_, const std::vector<std::variant<IfcRepresentationItem>>& Items_)
@@ -26900,7 +24100,6 @@ public:
     const int type = 2934153892;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<std::vector<IfcLengthMeasure>> SurfaceReinforcement1;
     std::optional<std::vector<IfcLengthMeasure>> SurfaceReinforcement2;
     std::optional<IfcRatioMeasure> ShearReinforcement;
@@ -26921,7 +24120,6 @@ public:
     const int type = 1300840506;
 
 
-    std::optional<IfcLabel> Name;
     IfcSurfaceSide Side;
     std::vector<IfcSurfaceStyleElementSelect> Styles;
 
@@ -27102,9 +24300,6 @@ public:
     const int type = 1549132990;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcDataOriginEnum> DataOrigin;
-    std::optional<IfcLabel> UserDefinedDataOrigin;
     std::optional<IfcTaskDurationEnum> DurationType;
     std::optional<IfcDuration> ScheduleDuration;
     std::optional<IfcDateTime> ScheduleStart;
@@ -27153,26 +24348,6 @@ public:
     const int type = 2771591690;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcDataOriginEnum> DataOrigin;
-    std::optional<IfcLabel> UserDefinedDataOrigin;
-    std::optional<IfcTaskDurationEnum> DurationType;
-    std::optional<IfcDuration> ScheduleDuration;
-    std::optional<IfcDateTime> ScheduleStart;
-    std::optional<IfcDateTime> ScheduleFinish;
-    std::optional<IfcDateTime> EarlyStart;
-    std::optional<IfcDateTime> EarlyFinish;
-    std::optional<IfcDateTime> LateStart;
-    std::optional<IfcDateTime> LateFinish;
-    std::optional<IfcDuration> FreeFloat;
-    std::optional<IfcDuration> TotalFloat;
-    std::optional<IfcBoolean> IsCritical;
-    std::optional<IfcDateTime> StatusTime;
-    std::optional<IfcDuration> ActualDuration;
-    std::optional<IfcDateTime> ActualStart;
-    std::optional<IfcDateTime> ActualFinish;
-    std::optional<IfcDuration> RemainingTime;
-    std::optional<IfcPositiveRatioMeasure> Completion;
     std::variant<IfcRecurrencePattern> Recurrence;
 
     // Constructor
@@ -27189,9 +24364,6 @@ public:
     const int type = 912023232;
 
 
-    std::optional<IfcAddressTypeEnum> Purpose;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> UserDefinedPurpose;
     std::optional<std::vector<IfcLabel>> TelephoneNumbers;
     std::optional<std::vector<IfcLabel>> FacsimileNumbers;
     std::optional<IfcLabel> PagerNumber;
@@ -27218,7 +24390,6 @@ public:
     const int type = 1447204868;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<std::variant<IfcTextStyleForDefinedFont>> TextCharacterAppearance;
     std::optional<std::variant<IfcTextStyleTextModel>> TextStyle;
     IfcTextFontSelect TextFontStyle;
@@ -27303,7 +24474,6 @@ public:
     const int type = 1742049831;
 
 
-    std::vector<std::variant<IfcSurfaceTexture>> Maps;
     IfcLabel Mode;
     std::optional<std::vector<IfcReal>> Parameter;
 
@@ -27322,7 +24492,6 @@ public:
     const int type = 2552916305;
 
 
-    std::vector<std::variant<IfcSurfaceTexture>> Maps;
     std::vector<std::variant<IfcTextureVertex>> Vertices;
     std::variant<IfcFace> MappedTo;
 
@@ -27452,10 +24621,6 @@ public:
     const int type = 1735638870;
 
 
-    std::variant<IfcRepresentationContext> ContextOfItems;
-    std::optional<IfcLabel> RepresentationIdentifier;
-    std::optional<IfcLabel> RepresentationType;
-    std::vector<std::variant<IfcRepresentationItem>> Items;
 
     // Constructor
     explicit IfcTopologyRepresentation(const std::variant<IfcRepresentationContext>& ContextOfItems_, const std::optional<IfcLabel>& RepresentationIdentifier_, const std::optional<IfcLabel>& RepresentationType_, const std::vector<std::variant<IfcRepresentationItem>>& Items_)
@@ -27534,9 +24699,6 @@ public:
     const int type = 1236880293;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcDataOriginEnum> DataOrigin;
-    std::optional<IfcLabel> UserDefinedDataOrigin;
     std::optional<std::variant<IfcRecurrencePattern>> RecurrencePattern;
     std::optional<IfcDate> Start;
     std::optional<IfcDate> Finish;
@@ -27557,8 +24719,6 @@ public:
     const int type = 3869604511;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcApproval> RelatingApproval;
     std::vector<std::variant<IfcApproval>> RelatedApprovals;
 
@@ -27577,8 +24737,6 @@ public:
     const int type = 3798115385;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
     std::variant<IfcCurve> OuterCurve;
 
     // Constructor
@@ -27595,8 +24753,6 @@ public:
     const int type = 1310608509;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
     std::variant<IfcBoundedCurve> Curve;
 
     // Constructor
@@ -27613,9 +24769,6 @@ public:
     const int type = 2705031697;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcCurve> OuterCurve;
     std::vector<std::variant<IfcCurve>> InnerCurves;
 
     // Constructor
@@ -27632,11 +24785,6 @@ public:
     const int type = 616511568;
 
 
-    IfcBoolean RepeatS;
-    IfcBoolean RepeatT;
-    std::optional<IfcIdentifier> Mode;
-    std::optional<std::variant<IfcCartesianTransformationOperator2D>> TextureTransform;
-    std::optional<std::vector<IfcIdentifier>> Parameter;
     IfcIdentifier RasterFormat;
     IfcBinary RasterCode;
 
@@ -27655,9 +24803,6 @@ public:
     const int type = 3150382593;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcBoundedCurve> Curve;
     IfcPositiveLengthMeasure Thickness;
 
     // Constructor
@@ -27706,9 +24851,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelAssociatesClassification>>> ClassificationRefForObjects;
     std::optional<std::vector<std::variant<IfcClassificationReference>>> HasReferences;
 
-    std::optional<IfcURIReference> Location;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcLabel> Name;
     std::optional<IfcClassificationReferenceSelect> ReferencedSource;
     std::optional<IfcText> Description;
     std::optional<IfcIdentifier> Sort;
@@ -27761,8 +24903,6 @@ public:
     const int type = 1485152156;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
     std::vector<std::variant<IfcProfileDef>> Profiles;
     std::optional<IfcLabel> Label;
 
@@ -27815,8 +24955,6 @@ public:
     const int type = 45288368;
 
 
-    IfcPointOrVertexPoint PointOnRelatingElement;
-    std::optional<IfcPointOrVertexPoint> PointOnRelatedElement;
     std::optional<IfcLengthMeasure> EccentricityInX;
     std::optional<IfcLengthMeasure> EccentricityInY;
     std::optional<IfcLengthMeasure> EccentricityInZ;
@@ -27838,8 +24976,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcExternalReferenceRelationship>>> HasExternalReference;
 
-    std::variant<IfcDimensionalExponents> Dimensions;
-    IfcUnitEnum UnitType;
     IfcLabel Name;
 
     // Constructor
@@ -27857,8 +24993,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcExternalReferenceRelationship>>> HasExternalReference;
 
-    std::variant<IfcDimensionalExponents> Dimensions;
-    IfcUnitEnum UnitType;
     IfcLabel Name;
     std::variant<IfcMeasureWithUnit> ConversionFactor;
 
@@ -27877,10 +25011,6 @@ public:
     const int type = 2713554722;
 
 
-    std::variant<IfcDimensionalExponents> Dimensions;
-    IfcUnitEnum UnitType;
-    IfcLabel Name;
-    std::variant<IfcMeasureWithUnit> ConversionFactor;
     IfcReal ConversionOffset;
 
     // Constructor
@@ -27897,8 +25027,6 @@ public:
     const int type = 539742890;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcMonetaryUnit> RelatingMonetaryUnit;
     std::variant<IfcMonetaryUnit> RelatedMonetaryUnit;
     IfcPositiveRatioMeasure ExchangeRate;
@@ -27923,7 +25051,6 @@ public:
     const int type = 3800577675;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcCurveFontOrScaledCurveFontSelect> CurveFont;
     std::optional<IfcSizeSelect> CurveWidth;
     std::optional<IfcColour> CurveColour;
@@ -28002,8 +25129,6 @@ public:
     const int type = 3632507154;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
     std::variant<IfcProfileDef> ParentProfile;
     std::variant<IfcCartesianTransformationOperator2D> Operator;
     std::optional<IfcLabel> Label;
@@ -28076,8 +25201,6 @@ public:
     const int type = 770865208;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcDocumentInformation> RelatingDocument;
     std::vector<std::variant<IfcDocumentInformation>> RelatedDocuments;
     std::optional<IfcLabel> RelationshipType;
@@ -28099,9 +25222,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelAssociatesDocument>>> DocumentRefForObjects;
 
-    std::optional<IfcURIReference> Location;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcLabel> Name;
     std::optional<IfcText> Description;
     std::optional<std::variant<IfcDocumentInformation>> ReferencedDocument;
 
@@ -28138,8 +25258,6 @@ public:
     const int type = 476780140;
 
 
-    std::variant<IfcVertex> EdgeStart;
-    std::variant<IfcVertex> EdgeEnd;
     std::variant<IfcCurve> EdgeGeometry;
     IfcBoolean SameSense;
 
@@ -28158,9 +25276,6 @@ public:
     const int type = 211053100;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcDataOriginEnum> DataOrigin;
-    std::optional<IfcLabel> UserDefinedDataOrigin;
     std::optional<IfcDateTime> ActualDate;
     std::optional<IfcDateTime> EarlyDate;
     std::optional<IfcDateTime> LateDate;
@@ -28203,8 +25318,6 @@ public:
     const int type = 1437805879;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcExternalReference> RelatingReference;
     std::vector<IfcResourceObjectSelect> RelatedResourceObjects;
 
@@ -28258,8 +25371,6 @@ public:
     const int type = 803316827;
 
 
-    std::variant<IfcLoop> Bound;
-    IfcBoolean Orientation;
 
     // Constructor
     explicit IfcFaceOuterBound(const std::variant<IfcLoop>& Bound_, IfcBoolean Orientation_)
@@ -28274,7 +25385,6 @@ public:
     const int type = 3008276851;
 
 
-    std::vector<std::variant<IfcFaceBound>> Bounds;
     std::variant<IfcSurface> FaceSurface;
     IfcBoolean SameSense;
 
@@ -28293,7 +25403,6 @@ public:
     const int type = 4219587988;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcForceMeasure> TensionFailureX;
     std::optional<IfcForceMeasure> TensionFailureY;
     std::optional<IfcForceMeasure> TensionFailureZ;
@@ -28320,7 +25429,6 @@ public:
     const int type = 738692330;
 
 
-    std::optional<IfcLabel> Name;
     std::vector<IfcFillStyleSelect> FillStyles;
     std::optional<IfcBoolean> ModelorDraughting;
 
@@ -28341,8 +25449,6 @@ public:
     std::optional<std::vector<std::variant<IfcGeometricRepresentationSubContext>>> HasSubContexts;
     std::optional<std::vector<std::variant<IfcCoordinateOperation>>> HasCoordinateOperation;
 
-    std::optional<IfcLabel> ContextIdentifier;
-    std::optional<IfcLabel> ContextType;
     IfcDimensionCount CoordinateSpaceDimension;
     std::optional<IfcReal> Precision;
     IfcAxis2Placement WorldCoordinateSystem;
@@ -28379,8 +25485,6 @@ public:
     const int type = 4142052618;
 
 
-    std::optional<IfcLabel> ContextIdentifier;
-    std::optional<IfcLabel> ContextType;
     std::variant<IfcGeometricRepresentationContext> ParentContext;
     std::optional<IfcPositiveRatioMeasure> TargetScale;
     IfcGeometricProjectionEnum TargetView;
@@ -28455,11 +25559,6 @@ public:
     const int type = 3905492369;
 
 
-    IfcBoolean RepeatS;
-    IfcBoolean RepeatT;
-    std::optional<IfcIdentifier> Mode;
-    std::optional<std::variant<IfcCartesianTransformationOperator2D>> TextureTransform;
-    std::optional<std::vector<IfcIdentifier>> Parameter;
     IfcURIReference URLReference;
 
     // Constructor
@@ -28498,7 +25597,6 @@ public:
     const int type = 1437953363;
 
 
-    std::vector<std::variant<IfcSurfaceTexture>> Maps;
     std::variant<IfcTessellatedFaceSet> MappedTo;
     std::variant<IfcTextureVertexList> TexCoords;
 
@@ -28517,9 +25615,6 @@ public:
     const int type = 2133299955;
 
 
-    std::vector<std::variant<IfcSurfaceTexture>> Maps;
-    std::variant<IfcTessellatedFaceSet> MappedTo;
-    std::variant<IfcTextureVertexList> TexCoords;
     std::optional<std::vector<std::vector<IfcPositiveInteger>>> TexCoordIndex;
 
     // Constructor
@@ -28536,14 +25631,6 @@ public:
     const int type = 3741457305;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    IfcDateTime StartTime;
-    IfcDateTime EndTime;
-    IfcTimeSeriesDataTypeEnum TimeSeriesDataType;
-    IfcDataOriginEnum DataOrigin;
-    std::optional<IfcLabel> UserDefinedDataOrigin;
-    std::optional<IfcUnit> Unit;
     std::vector<std::variant<IfcIrregularTimeSeriesValue>> Values;
 
     // Constructor
@@ -28560,9 +25647,6 @@ public:
     const int type = 1585845231;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcDataOriginEnum> DataOrigin;
-    std::optional<IfcLabel> UserDefinedDataOrigin;
     IfcTimeOrRatioSelect LagValue;
     IfcTaskDurationEnum DurationType;
 
@@ -28603,10 +25687,6 @@ public:
     const int type = 125510826;
 
 
-    std::optional<IfcLabel> Name;
-    std::variant<IfcColourRgb> LightColour;
-    std::optional<IfcNormalisedRatioMeasure> AmbientIntensity;
-    std::optional<IfcNormalisedRatioMeasure> Intensity;
 
     // Constructor
     explicit IfcLightSourceAmbient(const std::optional<IfcLabel>& Name_, const std::variant<IfcColourRgb>& LightColour_, const std::optional<IfcNormalisedRatioMeasure>& AmbientIntensity_, const std::optional<IfcNormalisedRatioMeasure>& Intensity_)
@@ -28621,10 +25701,6 @@ public:
     const int type = 2604431987;
 
 
-    std::optional<IfcLabel> Name;
-    std::variant<IfcColourRgb> LightColour;
-    std::optional<IfcNormalisedRatioMeasure> AmbientIntensity;
-    std::optional<IfcNormalisedRatioMeasure> Intensity;
     std::variant<IfcDirection> Orientation;
 
     // Constructor
@@ -28641,10 +25717,6 @@ public:
     const int type = 4266656042;
 
 
-    std::optional<IfcLabel> Name;
-    std::variant<IfcColourRgb> LightColour;
-    std::optional<IfcNormalisedRatioMeasure> AmbientIntensity;
-    std::optional<IfcNormalisedRatioMeasure> Intensity;
     std::variant<IfcAxis2Placement3D> Position;
     std::optional<std::variant<IfcColourRgb>> ColourAppearance;
     IfcThermodynamicTemperatureMeasure ColourTemperature;
@@ -28671,10 +25743,6 @@ public:
     const int type = 1520743889;
 
 
-    std::optional<IfcLabel> Name;
-    std::variant<IfcColourRgb> LightColour;
-    std::optional<IfcNormalisedRatioMeasure> AmbientIntensity;
-    std::optional<IfcNormalisedRatioMeasure> Intensity;
     std::variant<IfcCartesianPoint> Position;
     IfcPositiveLengthMeasure Radius;
     IfcReal ConstantAttenuation;
@@ -28699,15 +25767,6 @@ public:
     const int type = 3422422726;
 
 
-    std::optional<IfcLabel> Name;
-    std::variant<IfcColourRgb> LightColour;
-    std::optional<IfcNormalisedRatioMeasure> AmbientIntensity;
-    std::optional<IfcNormalisedRatioMeasure> Intensity;
-    std::variant<IfcCartesianPoint> Position;
-    IfcPositiveLengthMeasure Radius;
-    IfcReal ConstantAttenuation;
-    IfcReal DistanceAttenuation;
-    IfcReal QuadricAttenuation;
     std::variant<IfcDirection> Orientation;
     std::optional<IfcReal> ConcentrationExponent;
     IfcPositivePlaneAngleMeasure SpreadAngle;
@@ -28848,9 +25907,6 @@ public:
     const int type = 2022407955;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcRepresentation>> Representations;
     std::variant<IfcMaterial> RepresentedMaterial;
 
     // Constructor
@@ -28911,9 +25967,6 @@ public:
     const int type = 3404854881;
 
 
-    std::variant<IfcMaterialProfileSet> ForProfileSet;
-    std::optional<IfcCardinalPointReference> CardinalPoint;
-    std::optional<IfcPositiveLengthMeasure> ReferenceExtent;
     std::variant<IfcMaterialProfileSet> ForProfileEndSet;
     std::optional<IfcCardinalPointReference> CardinalEndPoint;
 
@@ -28932,9 +25985,6 @@ public:
     const int type = 3265635763;
 
 
-    std::optional<IfcIdentifier> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcProperty>> Properties;
     std::variant<IfcMaterialDefinition> Material;
 
     // Constructor
@@ -28951,8 +26001,6 @@ public:
     const int type = 853536259;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcMaterial> RelatingMaterial;
     std::vector<std::variant<IfcMaterial>> RelatedMaterials;
     std::optional<IfcLabel> Expression;
@@ -28973,10 +26021,6 @@ public:
     const int type = 2998442950;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcProfileDef> ParentProfile;
-    std::optional<IfcLabel> Label;
 
     // Constructor
     explicit IfcMirroredProfileDef(IfcProfileTypeEnum ProfileType_, const std::optional<IfcLabel>& ProfileName_, const std::variant<IfcProfileDef>& ParentProfile_, const std::optional<IfcLabel>& Label_)
@@ -28998,10 +26042,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelAggregates>>> Decomposes;
     std::optional<std::vector<std::variant<IfcRelAssociates>>> HasAssociations;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcObjectDefinition(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -29016,7 +26056,6 @@ public:
     const int type = 2665983363;
 
 
-    std::vector<std::variant<IfcFace>> CfsFaces;
 
     // Constructor
     explicit IfcOpenShell(const std::vector<std::variant<IfcFace>>& CfsFaces_)
@@ -29031,8 +26070,6 @@ public:
     const int type = 1411181986;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcOrganization> RelatingOrganization;
     std::vector<std::variant<IfcOrganization>> RelatedOrganizations;
 
@@ -29069,8 +26106,6 @@ public:
     const int type = 2529465313;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
     std::optional<std::variant<IfcAxis2Placement2D>> Position;
 
     // Constructor
@@ -29103,8 +26138,6 @@ public:
     const int type = 3021840470;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcPhysicalQuantity>> HasQuantities;
     IfcLabel Discrimination;
     std::optional<IfcLabel> Quality;
@@ -29127,11 +26160,6 @@ public:
     const int type = 597895409;
 
 
-    IfcBoolean RepeatS;
-    IfcBoolean RepeatT;
-    std::optional<IfcIdentifier> Mode;
-    std::optional<std::variant<IfcCartesianTransformationOperator2D>> TextureTransform;
-    std::optional<std::vector<IfcIdentifier>> Parameter;
     IfcInteger Width;
     IfcInteger Height;
     IfcInteger ColourComponents;
@@ -29256,8 +26284,6 @@ public:
     const int type = 2775532180;
 
 
-    std::variant<IfcSurface> BaseSurface;
-    IfcBoolean AgreementFlag;
     std::variant<IfcAxis2Placement3D> Position;
     std::variant<IfcBoundedCurve> PolygonalBoundary;
 
@@ -29306,7 +26332,6 @@ public:
     const int type = 1775413392;
 
 
-    IfcLabel Name;
 
     // Constructor
     explicit IfcPreDefinedTextFont(IfcLabel Name_)
@@ -29323,9 +26348,6 @@ public:
     std::optional<std::vector<std::variant<IfcProduct>>> ShapeOfProduct;
     std::optional<std::vector<std::variant<IfcShapeAspect>>> HasShapeAspects;
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcRepresentation>> Representations;
 
     // Constructor
     explicit IfcProductDefinitionShape(const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::vector<std::variant<IfcRepresentation>>& Representations_)
@@ -29340,9 +26362,6 @@ public:
     const int type = 2802850158;
 
 
-    std::optional<IfcIdentifier> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcProperty>> Properties;
     std::variant<IfcProfileDef> ProfileDefinition;
 
     // Constructor
@@ -29385,10 +26404,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelDeclares>>> HasContext;
     std::optional<std::vector<std::variant<IfcRelAssociates>>> HasAssociations;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcPropertyDefinition(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -29403,8 +26418,6 @@ public:
     const int type = 148025276;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcProperty> DependingProperty;
     std::variant<IfcProperty> DependantProperty;
     std::optional<IfcText> Expression;
@@ -29428,10 +26441,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelDefinesByTemplate>>> IsDefinedBy;
     std::optional<std::vector<std::variant<IfcRelDefinesByProperties>>> DefinesOccurrence;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcPropertySetDefinition(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -29446,10 +26455,6 @@ public:
     const int type = 1482703590;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcPropertyTemplateDefinition(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -29464,10 +26469,6 @@ public:
     const int type = 2090586900;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcQuantitySet(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -29482,9 +26483,6 @@ public:
     const int type = 3615266464;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
     IfcPositiveLengthMeasure XDim;
     IfcPositiveLengthMeasure YDim;
 
@@ -29503,14 +26501,6 @@ public:
     const int type = 3413951693;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    IfcDateTime StartTime;
-    IfcDateTime EndTime;
-    IfcTimeSeriesDataTypeEnum TimeSeriesDataType;
-    IfcDataOriginEnum DataOrigin;
-    std::optional<IfcLabel> UserDefinedDataOrigin;
-    std::optional<IfcUnit> Unit;
     IfcTimeMeasure TimeStep;
     std::vector<std::variant<IfcTimeSeriesValue>> Values;
 
@@ -29555,10 +26545,6 @@ public:
     const int type = 478536968;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcRelationship(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -29573,8 +26559,6 @@ public:
     const int type = 2943643501;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<IfcResourceObjectSelect> RelatedResourceObjects;
     std::variant<IfcApproval> RelatingApproval;
 
@@ -29593,8 +26577,6 @@ public:
     const int type = 1608871552;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcConstraint> RelatingConstraint;
     std::vector<IfcResourceObjectSelect> RelatedResourceObjects;
 
@@ -29613,9 +26595,6 @@ public:
     const int type = 1042787934;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcDataOriginEnum> DataOrigin;
-    std::optional<IfcLabel> UserDefinedDataOrigin;
     std::optional<IfcDuration> ScheduleWork;
     std::optional<IfcPositiveRatioMeasure> ScheduleUsage;
     std::optional<IfcDateTime> ScheduleStart;
@@ -29660,11 +26639,6 @@ public:
     const int type = 2778083089;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
-    IfcPositiveLengthMeasure XDim;
-    IfcPositiveLengthMeasure YDim;
     IfcPositiveLengthMeasure RoundingRadius;
 
     // Constructor
@@ -29763,8 +26737,6 @@ public:
     const int type = 3692461612;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcSimpleProperty(IfcIdentifier Name_, const std::optional<IfcText>& Description_)
@@ -29779,7 +26751,6 @@ public:
     const int type = 2609359061;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcLengthMeasure> SlippageX;
     std::optional<IfcLengthMeasure> SlippageY;
     std::optional<IfcLengthMeasure> SlippageZ;
@@ -29814,7 +26785,6 @@ public:
     const int type = 1595516126;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcLinearForceMeasure> LinearForceX;
     std::optional<IfcLinearForceMeasure> LinearForceY;
     std::optional<IfcLinearForceMeasure> LinearForceZ;
@@ -29841,7 +26811,6 @@ public:
     const int type = 2668620305;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcPlanarForceMeasure> PlanarForceX;
     std::optional<IfcPlanarForceMeasure> PlanarForceY;
     std::optional<IfcPlanarForceMeasure> PlanarForceZ;
@@ -29862,7 +26831,6 @@ public:
     const int type = 2473145415;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcLengthMeasure> DisplacementX;
     std::optional<IfcLengthMeasure> DisplacementY;
     std::optional<IfcLengthMeasure> DisplacementZ;
@@ -29889,13 +26857,6 @@ public:
     const int type = 1973038258;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcLengthMeasure> DisplacementX;
-    std::optional<IfcLengthMeasure> DisplacementY;
-    std::optional<IfcLengthMeasure> DisplacementZ;
-    std::optional<IfcPlaneAngleMeasure> RotationalDisplacementRX;
-    std::optional<IfcPlaneAngleMeasure> RotationalDisplacementRY;
-    std::optional<IfcPlaneAngleMeasure> RotationalDisplacementRZ;
     std::optional<IfcCurvatureMeasure> Distortion;
 
     // Constructor
@@ -29912,7 +26873,6 @@ public:
     const int type = 1597423693;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcForceMeasure> ForceX;
     std::optional<IfcForceMeasure> ForceY;
     std::optional<IfcForceMeasure> ForceZ;
@@ -29939,13 +26899,6 @@ public:
     const int type = 1190533807;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcForceMeasure> ForceX;
-    std::optional<IfcForceMeasure> ForceY;
-    std::optional<IfcForceMeasure> ForceZ;
-    std::optional<IfcTorqueMeasure> MomentX;
-    std::optional<IfcTorqueMeasure> MomentY;
-    std::optional<IfcTorqueMeasure> MomentZ;
     std::optional<IfcWarpingMomentMeasure> WarpingMoment;
 
     // Constructor
@@ -29962,8 +26915,6 @@ public:
     const int type = 2233826070;
 
 
-    std::variant<IfcVertex> EdgeStart;
-    std::variant<IfcVertex> EdgeEnd;
     std::variant<IfcEdge> ParentEdge;
 
     // Constructor
@@ -29994,8 +26945,6 @@ public:
     const int type = 1878645084;
 
 
-    std::variant<IfcColourRgb> SurfaceColour;
-    std::optional<IfcNormalisedRatioMeasure> Transparency;
     std::optional<IfcColourOrFactor> DiffuseColour;
     std::optional<IfcColourOrFactor> TransmissionColour;
     std::optional<IfcColourOrFactor> DiffuseTransmissionColour;
@@ -30066,11 +27015,6 @@ public:
     const int type = 1096409881;
 
 
-    std::variant<IfcCurve> Directrix;
-    IfcPositiveLengthMeasure Radius;
-    std::optional<IfcPositiveLengthMeasure> InnerRadius;
-    std::optional<IfcParameterValue> StartParam;
-    std::optional<IfcParameterValue> EndParam;
     std::optional<IfcPositiveLengthMeasure> FilletRadius;
 
     // Constructor
@@ -30105,9 +27049,6 @@ public:
     const int type = 3071757647;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
     IfcPositiveLengthMeasure Depth;
     IfcPositiveLengthMeasure FlangeWidth;
     IfcPositiveLengthMeasure WebThickness;
@@ -30174,9 +27115,6 @@ public:
     const int type = 3124975700;
 
 
-    IfcPresentableText Literal;
-    IfcAxis2Placement Placement;
-    IfcTextPath Path;
     std::variant<IfcPlanarExtent> Extent;
     IfcBoxAlignment BoxAlignment;
 
@@ -30195,7 +27133,6 @@ public:
     const int type = 1983826977;
 
 
-    IfcLabel Name;
     std::vector<IfcTextFontName> FontFamily;
     std::optional<IfcFontStyle> FontStyle;
     std::optional<IfcFontVariant> FontVariant;
@@ -30220,9 +27157,6 @@ public:
     const int type = 2715220739;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
     IfcPositiveLengthMeasure BottomXDim;
     IfcPositiveLengthMeasure TopXDim;
     IfcPositiveLengthMeasure YDim;
@@ -30246,10 +27180,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelDefinesByType>>> Types;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcIdentifier> ApplicableOccurrence;
     std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
 
@@ -30269,12 +27199,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelAssignsToProcess>>> OperatesOn;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
     std::optional<IfcIdentifier> Identification;
     std::optional<IfcText> LongDescription;
     std::optional<IfcLabel> ProcessType;
@@ -30296,12 +27220,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelAssignsToProduct>>> ReferencedBy;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
     std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
     std::optional<IfcLabel> Tag;
 
@@ -30321,12 +27239,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelAssignsToResource>>> ResourceOf;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
     std::optional<IfcIdentifier> Identification;
     std::optional<IfcText> LongDescription;
     std::optional<IfcLabel> ResourceType;
@@ -30347,9 +27259,6 @@ public:
     const int type = 427810014;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
     IfcPositiveLengthMeasure Depth;
     IfcPositiveLengthMeasure FlangeWidth;
     IfcPositiveLengthMeasure WebThickness;
@@ -30412,14 +27321,6 @@ public:
     const int type = 1299126871;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
     IfcWindowStyleConstructionEnum ConstructionType;
     IfcWindowStyleOperationEnum OperationType;
     IfcBoolean ParameterTakesPrecedence;
@@ -30442,9 +27343,6 @@ public:
     const int type = 2543172580;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
     IfcPositiveLengthMeasure Depth;
     IfcPositiveLengthMeasure FlangeWidth;
     IfcPositiveLengthMeasure WebThickness;
@@ -30471,9 +27369,6 @@ public:
     const int type = 3406155212;
 
 
-    std::vector<std::variant<IfcFaceBound>> Bounds;
-    std::variant<IfcSurface> FaceSurface;
-    IfcBoolean SameSense;
 
     // Constructor
     explicit IfcAdvancedFace(const std::vector<std::variant<IfcFaceBound>>& Bounds_, const std::variant<IfcSurface>& FaceSurface_, IfcBoolean SameSense_)
@@ -30506,9 +27401,6 @@ public:
     const int type = 3207858831;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
     IfcPositiveLengthMeasure BottomFlangeWidth;
     IfcPositiveLengthMeasure OverallDepth;
     IfcPositiveLengthMeasure WebThickness;
@@ -30547,7 +27439,6 @@ public:
     const int type = 4261334040;
 
 
-    std::variant<IfcCartesianPoint> Location;
     std::optional<std::variant<IfcDirection>> Axis;
 
     // Constructor
@@ -30564,7 +27455,6 @@ public:
     const int type = 3125803723;
 
 
-    std::variant<IfcCartesianPoint> Location;
     std::optional<std::variant<IfcDirection>> RefDirection;
 
     // Constructor
@@ -30581,7 +27471,6 @@ public:
     const int type = 2740243338;
 
 
-    std::variant<IfcCartesianPoint> Location;
     std::optional<std::variant<IfcDirection>> Axis;
     std::optional<std::variant<IfcDirection>> RefDirection;
 
@@ -30656,8 +27545,6 @@ public:
     const int type = 2713105998;
 
 
-    std::variant<IfcSurface> BaseSurface;
-    IfcBoolean AgreementFlag;
     std::variant<IfcBoundingBox> Enclosure;
 
     // Constructor
@@ -30674,9 +27561,6 @@ public:
     const int type = 2898889636;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
     IfcPositiveLengthMeasure Depth;
     IfcPositiveLengthMeasure Width;
     IfcPositiveLengthMeasure WallThickness;
@@ -30785,10 +27669,6 @@ public:
     const int type = 3749851601;
 
 
-    std::optional<std::variant<IfcDirection>> Axis1;
-    std::optional<std::variant<IfcDirection>> Axis2;
-    std::variant<IfcCartesianPoint> LocalOrigin;
-    std::optional<IfcReal> Scale;
 
     // Constructor
     explicit IfcCartesianTransformationOperator2D(const std::optional<std::variant<IfcDirection>>& Axis1_, const std::optional<std::variant<IfcDirection>>& Axis2_, const std::variant<IfcCartesianPoint>& LocalOrigin_, const std::optional<IfcReal>& Scale_)
@@ -30803,10 +27683,6 @@ public:
     const int type = 3486308946;
 
 
-    std::optional<std::variant<IfcDirection>> Axis1;
-    std::optional<std::variant<IfcDirection>> Axis2;
-    std::variant<IfcCartesianPoint> LocalOrigin;
-    std::optional<IfcReal> Scale;
     std::optional<IfcReal> Scale2;
 
     // Constructor
@@ -30823,10 +27699,6 @@ public:
     const int type = 3331915920;
 
 
-    std::optional<std::variant<IfcDirection>> Axis1;
-    std::optional<std::variant<IfcDirection>> Axis2;
-    std::variant<IfcCartesianPoint> LocalOrigin;
-    std::optional<IfcReal> Scale;
     std::optional<std::variant<IfcDirection>> Axis3;
 
     // Constructor
@@ -30843,11 +27715,6 @@ public:
     const int type = 1416205885;
 
 
-    std::optional<std::variant<IfcDirection>> Axis1;
-    std::optional<std::variant<IfcDirection>> Axis2;
-    std::variant<IfcCartesianPoint> LocalOrigin;
-    std::optional<IfcReal> Scale;
-    std::optional<std::variant<IfcDirection>> Axis3;
     std::optional<IfcReal> Scale2;
     std::optional<IfcReal> Scale3;
 
@@ -30866,9 +27733,6 @@ public:
     const int type = 1383045692;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
     IfcPositiveLengthMeasure Radius;
 
     // Constructor
@@ -30885,7 +27749,6 @@ public:
     const int type = 2205249479;
 
 
-    std::vector<std::variant<IfcFace>> CfsFaces;
 
     // Constructor
     explicit IfcClosedShell(const std::vector<std::variant<IfcFace>>& CfsFaces_)
@@ -30900,7 +27763,6 @@ public:
     const int type = 776857604;
 
 
-    std::optional<IfcLabel> Name;
     IfcNormalisedRatioMeasure Red;
     IfcNormalisedRatioMeasure Green;
     IfcNormalisedRatioMeasure Blue;
@@ -30921,8 +27783,6 @@ public:
     const int type = 2542286263;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Description;
     IfcIdentifier UsageName;
     std::vector<std::variant<IfcProperty>> HasProperties;
 
@@ -30962,15 +27822,6 @@ public:
     const int type = 2574617495;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<IfcLabel> ResourceType;
     std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
     std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
 
@@ -30991,10 +27842,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelDefinesByProperties>>> IsDefinedBy;
     std::optional<std::vector<std::variant<IfcRelDeclares>>> Declares;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcLabel> ObjectType;
     std::optional<IfcLabel> LongName;
     std::optional<IfcLabel> Phase;
@@ -31019,17 +27866,6 @@ public:
     const int type = 1815067380;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<IfcLabel> ResourceType;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     IfcCrewResourceTypeEnum PredefinedType;
 
     // Constructor
@@ -31148,14 +27984,6 @@ public:
     const int type = 526551008;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
     IfcDoorStyleOperationEnum OperationType;
     IfcDoorStyleConstructionEnum ConstructionType;
     IfcBoolean ParameterTakesPrecedence;
@@ -31194,10 +28022,6 @@ public:
     const int type = 1883228015;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcLabel> MethodOfMeasurement;
     std::vector<std::variant<IfcPhysicalQuantity>> Quantities;
 
@@ -31216,14 +28040,6 @@ public:
     const int type = 339256511;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
     std::optional<IfcLabel> ElementType;
 
     // Constructor
@@ -31256,9 +28072,6 @@ public:
     const int type = 2835456948;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
     IfcPositiveLengthMeasure SemiAxis1;
     IfcPositiveLengthMeasure SemiAxis2;
 
@@ -31277,15 +28090,6 @@ public:
     const int type = 4024345920;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<IfcLabel> ProcessType;
     IfcEventTypeEnum PredefinedType;
     IfcEventTriggerTypeEnum EventTriggerType;
     std::optional<IfcLabel> UserDefinedEventTriggerType;
@@ -31306,8 +28110,6 @@ public:
     const int type = 477187591;
 
 
-    std::variant<IfcProfileDef> SweptArea;
-    std::optional<std::variant<IfcAxis2Placement3D>> Position;
     std::variant<IfcDirection> ExtrudedDirection;
     IfcPositiveLengthMeasure Depth;
 
@@ -31326,10 +28128,6 @@ public:
     const int type = 2804161546;
 
 
-    std::variant<IfcProfileDef> SweptArea;
-    std::optional<std::variant<IfcAxis2Placement3D>> Position;
-    std::variant<IfcDirection> ExtrudedDirection;
-    IfcPositiveLengthMeasure Depth;
     std::variant<IfcProfileDef> EndSweptArea;
 
     // Constructor
@@ -31406,8 +28204,6 @@ public:
     const int type = 2652556860;
 
 
-    std::variant<IfcProfileDef> SweptArea;
-    std::optional<std::variant<IfcAxis2Placement3D>> Position;
     std::variant<IfcCurve> Directrix;
     std::optional<IfcParameterValue> StartParam;
     std::optional<IfcParameterValue> EndParam;
@@ -31430,15 +28226,6 @@ public:
     const int type = 4238390223;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFurnishingElementType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -31453,15 +28240,6 @@ public:
     const int type = 1268542332;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcAssemblyPlaceEnum AssemblyPlace;
     std::optional<IfcFurnitureTypeEnum> PredefinedType;
 
@@ -31480,15 +28258,6 @@ public:
     const int type = 4095422895;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcGeographicElementTypeEnum PredefinedType;
 
     // Constructor
@@ -31505,7 +28274,6 @@ public:
     const int type = 987898635;
 
 
-    std::vector<IfcGeometricSetSelect> Elements;
 
     // Constructor
     explicit IfcGeometricCurveSet(const std::vector<IfcGeometricSetSelect>& Elements_)
@@ -31520,9 +28288,6 @@ public:
     const int type = 1484403080;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
     IfcPositiveLengthMeasure OverallWidth;
     IfcPositiveLengthMeasure OverallDepth;
     IfcPositiveLengthMeasure WebThickness;
@@ -31568,7 +28333,6 @@ public:
     const int type = 2294589976;
 
 
-    std::vector<IfcPositiveInteger> CoordIndex;
     std::vector<std::vector<IfcPositiveInteger>> InnerCoordIndices;
 
     // Constructor
@@ -31585,9 +28349,6 @@ public:
     const int type = 572779678;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
     IfcPositiveLengthMeasure Depth;
     std::optional<IfcPositiveLengthMeasure> Width;
     IfcPositiveLengthMeasure Thickness;
@@ -31614,17 +28375,6 @@ public:
     const int type = 428585644;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<IfcLabel> ResourceType;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     IfcLaborResourceTypeEnum PredefinedType;
 
     // Constructor
@@ -31679,10 +28429,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelDefinesByType>>> IsTypedBy;
     std::optional<std::vector<std::variant<IfcRelDefinesByProperties>>> IsDefinedBy;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcLabel> ObjectType;
 
     // Constructor
@@ -31759,8 +28505,6 @@ public:
     const int type = 603570806;
 
 
-    IfcLengthMeasure SizeInX;
-    IfcLengthMeasure SizeInY;
     IfcAxis2Placement Placement;
 
     // Constructor
@@ -31777,7 +28521,6 @@ public:
     const int type = 220341763;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
 
     // Constructor
     explicit IfcPlane(const std::variant<IfcAxis2Placement3D>& Position_)
@@ -31792,7 +28535,6 @@ public:
     const int type = 759155922;
 
 
-    IfcLabel Name;
 
     // Constructor
     explicit IfcPreDefinedColour(IfcLabel Name_)
@@ -31807,7 +28549,6 @@ public:
     const int type = 2559016684;
 
 
-    IfcLabel Name;
 
     // Constructor
     explicit IfcPreDefinedCurveFont(IfcLabel Name_)
@@ -31822,10 +28563,6 @@ public:
     const int type = 3967405729;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcPreDefinedPropertySet(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -31840,15 +28577,6 @@ public:
     const int type = 569719735;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<IfcLabel> ProcessType;
     IfcProcedureTypeEnum PredefinedType;
 
     // Constructor
@@ -31868,11 +28596,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelSequence>>> IsSuccessorFrom;
     std::optional<std::vector<std::variant<IfcRelAssignsToProcess>>> OperatesOn;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<IfcIdentifier> Identification;
     std::optional<IfcText> LongDescription;
 
@@ -31892,11 +28615,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelAssignsToProduct>>> ReferencedBy;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
     std::optional<std::variant<IfcProductRepresentation>> Representation;
 
@@ -31915,15 +28633,6 @@ public:
     const int type = 103090709;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcLabel> Phase;
-    std::optional<std::vector<std::variant<IfcRepresentationContext>>> RepresentationContexts;
-    std::optional<std::variant<IfcUnitAssignment>> UnitsInContext;
 
     // Constructor
     explicit IfcProject(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<IfcLabel>& LongName_, const std::optional<IfcLabel>& Phase_, const std::optional<std::vector<std::variant<IfcRepresentationContext>>>& RepresentationContexts_, const std::optional<std::variant<IfcUnitAssignment>>& UnitsInContext_)
@@ -31938,15 +28647,6 @@ public:
     const int type = 653396225;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcLabel> Phase;
-    std::optional<std::vector<std::variant<IfcRepresentationContext>>> RepresentationContexts;
-    std::optional<std::variant<IfcUnitAssignment>> UnitsInContext;
 
     // Constructor
     explicit IfcProjectLibrary(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<IfcLabel>& LongName_, const std::optional<IfcLabel>& Phase_, const std::optional<std::vector<std::variant<IfcRepresentationContext>>>& RepresentationContexts_, const std::optional<std::variant<IfcUnitAssignment>>& UnitsInContext_)
@@ -31961,8 +28661,6 @@ public:
     const int type = 871118103;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Description;
     std::optional<IfcValue> UpperBoundValue;
     std::optional<IfcValue> LowerBoundValue;
     std::optional<IfcUnit> Unit;
@@ -31985,8 +28683,6 @@ public:
     const int type = 4166981789;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Description;
     std::optional<std::vector<IfcValue>> EnumerationValues;
     std::optional<std::variant<IfcPropertyEnumeration>> EnumerationReference;
 
@@ -32005,8 +28701,6 @@ public:
     const int type = 2752243245;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Description;
     std::optional<std::vector<IfcValue>> ListValues;
     std::optional<IfcUnit> Unit;
 
@@ -32025,8 +28719,6 @@ public:
     const int type = 941946838;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Description;
     std::optional<IfcText> UsageName;
     std::optional<IfcObjectReferenceSelect> PropertyReference;
 
@@ -32045,10 +28737,6 @@ public:
     const int type = 1451395588;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcProperty>> HasProperties;
 
     // Constructor
@@ -32066,10 +28754,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelDefinesByTemplate>>> Defines;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcPropertySetTemplateTypeEnum> TemplateType;
     std::optional<IfcIdentifier> ApplicableEntity;
     std::vector<std::variant<IfcPropertyTemplate>> HasPropertyTemplates;
@@ -32090,8 +28774,6 @@ public:
     const int type = 3650150729;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Description;
     std::optional<IfcValue> NominalValue;
     std::optional<IfcUnit> Unit;
 
@@ -32110,8 +28792,6 @@ public:
     const int type = 110355661;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Description;
     std::optional<std::vector<IfcValue>> DefiningValues;
     std::optional<std::vector<IfcValue>> DefinedValues;
     std::optional<IfcText> Expression;
@@ -32140,10 +28820,6 @@ public:
     std::optional<std::vector<std::variant<IfcComplexPropertyTemplate>>> PartOfComplexTemplate;
     std::optional<std::vector<std::variant<IfcPropertySetTemplate>>> PartOfPsetTemplate;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcPropertyTemplate(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -32158,13 +28834,6 @@ public:
     const int type = 3219374653;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     IfcObjectTypeEnum ProxyType;
     std::optional<IfcLabel> Tag;
 
@@ -32183,11 +28852,6 @@ public:
     const int type = 2770003689;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
-    IfcPositiveLengthMeasure XDim;
-    IfcPositiveLengthMeasure YDim;
     IfcPositiveLengthMeasure WallThickness;
     std::optional<IfcNonNegativeLengthMeasure> InnerFilletRadius;
     std::optional<IfcNonNegativeLengthMeasure> OuterFilletRadius;
@@ -32208,7 +28872,6 @@ public:
     const int type = 2798486643;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
     IfcPositiveLengthMeasure XLength;
     IfcPositiveLengthMeasure YLength;
     IfcPositiveLengthMeasure Height;
@@ -32257,10 +28920,6 @@ public:
     const int type = 3765753017;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcLabel> DefinitionType;
     std::vector<std::variant<IfcSectionReinforcementProperties>> ReinforcementSectionDefinitions;
 
@@ -32279,10 +28938,6 @@ public:
     const int type = 3939117080;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
     std::optional<IfcObjectTypeEnum> RelatedObjectsType;
 
@@ -32301,12 +28956,6 @@ public:
     const int type = 1683148259;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcObjectTypeEnum> RelatedObjectsType;
     std::variant<IfcActor> RelatingActor;
     std::optional<std::variant<IfcActorRole>> ActingRole;
 
@@ -32325,12 +28974,6 @@ public:
     const int type = 2495723537;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcObjectTypeEnum> RelatedObjectsType;
     std::variant<IfcControl> RelatingControl;
 
     // Constructor
@@ -32347,12 +28990,6 @@ public:
     const int type = 1307041759;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcObjectTypeEnum> RelatedObjectsType;
     std::variant<IfcGroup> RelatingGroup;
 
     // Constructor
@@ -32369,13 +29006,6 @@ public:
     const int type = 1027710054;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcObjectTypeEnum> RelatedObjectsType;
-    std::variant<IfcGroup> RelatingGroup;
     IfcRatioMeasure Factor;
 
     // Constructor
@@ -32392,12 +29022,6 @@ public:
     const int type = 4278684876;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcObjectTypeEnum> RelatedObjectsType;
     IfcProcessSelect RelatingProcess;
     std::optional<std::variant<IfcMeasureWithUnit>> QuantityInProcess;
 
@@ -32416,12 +29040,6 @@ public:
     const int type = 2857406711;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcObjectTypeEnum> RelatedObjectsType;
     IfcProductSelect RelatingProduct;
 
     // Constructor
@@ -32438,12 +29056,6 @@ public:
     const int type = 205026976;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcObjectTypeEnum> RelatedObjectsType;
     IfcResourceSelect RelatingResource;
 
     // Constructor
@@ -32460,10 +29072,6 @@ public:
     const int type = 1865459582;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<IfcDefinitionSelect> RelatedObjects;
 
     // Constructor
@@ -32480,11 +29088,6 @@ public:
     const int type = 4095574036;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<IfcDefinitionSelect> RelatedObjects;
     std::variant<IfcApproval> RelatingApproval;
 
     // Constructor
@@ -32501,11 +29104,6 @@ public:
     const int type = 919958153;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<IfcDefinitionSelect> RelatedObjects;
     IfcClassificationSelect RelatingClassification;
 
     // Constructor
@@ -32522,11 +29120,6 @@ public:
     const int type = 2728634034;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<IfcDefinitionSelect> RelatedObjects;
     std::optional<IfcLabel> Intent;
     std::variant<IfcConstraint> RelatingConstraint;
 
@@ -32545,11 +29138,6 @@ public:
     const int type = 982818633;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<IfcDefinitionSelect> RelatedObjects;
     IfcDocumentSelect RelatingDocument;
 
     // Constructor
@@ -32566,11 +29154,6 @@ public:
     const int type = 3840914261;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<IfcDefinitionSelect> RelatedObjects;
     IfcLibrarySelect RelatingLibrary;
 
     // Constructor
@@ -32587,11 +29170,6 @@ public:
     const int type = 2655215786;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<IfcDefinitionSelect> RelatedObjects;
     IfcMaterialSelect RelatingMaterial;
 
     // Constructor
@@ -32608,10 +29186,6 @@ public:
     const int type = 826625072;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcRelConnects(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -32626,10 +29200,6 @@ public:
     const int type = 1204542856;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<std::variant<IfcConnectionGeometry>> ConnectionGeometry;
     std::variant<IfcElement> RelatingElement;
     std::variant<IfcElement> RelatedElement;
@@ -32650,13 +29220,6 @@ public:
     const int type = 3945020480;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcConnectionGeometry>> ConnectionGeometry;
-    std::variant<IfcElement> RelatingElement;
-    std::variant<IfcElement> RelatedElement;
     std::optional<std::vector<IfcInteger>> RelatingPriorities;
     std::optional<std::vector<IfcInteger>> RelatedPriorities;
     IfcConnectionTypeEnum RelatedConnectionType;
@@ -32679,10 +29242,6 @@ public:
     const int type = 4201705270;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcPort> RelatingPort;
     std::variant<IfcDistributionElement> RelatedElement;
 
@@ -32701,10 +29260,6 @@ public:
     const int type = 3190031847;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcPort> RelatingPort;
     std::variant<IfcPort> RelatedPort;
     std::optional<std::variant<IfcElement>> RealizingElement;
@@ -32725,10 +29280,6 @@ public:
     const int type = 2127690289;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     IfcStructuralActivityAssignmentSelect RelatingElement;
     std::variant<IfcStructuralActivity> RelatedStructuralActivity;
 
@@ -32747,10 +29298,6 @@ public:
     const int type = 1638771189;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcStructuralMember> RelatingStructuralMember;
     std::variant<IfcStructuralConnection> RelatedStructuralConnection;
     std::optional<std::variant<IfcBoundaryCondition>> AppliedCondition;
@@ -32777,16 +29324,6 @@ public:
     const int type = 504942748;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::variant<IfcStructuralMember> RelatingStructuralMember;
-    std::variant<IfcStructuralConnection> RelatedStructuralConnection;
-    std::optional<std::variant<IfcBoundaryCondition>> AppliedCondition;
-    std::optional<std::variant<IfcStructuralConnectionCondition>> AdditionalConditions;
-    std::optional<IfcLengthMeasure> SupportedLength;
-    std::optional<std::variant<IfcAxis2Placement3D>> ConditionCoordinateSystem;
     std::variant<IfcConnectionGeometry> ConnectionConstraint;
 
     // Constructor
@@ -32803,13 +29340,6 @@ public:
     const int type = 3678494232;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcConnectionGeometry>> ConnectionGeometry;
-    std::variant<IfcElement> RelatingElement;
-    std::variant<IfcElement> RelatedElement;
     std::vector<std::variant<IfcElement>> RealizingElements;
     std::optional<IfcLabel> ConnectionType;
 
@@ -32828,10 +29358,6 @@ public:
     const int type = 3242617779;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcProduct>> RelatedElements;
     std::variant<IfcSpatialElement> RelatingStructure;
 
@@ -32850,10 +29376,6 @@ public:
     const int type = 886880790;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcElement> RelatingBuildingElement;
     std::vector<std::variant<IfcCovering>> RelatedCoverings;
 
@@ -32872,10 +29394,6 @@ public:
     const int type = 2802773753;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcSpace> RelatingSpace;
     std::vector<std::variant<IfcCovering>> RelatedCoverings;
 
@@ -32894,10 +29412,6 @@ public:
     const int type = 2565941209;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcContext> RelatingContext;
     std::vector<IfcDefinitionSelect> RelatedDefinitions;
 
@@ -32916,10 +29430,6 @@ public:
     const int type = 2551354335;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcRelDecomposes(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -32934,10 +29444,6 @@ public:
     const int type = 693640335;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcRelDefines(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -32952,10 +29458,6 @@ public:
     const int type = 1462361463;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcObject>> RelatedObjects;
     std::variant<IfcObject> RelatingObject;
 
@@ -32974,10 +29476,6 @@ public:
     const int type = 4186316022;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
     IfcPropertySetDefinitionSelect RelatingPropertyDefinition;
 
@@ -32996,10 +29494,6 @@ public:
     const int type = 307848117;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcPropertySetDefinition>> RelatedPropertySets;
     std::variant<IfcPropertySetTemplate> RelatingTemplate;
 
@@ -33018,10 +29512,6 @@ public:
     const int type = 781010003;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcObject>> RelatedObjects;
     std::variant<IfcTypeObject> RelatingType;
 
@@ -33040,10 +29530,6 @@ public:
     const int type = 3940055652;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcOpeningElement> RelatingOpeningElement;
     std::variant<IfcElement> RelatedBuildingElement;
 
@@ -33062,10 +29548,6 @@ public:
     const int type = 279856033;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcDistributionControlElement>> RelatedControlElements;
     std::variant<IfcDistributionFlowElement> RelatingFlowElement;
 
@@ -33084,10 +29566,6 @@ public:
     const int type = 427948657;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcElement> RelatingElement;
     std::variant<IfcElement> RelatedElement;
     std::optional<std::variant<IfcConnectionGeometry>> InterferenceGeometry;
@@ -33112,10 +29590,6 @@ public:
     const int type = 3268803585;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcObjectDefinition> RelatingObject;
     std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
 
@@ -33134,10 +29608,6 @@ public:
     const int type = 750771296;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcElement> RelatingElement;
     std::variant<IfcFeatureElementAddition> RelatedFeatureElement;
 
@@ -33156,10 +29626,6 @@ public:
     const int type = 1245217292;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcProduct>> RelatedElements;
     std::variant<IfcSpatialElement> RelatingStructure;
 
@@ -33178,10 +29644,6 @@ public:
     const int type = 4122056220;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcProcess> RelatingProcess;
     std::variant<IfcProcess> RelatedProcess;
     std::optional<std::variant<IfcLagTime>> TimeLag;
@@ -33206,10 +29668,6 @@ public:
     const int type = 366585022;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcSystem> RelatingSystem;
     std::vector<std::variant<IfcSpatialElement>> RelatedBuildings;
 
@@ -33228,10 +29686,6 @@ public:
     const int type = 3451746338;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     IfcSpaceBoundarySelect RelatingSpace;
     std::variant<IfcElement> RelatedBuildingElement;
     std::optional<std::variant<IfcConnectionGeometry>> ConnectionGeometry;
@@ -33257,15 +29711,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelSpaceBoundary1stLevel>>> InnerBoundaries;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    IfcSpaceBoundarySelect RelatingSpace;
-    std::variant<IfcElement> RelatedBuildingElement;
-    std::optional<std::variant<IfcConnectionGeometry>> ConnectionGeometry;
-    IfcPhysicalOrVirtualEnum PhysicalOrVirtualBoundary;
-    IfcInternalOrExternalEnum InternalOrExternalBoundary;
     std::optional<std::variant<IfcRelSpaceBoundary1stLevel>> ParentBoundary;
 
     // Constructor
@@ -33283,16 +29728,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelSpaceBoundary2ndLevel>>> Corresponds;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    IfcSpaceBoundarySelect RelatingSpace;
-    std::variant<IfcElement> RelatedBuildingElement;
-    std::optional<std::variant<IfcConnectionGeometry>> ConnectionGeometry;
-    IfcPhysicalOrVirtualEnum PhysicalOrVirtualBoundary;
-    IfcInternalOrExternalEnum InternalOrExternalBoundary;
-    std::optional<std::variant<IfcRelSpaceBoundary1stLevel>> ParentBoundary;
     std::optional<std::variant<IfcRelSpaceBoundary2ndLevel>> CorrespondingBoundary;
 
     // Constructor
@@ -33309,10 +29744,6 @@ public:
     const int type = 1401173127;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcElement> RelatingBuildingElement;
     std::variant<IfcFeatureElementSubtraction> RelatedOpeningElement;
 
@@ -33331,9 +29762,6 @@ public:
     const int type = 816062949;
 
 
-    IfcTransitionCode Transition;
-    IfcBoolean SameSense;
-    std::variant<IfcCurve> ParentCurve;
     IfcParameterValue ParamLength;
 
     // Constructor
@@ -33351,11 +29779,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelAssignsToResource>>> ResourceOf;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<IfcIdentifier> Identification;
     std::optional<IfcText> LongDescription;
 
@@ -33374,8 +29797,6 @@ public:
     const int type = 1856042241;
 
 
-    std::variant<IfcProfileDef> SweptArea;
-    std::optional<std::variant<IfcAxis2Placement3D>> Position;
     std::variant<IfcAxis1Placement> Axis;
     IfcPlaneAngleMeasure Angle;
 
@@ -33394,10 +29815,6 @@ public:
     const int type = 3243963512;
 
 
-    std::variant<IfcProfileDef> SweptArea;
-    std::optional<std::variant<IfcAxis2Placement3D>> Position;
-    std::variant<IfcAxis1Placement> Axis;
-    IfcPlaneAngleMeasure Angle;
     std::variant<IfcProfileDef> EndSweptArea;
 
     // Constructor
@@ -33414,7 +29831,6 @@ public:
     const int type = 4158566097;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
     IfcPositiveLengthMeasure Height;
     IfcPositiveLengthMeasure BottomRadius;
 
@@ -33433,7 +29849,6 @@ public:
     const int type = 3626867408;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
     IfcPositiveLengthMeasure Height;
     IfcPositiveLengthMeasure Radius;
 
@@ -33452,10 +29867,6 @@ public:
     const int type = 3663146110;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcSimplePropertyTemplateTypeEnum> TemplateType;
     std::optional<IfcLabel> PrimaryMeasureType;
     std::optional<IfcLabel> SecondaryMeasureType;
@@ -33489,13 +29900,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelServicesBuildings>>> ServicedBySystems;
     std::optional<std::vector<std::variant<IfcRelReferencedInSpatialStructure>>> ReferencesElements;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     std::optional<IfcLabel> LongName;
 
     // Constructor
@@ -33512,14 +29916,6 @@ public:
     const int type = 710998568;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
     std::optional<IfcLabel> ElementType;
 
     // Constructor
@@ -33536,14 +29932,6 @@ public:
     const int type = 2706606064;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
     std::optional<IfcElementCompositionEnum> CompositionType;
 
     // Constructor
@@ -33560,15 +29948,6 @@ public:
     const int type = 3893378262;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcSpatialStructureElementType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -33583,14 +29962,6 @@ public:
     const int type = 463610769;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
     std::optional<IfcSpatialZoneTypeEnum> PredefinedType;
 
     // Constructor
@@ -33607,15 +29978,6 @@ public:
     const int type = 2481509218;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSpatialZoneTypeEnum PredefinedType;
     std::optional<IfcLabel> LongName;
 
@@ -33634,7 +29996,6 @@ public:
     const int type = 451544542;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
     IfcPositiveLengthMeasure Radius;
 
     // Constructor
@@ -33651,7 +30012,6 @@ public:
     const int type = 4015995234;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
     IfcPositiveLengthMeasure Radius;
 
     // Constructor
@@ -33669,13 +30029,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelConnectsStructuralActivity>>> AssignedToStructuralItem;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     std::variant<IfcStructuralLoad> AppliedLoad;
     IfcGlobalOrLocalEnum GlobalOrLocal;
 
@@ -33695,13 +30048,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelConnectsStructuralActivity>>> AssignedStructuralActivity;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
 
     // Constructor
     explicit IfcStructuralItem(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_)
@@ -33717,13 +30063,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelConnectsStructuralMember>>> ConnectedBy;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
 
     // Constructor
     explicit IfcStructuralMember(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_)
@@ -33738,15 +30077,6 @@ public:
     const int type = 3689010777;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
 
     // Constructor
     explicit IfcStructuralReaction(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_)
@@ -33761,13 +30091,6 @@ public:
     const int type = 3979015343;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     IfcStructuralSurfaceMemberTypeEnum PredefinedType;
     std::optional<IfcPositiveLengthMeasure> Thickness;
 
@@ -33786,15 +30109,6 @@ public:
     const int type = 2218152070;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    IfcStructuralSurfaceMemberTypeEnum PredefinedType;
-    std::optional<IfcPositiveLengthMeasure> Thickness;
 
     // Constructor
     explicit IfcStructuralSurfaceMemberVarying(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, IfcStructuralSurfaceMemberTypeEnum PredefinedType_, const std::optional<IfcPositiveLengthMeasure>& Thickness_)
@@ -33809,15 +30123,6 @@ public:
     const int type = 603775116;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
     IfcStructuralSurfaceActivityTypeEnum PredefinedType;
 
     // Constructor
@@ -33834,17 +30139,6 @@ public:
     const int type = 4095615324;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<IfcLabel> ResourceType;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     IfcSubContractResourceTypeEnum PredefinedType;
 
     // Constructor
@@ -33881,8 +30175,6 @@ public:
     const int type = 2028607225;
 
 
-    std::variant<IfcProfileDef> SweptArea;
-    std::optional<std::variant<IfcAxis2Placement3D>> Position;
     std::variant<IfcCurve> Directrix;
     std::optional<IfcParameterValue> StartParam;
     std::optional<IfcParameterValue> EndParam;
@@ -33905,8 +30197,6 @@ public:
     const int type = 2809605785;
 
 
-    std::variant<IfcProfileDef> SweptCurve;
-    std::optional<std::variant<IfcAxis2Placement3D>> Position;
     std::variant<IfcDirection> ExtrudedDirection;
     IfcLengthMeasure Depth;
 
@@ -33925,8 +30215,6 @@ public:
     const int type = 4124788165;
 
 
-    std::variant<IfcProfileDef> SweptCurve;
-    std::optional<std::variant<IfcAxis2Placement3D>> Position;
     std::variant<IfcAxis1Placement> AxisPosition;
 
     // Constructor
@@ -33943,15 +30231,6 @@ public:
     const int type = 1580310250;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     std::optional<IfcSystemFurnitureElementTypeEnum> PredefinedType;
 
     // Constructor
@@ -33968,13 +30247,6 @@ public:
     const int type = 3473067441;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
     std::optional<IfcLabel> Status;
     std::optional<IfcLabel> WorkMethod;
     IfcBoolean IsMilestone;
@@ -34001,15 +30273,6 @@ public:
     const int type = 3206491090;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<IfcLabel> ProcessType;
     IfcTaskTypeEnum PredefinedType;
     std::optional<IfcLabel> WorkMethod;
 
@@ -34046,7 +30309,6 @@ public:
     const int type = 1935646853;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
     IfcPositiveLengthMeasure MajorRadius;
     IfcPositiveLengthMeasure MinorRadius;
 
@@ -34065,15 +30327,6 @@ public:
     const int type = 2097647324;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcTransportElementTypeEnum PredefinedType;
 
     // Constructor
@@ -34090,7 +30343,6 @@ public:
     const int type = 2916149573;
 
 
-    std::variant<IfcCartesianPointList3D> Coordinates;
     std::optional<std::vector<std::vector<IfcParameterValue>>> Normals;
     std::optional<IfcBoolean> Closed;
     std::vector<std::vector<IfcPositiveInteger>> CoordIndex;
@@ -34113,10 +30365,6 @@ public:
     const int type = 336235671;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcPositiveLengthMeasure> LiningDepth;
     std::optional<IfcNonNegativeLengthMeasure> LiningThickness;
     std::optional<IfcNonNegativeLengthMeasure> TransomThickness;
@@ -34155,10 +30403,6 @@ public:
     const int type = 512836454;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     IfcWindowPanelOperationEnum OperationType;
     IfcWindowPanelPositionEnum PanelPosition;
     std::optional<IfcPositiveLengthMeasure> FrameDepth;
@@ -34184,11 +30428,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelAssignsToActor>>> IsActingUpon;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcActorSelect TheActor;
 
     // Constructor
@@ -34205,7 +30444,6 @@ public:
     const int type = 1635779807;
 
 
-    std::variant<IfcClosedShell> Outer;
 
     // Constructor
     explicit IfcAdvancedBrep(const std::variant<IfcClosedShell>& Outer_)
@@ -34220,7 +30458,6 @@ public:
     const int type = 2603310189;
 
 
-    std::variant<IfcClosedShell> Outer;
     std::vector<std::variant<IfcClosedShell>> Voids;
 
     // Constructor
@@ -34238,13 +30475,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelContainedInSpatialStructure>>> ContainedInStructure;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
 
     // Constructor
     explicit IfcAnnotation(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_)
@@ -34287,13 +30517,6 @@ public:
     const int type = 167062518;
 
 
-    IfcInteger UDegree;
-    IfcInteger VDegree;
-    std::vector<std::vector<std::variant<IfcCartesianPoint>>> ControlPointsList;
-    IfcBSplineSurfaceForm SurfaceForm;
-    IfcLogical UClosed;
-    IfcLogical VClosed;
-    IfcLogical SelfIntersect;
     std::vector<IfcInteger> UMultiplicities;
     std::vector<IfcInteger> VMultiplicities;
     std::vector<IfcParameterValue> UKnots;
@@ -34318,7 +30541,6 @@ public:
     const int type = 1334484129;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
     IfcPositiveLengthMeasure XLength;
     IfcPositiveLengthMeasure YLength;
     IfcPositiveLengthMeasure ZLength;
@@ -34339,9 +30561,6 @@ public:
     const int type = 3649129432;
 
 
-    IfcBooleanOperator Operator;
-    IfcBooleanOperand FirstOperand;
-    IfcBooleanOperand SecondOperand;
 
     // Constructor
     explicit IfcBooleanClippingResult(IfcBooleanOperator Operator_, IfcBooleanOperand FirstOperand_, IfcBooleanOperand SecondOperand_)
@@ -34370,15 +30589,6 @@ public:
     const int type = 4031249490;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcElementCompositionEnum> CompositionType;
     std::optional<IfcLengthMeasure> ElevationOfRefHeight;
     std::optional<IfcLengthMeasure> ElevationOfTerrain;
     std::optional<std::variant<IfcPostalAddress>> BuildingAddress;
@@ -34399,15 +30609,6 @@ public:
     const int type = 1950629157;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcBuildingElementType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -34422,15 +30623,6 @@ public:
     const int type = 3124254112;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcElementCompositionEnum> CompositionType;
     std::optional<IfcLengthMeasure> Elevation;
 
     // Constructor
@@ -34447,15 +30639,6 @@ public:
     const int type = 2197970202;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcChimneyTypeEnum PredefinedType;
 
     // Constructor
@@ -34472,10 +30655,6 @@ public:
     const int type = 2937912522;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
-    IfcPositiveLengthMeasure Radius;
     IfcPositiveLengthMeasure WallThickness;
 
     // Constructor
@@ -34492,15 +30671,6 @@ public:
     const int type = 3893394355;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcCivilElementType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -34515,15 +30685,6 @@ public:
     const int type = 300633059;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcColumnTypeEnum PredefinedType;
 
     // Constructor
@@ -34540,10 +30701,6 @@ public:
     const int type = 3875453745;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcLabel> UsageName;
     std::optional<IfcComplexPropertyTemplateTypeEnum> TemplateType;
     std::optional<std::vector<std::variant<IfcPropertyTemplate>>> HasPropertyTemplates;
@@ -34582,8 +30739,6 @@ public:
     const int type = 15328376;
 
 
-    std::vector<std::variant<IfcCompositeCurveSegment>> Segments;
-    IfcLogical SelfIntersect;
 
     // Constructor
     explicit IfcCompositeCurveOnSurface(const std::vector<std::variant<IfcCompositeCurveSegment>>& Segments_, IfcLogical SelfIntersect_)
@@ -34614,17 +30769,6 @@ public:
     const int type = 2185764099;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<IfcLabel> ResourceType;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     IfcConstructionEquipmentResourceTypeEnum PredefinedType;
 
     // Constructor
@@ -34641,17 +30785,6 @@ public:
     const int type = 4105962743;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<IfcLabel> ResourceType;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     IfcConstructionMaterialResourceTypeEnum PredefinedType;
 
     // Constructor
@@ -34668,17 +30801,6 @@ public:
     const int type = 1525564444;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<IfcLabel> ResourceType;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     IfcConstructionProductResourceTypeEnum PredefinedType;
 
     // Constructor
@@ -34695,13 +30817,6 @@ public:
     const int type = 2559216714;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
     std::optional<std::variant<IfcResourceTime>> Usage;
     std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
     std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
@@ -34723,11 +30838,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelAssignsToControl>>> Controls;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<IfcIdentifier> Identification;
 
     // Constructor
@@ -34744,12 +30854,6 @@ public:
     const int type = 3895139033;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
     std::optional<IfcCostItemTypeEnum> PredefinedType;
     std::optional<std::vector<std::variant<IfcCostValue>>> CostValues;
     std::optional<std::vector<std::variant<IfcPhysicalQuantity>>> CostQuantities;
@@ -34770,12 +30874,6 @@ public:
     const int type = 1419761937;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
     std::optional<IfcCostScheduleTypeEnum> PredefinedType;
     std::optional<IfcLabel> Status;
     std::optional<IfcDateTime> SubmittedOn;
@@ -34798,15 +30896,6 @@ public:
     const int type = 1916426348;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCoveringTypeEnum PredefinedType;
 
     // Constructor
@@ -34823,16 +30912,6 @@ public:
     const int type = 3295246426;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<std::variant<IfcResourceTime>> Usage;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     std::optional<IfcCrewResourceTypeEnum> PredefinedType;
 
     // Constructor
@@ -34849,15 +30928,6 @@ public:
     const int type = 1457835157;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCurtainWallTypeEnum PredefinedType;
 
     // Constructor
@@ -34874,7 +30944,6 @@ public:
     const int type = 1213902940;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
     IfcPositiveLengthMeasure Radius;
 
     // Constructor
@@ -34891,15 +30960,6 @@ public:
     const int type = 3256556792;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcDistributionElementType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -34914,15 +30974,6 @@ public:
     const int type = 3849074793;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcDistributionFlowElementType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -34937,10 +30988,6 @@ public:
     const int type = 2963535650;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcPositiveLengthMeasure> LiningDepth;
     std::optional<IfcNonNegativeLengthMeasure> LiningThickness;
     std::optional<IfcPositiveLengthMeasure> ThresholdDepth;
@@ -34981,10 +31028,6 @@ public:
     const int type = 1714330368;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcPositiveLengthMeasure> PanelDepth;
     IfcDoorPanelOperationEnum PanelOperation;
     std::optional<IfcNormalisedRatioMeasure> PanelWidth;
@@ -35009,15 +31052,6 @@ public:
     const int type = 2323601079;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcDoorTypeEnum PredefinedType;
     IfcDoorTypeOperationEnum OperationType;
     std::optional<IfcBoolean> ParameterTakesPrecedence;
@@ -35040,7 +31074,6 @@ public:
     const int type = 445594917;
 
 
-    IfcLabel Name;
 
     // Constructor
     explicit IfcDraughtingPreDefinedColour(IfcLabel Name_)
@@ -35055,7 +31088,6 @@ public:
     const int type = 4006246654;
 
 
-    IfcLabel Name;
 
     // Constructor
     explicit IfcDraughtingPreDefinedCurveFont(IfcLabel Name_)
@@ -35082,13 +31114,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelContainedInSpatialStructure>>> ContainedInStructure;
     std::optional<std::vector<std::variant<IfcRelCoversBldgElements>>> HasCoverings;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     std::optional<IfcIdentifier> Tag;
 
     // Constructor
@@ -35105,14 +31130,6 @@ public:
     const int type = 4123344466;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcAssemblyPlaceEnum> AssemblyPlace;
     std::optional<IfcElementAssemblyTypeEnum> PredefinedType;
 
@@ -35131,15 +31148,6 @@ public:
     const int type = 2397081782;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcElementAssemblyTypeEnum PredefinedType;
 
     // Constructor
@@ -35156,14 +31164,6 @@ public:
     const int type = 1623761950;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcElementComponent(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -35178,15 +31178,6 @@ public:
     const int type = 2590856083;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcElementComponentType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -35201,7 +31192,6 @@ public:
     const int type = 1704287377;
 
 
-    IfcAxis2Placement Position;
     IfcPositiveLengthMeasure SemiAxis1;
     IfcPositiveLengthMeasure SemiAxis2;
 
@@ -35220,15 +31210,6 @@ public:
     const int type = 2107101300;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcEnergyConversionDeviceType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -35243,15 +31224,6 @@ public:
     const int type = 132023988;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcEngineTypeEnum PredefinedType;
 
     // Constructor
@@ -35268,15 +31240,6 @@ public:
     const int type = 3174744832;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcEvaporativeCoolerTypeEnum PredefinedType;
 
     // Constructor
@@ -35293,15 +31256,6 @@ public:
     const int type = 3390157468;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcEvaporatorTypeEnum PredefinedType;
 
     // Constructor
@@ -35318,13 +31272,6 @@ public:
     const int type = 4148101412;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
     std::optional<IfcEventTypeEnum> PredefinedType;
     std::optional<IfcEventTriggerTypeEnum> EventTriggerType;
     std::optional<IfcLabel> UserDefinedEventTriggerType;
@@ -35347,14 +31294,6 @@ public:
     const int type = 2853485674;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
 
     // Constructor
     explicit IfcExternalSpatialStructureElement(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcLabel>& LongName_)
@@ -35369,7 +31308,6 @@ public:
     const int type = 807026263;
 
 
-    std::variant<IfcClosedShell> Outer;
 
     // Constructor
     explicit IfcFacetedBrep(const std::variant<IfcClosedShell>& Outer_)
@@ -35384,7 +31322,6 @@ public:
     const int type = 3737207727;
 
 
-    std::variant<IfcClosedShell> Outer;
     std::vector<std::variant<IfcClosedShell>> Voids;
 
     // Constructor
@@ -35401,14 +31338,6 @@ public:
     const int type = 647756555;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcFastenerTypeEnum> PredefinedType;
 
     // Constructor
@@ -35425,15 +31354,6 @@ public:
     const int type = 2489546625;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcFastenerTypeEnum PredefinedType;
 
     // Constructor
@@ -35450,14 +31370,6 @@ public:
     const int type = 2827207264;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFeatureElement(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -35473,14 +31385,6 @@ public:
 
     std::optional<std::variant<IfcRelProjectsElement>> ProjectsElements;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFeatureElementAddition(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -35496,14 +31400,6 @@ public:
 
     std::optional<std::variant<IfcRelVoidsElement>> VoidsElements;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFeatureElementSubtraction(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -35518,15 +31414,6 @@ public:
     const int type = 3907093117;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFlowControllerType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -35541,15 +31428,6 @@ public:
     const int type = 3198132628;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFlowFittingType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -35564,15 +31442,6 @@ public:
     const int type = 3815607619;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcFlowMeterTypeEnum PredefinedType;
 
     // Constructor
@@ -35589,15 +31458,6 @@ public:
     const int type = 1482959167;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFlowMovingDeviceType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -35612,15 +31472,6 @@ public:
     const int type = 1834744321;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFlowSegmentType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -35635,15 +31486,6 @@ public:
     const int type = 1339347760;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFlowStorageDeviceType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -35658,15 +31500,6 @@ public:
     const int type = 2297155007;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFlowTerminalType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -35681,15 +31514,6 @@ public:
     const int type = 3009222698;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFlowTreatmentDeviceType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -35704,15 +31528,6 @@ public:
     const int type = 1893162501;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcFootingTypeEnum PredefinedType;
 
     // Constructor
@@ -35729,14 +31544,6 @@ public:
     const int type = 263784265;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFurnishingElement(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -35751,14 +31558,6 @@ public:
     const int type = 1509553395;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcFurnitureTypeEnum> PredefinedType;
 
     // Constructor
@@ -35775,14 +31574,6 @@ public:
     const int type = 3493046030;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcGeographicElementTypeEnum> PredefinedType;
 
     // Constructor
@@ -35800,13 +31591,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelContainedInSpatialStructure>>> ContainedInStructure;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     std::vector<std::variant<IfcGridAxis>> UAxes;
     std::vector<std::variant<IfcGridAxis>> VAxes;
     std::optional<std::vector<std::variant<IfcGridAxis>>> WAxes;
@@ -35830,11 +31614,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelAssignsToGroup>>> IsGroupedBy;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
 
     // Constructor
     explicit IfcGroup(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_)
@@ -35849,15 +31628,6 @@ public:
     const int type = 1251058090;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcHeatExchangerTypeEnum PredefinedType;
 
     // Constructor
@@ -35874,15 +31644,6 @@ public:
     const int type = 1806887404;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcHumidifierTypeEnum PredefinedType;
 
     // Constructor
@@ -35919,15 +31680,6 @@ public:
     const int type = 3946677679;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcInterceptorTypeEnum PredefinedType;
 
     // Constructor
@@ -35944,9 +31696,6 @@ public:
     const int type = 3113134337;
 
 
-    std::variant<IfcCurve> Curve3D;
-    std::vector<std::variant<IfcPcurve>> AssociatedGeometry;
-    IfcPreferredSurfaceCurveRepresentation MasterRepresentation;
 
     // Constructor
     explicit IfcIntersectionCurve(const std::variant<IfcCurve>& Curve3D_, const std::vector<std::variant<IfcPcurve>>& AssociatedGeometry_, IfcPreferredSurfaceCurveRepresentation MasterRepresentation_)
@@ -35961,11 +31710,6 @@ public:
     const int type = 2391368822;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<IfcInventoryTypeEnum> PredefinedType;
     std::optional<IfcActorSelect> Jurisdiction;
     std::optional<std::vector<std::variant<IfcPerson>>> ResponsiblePersons;
@@ -35992,15 +31736,6 @@ public:
     const int type = 4288270099;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcJunctionBoxTypeEnum PredefinedType;
 
     // Constructor
@@ -36017,16 +31752,6 @@ public:
     const int type = 3827777499;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<std::variant<IfcResourceTime>> Usage;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     std::optional<IfcLaborResourceTypeEnum> PredefinedType;
 
     // Constructor
@@ -36043,15 +31768,6 @@ public:
     const int type = 1051575348;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcLampTypeEnum PredefinedType;
 
     // Constructor
@@ -36068,15 +31784,6 @@ public:
     const int type = 1161773419;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcLightFixtureTypeEnum PredefinedType;
 
     // Constructor
@@ -36093,14 +31800,6 @@ public:
     const int type = 377706215;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcPositiveLengthMeasure> NominalDiameter;
     std::optional<IfcPositiveLengthMeasure> NominalLength;
     std::optional<IfcMechanicalFastenerTypeEnum> PredefinedType;
@@ -36121,15 +31820,6 @@ public:
     const int type = 2108223431;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcMechanicalFastenerTypeEnum PredefinedType;
     std::optional<IfcPositiveLengthMeasure> NominalDiameter;
     std::optional<IfcPositiveLengthMeasure> NominalLength;
@@ -36150,15 +31840,6 @@ public:
     const int type = 1114901282;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcMedicalDeviceTypeEnum PredefinedType;
 
     // Constructor
@@ -36175,15 +31856,6 @@ public:
     const int type = 3181161470;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcMemberTypeEnum PredefinedType;
 
     // Constructor
@@ -36200,15 +31872,6 @@ public:
     const int type = 977012517;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcMotorConnectionTypeEnum PredefinedType;
 
     // Constructor
@@ -36225,12 +31888,6 @@ public:
     const int type = 4143007308;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    IfcActorSelect TheActor;
     std::optional<IfcOccupantTypeEnum> PredefinedType;
 
     // Constructor
@@ -36248,14 +31905,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelFillsElement>>> HasFillings;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcOpeningElementTypeEnum> PredefinedType;
 
     // Constructor
@@ -36272,15 +31921,6 @@ public:
     const int type = 3079942009;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcOpeningElementTypeEnum> PredefinedType;
 
     // Constructor
     explicit IfcOpeningStandardCase(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_, const std::optional<IfcOpeningElementTypeEnum>& PredefinedType_)
@@ -36295,15 +31935,6 @@ public:
     const int type = 2837617999;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcOutletTypeEnum PredefinedType;
 
     // Constructor
@@ -36320,12 +31951,6 @@ public:
     const int type = 2382730787;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
     IfcLabel LifeCyclePhase;
     std::optional<IfcPerformanceHistoryTypeEnum> PredefinedType;
 
@@ -36344,10 +31969,6 @@ public:
     const int type = 3566463478;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     IfcPermeableCoveringOperationEnum OperationType;
     IfcWindowPanelPositionEnum PanelPosition;
     std::optional<IfcPositiveLengthMeasure> FrameDepth;
@@ -36372,12 +31993,6 @@ public:
     const int type = 3327091369;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
     std::optional<IfcPermitTypeEnum> PredefinedType;
     std::optional<IfcLabel> Status;
     std::optional<IfcText> LongDescription;
@@ -36398,15 +32013,6 @@ public:
     const int type = 1158309216;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcPileTypeEnum PredefinedType;
 
     // Constructor
@@ -36423,15 +32029,6 @@ public:
     const int type = 804291784;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcPipeFittingTypeEnum PredefinedType;
 
     // Constructor
@@ -36448,15 +32045,6 @@ public:
     const int type = 4231323485;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcPipeSegmentTypeEnum PredefinedType;
 
     // Constructor
@@ -36473,15 +32061,6 @@ public:
     const int type = 4017108033;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcPlateTypeEnum PredefinedType;
 
     // Constructor
@@ -36498,7 +32077,6 @@ public:
     const int type = 2839578677;
 
 
-    std::variant<IfcCartesianPointList3D> Coordinates;
     std::optional<IfcBoolean> Closed;
     std::vector<std::variant<IfcIndexedPolygonalFace>> Faces;
     std::optional<std::vector<IfcPositiveInteger>> PnIndex;
@@ -36538,13 +32116,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelConnectsPorts>>> ConnectedFrom;
     std::optional<std::vector<std::variant<IfcRelConnectsPorts>>> ConnectedTo;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
 
     // Constructor
     explicit IfcPort(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_)
@@ -36559,13 +32130,6 @@ public:
     const int type = 2744685151;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
     std::optional<IfcProcedureTypeEnum> PredefinedType;
 
     // Constructor
@@ -36582,12 +32146,6 @@ public:
     const int type = 2904328755;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
     std::optional<IfcProjectOrderTypeEnum> PredefinedType;
     std::optional<IfcLabel> Status;
     std::optional<IfcText> LongDescription;
@@ -36608,14 +32166,6 @@ public:
     const int type = 3651124850;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcProjectionElementTypeEnum> PredefinedType;
 
     // Constructor
@@ -36632,15 +32182,6 @@ public:
     const int type = 1842657554;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcProtectiveDeviceTypeEnum PredefinedType;
 
     // Constructor
@@ -36657,15 +32198,6 @@ public:
     const int type = 2250791053;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcPumpTypeEnum PredefinedType;
 
     // Constructor
@@ -36682,15 +32214,6 @@ public:
     const int type = 2893384427;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcRailingTypeEnum PredefinedType;
 
     // Constructor
@@ -36707,15 +32230,6 @@ public:
     const int type = 2324767716;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcRampFlightTypeEnum PredefinedType;
 
     // Constructor
@@ -36732,15 +32246,6 @@ public:
     const int type = 1469900589;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcRampTypeEnum PredefinedType;
 
     // Constructor
@@ -36757,18 +32262,6 @@ public:
     const int type = 683857671;
 
 
-    IfcInteger UDegree;
-    IfcInteger VDegree;
-    std::vector<std::vector<std::variant<IfcCartesianPoint>>> ControlPointsList;
-    IfcBSplineSurfaceForm SurfaceForm;
-    IfcLogical UClosed;
-    IfcLogical VClosed;
-    IfcLogical SelfIntersect;
-    std::vector<IfcInteger> UMultiplicities;
-    std::vector<IfcInteger> VMultiplicities;
-    std::vector<IfcParameterValue> UKnots;
-    std::vector<IfcParameterValue> VKnots;
-    IfcKnotType KnotSpec;
     std::vector<std::vector<IfcReal>> WeightsData;
 
     // Constructor
@@ -36785,14 +32278,6 @@ public:
     const int type = 3027567501;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcLabel> SteelGrade;
 
     // Constructor
@@ -36809,15 +32294,6 @@ public:
     const int type = 964333572;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcReinforcingElementType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -36832,15 +32308,6 @@ public:
     const int type = 2320036040;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcLabel> SteelGrade;
     std::optional<IfcPositiveLengthMeasure> MeshLength;
     std::optional<IfcPositiveLengthMeasure> MeshWidth;
     std::optional<IfcPositiveLengthMeasure> LongitudinalBarNominalDiameter;
@@ -36873,15 +32340,6 @@ public:
     const int type = 2310774935;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcReinforcingMeshTypeEnum PredefinedType;
     std::optional<IfcPositiveLengthMeasure> MeshLength;
     std::optional<IfcPositiveLengthMeasure> MeshWidth;
@@ -36918,10 +32376,6 @@ public:
     const int type = 160246688;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcObjectDefinition> RelatingObject;
     std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
 
@@ -36940,15 +32394,6 @@ public:
     const int type = 2781568857;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcRoofTypeEnum PredefinedType;
 
     // Constructor
@@ -36965,15 +32410,6 @@ public:
     const int type = 1768891740;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSanitaryTerminalTypeEnum PredefinedType;
 
     // Constructor
@@ -36990,9 +32426,6 @@ public:
     const int type = 2157484638;
 
 
-    std::variant<IfcCurve> Curve3D;
-    std::vector<std::variant<IfcPcurve>> AssociatedGeometry;
-    IfcPreferredSurfaceCurveRepresentation MasterRepresentation;
 
     // Constructor
     explicit IfcSeamCurve(const std::variant<IfcCurve>& Curve3D_, const std::vector<std::variant<IfcPcurve>>& AssociatedGeometry_, IfcPreferredSurfaceCurveRepresentation MasterRepresentation_)
@@ -37007,15 +32440,6 @@ public:
     const int type = 4074543187;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcShadingDeviceTypeEnum PredefinedType;
 
     // Constructor
@@ -37032,15 +32456,6 @@ public:
     const int type = 4097777520;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcElementCompositionEnum> CompositionType;
     std::optional<IfcCompoundPlaneAngleMeasure> RefLatitude;
     std::optional<IfcCompoundPlaneAngleMeasure> RefLongitude;
     std::optional<IfcLengthMeasure> RefElevation;
@@ -37065,15 +32480,6 @@ public:
     const int type = 2533589738;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSlabTypeEnum PredefinedType;
 
     // Constructor
@@ -37090,15 +32496,6 @@ public:
     const int type = 1072016465;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSolarDeviceTypeEnum PredefinedType;
 
     // Constructor
@@ -37117,15 +32514,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelCoversSpaces>>> HasCoverings;
     std::optional<std::vector<std::variant<IfcRelSpaceBoundary>>> BoundedBy;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcElementCompositionEnum> CompositionType;
     std::optional<IfcSpaceTypeEnum> PredefinedType;
     std::optional<IfcLengthMeasure> ElevationWithFlooring;
 
@@ -37144,15 +32532,6 @@ public:
     const int type = 1305183839;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSpaceHeaterTypeEnum PredefinedType;
 
     // Constructor
@@ -37169,15 +32548,6 @@ public:
     const int type = 3812236995;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSpaceTypeEnum PredefinedType;
     std::optional<IfcLabel> LongName;
 
@@ -37196,15 +32566,6 @@ public:
     const int type = 3112655638;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcStackTerminalTypeEnum PredefinedType;
 
     // Constructor
@@ -37221,15 +32582,6 @@ public:
     const int type = 1039846685;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcStairFlightTypeEnum PredefinedType;
 
     // Constructor
@@ -37246,15 +32598,6 @@ public:
     const int type = 338393293;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcStairTypeEnum PredefinedType;
 
     // Constructor
@@ -37271,15 +32614,6 @@ public:
     const int type = 682877961;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
     std::optional<IfcBoolean> DestabilizingLoad;
 
     // Constructor
@@ -37297,13 +32631,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelConnectsStructuralMember>>> ConnectsStructuralMembers;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     std::optional<std::variant<IfcBoundaryCondition>> AppliedCondition;
 
     // Constructor
@@ -37320,16 +32647,6 @@ public:
     const int type = 1004757350;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
-    std::optional<IfcBoolean> DestabilizingLoad;
     std::optional<IfcProjectedOrTrueLengthEnum> ProjectedOrTrue;
     IfcStructuralCurveActivityTypeEnum PredefinedType;
 
@@ -37348,14 +32665,6 @@ public:
     const int type = 4243806635;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<std::variant<IfcBoundaryCondition>> AppliedCondition;
     std::variant<IfcDirection> Axis;
 
     // Constructor
@@ -37372,13 +32681,6 @@ public:
     const int type = 214636428;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     IfcStructuralCurveMemberTypeEnum PredefinedType;
     std::variant<IfcDirection> Axis;
 
@@ -37397,15 +32699,6 @@ public:
     const int type = 2445595289;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    IfcStructuralCurveMemberTypeEnum PredefinedType;
-    std::variant<IfcDirection> Axis;
 
     // Constructor
     explicit IfcStructuralCurveMemberVarying(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, IfcStructuralCurveMemberTypeEnum PredefinedType_, const std::variant<IfcDirection>& Axis_)
@@ -37420,15 +32713,6 @@ public:
     const int type = 2757150158;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
     IfcStructuralCurveActivityTypeEnum PredefinedType;
 
     // Constructor
@@ -37445,18 +32729,6 @@ public:
     const int type = 1807405624;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
-    std::optional<IfcBoolean> DestabilizingLoad;
-    std::optional<IfcProjectedOrTrueLengthEnum> ProjectedOrTrue;
-    IfcStructuralCurveActivityTypeEnum PredefinedType;
 
     // Constructor
     explicit IfcStructuralLinearAction(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_, const std::optional<IfcBoolean>& DestabilizingLoad_, const std::optional<IfcProjectedOrTrueLengthEnum>& ProjectedOrTrue_, IfcStructuralCurveActivityTypeEnum PredefinedType_)
@@ -37473,11 +32745,6 @@ public:
     std::optional<std::vector<std::variant<IfcStructuralResultGroup>>> SourceOfResultGroup;
     std::optional<std::vector<std::variant<IfcStructuralAnalysisModel>>> LoadGroupFor;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcLoadGroupTypeEnum PredefinedType;
     IfcActionTypeEnum ActionType;
     IfcActionSourceTypeEnum ActionSource;
@@ -37502,16 +32769,6 @@ public:
     const int type = 2082059205;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
-    std::optional<IfcBoolean> DestabilizingLoad;
 
     // Constructor
     explicit IfcStructuralPointAction(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_, const std::optional<IfcBoolean>& DestabilizingLoad_)
@@ -37526,14 +32783,6 @@ public:
     const int type = 734778138;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<std::variant<IfcBoundaryCondition>> AppliedCondition;
     std::optional<std::variant<IfcAxis2Placement3D>> ConditionCoordinateSystem;
 
     // Constructor
@@ -37550,15 +32799,6 @@ public:
     const int type = 1235345126;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
 
     // Constructor
     explicit IfcStructuralPointReaction(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_)
@@ -37574,11 +32814,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcStructuralAnalysisModel>>> ResultGroupFor;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcAnalysisTheoryTypeEnum TheoryType;
     std::optional<std::variant<IfcStructuralLoadGroup>> ResultForLoadGroup;
     IfcBoolean IsLinear;
@@ -37599,16 +32834,6 @@ public:
     const int type = 3657597509;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
-    std::optional<IfcBoolean> DestabilizingLoad;
     std::optional<IfcProjectedOrTrueLengthEnum> ProjectedOrTrue;
     IfcStructuralSurfaceActivityTypeEnum PredefinedType;
 
@@ -37627,14 +32852,6 @@ public:
     const int type = 1975003073;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<std::variant<IfcBoundaryCondition>> AppliedCondition;
 
     // Constructor
     explicit IfcStructuralSurfaceConnection(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<std::variant<IfcBoundaryCondition>>& AppliedCondition_)
@@ -37649,16 +32866,6 @@ public:
     const int type = 148013059;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<std::variant<IfcResourceTime>> Usage;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     std::optional<IfcSubContractResourceTypeEnum> PredefinedType;
 
     // Constructor
@@ -37675,14 +32882,6 @@ public:
     const int type = 3101698114;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcSurfaceFeatureTypeEnum> PredefinedType;
 
     // Constructor
@@ -37699,15 +32898,6 @@ public:
     const int type = 2315554128;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSwitchingDeviceTypeEnum PredefinedType;
 
     // Constructor
@@ -37725,11 +32915,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelServicesBuildings>>> ServicesBuildings;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
 
     // Constructor
     explicit IfcSystem(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_)
@@ -37744,14 +32929,6 @@ public:
     const int type = 413509423;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcSystemFurnitureElementTypeEnum> PredefinedType;
 
     // Constructor
@@ -37768,15 +32945,6 @@ public:
     const int type = 5716631;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcTankTypeEnum PredefinedType;
 
     // Constructor
@@ -37793,15 +32961,6 @@ public:
     const int type = 3824725483;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcLabel> SteelGrade;
     std::optional<IfcTendonTypeEnum> PredefinedType;
     std::optional<IfcPositiveLengthMeasure> NominalDiameter;
     std::optional<IfcAreaMeasure> CrossSectionArea;
@@ -37832,15 +32991,6 @@ public:
     const int type = 2347447852;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcLabel> SteelGrade;
     std::optional<IfcTendonAnchorTypeEnum> PredefinedType;
 
     // Constructor
@@ -37857,15 +33007,6 @@ public:
     const int type = 3081323446;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcTendonAnchorTypeEnum PredefinedType;
 
     // Constructor
@@ -37882,15 +33023,6 @@ public:
     const int type = 2415094496;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcTendonTypeEnum PredefinedType;
     std::optional<IfcPositiveLengthMeasure> NominalDiameter;
     std::optional<IfcAreaMeasure> CrossSectionArea;
@@ -37913,15 +33045,6 @@ public:
     const int type = 1692211062;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcTransformerTypeEnum PredefinedType;
 
     // Constructor
@@ -37938,14 +33061,6 @@ public:
     const int type = 1620046519;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcTransportElementTypeEnum> PredefinedType;
 
     // Constructor
@@ -37986,15 +33101,6 @@ public:
     const int type = 1600972822;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcTubeBundleTypeEnum PredefinedType;
 
     // Constructor
@@ -38011,15 +33117,6 @@ public:
     const int type = 1911125066;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcUnitaryEquipmentTypeEnum PredefinedType;
 
     // Constructor
@@ -38036,15 +33133,6 @@ public:
     const int type = 728799441;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcValveTypeEnum PredefinedType;
 
     // Constructor
@@ -38061,14 +33149,6 @@ public:
     const int type = 2391383451;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcVibrationIsolatorTypeEnum> PredefinedType;
 
     // Constructor
@@ -38085,15 +33165,6 @@ public:
     const int type = 3313531582;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcVibrationIsolatorTypeEnum PredefinedType;
 
     // Constructor
@@ -38110,14 +33181,6 @@ public:
     const int type = 2769231204;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcVirtualElement(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -38132,14 +33195,6 @@ public:
     const int type = 926996030;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcVoidingFeatureTypeEnum> PredefinedType;
 
     // Constructor
@@ -38156,15 +33211,6 @@ public:
     const int type = 1898987631;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcWallTypeEnum PredefinedType;
 
     // Constructor
@@ -38181,15 +33227,6 @@ public:
     const int type = 1133259667;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcWasteTerminalTypeEnum PredefinedType;
 
     // Constructor
@@ -38206,15 +33243,6 @@ public:
     const int type = 4009809668;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcWindowTypeEnum PredefinedType;
     IfcWindowTypePartitioningEnum PartitioningType;
     std::optional<IfcBoolean> ParameterTakesPrecedence;
@@ -38237,12 +33265,6 @@ public:
     const int type = 4088093105;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
     std::optional<std::vector<std::variant<IfcWorkTime>>> WorkingTimes;
     std::optional<std::vector<std::variant<IfcWorkTime>>> ExceptionTimes;
     std::optional<IfcWorkCalendarTypeEnum> PredefinedType;
@@ -38263,12 +33285,6 @@ public:
     const int type = 1028945134;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
     IfcDateTime CreationDate;
     std::optional<std::vector<std::variant<IfcPerson>>> Creators;
     std::optional<IfcLabel> Purpose;
@@ -38297,19 +33313,6 @@ public:
     const int type = 4218914973;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    IfcDateTime CreationDate;
-    std::optional<std::vector<std::variant<IfcPerson>>> Creators;
-    std::optional<IfcLabel> Purpose;
-    std::optional<IfcDuration> Duration;
-    std::optional<IfcDuration> TotalFloat;
-    IfcDateTime StartTime;
-    std::optional<IfcDateTime> FinishTime;
     std::optional<IfcWorkPlanTypeEnum> PredefinedType;
 
     // Constructor
@@ -38326,19 +33329,6 @@ public:
     const int type = 3342526732;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    IfcDateTime CreationDate;
-    std::optional<std::vector<std::variant<IfcPerson>>> Creators;
-    std::optional<IfcLabel> Purpose;
-    std::optional<IfcDuration> Duration;
-    std::optional<IfcDuration> TotalFloat;
-    IfcDateTime StartTime;
-    std::optional<IfcDateTime> FinishTime;
     std::optional<IfcWorkScheduleTypeEnum> PredefinedType;
 
     // Constructor
@@ -38355,11 +33345,6 @@ public:
     const int type = 1033361043;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<IfcLabel> LongName;
 
     // Constructor
@@ -38376,12 +33361,6 @@ public:
     const int type = 3821786052;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
     std::optional<IfcActionRequestTypeEnum> PredefinedType;
     std::optional<IfcLabel> Status;
     std::optional<IfcText> LongDescription;
@@ -38402,15 +33381,6 @@ public:
     const int type = 1411407467;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcAirTerminalBoxTypeEnum PredefinedType;
 
     // Constructor
@@ -38427,15 +33397,6 @@ public:
     const int type = 3352864051;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcAirTerminalTypeEnum PredefinedType;
 
     // Constructor
@@ -38452,15 +33413,6 @@ public:
     const int type = 1871374353;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcAirToAirHeatRecoveryTypeEnum PredefinedType;
 
     // Constructor
@@ -38477,11 +33429,6 @@ public:
     const int type = 3460190687;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<IfcIdentifier> Identification;
     std::optional<std::variant<IfcCostValue>> OriginalValue;
     std::optional<std::variant<IfcCostValue>> CurrentValue;
@@ -38514,15 +33461,6 @@ public:
     const int type = 1532957894;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcAudioVisualApplianceTypeEnum PredefinedType;
 
     // Constructor
@@ -38563,11 +33501,6 @@ public:
     const int type = 2461110595;
 
 
-    IfcInteger Degree;
-    std::vector<std::variant<IfcCartesianPoint>> ControlPointsList;
-    IfcBSplineCurveForm CurveForm;
-    IfcLogical ClosedCurve;
-    IfcLogical SelfIntersect;
     std::vector<IfcInteger> KnotMultiplicities;
     std::vector<IfcParameterValue> Knots;
     IfcKnotType KnotSpec;
@@ -38588,15 +33521,6 @@ public:
     const int type = 819618141;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcBeamTypeEnum PredefinedType;
 
     // Constructor
@@ -38613,15 +33537,6 @@ public:
     const int type = 231477066;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcBoilerTypeEnum PredefinedType;
 
     // Constructor
@@ -38638,8 +33553,6 @@ public:
     const int type = 1136057603;
 
 
-    std::vector<std::variant<IfcCompositeCurveSegment>> Segments;
-    IfcLogical SelfIntersect;
 
     // Constructor
     explicit IfcBoundaryCurve(const std::vector<std::variant<IfcCompositeCurveSegment>>& Segments_, IfcLogical SelfIntersect_)
@@ -38654,14 +33567,6 @@ public:
     const int type = 3299480353;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcBuildingElement(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -38676,14 +33581,6 @@ public:
     const int type = 2979338954;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcBuildingElementPartTypeEnum> PredefinedType;
 
     // Constructor
@@ -38700,15 +33597,6 @@ public:
     const int type = 39481116;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcBuildingElementPartTypeEnum PredefinedType;
 
     // Constructor
@@ -38725,14 +33613,6 @@ public:
     const int type = 1095909175;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcBuildingElementProxyTypeEnum> PredefinedType;
 
     // Constructor
@@ -38749,15 +33629,6 @@ public:
     const int type = 1909888760;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcBuildingElementProxyTypeEnum PredefinedType;
 
     // Constructor
@@ -38774,11 +33645,6 @@ public:
     const int type = 1177604601;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<IfcBuildingSystemTypeEnum> PredefinedType;
     std::optional<IfcLabel> LongName;
 
@@ -38797,15 +33663,6 @@ public:
     const int type = 2188180465;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcBurnerTypeEnum PredefinedType;
 
     // Constructor
@@ -38822,15 +33679,6 @@ public:
     const int type = 395041908;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCableCarrierFittingTypeEnum PredefinedType;
 
     // Constructor
@@ -38847,15 +33695,6 @@ public:
     const int type = 3293546465;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCableCarrierSegmentTypeEnum PredefinedType;
 
     // Constructor
@@ -38872,15 +33711,6 @@ public:
     const int type = 2674252688;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCableFittingTypeEnum PredefinedType;
 
     // Constructor
@@ -38897,15 +33727,6 @@ public:
     const int type = 1285652485;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCableSegmentTypeEnum PredefinedType;
 
     // Constructor
@@ -38922,15 +33743,6 @@ public:
     const int type = 2951183804;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcChillerTypeEnum PredefinedType;
 
     // Constructor
@@ -38947,14 +33759,6 @@ public:
     const int type = 3296154744;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcChimneyTypeEnum> PredefinedType;
 
     // Constructor
@@ -38971,7 +33775,6 @@ public:
     const int type = 2611217952;
 
 
-    IfcAxis2Placement Position;
     IfcPositiveLengthMeasure Radius;
 
     // Constructor
@@ -38988,14 +33791,6 @@ public:
     const int type = 1677625105;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcCivilElement(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -39010,15 +33805,6 @@ public:
     const int type = 2301859152;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCoilTypeEnum PredefinedType;
 
     // Constructor
@@ -39035,14 +33821,6 @@ public:
     const int type = 843113511;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcColumnTypeEnum> PredefinedType;
 
     // Constructor
@@ -39059,15 +33837,6 @@ public:
     const int type = 905975707;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcColumnTypeEnum> PredefinedType;
 
     // Constructor
     explicit IfcColumnStandardCase(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_, const std::optional<IfcColumnTypeEnum>& PredefinedType_)
@@ -39082,15 +33851,6 @@ public:
     const int type = 400855858;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCommunicationsApplianceTypeEnum PredefinedType;
 
     // Constructor
@@ -39107,15 +33867,6 @@ public:
     const int type = 3850581409;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCompressorTypeEnum PredefinedType;
 
     // Constructor
@@ -39132,15 +33883,6 @@ public:
     const int type = 2816379211;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCondenserTypeEnum PredefinedType;
 
     // Constructor
@@ -39157,16 +33899,6 @@ public:
     const int type = 3898045240;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<std::variant<IfcResourceTime>> Usage;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     std::optional<IfcConstructionEquipmentResourceTypeEnum> PredefinedType;
 
     // Constructor
@@ -39183,16 +33915,6 @@ public:
     const int type = 1060000209;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<std::variant<IfcResourceTime>> Usage;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     std::optional<IfcConstructionMaterialResourceTypeEnum> PredefinedType;
 
     // Constructor
@@ -39209,16 +33931,6 @@ public:
     const int type = 488727124;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<std::variant<IfcResourceTime>> Usage;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     std::optional<IfcConstructionProductResourceTypeEnum> PredefinedType;
 
     // Constructor
@@ -39235,15 +33947,6 @@ public:
     const int type = 335055490;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCooledBeamTypeEnum PredefinedType;
 
     // Constructor
@@ -39260,15 +33963,6 @@ public:
     const int type = 2954562838;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCoolingTowerTypeEnum PredefinedType;
 
     // Constructor
@@ -39287,14 +33981,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelCoversSpaces>>> CoversSpaces;
     std::optional<std::vector<std::variant<IfcRelCoversBldgElements>>> CoversElements;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCoveringTypeEnum> PredefinedType;
 
     // Constructor
@@ -39311,14 +33997,6 @@ public:
     const int type = 3495092785;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCurtainWallTypeEnum> PredefinedType;
 
     // Constructor
@@ -39335,15 +34013,6 @@ public:
     const int type = 3961806047;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcDamperTypeEnum PredefinedType;
 
     // Constructor
@@ -39360,14 +34029,6 @@ public:
     const int type = 1335981549;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcDiscreteAccessoryTypeEnum> PredefinedType;
 
     // Constructor
@@ -39384,15 +34045,6 @@ public:
     const int type = 2635815018;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcDiscreteAccessoryTypeEnum PredefinedType;
 
     // Constructor
@@ -39409,15 +34061,6 @@ public:
     const int type = 1599208980;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcDistributionChamberElementTypeEnum PredefinedType;
 
     // Constructor
@@ -39434,15 +34077,6 @@ public:
     const int type = 2063403501;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcDistributionControlElementType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -39458,14 +34092,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelConnectsPortToElement>>> HasPorts;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcDistributionElement(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -39481,14 +34107,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelFlowControlElements>>> HasControlElements;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcDistributionFlowElement(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -39503,13 +34121,6 @@ public:
     const int type = 3041715199;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     std::optional<IfcFlowDirectionEnum> FlowDirection;
     std::optional<IfcDistributionPortTypeEnum> PredefinedType;
     std::optional<IfcDistributionSystemEnum> SystemType;
@@ -39530,11 +34141,6 @@ public:
     const int type = 3205830791;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<IfcLabel> LongName;
     std::optional<IfcDistributionSystemEnum> PredefinedType;
 
@@ -39553,14 +34159,6 @@ public:
     const int type = 395920057;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcPositiveLengthMeasure> OverallHeight;
     std::optional<IfcPositiveLengthMeasure> OverallWidth;
     std::optional<IfcDoorTypeEnum> PredefinedType;
@@ -39585,19 +34183,6 @@ public:
     const int type = 3242481149;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcPositiveLengthMeasure> OverallHeight;
-    std::optional<IfcPositiveLengthMeasure> OverallWidth;
-    std::optional<IfcDoorTypeEnum> PredefinedType;
-    std::optional<IfcDoorTypeOperationEnum> OperationType;
-    std::optional<IfcLabel> UserDefinedOperationType;
 
     // Constructor
     explicit IfcDoorStandardCase(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_, const std::optional<IfcPositiveLengthMeasure>& OverallHeight_, const std::optional<IfcPositiveLengthMeasure>& OverallWidth_, const std::optional<IfcDoorTypeEnum>& PredefinedType_, const std::optional<IfcDoorTypeOperationEnum>& OperationType_, const std::optional<IfcLabel>& UserDefinedOperationType_)
@@ -39612,15 +34197,6 @@ public:
     const int type = 869906466;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcDuctFittingTypeEnum PredefinedType;
 
     // Constructor
@@ -39637,15 +34213,6 @@ public:
     const int type = 3760055223;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcDuctSegmentTypeEnum PredefinedType;
 
     // Constructor
@@ -39662,15 +34229,6 @@ public:
     const int type = 2030761528;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcDuctSilencerTypeEnum PredefinedType;
 
     // Constructor
@@ -39687,15 +34245,6 @@ public:
     const int type = 663422040;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcElectricApplianceTypeEnum PredefinedType;
 
     // Constructor
@@ -39712,15 +34261,6 @@ public:
     const int type = 2417008758;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcElectricDistributionBoardTypeEnum PredefinedType;
 
     // Constructor
@@ -39737,15 +34277,6 @@ public:
     const int type = 3277789161;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcElectricFlowStorageDeviceTypeEnum PredefinedType;
 
     // Constructor
@@ -39762,15 +34293,6 @@ public:
     const int type = 1534661035;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcElectricGeneratorTypeEnum PredefinedType;
 
     // Constructor
@@ -39787,15 +34309,6 @@ public:
     const int type = 1217240411;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcElectricMotorTypeEnum PredefinedType;
 
     // Constructor
@@ -39812,15 +34325,6 @@ public:
     const int type = 712377611;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcElectricTimeControlTypeEnum PredefinedType;
 
     // Constructor
@@ -39837,14 +34341,6 @@ public:
     const int type = 1658829314;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcEnergyConversionDevice(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -39859,14 +34355,6 @@ public:
     const int type = 2814081492;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcEngineTypeEnum> PredefinedType;
 
     // Constructor
@@ -39883,14 +34371,6 @@ public:
     const int type = 3747195512;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcEvaporativeCoolerTypeEnum> PredefinedType;
 
     // Constructor
@@ -39907,14 +34387,6 @@ public:
     const int type = 484807127;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcEvaporatorTypeEnum> PredefinedType;
 
     // Constructor
@@ -39932,14 +34404,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelSpaceBoundary>>> BoundedBy;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
     std::optional<IfcExternalSpatialElementTypeEnum> PredefinedType;
 
     // Constructor
@@ -39956,15 +34420,6 @@ public:
     const int type = 346874300;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcFanTypeEnum PredefinedType;
 
     // Constructor
@@ -39981,15 +34436,6 @@ public:
     const int type = 1810631287;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcFilterTypeEnum PredefinedType;
 
     // Constructor
@@ -40006,15 +34452,6 @@ public:
     const int type = 4222183408;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcFireSuppressionTerminalTypeEnum PredefinedType;
 
     // Constructor
@@ -40031,14 +34468,6 @@ public:
     const int type = 2058353004;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFlowController(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -40053,14 +34482,6 @@ public:
     const int type = 4278956645;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFlowFitting(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -40075,15 +34496,6 @@ public:
     const int type = 4037862832;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcFlowInstrumentTypeEnum PredefinedType;
 
     // Constructor
@@ -40100,14 +34512,6 @@ public:
     const int type = 2188021234;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcFlowMeterTypeEnum> PredefinedType;
 
     // Constructor
@@ -40124,14 +34528,6 @@ public:
     const int type = 3132237377;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFlowMovingDevice(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -40146,14 +34542,6 @@ public:
     const int type = 987401354;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFlowSegment(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -40168,14 +34556,6 @@ public:
     const int type = 707683696;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFlowStorageDevice(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -40190,14 +34570,6 @@ public:
     const int type = 2223149337;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFlowTerminal(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -40212,14 +34584,6 @@ public:
     const int type = 3508470533;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFlowTreatmentDevice(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -40234,14 +34598,6 @@ public:
     const int type = 900683007;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcFootingTypeEnum> PredefinedType;
 
     // Constructor
@@ -40258,14 +34614,6 @@ public:
     const int type = 3319311131;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcHeatExchangerTypeEnum> PredefinedType;
 
     // Constructor
@@ -40282,14 +34630,6 @@ public:
     const int type = 2068733104;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcHumidifierTypeEnum> PredefinedType;
 
     // Constructor
@@ -40306,14 +34646,6 @@ public:
     const int type = 4175244083;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcInterceptorTypeEnum> PredefinedType;
 
     // Constructor
@@ -40330,14 +34662,6 @@ public:
     const int type = 2176052936;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcJunctionBoxTypeEnum> PredefinedType;
 
     // Constructor
@@ -40354,14 +34678,6 @@ public:
     const int type = 76236018;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcLampTypeEnum> PredefinedType;
 
     // Constructor
@@ -40378,14 +34694,6 @@ public:
     const int type = 629592764;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcLightFixtureTypeEnum> PredefinedType;
 
     // Constructor
@@ -40402,14 +34710,6 @@ public:
     const int type = 1437502449;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcMedicalDeviceTypeEnum> PredefinedType;
 
     // Constructor
@@ -40426,14 +34726,6 @@ public:
     const int type = 1073191201;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcMemberTypeEnum> PredefinedType;
 
     // Constructor
@@ -40450,15 +34742,6 @@ public:
     const int type = 1911478936;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcMemberTypeEnum> PredefinedType;
 
     // Constructor
     explicit IfcMemberStandardCase(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_, const std::optional<IfcMemberTypeEnum>& PredefinedType_)
@@ -40473,14 +34756,6 @@ public:
     const int type = 2474470126;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcMotorConnectionTypeEnum> PredefinedType;
 
     // Constructor
@@ -40497,8 +34772,6 @@ public:
     const int type = 144952367;
 
 
-    std::vector<std::variant<IfcCompositeCurveSegment>> Segments;
-    IfcLogical SelfIntersect;
 
     // Constructor
     explicit IfcOuterBoundaryCurve(const std::vector<std::variant<IfcCompositeCurveSegment>>& Segments_, IfcLogical SelfIntersect_)
@@ -40513,14 +34786,6 @@ public:
     const int type = 3694346114;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcOutletTypeEnum> PredefinedType;
 
     // Constructor
@@ -40537,14 +34802,6 @@ public:
     const int type = 1687234759;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcPileTypeEnum> PredefinedType;
     std::optional<IfcPileConstructionEnum> ConstructionType;
 
@@ -40563,14 +34820,6 @@ public:
     const int type = 310824031;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcPipeFittingTypeEnum> PredefinedType;
 
     // Constructor
@@ -40587,14 +34836,6 @@ public:
     const int type = 3612865200;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcPipeSegmentTypeEnum> PredefinedType;
 
     // Constructor
@@ -40611,14 +34852,6 @@ public:
     const int type = 3171933400;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcPlateTypeEnum> PredefinedType;
 
     // Constructor
@@ -40635,15 +34868,6 @@ public:
     const int type = 1156407060;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcPlateTypeEnum> PredefinedType;
 
     // Constructor
     explicit IfcPlateStandardCase(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_, const std::optional<IfcPlateTypeEnum>& PredefinedType_)
@@ -40658,14 +34882,6 @@ public:
     const int type = 738039164;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcProtectiveDeviceTypeEnum> PredefinedType;
 
     // Constructor
@@ -40682,15 +34898,6 @@ public:
     const int type = 655969474;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcProtectiveDeviceTrippingUnitTypeEnum PredefinedType;
 
     // Constructor
@@ -40707,14 +34914,6 @@ public:
     const int type = 90941305;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcPumpTypeEnum> PredefinedType;
 
     // Constructor
@@ -40731,14 +34930,6 @@ public:
     const int type = 2262370178;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcRailingTypeEnum> PredefinedType;
 
     // Constructor
@@ -40755,14 +34946,6 @@ public:
     const int type = 3024970846;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcRampTypeEnum> PredefinedType;
 
     // Constructor
@@ -40779,14 +34962,6 @@ public:
     const int type = 3283111854;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcRampFlightTypeEnum> PredefinedType;
 
     // Constructor
@@ -40803,14 +34978,6 @@ public:
     const int type = 1232101972;
 
 
-    IfcInteger Degree;
-    std::vector<std::variant<IfcCartesianPoint>> ControlPointsList;
-    IfcBSplineCurveForm CurveForm;
-    IfcLogical ClosedCurve;
-    IfcLogical SelfIntersect;
-    std::vector<IfcInteger> KnotMultiplicities;
-    std::vector<IfcParameterValue> Knots;
-    IfcKnotType KnotSpec;
     std::vector<IfcReal> WeightsData;
 
     // Constructor
@@ -40827,15 +34994,6 @@ public:
     const int type = 979691226;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcLabel> SteelGrade;
     std::optional<IfcPositiveLengthMeasure> NominalDiameter;
     std::optional<IfcAreaMeasure> CrossSectionArea;
     std::optional<IfcPositiveLengthMeasure> BarLength;
@@ -40860,15 +35018,6 @@ public:
     const int type = 2572171363;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcReinforcingBarTypeEnum PredefinedType;
     std::optional<IfcPositiveLengthMeasure> NominalDiameter;
     std::optional<IfcAreaMeasure> CrossSectionArea;
@@ -40897,14 +35046,6 @@ public:
     const int type = 2016517767;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcRoofTypeEnum> PredefinedType;
 
     // Constructor
@@ -40921,14 +35062,6 @@ public:
     const int type = 3053780830;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcSanitaryTerminalTypeEnum> PredefinedType;
 
     // Constructor
@@ -40945,15 +35078,6 @@ public:
     const int type = 1783015770;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSensorTypeEnum PredefinedType;
 
     // Constructor
@@ -40970,14 +35094,6 @@ public:
     const int type = 1329646415;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcShadingDeviceTypeEnum> PredefinedType;
 
     // Constructor
@@ -40994,14 +35110,6 @@ public:
     const int type = 1529196076;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcSlabTypeEnum> PredefinedType;
 
     // Constructor
@@ -41018,15 +35126,6 @@ public:
     const int type = 3127900445;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcSlabTypeEnum> PredefinedType;
 
     // Constructor
     explicit IfcSlabElementedCase(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_, const std::optional<IfcSlabTypeEnum>& PredefinedType_)
@@ -41041,15 +35140,6 @@ public:
     const int type = 3027962421;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcSlabTypeEnum> PredefinedType;
 
     // Constructor
     explicit IfcSlabStandardCase(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_, const std::optional<IfcSlabTypeEnum>& PredefinedType_)
@@ -41064,14 +35154,6 @@ public:
     const int type = 3420628829;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcSolarDeviceTypeEnum> PredefinedType;
 
     // Constructor
@@ -41088,14 +35170,6 @@ public:
     const int type = 1999602285;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcSpaceHeaterTypeEnum> PredefinedType;
 
     // Constructor
@@ -41112,14 +35186,6 @@ public:
     const int type = 1404847402;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcStackTerminalTypeEnum> PredefinedType;
 
     // Constructor
@@ -41136,14 +35202,6 @@ public:
     const int type = 331165859;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcStairTypeEnum> PredefinedType;
 
     // Constructor
@@ -41160,14 +35218,6 @@ public:
     const int type = 4252922144;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcInteger> NumberOfRisers;
     std::optional<IfcInteger> NumberOfTreads;
     std::optional<IfcPositiveLengthMeasure> RiserHeight;
@@ -41192,11 +35242,6 @@ public:
     const int type = 2515109513;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcAnalysisModelTypeEnum PredefinedType;
     std::optional<std::variant<IfcAxis2Placement3D>> OrientationOf2DPlane;
     std::optional<std::vector<std::variant<IfcStructuralLoadGroup>>> LoadedBy;
@@ -41221,16 +35266,6 @@ public:
     const int type = 385403989;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    IfcLoadGroupTypeEnum PredefinedType;
-    IfcActionTypeEnum ActionType;
-    IfcActionSourceTypeEnum ActionSource;
-    std::optional<IfcRatioMeasure> Coefficient;
-    std::optional<IfcLabel> Purpose;
     std::optional<std::vector<IfcRatioMeasure>> SelfWeightCoefficients;
 
     // Constructor
@@ -41247,18 +35282,6 @@ public:
     const int type = 1621171031;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
-    std::optional<IfcBoolean> DestabilizingLoad;
-    std::optional<IfcProjectedOrTrueLengthEnum> ProjectedOrTrue;
-    IfcStructuralSurfaceActivityTypeEnum PredefinedType;
 
     // Constructor
     explicit IfcStructuralPlanarAction(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_, const std::optional<IfcBoolean>& DestabilizingLoad_, const std::optional<IfcProjectedOrTrueLengthEnum>& ProjectedOrTrue_, IfcStructuralSurfaceActivityTypeEnum PredefinedType_)
@@ -41273,14 +35296,6 @@ public:
     const int type = 1162798199;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcSwitchingDeviceTypeEnum> PredefinedType;
 
     // Constructor
@@ -41297,14 +35312,6 @@ public:
     const int type = 812556717;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcTankTypeEnum> PredefinedType;
 
     // Constructor
@@ -41321,14 +35328,6 @@ public:
     const int type = 3825984169;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcTransformerTypeEnum> PredefinedType;
 
     // Constructor
@@ -41345,14 +35344,6 @@ public:
     const int type = 3026737570;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcTubeBundleTypeEnum> PredefinedType;
 
     // Constructor
@@ -41369,15 +35360,6 @@ public:
     const int type = 3179687236;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcUnitaryControlElementTypeEnum PredefinedType;
 
     // Constructor
@@ -41394,14 +35376,6 @@ public:
     const int type = 4292641817;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcUnitaryEquipmentTypeEnum> PredefinedType;
 
     // Constructor
@@ -41418,14 +35392,6 @@ public:
     const int type = 4207607924;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcValveTypeEnum> PredefinedType;
 
     // Constructor
@@ -41442,14 +35408,6 @@ public:
     const int type = 2391406946;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcWallTypeEnum> PredefinedType;
 
     // Constructor
@@ -41466,15 +35424,6 @@ public:
     const int type = 4156078855;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcWallTypeEnum> PredefinedType;
 
     // Constructor
     explicit IfcWallElementedCase(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_, const std::optional<IfcWallTypeEnum>& PredefinedType_)
@@ -41489,15 +35438,6 @@ public:
     const int type = 3512223829;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcWallTypeEnum> PredefinedType;
 
     // Constructor
     explicit IfcWallStandardCase(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_, const std::optional<IfcWallTypeEnum>& PredefinedType_)
@@ -41512,14 +35452,6 @@ public:
     const int type = 4237592921;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcWasteTerminalTypeEnum> PredefinedType;
 
     // Constructor
@@ -41536,14 +35468,6 @@ public:
     const int type = 3304561284;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcPositiveLengthMeasure> OverallHeight;
     std::optional<IfcPositiveLengthMeasure> OverallWidth;
     std::optional<IfcWindowTypeEnum> PredefinedType;
@@ -41568,19 +35492,6 @@ public:
     const int type = 486154966;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcPositiveLengthMeasure> OverallHeight;
-    std::optional<IfcPositiveLengthMeasure> OverallWidth;
-    std::optional<IfcWindowTypeEnum> PredefinedType;
-    std::optional<IfcWindowTypePartitioningEnum> PartitioningType;
-    std::optional<IfcLabel> UserDefinedPartitioningType;
 
     // Constructor
     explicit IfcWindowStandardCase(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_, const std::optional<IfcPositiveLengthMeasure>& OverallHeight_, const std::optional<IfcPositiveLengthMeasure>& OverallWidth_, const std::optional<IfcWindowTypeEnum>& PredefinedType_, const std::optional<IfcWindowTypePartitioningEnum>& PartitioningType_, const std::optional<IfcLabel>& UserDefinedPartitioningType_)
@@ -41595,15 +35506,6 @@ public:
     const int type = 2874132201;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcActuatorTypeEnum PredefinedType;
 
     // Constructor
@@ -41620,14 +35522,6 @@ public:
     const int type = 1634111441;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcAirTerminalTypeEnum> PredefinedType;
 
     // Constructor
@@ -41644,14 +35538,6 @@ public:
     const int type = 177149247;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcAirTerminalBoxTypeEnum> PredefinedType;
 
     // Constructor
@@ -41668,14 +35554,6 @@ public:
     const int type = 2056796094;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcAirToAirHeatRecoveryTypeEnum> PredefinedType;
 
     // Constructor
@@ -41692,15 +35570,6 @@ public:
     const int type = 3001207471;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcAlarmTypeEnum PredefinedType;
 
     // Constructor
@@ -41717,14 +35586,6 @@ public:
     const int type = 277319702;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcAudioVisualApplianceTypeEnum> PredefinedType;
 
     // Constructor
@@ -41741,14 +35602,6 @@ public:
     const int type = 753842376;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcBeamTypeEnum> PredefinedType;
 
     // Constructor
@@ -41765,15 +35618,6 @@ public:
     const int type = 2906023776;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcBeamTypeEnum> PredefinedType;
 
     // Constructor
     explicit IfcBeamStandardCase(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_, const std::optional<IfcBeamTypeEnum>& PredefinedType_)
@@ -41788,14 +35632,6 @@ public:
     const int type = 32344328;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcBoilerTypeEnum> PredefinedType;
 
     // Constructor
@@ -41812,14 +35648,6 @@ public:
     const int type = 2938176219;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcBurnerTypeEnum> PredefinedType;
 
     // Constructor
@@ -41836,14 +35664,6 @@ public:
     const int type = 635142910;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCableCarrierFittingTypeEnum> PredefinedType;
 
     // Constructor
@@ -41860,14 +35680,6 @@ public:
     const int type = 3758799889;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCableCarrierSegmentTypeEnum> PredefinedType;
 
     // Constructor
@@ -41884,14 +35696,6 @@ public:
     const int type = 1051757585;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCableFittingTypeEnum> PredefinedType;
 
     // Constructor
@@ -41908,14 +35712,6 @@ public:
     const int type = 4217484030;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCableSegmentTypeEnum> PredefinedType;
 
     // Constructor
@@ -41932,14 +35728,6 @@ public:
     const int type = 3902619387;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcChillerTypeEnum> PredefinedType;
 
     // Constructor
@@ -41956,14 +35744,6 @@ public:
     const int type = 639361253;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCoilTypeEnum> PredefinedType;
 
     // Constructor
@@ -41980,14 +35760,6 @@ public:
     const int type = 3221913625;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCommunicationsApplianceTypeEnum> PredefinedType;
 
     // Constructor
@@ -42004,14 +35776,6 @@ public:
     const int type = 3571504051;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCompressorTypeEnum> PredefinedType;
 
     // Constructor
@@ -42028,14 +35792,6 @@ public:
     const int type = 2272882330;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCondenserTypeEnum> PredefinedType;
 
     // Constructor
@@ -42052,15 +35808,6 @@ public:
     const int type = 578613899;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcControllerTypeEnum PredefinedType;
 
     // Constructor
@@ -42077,14 +35824,6 @@ public:
     const int type = 4136498852;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCooledBeamTypeEnum> PredefinedType;
 
     // Constructor
@@ -42101,14 +35840,6 @@ public:
     const int type = 3640358203;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCoolingTowerTypeEnum> PredefinedType;
 
     // Constructor
@@ -42125,14 +35856,6 @@ public:
     const int type = 4074379575;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcDamperTypeEnum> PredefinedType;
 
     // Constructor
@@ -42149,14 +35872,6 @@ public:
     const int type = 1052013943;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcDistributionChamberElementTypeEnum> PredefinedType;
 
     // Constructor
@@ -42173,13 +35888,6 @@ public:
     const int type = 562808652;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcDistributionSystemEnum> PredefinedType;
 
     // Constructor
     explicit IfcDistributionCircuit(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<IfcLabel>& LongName_, const std::optional<IfcDistributionSystemEnum>& PredefinedType_)
@@ -42195,14 +35903,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelFlowControlElements>>> AssignedToFlowElement;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcDistributionControlElement(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -42217,14 +35917,6 @@ public:
     const int type = 342316401;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcDuctFittingTypeEnum> PredefinedType;
 
     // Constructor
@@ -42241,14 +35933,6 @@ public:
     const int type = 3518393246;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcDuctSegmentTypeEnum> PredefinedType;
 
     // Constructor
@@ -42265,14 +35949,6 @@ public:
     const int type = 1360408905;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcDuctSilencerTypeEnum> PredefinedType;
 
     // Constructor
@@ -42289,14 +35965,6 @@ public:
     const int type = 1904799276;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcElectricApplianceTypeEnum> PredefinedType;
 
     // Constructor
@@ -42313,14 +35981,6 @@ public:
     const int type = 862014818;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcElectricDistributionBoardTypeEnum> PredefinedType;
 
     // Constructor
@@ -42337,14 +35997,6 @@ public:
     const int type = 3310460725;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcElectricFlowStorageDeviceTypeEnum> PredefinedType;
 
     // Constructor
@@ -42361,14 +36013,6 @@ public:
     const int type = 264262732;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcElectricGeneratorTypeEnum> PredefinedType;
 
     // Constructor
@@ -42385,14 +36029,6 @@ public:
     const int type = 402227799;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcElectricMotorTypeEnum> PredefinedType;
 
     // Constructor
@@ -42409,14 +36045,6 @@ public:
     const int type = 1003880860;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcElectricTimeControlTypeEnum> PredefinedType;
 
     // Constructor
@@ -42433,14 +36061,6 @@ public:
     const int type = 3415622556;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcFanTypeEnum> PredefinedType;
 
     // Constructor
@@ -42457,14 +36077,6 @@ public:
     const int type = 819412036;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcFilterTypeEnum> PredefinedType;
 
     // Constructor
@@ -42481,14 +36093,6 @@ public:
     const int type = 1426591983;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcFireSuppressionTerminalTypeEnum> PredefinedType;
 
     // Constructor
@@ -42505,14 +36109,6 @@ public:
     const int type = 182646315;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcFlowInstrumentTypeEnum> PredefinedType;
 
     // Constructor
@@ -42529,14 +36125,6 @@ public:
     const int type = 2295281155;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcProtectiveDeviceTrippingUnitTypeEnum> PredefinedType;
 
     // Constructor
@@ -42553,14 +36141,6 @@ public:
     const int type = 4086658281;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcSensorTypeEnum> PredefinedType;
 
     // Constructor
@@ -42577,14 +36157,6 @@ public:
     const int type = 630975310;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcUnitaryControlElementTypeEnum> PredefinedType;
 
     // Constructor
@@ -42601,14 +36173,6 @@ public:
     const int type = 4288193352;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcActuatorTypeEnum> PredefinedType;
 
     // Constructor
@@ -42625,14 +36189,6 @@ public:
     const int type = 3087945054;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcAlarmTypeEnum> PredefinedType;
 
     // Constructor
@@ -42649,14 +36205,6 @@ public:
     const int type = 25142252;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcControllerTypeEnum> PredefinedType;
 
     // Constructor
@@ -49309,8 +42857,6 @@ public:
     const int type = 3633395639;
 
 
-    std::optional<IfcLabel> StartTag;
-    std::optional<IfcLabel> EndTag;
     IfcLengthMeasure StartDistAlong;
     IfcNonNegativeLengthMeasure HorizontalLength;
     IfcLengthMeasure StartHeight;
@@ -49449,7 +42995,6 @@ public:
     const int type = 1560379544;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcModulusOfTranslationalSubgradeReactionSelect> TranslationalStiffnessByLengthX;
     std::optional<IfcModulusOfTranslationalSubgradeReactionSelect> TranslationalStiffnessByLengthY;
     std::optional<IfcModulusOfTranslationalSubgradeReactionSelect> TranslationalStiffnessByLengthZ;
@@ -49476,7 +43021,6 @@ public:
     const int type = 3367102660;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcModulusOfSubgradeReactionSelect> TranslationalStiffnessByAreaX;
     std::optional<IfcModulusOfSubgradeReactionSelect> TranslationalStiffnessByAreaY;
     std::optional<IfcModulusOfSubgradeReactionSelect> TranslationalStiffnessByAreaZ;
@@ -49497,7 +43041,6 @@ public:
     const int type = 1387855156;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcTranslationalStiffnessSelect> TranslationalStiffnessX;
     std::optional<IfcTranslationalStiffnessSelect> TranslationalStiffnessY;
     std::optional<IfcTranslationalStiffnessSelect> TranslationalStiffnessZ;
@@ -49524,13 +43067,6 @@ public:
     const int type = 2069777674;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcTranslationalStiffnessSelect> TranslationalStiffnessX;
-    std::optional<IfcTranslationalStiffnessSelect> TranslationalStiffnessY;
-    std::optional<IfcTranslationalStiffnessSelect> TranslationalStiffnessZ;
-    std::optional<IfcRotationalStiffnessSelect> RotationalStiffnessX;
-    std::optional<IfcRotationalStiffnessSelect> RotationalStiffnessY;
-    std::optional<IfcRotationalStiffnessSelect> RotationalStiffnessZ;
     std::optional<IfcWarpingStiffnessSelect> WarpingStiffness;
 
     // Constructor
@@ -49685,16 +43221,6 @@ public:
     const int type = 602808272;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcAppliedValueSelect> AppliedValue;
-    std::optional<std::variant<IfcMeasureWithUnit>> UnitBasis;
-    std::optional<IfcDate> ApplicableDate;
-    std::optional<IfcDate> FixedUntilDate;
-    std::optional<IfcLabel> Category;
-    std::optional<IfcLabel> Condition;
-    std::optional<IfcArithmeticOperatorEnum> ArithmeticOperator;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> Components;
 
     // Constructor
     explicit IfcCostValue(const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcAppliedValueSelect>& AppliedValue_, const std::optional<std::variant<IfcMeasureWithUnit>>& UnitBasis_, const std::optional<IfcDate>& ApplicableDate_, const std::optional<IfcDate>& FixedUntilDate_, const std::optional<IfcLabel>& Category_, const std::optional<IfcLabel>& Condition_, const std::optional<IfcArithmeticOperatorEnum>& ArithmeticOperator_, const std::optional<std::vector<std::variant<IfcAppliedValue>>>& Components_)
@@ -49812,9 +43338,6 @@ public:
     const int type = 2242383968;
 
 
-    std::optional<IfcURIReference> Location;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcExternallyDefinedHatchStyle(const std::optional<IfcURIReference>& Location_, const std::optional<IfcIdentifier>& Identification_, const std::optional<IfcLabel>& Name_)
@@ -49829,9 +43352,6 @@ public:
     const int type = 1040185647;
 
 
-    std::optional<IfcURIReference> Location;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcExternallyDefinedSurfaceStyle(const std::optional<IfcURIReference>& Location_, const std::optional<IfcIdentifier>& Identification_, const std::optional<IfcLabel>& Name_)
@@ -49846,9 +43366,6 @@ public:
     const int type = 3548104201;
 
 
-    std::optional<IfcURIReference> Location;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcExternallyDefinedTextFont(const std::optional<IfcURIReference>& Location_, const std::optional<IfcIdentifier>& Identification_, const std::optional<IfcLabel>& Name_)
@@ -49863,9 +43380,6 @@ public:
     const int type = 917726184;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> GeodeticDatum;
     std::optional<IfcIdentifier> PrimeMeridian;
     std::optional<std::variant<IfcNamedUnit>> AngleUnit;
     std::optional<std::variant<IfcNamedUnit>> HeightUnit;
@@ -49957,9 +43471,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelAssociatesLibrary>>> LibraryRefForObjects;
 
-    std::optional<IfcURIReference> Location;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcLabel> Name;
     std::optional<IfcText> Description;
     std::optional<IfcLanguageId> Language;
     std::optional<std::variant<IfcLibraryInformation>> ReferencedLibrary;
@@ -50018,8 +43529,6 @@ public:
     const int type = 3057273783;
 
 
-    IfcCoordinateReferenceSystemSelect SourceCRS;
-    std::variant<IfcCoordinateReferenceSystem> TargetCRS;
     IfcLengthMeasure Eastings;
     IfcLengthMeasure Northings;
     IfcLengthMeasure OrthogonalHeight;
@@ -50046,14 +43555,6 @@ public:
     const int type = 4105526436;
 
 
-    IfcCoordinateReferenceSystemSelect SourceCRS;
-    std::variant<IfcCoordinateReferenceSystem> TargetCRS;
-    IfcLengthMeasure Eastings;
-    IfcLengthMeasure Northings;
-    IfcLengthMeasure OrthogonalHeight;
-    std::optional<IfcReal> XAxisAbscissa;
-    std::optional<IfcReal> XAxisOrdinate;
-    std::optional<IfcReal> Scale;
     IfcReal FactorX;
     IfcReal FactorY;
     IfcReal FactorZ;
@@ -50158,13 +43659,6 @@ public:
     const int type = 1847252529;
 
 
-    std::optional<std::variant<IfcMaterial>> Material;
-    IfcNonNegativeLengthMeasure LayerThickness;
-    std::optional<IfcLogical> IsVentilated;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> Category;
-    std::optional<IfcInteger> Priority;
     IfcLayerSetDirectionEnum OffsetDirection;
     IfcLengthMeasure OffsetValues;
 
@@ -50248,12 +43742,6 @@ public:
     const int type = 552965576;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcMaterial>> Material;
-    std::variant<IfcProfileDef> Profile;
-    std::optional<IfcInteger> Priority;
-    std::optional<IfcLabel> Category;
     IfcLengthMeasure OffsetValues;
 
     // Constructor
@@ -50303,13 +43791,6 @@ public:
     const int type = 3368373690;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    IfcConstraintEnum ConstraintGrade;
-    std::optional<IfcLabel> ConstraintSource;
-    std::optional<IfcActorSelect> CreatingActor;
-    std::optional<IfcDateTime> CreationTime;
-    std::optional<IfcLabel> UserDefinedGrade;
     IfcBenchmarkEnum Benchmark;
     std::optional<IfcLabel> ValueSource;
     std::optional<IfcMetricValueSelect> DataValue;
@@ -50384,13 +43865,6 @@ public:
     const int type = 2251480897;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    IfcConstraintEnum ConstraintGrade;
-    std::optional<IfcLabel> ConstraintSource;
-    std::optional<IfcActorSelect> CreatingActor;
-    std::optional<IfcDateTime> CreationTime;
-    std::optional<IfcLabel> UserDefinedGrade;
     std::optional<std::vector<std::variant<IfcConstraint>>> BenchmarkValues;
     std::optional<IfcLogicalOperatorEnum> LogicalAggregator;
     IfcObjectiveEnum ObjectiveQualifier;
@@ -50541,8 +44015,6 @@ public:
     const int type = 2226359599;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
     std::optional<std::variant<IfcNamedUnit>> Unit;
 
     // Constructor
@@ -50559,9 +44031,6 @@ public:
     const int type = 3355820592;
 
 
-    std::optional<IfcAddressTypeEnum> Purpose;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> UserDefinedPurpose;
     std::optional<IfcLabel> InternalLocation;
     std::optional<std::vector<IfcLabel>> AddressLines;
     std::optional<IfcLabel> PostalBox;
@@ -50626,10 +44095,6 @@ public:
     const int type = 1304840413;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    std::vector<IfcLayeredItem> AssignedItems;
-    std::optional<IfcIdentifier> Identifier;
     IfcLogical LayerOn;
     IfcLogical LayerFrozen;
     IfcLogical LayerBlocked;
@@ -50708,9 +44173,6 @@ public:
     const int type = 3843373140;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> GeodeticDatum;
     std::optional<IfcIdentifier> VerticalDatum;
     std::optional<IfcIdentifier> MapProjection;
     std::optional<IfcIdentifier> MapZone;
@@ -50768,9 +44230,6 @@ public:
     const int type = 2044713172;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcNamedUnit>> Unit;
     IfcAreaMeasure AreaValue;
     std::optional<IfcLabel> Formula;
 
@@ -50789,9 +44248,6 @@ public:
     const int type = 2093928680;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcNamedUnit>> Unit;
     IfcCountMeasure CountValue;
     std::optional<IfcLabel> Formula;
 
@@ -50810,9 +44266,6 @@ public:
     const int type = 931644368;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcNamedUnit>> Unit;
     IfcLengthMeasure LengthValue;
     std::optional<IfcLabel> Formula;
 
@@ -50831,9 +44284,6 @@ public:
     const int type = 2691318326;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcNamedUnit>> Unit;
     IfcNumericMeasure NumberValue;
     std::optional<IfcLabel> Formula;
 
@@ -50852,9 +44302,6 @@ public:
     const int type = 3252649465;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcNamedUnit>> Unit;
     IfcTimeMeasure TimeValue;
     std::optional<IfcLabel> Formula;
 
@@ -50873,9 +44320,6 @@ public:
     const int type = 2405470396;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcNamedUnit>> Unit;
     IfcVolumeMeasure VolumeValue;
     std::optional<IfcLabel> Formula;
 
@@ -50894,9 +44338,6 @@ public:
     const int type = 825690147;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcNamedUnit>> Unit;
     IfcMassMeasure WeightValue;
     std::optional<IfcLabel> Formula;
 
@@ -51067,8 +44508,6 @@ public:
     const int type = 1794013214;
 
 
-    IfcCoordinateReferenceSystemSelect SourceCRS;
-    std::variant<IfcCoordinateReferenceSystem> TargetCRS;
     IfcMeasureValue FirstCoordinate;
     IfcMeasureValue SecondCoordinate;
     std::optional<IfcLengthMeasure> Height;
@@ -51111,7 +44550,6 @@ public:
     const int type = 448429030;
 
 
-    IfcUnitEnum UnitType;
     std::optional<IfcSIPrefix> Prefix;
     IfcSIUnitName Name;
 
@@ -51176,10 +44614,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcShapeAspect>>> OfShapeAspect;
 
-    std::variant<IfcRepresentationContext> ContextOfItems;
-    std::optional<IfcLabel> RepresentationIdentifier;
-    std::optional<IfcLabel> RepresentationType;
-    std::vector<std::variant<IfcRepresentationItem>> Items;
 
     // Constructor
     explicit IfcShapeModel(const std::variant<IfcRepresentationContext>& ContextOfItems_, const std::optional<IfcLabel>& RepresentationIdentifier_, const std::optional<IfcLabel>& RepresentationType_, const std::vector<std::variant<IfcRepresentationItem>>& Items_)
@@ -51194,10 +44628,6 @@ public:
     const int type = 4240577450;
 
 
-    std::variant<IfcRepresentationContext> ContextOfItems;
-    std::optional<IfcLabel> RepresentationIdentifier;
-    std::optional<IfcLabel> RepresentationType;
-    std::vector<std::variant<IfcRepresentationItem>> Items;
 
     // Constructor
     explicit IfcShapeRepresentation(const std::variant<IfcRepresentationContext>& ContextOfItems_, const std::optional<IfcLabel>& RepresentationIdentifier_, const std::optional<IfcLabel>& RepresentationType_, const std::vector<std::variant<IfcRepresentationItem>>& Items_)
@@ -51244,7 +44674,6 @@ public:
     const int type = 3478079324;
 
 
-    std::optional<IfcLabel> Name;
     std::vector<std::variant<IfcStructuralLoadOrResult>> Values;
     std::optional<std::vector<std::vector<IfcLengthMeasure>>> Locations;
 
@@ -51263,7 +44692,6 @@ public:
     const int type = 609421318;
 
 
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcStructuralLoadOrResult(const std::optional<IfcLabel>& Name_)
@@ -51278,7 +44706,6 @@ public:
     const int type = 2525727697;
 
 
-    std::optional<IfcLabel> Name;
 
     // Constructor
     explicit IfcStructuralLoadStatic(const std::optional<IfcLabel>& Name_)
@@ -51293,7 +44720,6 @@ public:
     const int type = 3408363356;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcThermodynamicTemperatureMeasure> DeltaTConstant;
     std::optional<IfcThermodynamicTemperatureMeasure> DeltaTY;
     std::optional<IfcThermodynamicTemperatureMeasure> DeltaTZ;
@@ -51314,10 +44740,6 @@ public:
     const int type = 2830218821;
 
 
-    std::variant<IfcRepresentationContext> ContextOfItems;
-    std::optional<IfcLabel> RepresentationIdentifier;
-    std::optional<IfcLabel> RepresentationType;
-    std::vector<std::variant<IfcRepresentationItem>> Items;
 
     // Constructor
     explicit IfcStyleModel(const std::variant<IfcRepresentationContext>& ContextOfItems_, const std::optional<IfcLabel>& RepresentationIdentifier_, const std::optional<IfcLabel>& RepresentationType_, const std::vector<std::variant<IfcRepresentationItem>>& Items_)
@@ -51352,10 +44774,6 @@ public:
     const int type = 3049322572;
 
 
-    std::variant<IfcRepresentationContext> ContextOfItems;
-    std::optional<IfcLabel> RepresentationIdentifier;
-    std::optional<IfcLabel> RepresentationType;
-    std::vector<std::variant<IfcRepresentationItem>> Items;
 
     // Constructor
     explicit IfcStyledRepresentation(const std::variant<IfcRepresentationContext>& ContextOfItems_, const std::optional<IfcLabel>& RepresentationIdentifier_, const std::optional<IfcLabel>& RepresentationType_, const std::vector<std::variant<IfcRepresentationItem>>& Items_)
@@ -51370,7 +44788,6 @@ public:
     const int type = 2934153892;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<std::vector<IfcLengthMeasure>> SurfaceReinforcement1;
     std::optional<std::vector<IfcLengthMeasure>> SurfaceReinforcement2;
     std::optional<IfcRatioMeasure> ShearReinforcement;
@@ -51391,7 +44808,6 @@ public:
     const int type = 1300840506;
 
 
-    std::optional<IfcLabel> Name;
     IfcSurfaceSide Side;
     std::vector<IfcSurfaceStyleElementSelect> Styles;
 
@@ -51572,9 +44988,6 @@ public:
     const int type = 1549132990;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcDataOriginEnum> DataOrigin;
-    std::optional<IfcLabel> UserDefinedDataOrigin;
     std::optional<IfcTaskDurationEnum> DurationType;
     std::optional<IfcDuration> ScheduleDuration;
     std::optional<IfcDateTime> ScheduleStart;
@@ -51623,26 +45036,6 @@ public:
     const int type = 2771591690;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcDataOriginEnum> DataOrigin;
-    std::optional<IfcLabel> UserDefinedDataOrigin;
-    std::optional<IfcTaskDurationEnum> DurationType;
-    std::optional<IfcDuration> ScheduleDuration;
-    std::optional<IfcDateTime> ScheduleStart;
-    std::optional<IfcDateTime> ScheduleFinish;
-    std::optional<IfcDateTime> EarlyStart;
-    std::optional<IfcDateTime> EarlyFinish;
-    std::optional<IfcDateTime> LateStart;
-    std::optional<IfcDateTime> LateFinish;
-    std::optional<IfcDuration> FreeFloat;
-    std::optional<IfcDuration> TotalFloat;
-    std::optional<IfcBoolean> IsCritical;
-    std::optional<IfcDateTime> StatusTime;
-    std::optional<IfcDuration> ActualDuration;
-    std::optional<IfcDateTime> ActualStart;
-    std::optional<IfcDateTime> ActualFinish;
-    std::optional<IfcDuration> RemainingTime;
-    std::optional<IfcPositiveRatioMeasure> Completion;
     std::variant<IfcRecurrencePattern> Recurrence;
 
     // Constructor
@@ -51659,9 +45052,6 @@ public:
     const int type = 912023232;
 
 
-    std::optional<IfcAddressTypeEnum> Purpose;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> UserDefinedPurpose;
     std::optional<std::vector<IfcLabel>> TelephoneNumbers;
     std::optional<std::vector<IfcLabel>> FacsimileNumbers;
     std::optional<IfcLabel> PagerNumber;
@@ -51688,7 +45078,6 @@ public:
     const int type = 1447204868;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<std::variant<IfcTextStyleForDefinedFont>> TextCharacterAppearance;
     std::optional<std::variant<IfcTextStyleTextModel>> TextStyle;
     IfcTextFontSelect TextFontStyle;
@@ -51773,7 +45162,6 @@ public:
     const int type = 1742049831;
 
 
-    std::vector<std::variant<IfcSurfaceTexture>> Maps;
     IfcLabel Mode;
     std::optional<std::vector<IfcReal>> Parameter;
 
@@ -51811,8 +45199,6 @@ public:
     const int type = 1010789467;
 
 
-    std::vector<IfcPositiveInteger> TexCoordIndex;
-    std::variant<IfcIndexedPolygonalFace> TexCoordsOf;
     std::vector<std::vector<IfcPositiveInteger>> InnerTexCoordIndices;
 
     // Constructor
@@ -51829,7 +45215,6 @@ public:
     const int type = 2552916305;
 
 
-    std::vector<std::variant<IfcSurfaceTexture>> Maps;
     std::vector<std::variant<IfcTextureVertex>> Vertices;
     std::variant<IfcFace> MappedTo;
 
@@ -51959,10 +45344,6 @@ public:
     const int type = 1735638870;
 
 
-    std::variant<IfcRepresentationContext> ContextOfItems;
-    std::optional<IfcLabel> RepresentationIdentifier;
-    std::optional<IfcLabel> RepresentationType;
-    std::vector<std::variant<IfcRepresentationItem>> Items;
 
     // Constructor
     explicit IfcTopologyRepresentation(const std::variant<IfcRepresentationContext>& ContextOfItems_, const std::optional<IfcLabel>& RepresentationIdentifier_, const std::optional<IfcLabel>& RepresentationType_, const std::vector<std::variant<IfcRepresentationItem>>& Items_)
@@ -52059,9 +45440,6 @@ public:
     const int type = 1236880293;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcDataOriginEnum> DataOrigin;
-    std::optional<IfcLabel> UserDefinedDataOrigin;
     std::optional<std::variant<IfcRecurrencePattern>> RecurrencePattern;
     std::optional<IfcDate> StartDate;
     std::optional<IfcDate> FinishDate;
@@ -52082,8 +45460,6 @@ public:
     const int type = 3752311538;
 
 
-    std::optional<IfcLabel> StartTag;
-    std::optional<IfcLabel> EndTag;
     IfcLengthMeasure StartDistAlong;
     IfcNonNegativeLengthMeasure HorizontalLength;
     IfcLengthMeasure StartCantLeft;
@@ -52112,8 +45488,6 @@ public:
     const int type = 536804194;
 
 
-    std::optional<IfcLabel> StartTag;
-    std::optional<IfcLabel> EndTag;
     std::variant<IfcCartesianPoint> StartPoint;
     IfcPlaneAngleMeasure StartDirection;
     IfcLengthMeasure StartRadiusOfCurvature;
@@ -52142,8 +45516,6 @@ public:
     const int type = 3869604511;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcApproval> RelatingApproval;
     std::vector<std::variant<IfcApproval>> RelatedApprovals;
 
@@ -52162,8 +45534,6 @@ public:
     const int type = 3798115385;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
     std::variant<IfcCurve> OuterCurve;
 
     // Constructor
@@ -52180,8 +45550,6 @@ public:
     const int type = 1310608509;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
     std::variant<IfcBoundedCurve> Curve;
 
     // Constructor
@@ -52198,9 +45566,6 @@ public:
     const int type = 2705031697;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcCurve> OuterCurve;
     std::vector<std::variant<IfcCurve>> InnerCurves;
 
     // Constructor
@@ -52217,11 +45582,6 @@ public:
     const int type = 616511568;
 
 
-    IfcBoolean RepeatS;
-    IfcBoolean RepeatT;
-    std::optional<IfcIdentifier> Mode;
-    std::optional<std::variant<IfcCartesianTransformationOperator2D>> TextureTransform;
-    std::optional<std::vector<IfcIdentifier>> Parameter;
     IfcIdentifier RasterFormat;
     IfcBinary RasterCode;
 
@@ -52240,9 +45600,6 @@ public:
     const int type = 3150382593;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcBoundedCurve> Curve;
     IfcPositiveLengthMeasure Thickness;
 
     // Constructor
@@ -52291,9 +45648,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelAssociatesClassification>>> ClassificationRefForObjects;
     std::optional<std::vector<std::variant<IfcClassificationReference>>> HasReferences;
 
-    std::optional<IfcURIReference> Location;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcLabel> Name;
     std::optional<IfcClassificationReferenceSelect> ReferencedSource;
     std::optional<IfcText> Description;
     std::optional<IfcIdentifier> Sort;
@@ -52346,8 +45700,6 @@ public:
     const int type = 1485152156;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
     std::vector<std::variant<IfcProfileDef>> Profiles;
     std::optional<IfcLabel> Label;
 
@@ -52400,8 +45752,6 @@ public:
     const int type = 45288368;
 
 
-    IfcPointOrVertexPoint PointOnRelatingElement;
-    std::optional<IfcPointOrVertexPoint> PointOnRelatedElement;
     std::optional<IfcLengthMeasure> EccentricityInX;
     std::optional<IfcLengthMeasure> EccentricityInY;
     std::optional<IfcLengthMeasure> EccentricityInZ;
@@ -52423,8 +45773,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcExternalReferenceRelationship>>> HasExternalReference;
 
-    std::variant<IfcDimensionalExponents> Dimensions;
-    IfcUnitEnum UnitType;
     IfcLabel Name;
 
     // Constructor
@@ -52442,8 +45790,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcExternalReferenceRelationship>>> HasExternalReference;
 
-    std::variant<IfcDimensionalExponents> Dimensions;
-    IfcUnitEnum UnitType;
     IfcLabel Name;
     std::variant<IfcMeasureWithUnit> ConversionFactor;
 
@@ -52462,10 +45808,6 @@ public:
     const int type = 2713554722;
 
 
-    std::variant<IfcDimensionalExponents> Dimensions;
-    IfcUnitEnum UnitType;
-    IfcLabel Name;
-    std::variant<IfcMeasureWithUnit> ConversionFactor;
     IfcReal ConversionOffset;
 
     // Constructor
@@ -52482,8 +45824,6 @@ public:
     const int type = 539742890;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcMonetaryUnit> RelatingMonetaryUnit;
     std::variant<IfcMonetaryUnit> RelatedMonetaryUnit;
     IfcPositiveRatioMeasure ExchangeRate;
@@ -52508,7 +45848,6 @@ public:
     const int type = 3800577675;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcCurveFontOrScaledCurveFontSelect> CurveFont;
     std::optional<IfcSizeSelect> CurveWidth;
     std::optional<IfcColour> CurveColour;
@@ -52587,8 +45926,6 @@ public:
     const int type = 3632507154;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
     std::variant<IfcProfileDef> ParentProfile;
     std::variant<IfcCartesianTransformationOperator2D> Operator;
     std::optional<IfcLabel> Label;
@@ -52661,8 +45998,6 @@ public:
     const int type = 770865208;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcDocumentInformation> RelatingDocument;
     std::vector<std::variant<IfcDocumentInformation>> RelatedDocuments;
     std::optional<IfcLabel> RelationshipType;
@@ -52684,9 +46019,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelAssociatesDocument>>> DocumentRefForObjects;
 
-    std::optional<IfcURIReference> Location;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcLabel> Name;
     std::optional<IfcText> Description;
     std::optional<std::variant<IfcDocumentInformation>> ReferencedDocument;
 
@@ -52723,8 +46055,6 @@ public:
     const int type = 476780140;
 
 
-    std::variant<IfcVertex> EdgeStart;
-    std::variant<IfcVertex> EdgeEnd;
     std::variant<IfcCurve> EdgeGeometry;
     IfcBoolean SameSense;
 
@@ -52743,9 +46073,6 @@ public:
     const int type = 211053100;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcDataOriginEnum> DataOrigin;
-    std::optional<IfcLabel> UserDefinedDataOrigin;
     std::optional<IfcDateTime> ActualDate;
     std::optional<IfcDateTime> EarlyDate;
     std::optional<IfcDateTime> LateDate;
@@ -52788,8 +46115,6 @@ public:
     const int type = 1437805879;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcExternalReference> RelatingReference;
     std::vector<IfcResourceObjectSelect> RelatedResourceObjects;
 
@@ -52843,8 +46168,6 @@ public:
     const int type = 803316827;
 
 
-    std::variant<IfcLoop> Bound;
-    IfcBoolean Orientation;
 
     // Constructor
     explicit IfcFaceOuterBound(const std::variant<IfcLoop>& Bound_, IfcBoolean Orientation_)
@@ -52859,7 +46182,6 @@ public:
     const int type = 3008276851;
 
 
-    std::vector<std::variant<IfcFaceBound>> Bounds;
     std::variant<IfcSurface> FaceSurface;
     IfcBoolean SameSense;
 
@@ -52878,7 +46200,6 @@ public:
     const int type = 4219587988;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcForceMeasure> TensionFailureX;
     std::optional<IfcForceMeasure> TensionFailureY;
     std::optional<IfcForceMeasure> TensionFailureZ;
@@ -52905,7 +46226,6 @@ public:
     const int type = 738692330;
 
 
-    std::optional<IfcLabel> Name;
     std::vector<IfcFillStyleSelect> FillStyles;
     std::optional<IfcBoolean> ModelOrDraughting;
 
@@ -52926,8 +46246,6 @@ public:
     std::optional<std::vector<std::variant<IfcGeometricRepresentationSubContext>>> HasSubContexts;
     std::optional<std::vector<std::variant<IfcCoordinateOperation>>> HasCoordinateOperation;
 
-    std::optional<IfcLabel> ContextIdentifier;
-    std::optional<IfcLabel> ContextType;
     IfcDimensionCount CoordinateSpaceDimension;
     std::optional<IfcReal> Precision;
     IfcAxis2Placement WorldCoordinateSystem;
@@ -52964,8 +46282,6 @@ public:
     const int type = 4142052618;
 
 
-    std::optional<IfcLabel> ContextIdentifier;
-    std::optional<IfcLabel> ContextType;
     std::variant<IfcGeometricRepresentationContext> ParentContext;
     std::optional<IfcPositiveRatioMeasure> TargetScale;
     IfcGeometricProjectionEnum TargetView;
@@ -53004,7 +46320,6 @@ public:
     const int type = 178086475;
 
 
-    std::optional<std::variant<IfcObjectPlacement>> PlacementRelTo;
     std::variant<IfcVirtualGridIntersection> PlacementLocation;
     std::optional<IfcGridPlacementDirectionSelect> PlacementRefDirection;
 
@@ -53041,11 +46356,6 @@ public:
     const int type = 3905492369;
 
 
-    IfcBoolean RepeatS;
-    IfcBoolean RepeatT;
-    std::optional<IfcIdentifier> Mode;
-    std::optional<std::variant<IfcCartesianTransformationOperator2D>> TextureTransform;
-    std::optional<std::vector<IfcIdentifier>> Parameter;
     IfcURIReference URLReference;
 
     // Constructor
@@ -53084,7 +46394,6 @@ public:
     const int type = 1437953363;
 
 
-    std::vector<std::variant<IfcSurfaceTexture>> Maps;
     std::variant<IfcTessellatedFaceSet> MappedTo;
     std::variant<IfcTextureVertexList> TexCoords;
 
@@ -53103,9 +46412,6 @@ public:
     const int type = 2133299955;
 
 
-    std::vector<std::variant<IfcSurfaceTexture>> Maps;
-    std::variant<IfcTessellatedFaceSet> MappedTo;
-    std::variant<IfcTextureVertexList> TexCoords;
     std::optional<std::vector<std::vector<IfcPositiveInteger>>> TexCoordIndex;
 
     // Constructor
@@ -53122,14 +46428,6 @@ public:
     const int type = 3741457305;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    IfcDateTime StartTime;
-    IfcDateTime EndTime;
-    IfcTimeSeriesDataTypeEnum TimeSeriesDataType;
-    IfcDataOriginEnum DataOrigin;
-    std::optional<IfcLabel> UserDefinedDataOrigin;
-    std::optional<IfcUnit> Unit;
     std::vector<std::variant<IfcIrregularTimeSeriesValue>> Values;
 
     // Constructor
@@ -53146,9 +46444,6 @@ public:
     const int type = 1585845231;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcDataOriginEnum> DataOrigin;
-    std::optional<IfcLabel> UserDefinedDataOrigin;
     IfcTimeOrRatioSelect LagValue;
     IfcTaskDurationEnum DurationType;
 
@@ -53189,10 +46484,6 @@ public:
     const int type = 125510826;
 
 
-    std::optional<IfcLabel> Name;
-    std::variant<IfcColourRgb> LightColour;
-    std::optional<IfcNormalisedRatioMeasure> AmbientIntensity;
-    std::optional<IfcNormalisedRatioMeasure> Intensity;
 
     // Constructor
     explicit IfcLightSourceAmbient(const std::optional<IfcLabel>& Name_, const std::variant<IfcColourRgb>& LightColour_, const std::optional<IfcNormalisedRatioMeasure>& AmbientIntensity_, const std::optional<IfcNormalisedRatioMeasure>& Intensity_)
@@ -53207,10 +46498,6 @@ public:
     const int type = 2604431987;
 
 
-    std::optional<IfcLabel> Name;
-    std::variant<IfcColourRgb> LightColour;
-    std::optional<IfcNormalisedRatioMeasure> AmbientIntensity;
-    std::optional<IfcNormalisedRatioMeasure> Intensity;
     std::variant<IfcDirection> Orientation;
 
     // Constructor
@@ -53227,10 +46514,6 @@ public:
     const int type = 4266656042;
 
 
-    std::optional<IfcLabel> Name;
-    std::variant<IfcColourRgb> LightColour;
-    std::optional<IfcNormalisedRatioMeasure> AmbientIntensity;
-    std::optional<IfcNormalisedRatioMeasure> Intensity;
     std::variant<IfcAxis2Placement3D> Position;
     std::optional<std::variant<IfcColourRgb>> ColourAppearance;
     IfcThermodynamicTemperatureMeasure ColourTemperature;
@@ -53257,10 +46540,6 @@ public:
     const int type = 1520743889;
 
 
-    std::optional<IfcLabel> Name;
-    std::variant<IfcColourRgb> LightColour;
-    std::optional<IfcNormalisedRatioMeasure> AmbientIntensity;
-    std::optional<IfcNormalisedRatioMeasure> Intensity;
     std::variant<IfcCartesianPoint> Position;
     IfcPositiveLengthMeasure Radius;
     IfcReal ConstantAttenuation;
@@ -53285,15 +46564,6 @@ public:
     const int type = 3422422726;
 
 
-    std::optional<IfcLabel> Name;
-    std::variant<IfcColourRgb> LightColour;
-    std::optional<IfcNormalisedRatioMeasure> AmbientIntensity;
-    std::optional<IfcNormalisedRatioMeasure> Intensity;
-    std::variant<IfcCartesianPoint> Position;
-    IfcPositiveLengthMeasure Radius;
-    IfcReal ConstantAttenuation;
-    IfcReal DistanceAttenuation;
-    IfcReal QuadricAttenuation;
     std::variant<IfcDirection> Orientation;
     std::optional<IfcReal> ConcentrationExponent;
     IfcPositivePlaneAngleMeasure SpreadAngle;
@@ -53316,7 +46586,6 @@ public:
     const int type = 388784114;
 
 
-    std::optional<std::variant<IfcObjectPlacement>> PlacementRelTo;
     std::variant<IfcAxis2PlacementLinear> RelativePlacement;
     std::optional<std::variant<IfcAxis2Placement3D>> CartesianPosition;
 
@@ -53335,7 +46604,6 @@ public:
     const int type = 2624227202;
 
 
-    std::optional<std::variant<IfcObjectPlacement>> PlacementRelTo;
     IfcAxis2Placement RelativePlacement;
 
     // Constructor
@@ -53452,9 +46720,6 @@ public:
     const int type = 2022407955;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcRepresentation>> Representations;
     std::variant<IfcMaterial> RepresentedMaterial;
 
     // Constructor
@@ -53515,9 +46780,6 @@ public:
     const int type = 3404854881;
 
 
-    std::variant<IfcMaterialProfileSet> ForProfileSet;
-    std::optional<IfcCardinalPointReference> CardinalPoint;
-    std::optional<IfcPositiveLengthMeasure> ReferenceExtent;
     std::variant<IfcMaterialProfileSet> ForProfileEndSet;
     std::optional<IfcCardinalPointReference> CardinalEndPoint;
 
@@ -53536,9 +46798,6 @@ public:
     const int type = 3265635763;
 
 
-    std::optional<IfcIdentifier> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcProperty>> Properties;
     std::variant<IfcMaterialDefinition> Material;
 
     // Constructor
@@ -53555,8 +46814,6 @@ public:
     const int type = 853536259;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcMaterial> RelatingMaterial;
     std::vector<std::variant<IfcMaterial>> RelatedMaterials;
     std::optional<IfcLabel> MaterialExpression;
@@ -53577,10 +46834,6 @@ public:
     const int type = 2998442950;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::variant<IfcProfileDef> ParentProfile;
-    std::optional<IfcLabel> Label;
 
     // Constructor
     explicit IfcMirroredProfileDef(IfcProfileTypeEnum ProfileType_, const std::optional<IfcLabel>& ProfileName_, const std::variant<IfcProfileDef>& ParentProfile_, const std::optional<IfcLabel>& Label_)
@@ -53602,10 +46855,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelAggregates>>> Decomposes;
     std::optional<std::vector<std::variant<IfcRelAssociates>>> HasAssociations;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcObjectDefinition(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -53620,8 +46869,6 @@ public:
     const int type = 182550632;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
     IfcBoolean HorizontalWidths;
     std::vector<IfcNonNegativeLengthMeasure> Widths;
     std::vector<IfcPlaneAngleMeasure> Slopes;
@@ -53646,7 +46893,6 @@ public:
     const int type = 2665983363;
 
 
-    std::vector<std::variant<IfcFace>> CfsFaces;
 
     // Constructor
     explicit IfcOpenShell(const std::vector<std::variant<IfcFace>>& CfsFaces_)
@@ -53661,8 +46907,6 @@ public:
     const int type = 1411181986;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcOrganization> RelatingOrganization;
     std::vector<std::variant<IfcOrganization>> RelatedOrganizations;
 
@@ -53699,8 +46943,6 @@ public:
     const int type = 2529465313;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
     std::optional<std::variant<IfcAxis2Placement2D>> Position;
 
     // Constructor
@@ -53733,8 +46975,6 @@ public:
     const int type = 3021840470;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcPhysicalQuantity>> HasQuantities;
     IfcLabel Discrimination;
     std::optional<IfcLabel> Quality;
@@ -53757,11 +46997,6 @@ public:
     const int type = 597895409;
 
 
-    IfcBoolean RepeatS;
-    IfcBoolean RepeatT;
-    std::optional<IfcIdentifier> Mode;
-    std::optional<std::variant<IfcCartesianTransformationOperator2D>> TextureTransform;
-    std::optional<std::vector<IfcIdentifier>> Parameter;
     IfcInteger Width;
     IfcInteger Height;
     IfcInteger ColourComponents;
@@ -53910,8 +47145,6 @@ public:
     const int type = 2775532180;
 
 
-    std::variant<IfcSurface> BaseSurface;
-    IfcBoolean AgreementFlag;
     std::variant<IfcAxis2Placement3D> Position;
     std::variant<IfcBoundedCurve> PolygonalBoundary;
 
@@ -53960,7 +47193,6 @@ public:
     const int type = 1775413392;
 
 
-    IfcLabel Name;
 
     // Constructor
     explicit IfcPreDefinedTextFont(IfcLabel Name_)
@@ -53977,9 +47209,6 @@ public:
     std::optional<std::vector<std::variant<IfcProduct>>> ShapeOfProduct;
     std::optional<std::vector<std::variant<IfcShapeAspect>>> HasShapeAspects;
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcRepresentation>> Representations;
 
     // Constructor
     explicit IfcProductDefinitionShape(const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::vector<std::variant<IfcRepresentation>>& Representations_)
@@ -53994,9 +47223,6 @@ public:
     const int type = 2802850158;
 
 
-    std::optional<IfcIdentifier> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcProperty>> Properties;
     std::variant<IfcProfileDef> ProfileDefinition;
 
     // Constructor
@@ -54039,10 +47265,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelDeclares>>> HasContext;
     std::optional<std::vector<std::variant<IfcRelAssociates>>> HasAssociations;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcPropertyDefinition(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -54057,8 +47279,6 @@ public:
     const int type = 148025276;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcProperty> DependingProperty;
     std::variant<IfcProperty> DependantProperty;
     std::optional<IfcText> Expression;
@@ -54082,10 +47302,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelDefinesByTemplate>>> IsDefinedBy;
     std::optional<std::vector<std::variant<IfcRelDefinesByProperties>>> DefinesOccurrence;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcPropertySetDefinition(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -54100,10 +47316,6 @@ public:
     const int type = 1482703590;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcPropertyTemplateDefinition(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -54118,10 +47330,6 @@ public:
     const int type = 2090586900;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcQuantitySet(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -54136,9 +47344,6 @@ public:
     const int type = 3615266464;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
     IfcPositiveLengthMeasure XDim;
     IfcPositiveLengthMeasure YDim;
 
@@ -54157,14 +47362,6 @@ public:
     const int type = 3413951693;
 
 
-    IfcLabel Name;
-    std::optional<IfcText> Description;
-    IfcDateTime StartTime;
-    IfcDateTime EndTime;
-    IfcTimeSeriesDataTypeEnum TimeSeriesDataType;
-    IfcDataOriginEnum DataOrigin;
-    std::optional<IfcLabel> UserDefinedDataOrigin;
-    std::optional<IfcUnit> Unit;
     IfcTimeMeasure TimeStep;
     std::vector<std::variant<IfcTimeSeriesValue>> Values;
 
@@ -54209,10 +47406,6 @@ public:
     const int type = 478536968;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcRelationship(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -54227,8 +47420,6 @@ public:
     const int type = 2943643501;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<IfcResourceObjectSelect> RelatedResourceObjects;
     std::variant<IfcApproval> RelatingApproval;
 
@@ -54247,8 +47438,6 @@ public:
     const int type = 1608871552;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcConstraint> RelatingConstraint;
     std::vector<IfcResourceObjectSelect> RelatedResourceObjects;
 
@@ -54267,9 +47456,6 @@ public:
     const int type = 1042787934;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcDataOriginEnum> DataOrigin;
-    std::optional<IfcLabel> UserDefinedDataOrigin;
     std::optional<IfcDuration> ScheduleWork;
     std::optional<IfcPositiveRatioMeasure> ScheduleUsage;
     std::optional<IfcDateTime> ScheduleStart;
@@ -54314,11 +47500,6 @@ public:
     const int type = 2778083089;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
-    IfcPositiveLengthMeasure XDim;
-    IfcPositiveLengthMeasure YDim;
     IfcPositiveLengthMeasure RoundingRadius;
 
     // Constructor
@@ -54434,8 +47615,6 @@ public:
     const int type = 3692461612;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Specification;
 
     // Constructor
     explicit IfcSimpleProperty(IfcIdentifier Name_, const std::optional<IfcText>& Specification_)
@@ -54450,7 +47629,6 @@ public:
     const int type = 2609359061;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcLengthMeasure> SlippageX;
     std::optional<IfcLengthMeasure> SlippageY;
     std::optional<IfcLengthMeasure> SlippageZ;
@@ -54485,7 +47663,6 @@ public:
     const int type = 1595516126;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcLinearForceMeasure> LinearForceX;
     std::optional<IfcLinearForceMeasure> LinearForceY;
     std::optional<IfcLinearForceMeasure> LinearForceZ;
@@ -54512,7 +47689,6 @@ public:
     const int type = 2668620305;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcPlanarForceMeasure> PlanarForceX;
     std::optional<IfcPlanarForceMeasure> PlanarForceY;
     std::optional<IfcPlanarForceMeasure> PlanarForceZ;
@@ -54533,7 +47709,6 @@ public:
     const int type = 2473145415;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcLengthMeasure> DisplacementX;
     std::optional<IfcLengthMeasure> DisplacementY;
     std::optional<IfcLengthMeasure> DisplacementZ;
@@ -54560,13 +47735,6 @@ public:
     const int type = 1973038258;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcLengthMeasure> DisplacementX;
-    std::optional<IfcLengthMeasure> DisplacementY;
-    std::optional<IfcLengthMeasure> DisplacementZ;
-    std::optional<IfcPlaneAngleMeasure> RotationalDisplacementRX;
-    std::optional<IfcPlaneAngleMeasure> RotationalDisplacementRY;
-    std::optional<IfcPlaneAngleMeasure> RotationalDisplacementRZ;
     std::optional<IfcCurvatureMeasure> Distortion;
 
     // Constructor
@@ -54583,7 +47751,6 @@ public:
     const int type = 1597423693;
 
 
-    std::optional<IfcLabel> Name;
     std::optional<IfcForceMeasure> ForceX;
     std::optional<IfcForceMeasure> ForceY;
     std::optional<IfcForceMeasure> ForceZ;
@@ -54610,13 +47777,6 @@ public:
     const int type = 1190533807;
 
 
-    std::optional<IfcLabel> Name;
-    std::optional<IfcForceMeasure> ForceX;
-    std::optional<IfcForceMeasure> ForceY;
-    std::optional<IfcForceMeasure> ForceZ;
-    std::optional<IfcTorqueMeasure> MomentX;
-    std::optional<IfcTorqueMeasure> MomentY;
-    std::optional<IfcTorqueMeasure> MomentZ;
     std::optional<IfcWarpingMomentMeasure> WarpingMoment;
 
     // Constructor
@@ -54633,8 +47793,6 @@ public:
     const int type = 2233826070;
 
 
-    std::variant<IfcVertex> EdgeStart;
-    std::variant<IfcVertex> EdgeEnd;
     std::variant<IfcEdge> ParentEdge;
 
     // Constructor
@@ -54665,8 +47823,6 @@ public:
     const int type = 1878645084;
 
 
-    std::variant<IfcColourRgb> SurfaceColour;
-    std::optional<IfcNormalisedRatioMeasure> Transparency;
     std::optional<IfcColourOrFactor> DiffuseColour;
     std::optional<IfcColourOrFactor> TransmissionColour;
     std::optional<IfcColourOrFactor> DiffuseTransmissionColour;
@@ -54737,11 +47893,6 @@ public:
     const int type = 1096409881;
 
 
-    std::variant<IfcCurve> Directrix;
-    IfcPositiveLengthMeasure Radius;
-    std::optional<IfcPositiveLengthMeasure> InnerRadius;
-    std::optional<IfcParameterValue> StartParam;
-    std::optional<IfcParameterValue> EndParam;
     std::optional<IfcNonNegativeLengthMeasure> FilletRadius;
 
     // Constructor
@@ -54776,9 +47927,6 @@ public:
     const int type = 3071757647;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
     IfcPositiveLengthMeasure Depth;
     IfcPositiveLengthMeasure FlangeWidth;
     IfcPositiveLengthMeasure WebThickness;
@@ -54845,9 +47993,6 @@ public:
     const int type = 3124975700;
 
 
-    IfcPresentableText Literal;
-    IfcAxis2Placement Placement;
-    IfcTextPath Path;
     std::variant<IfcPlanarExtent> Extent;
     IfcBoxAlignment BoxAlignment;
 
@@ -54866,7 +48011,6 @@ public:
     const int type = 1983826977;
 
 
-    IfcLabel Name;
     std::vector<IfcTextFontName> FontFamily;
     std::optional<IfcFontStyle> FontStyle;
     std::optional<IfcFontVariant> FontVariant;
@@ -54891,9 +48035,6 @@ public:
     const int type = 2715220739;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
     IfcPositiveLengthMeasure BottomXDim;
     IfcPositiveLengthMeasure TopXDim;
     IfcPositiveLengthMeasure YDim;
@@ -54917,10 +48058,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelDefinesByType>>> Types;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcIdentifier> ApplicableOccurrence;
     std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
 
@@ -54940,12 +48077,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelAssignsToProcess>>> OperatesOn;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
     std::optional<IfcIdentifier> Identification;
     std::optional<IfcText> LongDescription;
     std::optional<IfcLabel> ProcessType;
@@ -54967,12 +48098,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelAssignsToProduct>>> ReferencedBy;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
     std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
     std::optional<IfcLabel> Tag;
 
@@ -54992,12 +48117,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelAssignsToResource>>> ResourceOf;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
     std::optional<IfcIdentifier> Identification;
     std::optional<IfcText> LongDescription;
     std::optional<IfcLabel> ResourceType;
@@ -55018,9 +48137,6 @@ public:
     const int type = 427810014;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
     IfcPositiveLengthMeasure Depth;
     IfcPositiveLengthMeasure FlangeWidth;
     IfcPositiveLengthMeasure WebThickness;
@@ -55083,9 +48199,6 @@ public:
     const int type = 2543172580;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
     IfcPositiveLengthMeasure Depth;
     IfcPositiveLengthMeasure FlangeWidth;
     IfcPositiveLengthMeasure WebThickness;
@@ -55112,9 +48225,6 @@ public:
     const int type = 3406155212;
 
 
-    std::vector<std::variant<IfcFaceBound>> Bounds;
-    std::variant<IfcSurface> FaceSurface;
-    IfcBoolean SameSense;
 
     // Constructor
     explicit IfcAdvancedFace(const std::vector<std::variant<IfcFaceBound>>& Bounds_, const std::variant<IfcSurface>& FaceSurface_, IfcBoolean SameSense_)
@@ -55147,9 +48257,6 @@ public:
     const int type = 3207858831;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
     IfcPositiveLengthMeasure BottomFlangeWidth;
     IfcPositiveLengthMeasure OverallDepth;
     IfcPositiveLengthMeasure WebThickness;
@@ -55188,7 +48295,6 @@ public:
     const int type = 4261334040;
 
 
-    std::variant<IfcPoint> Location;
     std::optional<std::variant<IfcDirection>> Axis;
 
     // Constructor
@@ -55205,7 +48311,6 @@ public:
     const int type = 3125803723;
 
 
-    std::variant<IfcPoint> Location;
     std::optional<std::variant<IfcDirection>> RefDirection;
 
     // Constructor
@@ -55222,7 +48327,6 @@ public:
     const int type = 2740243338;
 
 
-    std::variant<IfcPoint> Location;
     std::optional<std::variant<IfcDirection>> Axis;
     std::optional<std::variant<IfcDirection>> RefDirection;
 
@@ -55241,7 +48345,6 @@ public:
     const int type = 3425423356;
 
 
-    std::variant<IfcPoint> Location;
     std::optional<std::variant<IfcDirection>> Axis;
     std::optional<std::variant<IfcDirection>> RefDirection;
 
@@ -55316,8 +48419,6 @@ public:
     const int type = 2713105998;
 
 
-    std::variant<IfcSurface> BaseSurface;
-    IfcBoolean AgreementFlag;
     std::variant<IfcBoundingBox> Enclosure;
 
     // Constructor
@@ -55334,9 +48435,6 @@ public:
     const int type = 2898889636;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
     IfcPositiveLengthMeasure Depth;
     IfcPositiveLengthMeasure Width;
     IfcPositiveLengthMeasure WallThickness;
@@ -55449,10 +48547,6 @@ public:
     const int type = 3749851601;
 
 
-    std::optional<std::variant<IfcDirection>> Axis1;
-    std::optional<std::variant<IfcDirection>> Axis2;
-    std::variant<IfcCartesianPoint> LocalOrigin;
-    std::optional<IfcReal> Scale;
 
     // Constructor
     explicit IfcCartesianTransformationOperator2D(const std::optional<std::variant<IfcDirection>>& Axis1_, const std::optional<std::variant<IfcDirection>>& Axis2_, const std::variant<IfcCartesianPoint>& LocalOrigin_, const std::optional<IfcReal>& Scale_)
@@ -55467,10 +48561,6 @@ public:
     const int type = 3486308946;
 
 
-    std::optional<std::variant<IfcDirection>> Axis1;
-    std::optional<std::variant<IfcDirection>> Axis2;
-    std::variant<IfcCartesianPoint> LocalOrigin;
-    std::optional<IfcReal> Scale;
     std::optional<IfcReal> Scale2;
 
     // Constructor
@@ -55487,10 +48577,6 @@ public:
     const int type = 3331915920;
 
 
-    std::optional<std::variant<IfcDirection>> Axis1;
-    std::optional<std::variant<IfcDirection>> Axis2;
-    std::variant<IfcCartesianPoint> LocalOrigin;
-    std::optional<IfcReal> Scale;
     std::optional<std::variant<IfcDirection>> Axis3;
 
     // Constructor
@@ -55507,11 +48593,6 @@ public:
     const int type = 1416205885;
 
 
-    std::optional<std::variant<IfcDirection>> Axis1;
-    std::optional<std::variant<IfcDirection>> Axis2;
-    std::variant<IfcCartesianPoint> LocalOrigin;
-    std::optional<IfcReal> Scale;
-    std::optional<std::variant<IfcDirection>> Axis3;
     std::optional<IfcReal> Scale2;
     std::optional<IfcReal> Scale3;
 
@@ -55530,9 +48611,6 @@ public:
     const int type = 1383045692;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
     IfcPositiveLengthMeasure Radius;
 
     // Constructor
@@ -55549,7 +48627,6 @@ public:
     const int type = 2205249479;
 
 
-    std::vector<std::variant<IfcFace>> CfsFaces;
 
     // Constructor
     explicit IfcClosedShell(const std::vector<std::variant<IfcFace>>& CfsFaces_)
@@ -55564,7 +48641,6 @@ public:
     const int type = 776857604;
 
 
-    std::optional<IfcLabel> Name;
     IfcNormalisedRatioMeasure Red;
     IfcNormalisedRatioMeasure Green;
     IfcNormalisedRatioMeasure Blue;
@@ -55585,8 +48661,6 @@ public:
     const int type = 2542286263;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Specification;
     IfcIdentifier UsageName;
     std::vector<std::variant<IfcProperty>> HasProperties;
 
@@ -55605,7 +48679,6 @@ public:
     const int type = 2485617015;
 
 
-    IfcTransitionCode Transition;
     IfcBoolean SameSense;
     std::variant<IfcCurve> ParentCurve;
 
@@ -55624,15 +48697,6 @@ public:
     const int type = 2574617495;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<IfcLabel> ResourceType;
     std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
     std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
 
@@ -55653,10 +48717,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelDefinesByProperties>>> IsDefinedBy;
     std::optional<std::vector<std::variant<IfcRelDeclares>>> Declares;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcLabel> ObjectType;
     std::optional<IfcLabel> LongName;
     std::optional<IfcLabel> Phase;
@@ -55681,17 +48741,6 @@ public:
     const int type = 1815067380;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<IfcLabel> ResourceType;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     IfcCrewResourceTypeEnum PredefinedType;
 
     // Constructor
@@ -55794,7 +48843,6 @@ public:
     const int type = 4212018352;
 
 
-    IfcTransitionCode Transition;
     std::variant<IfcPlacement> Placement;
     IfcCurveMeasureSelect SegmentStart;
     IfcCurveMeasureSelect SegmentLength;
@@ -55833,8 +48881,6 @@ public:
     const int type = 593015953;
 
 
-    std::variant<IfcProfileDef> SweptArea;
-    std::optional<std::variant<IfcAxis2Placement3D>> Position;
     std::variant<IfcCurve> Directrix;
     std::optional<IfcCurveMeasureSelect> StartParam;
     std::optional<IfcCurveMeasureSelect> EndParam;
@@ -55871,10 +48917,6 @@ public:
     const int type = 1883228015;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcLabel> MethodOfMeasurement;
     std::vector<std::variant<IfcPhysicalQuantity>> Quantities;
 
@@ -55893,14 +48935,6 @@ public:
     const int type = 339256511;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
     std::optional<IfcLabel> ElementType;
 
     // Constructor
@@ -55933,9 +48967,6 @@ public:
     const int type = 2835456948;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
     IfcPositiveLengthMeasure SemiAxis1;
     IfcPositiveLengthMeasure SemiAxis2;
 
@@ -55954,15 +48985,6 @@ public:
     const int type = 4024345920;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<IfcLabel> ProcessType;
     IfcEventTypeEnum PredefinedType;
     IfcEventTriggerTypeEnum EventTriggerType;
     std::optional<IfcLabel> UserDefinedEventTriggerType;
@@ -55983,8 +49005,6 @@ public:
     const int type = 477187591;
 
 
-    std::variant<IfcProfileDef> SweptArea;
-    std::optional<std::variant<IfcAxis2Placement3D>> Position;
     std::variant<IfcDirection> ExtrudedDirection;
     IfcPositiveLengthMeasure Depth;
 
@@ -56003,10 +49023,6 @@ public:
     const int type = 2804161546;
 
 
-    std::variant<IfcProfileDef> SweptArea;
-    std::optional<std::variant<IfcAxis2Placement3D>> Position;
-    std::variant<IfcDirection> ExtrudedDirection;
-    IfcPositiveLengthMeasure Depth;
     std::variant<IfcProfileDef> EndSweptArea;
 
     // Constructor
@@ -56083,11 +49099,6 @@ public:
     const int type = 2652556860;
 
 
-    std::variant<IfcProfileDef> SweptArea;
-    std::optional<std::variant<IfcAxis2Placement3D>> Position;
-    std::variant<IfcCurve> Directrix;
-    std::optional<IfcCurveMeasureSelect> StartParam;
-    std::optional<IfcCurveMeasureSelect> EndParam;
     std::variant<IfcDirection> FixedReference;
 
     // Constructor
@@ -56104,15 +49115,6 @@ public:
     const int type = 4238390223;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFurnishingElementType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -56127,15 +49129,6 @@ public:
     const int type = 1268542332;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcAssemblyPlaceEnum AssemblyPlace;
     std::optional<IfcFurnitureTypeEnum> PredefinedType;
 
@@ -56154,15 +49147,6 @@ public:
     const int type = 4095422895;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcGeographicElementTypeEnum PredefinedType;
 
     // Constructor
@@ -56179,7 +49163,6 @@ public:
     const int type = 987898635;
 
 
-    std::vector<IfcGeometricSetSelect> Elements;
 
     // Constructor
     explicit IfcGeometricCurveSet(const std::vector<IfcGeometricSetSelect>& Elements_)
@@ -56194,9 +49177,6 @@ public:
     const int type = 1484403080;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
     IfcPositiveLengthMeasure OverallWidth;
     IfcPositiveLengthMeasure OverallDepth;
     IfcPositiveLengthMeasure WebThickness;
@@ -56243,7 +49223,6 @@ public:
     const int type = 2294589976;
 
 
-    std::vector<IfcPositiveInteger> CoordIndex;
     std::vector<std::vector<IfcPositiveInteger>> InnerCoordIndices;
 
     // Constructor
@@ -56260,9 +49239,6 @@ public:
     const int type = 3465909080;
 
 
-    std::vector<std::variant<IfcSurfaceTexture>> Maps;
-    std::variant<IfcTessellatedFaceSet> MappedTo;
-    std::variant<IfcTextureVertexList> TexCoords;
     std::vector<std::variant<IfcTextureCoordinateIndices>> TexCoordIndices;
 
     // Constructor
@@ -56279,9 +49255,6 @@ public:
     const int type = 572779678;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
     IfcPositiveLengthMeasure Depth;
     std::optional<IfcPositiveLengthMeasure> Width;
     IfcPositiveLengthMeasure Thickness;
@@ -56308,17 +49281,6 @@ public:
     const int type = 428585644;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<IfcLabel> ResourceType;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     IfcLaborResourceTypeEnum PredefinedType;
 
     // Constructor
@@ -56373,10 +49335,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelDefinesByType>>> IsTypedBy;
     std::optional<std::vector<std::variant<IfcRelDefinesByProperties>>> IsDefinedBy;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcLabel> ObjectType;
 
     // Constructor
@@ -56409,7 +49367,6 @@ public:
     const int type = 3388369263;
 
 
-    std::variant<IfcCurve> BasisCurve;
     IfcLengthMeasure Distance;
     IfcLogical SelfIntersect;
 
@@ -56428,7 +49385,6 @@ public:
     const int type = 3505215534;
 
 
-    std::variant<IfcCurve> BasisCurve;
     IfcLengthMeasure Distance;
     IfcLogical SelfIntersect;
     std::variant<IfcDirection> RefDirection;
@@ -56449,7 +49405,6 @@ public:
     const int type = 2485787929;
 
 
-    std::variant<IfcCurve> BasisCurve;
     std::vector<std::variant<IfcPointByDistanceExpression>> OffsetValues;
     std::optional<IfcLabel> Tag;
 
@@ -56486,8 +49441,6 @@ public:
     const int type = 603570806;
 
 
-    IfcLengthMeasure SizeInX;
-    IfcLengthMeasure SizeInY;
     IfcAxis2Placement Placement;
 
     // Constructor
@@ -56504,7 +49457,6 @@ public:
     const int type = 220341763;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
 
     // Constructor
     explicit IfcPlane(const std::variant<IfcAxis2Placement3D>& Position_)
@@ -56541,7 +49493,6 @@ public:
     const int type = 759155922;
 
 
-    IfcLabel Name;
 
     // Constructor
     explicit IfcPreDefinedColour(IfcLabel Name_)
@@ -56556,7 +49507,6 @@ public:
     const int type = 2559016684;
 
 
-    IfcLabel Name;
 
     // Constructor
     explicit IfcPreDefinedCurveFont(IfcLabel Name_)
@@ -56571,10 +49521,6 @@ public:
     const int type = 3967405729;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcPreDefinedPropertySet(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -56589,15 +49535,6 @@ public:
     const int type = 569719735;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<IfcLabel> ProcessType;
     IfcProcedureTypeEnum PredefinedType;
 
     // Constructor
@@ -56617,11 +49554,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelSequence>>> IsSuccessorFrom;
     std::optional<std::vector<std::variant<IfcRelAssignsToProcess>>> OperatesOn;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<IfcIdentifier> Identification;
     std::optional<IfcText> LongDescription;
 
@@ -56643,11 +49575,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelPositions>>> PositionedRelativeTo;
     std::optional<std::vector<std::variant<IfcRelReferencedInSpatialStructure>>> ReferencedInStructures;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
     std::optional<std::variant<IfcProductRepresentation>> Representation;
 
@@ -56666,15 +49593,6 @@ public:
     const int type = 103090709;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcLabel> Phase;
-    std::optional<std::vector<std::variant<IfcRepresentationContext>>> RepresentationContexts;
-    std::optional<std::variant<IfcUnitAssignment>> UnitsInContext;
 
     // Constructor
     explicit IfcProject(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<IfcLabel>& LongName_, const std::optional<IfcLabel>& Phase_, const std::optional<std::vector<std::variant<IfcRepresentationContext>>>& RepresentationContexts_, const std::optional<std::variant<IfcUnitAssignment>>& UnitsInContext_)
@@ -56689,15 +49607,6 @@ public:
     const int type = 653396225;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcLabel> Phase;
-    std::optional<std::vector<std::variant<IfcRepresentationContext>>> RepresentationContexts;
-    std::optional<std::variant<IfcUnitAssignment>> UnitsInContext;
 
     // Constructor
     explicit IfcProjectLibrary(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<IfcLabel>& LongName_, const std::optional<IfcLabel>& Phase_, const std::optional<std::vector<std::variant<IfcRepresentationContext>>>& RepresentationContexts_, const std::optional<std::variant<IfcUnitAssignment>>& UnitsInContext_)
@@ -56712,8 +49621,6 @@ public:
     const int type = 871118103;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Specification;
     std::optional<IfcValue> UpperBoundValue;
     std::optional<IfcValue> LowerBoundValue;
     std::optional<IfcUnit> Unit;
@@ -56736,8 +49643,6 @@ public:
     const int type = 4166981789;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Specification;
     std::optional<std::vector<IfcValue>> EnumerationValues;
     std::optional<std::variant<IfcPropertyEnumeration>> EnumerationReference;
 
@@ -56756,8 +49661,6 @@ public:
     const int type = 2752243245;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Specification;
     std::optional<std::vector<IfcValue>> ListValues;
     std::optional<IfcUnit> Unit;
 
@@ -56776,8 +49679,6 @@ public:
     const int type = 941946838;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Specification;
     std::optional<IfcText> UsageName;
     std::optional<IfcObjectReferenceSelect> PropertyReference;
 
@@ -56796,10 +49697,6 @@ public:
     const int type = 1451395588;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcProperty>> HasProperties;
 
     // Constructor
@@ -56817,10 +49714,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelDefinesByTemplate>>> Defines;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcPropertySetTemplateTypeEnum> TemplateType;
     std::optional<IfcIdentifier> ApplicableEntity;
     std::vector<std::variant<IfcPropertyTemplate>> HasPropertyTemplates;
@@ -56841,8 +49734,6 @@ public:
     const int type = 3650150729;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Specification;
     std::optional<IfcValue> NominalValue;
     std::optional<IfcUnit> Unit;
 
@@ -56861,8 +49752,6 @@ public:
     const int type = 110355661;
 
 
-    IfcIdentifier Name;
-    std::optional<IfcText> Specification;
     std::optional<std::vector<IfcValue>> DefiningValues;
     std::optional<std::vector<IfcValue>> DefinedValues;
     std::optional<IfcText> Expression;
@@ -56891,10 +49780,6 @@ public:
     std::optional<std::vector<std::variant<IfcComplexPropertyTemplate>>> PartOfComplexTemplate;
     std::optional<std::vector<std::variant<IfcPropertySetTemplate>>> PartOfPsetTemplate;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcPropertyTemplate(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -56909,11 +49794,6 @@ public:
     const int type = 2770003689;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
-    IfcPositiveLengthMeasure XDim;
-    IfcPositiveLengthMeasure YDim;
     IfcPositiveLengthMeasure WallThickness;
     std::optional<IfcNonNegativeLengthMeasure> InnerFilletRadius;
     std::optional<IfcNonNegativeLengthMeasure> OuterFilletRadius;
@@ -56934,7 +49814,6 @@ public:
     const int type = 2798486643;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
     IfcPositiveLengthMeasure XLength;
     IfcPositiveLengthMeasure YLength;
     IfcPositiveLengthMeasure Height;
@@ -56983,10 +49862,6 @@ public:
     const int type = 3765753017;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcLabel> DefinitionType;
     std::vector<std::variant<IfcSectionReinforcementProperties>> ReinforcementSectionDefinitions;
 
@@ -57005,10 +49880,6 @@ public:
     const int type = 3939117080;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
     std::optional<IfcStrippedOptional> RelatedObjectsType;
 
@@ -57027,12 +49898,6 @@ public:
     const int type = 1683148259;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcStrippedOptional> RelatedObjectsType;
     std::variant<IfcActor> RelatingActor;
     std::optional<std::variant<IfcActorRole>> ActingRole;
 
@@ -57051,12 +49916,6 @@ public:
     const int type = 2495723537;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcStrippedOptional> RelatedObjectsType;
     std::variant<IfcControl> RelatingControl;
 
     // Constructor
@@ -57073,12 +49932,6 @@ public:
     const int type = 1307041759;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcStrippedOptional> RelatedObjectsType;
     std::variant<IfcGroup> RelatingGroup;
 
     // Constructor
@@ -57095,13 +49948,6 @@ public:
     const int type = 1027710054;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcStrippedOptional> RelatedObjectsType;
-    std::variant<IfcGroup> RelatingGroup;
     IfcRatioMeasure Factor;
 
     // Constructor
@@ -57118,12 +49964,6 @@ public:
     const int type = 4278684876;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcStrippedOptional> RelatedObjectsType;
     IfcProcessSelect RelatingProcess;
     std::optional<std::variant<IfcMeasureWithUnit>> QuantityInProcess;
 
@@ -57142,12 +49982,6 @@ public:
     const int type = 2857406711;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcStrippedOptional> RelatedObjectsType;
     IfcProductSelect RelatingProduct;
 
     // Constructor
@@ -57164,12 +49998,6 @@ public:
     const int type = 205026976;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
-    std::optional<IfcStrippedOptional> RelatedObjectsType;
     IfcResourceSelect RelatingResource;
 
     // Constructor
@@ -57186,10 +50014,6 @@ public:
     const int type = 1865459582;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<IfcDefinitionSelect> RelatedObjects;
 
     // Constructor
@@ -57206,11 +50030,6 @@ public:
     const int type = 4095574036;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<IfcDefinitionSelect> RelatedObjects;
     std::variant<IfcApproval> RelatingApproval;
 
     // Constructor
@@ -57227,11 +50046,6 @@ public:
     const int type = 919958153;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<IfcDefinitionSelect> RelatedObjects;
     IfcClassificationSelect RelatingClassification;
 
     // Constructor
@@ -57248,11 +50062,6 @@ public:
     const int type = 2728634034;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<IfcDefinitionSelect> RelatedObjects;
     std::optional<IfcLabel> Intent;
     std::variant<IfcConstraint> RelatingConstraint;
 
@@ -57271,11 +50080,6 @@ public:
     const int type = 982818633;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<IfcDefinitionSelect> RelatedObjects;
     IfcDocumentSelect RelatingDocument;
 
     // Constructor
@@ -57292,11 +50096,6 @@ public:
     const int type = 3840914261;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<IfcDefinitionSelect> RelatedObjects;
     IfcLibrarySelect RelatingLibrary;
 
     // Constructor
@@ -57313,11 +50112,6 @@ public:
     const int type = 2655215786;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<IfcDefinitionSelect> RelatedObjects;
     IfcMaterialSelect RelatingMaterial;
 
     // Constructor
@@ -57334,11 +50128,6 @@ public:
     const int type = 1033248425;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::vector<IfcDefinitionSelect> RelatedObjects;
     std::variant<IfcProfileDef> RelatingProfileDef;
 
     // Constructor
@@ -57355,10 +50144,6 @@ public:
     const int type = 826625072;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcRelConnects(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -57373,10 +50158,6 @@ public:
     const int type = 1204542856;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<std::variant<IfcConnectionGeometry>> ConnectionGeometry;
     std::variant<IfcElement> RelatingElement;
     std::variant<IfcElement> RelatedElement;
@@ -57397,13 +50178,6 @@ public:
     const int type = 3945020480;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcConnectionGeometry>> ConnectionGeometry;
-    std::variant<IfcElement> RelatingElement;
-    std::variant<IfcElement> RelatedElement;
     std::optional<std::vector<IfcInteger>> RelatingPriorities;
     std::optional<std::vector<IfcInteger>> RelatedPriorities;
     IfcConnectionTypeEnum RelatedConnectionType;
@@ -57426,10 +50200,6 @@ public:
     const int type = 4201705270;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcPort> RelatingPort;
     std::variant<IfcDistributionElement> RelatedElement;
 
@@ -57448,10 +50218,6 @@ public:
     const int type = 3190031847;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcPort> RelatingPort;
     std::variant<IfcPort> RelatedPort;
     std::optional<std::variant<IfcElement>> RealizingElement;
@@ -57472,10 +50238,6 @@ public:
     const int type = 2127690289;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     IfcStructuralActivityAssignmentSelect RelatingElement;
     std::variant<IfcStructuralActivity> RelatedStructuralActivity;
 
@@ -57494,10 +50256,6 @@ public:
     const int type = 1638771189;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcStructuralMember> RelatingStructuralMember;
     std::variant<IfcStructuralConnection> RelatedStructuralConnection;
     std::optional<std::variant<IfcBoundaryCondition>> AppliedCondition;
@@ -57524,16 +50282,6 @@ public:
     const int type = 504942748;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::variant<IfcStructuralMember> RelatingStructuralMember;
-    std::variant<IfcStructuralConnection> RelatedStructuralConnection;
-    std::optional<std::variant<IfcBoundaryCondition>> AppliedCondition;
-    std::optional<std::variant<IfcStructuralConnectionCondition>> AdditionalConditions;
-    std::optional<IfcLengthMeasure> SupportedLength;
-    std::optional<std::variant<IfcAxis2Placement3D>> ConditionCoordinateSystem;
     std::variant<IfcConnectionGeometry> ConnectionConstraint;
 
     // Constructor
@@ -57550,13 +50298,6 @@ public:
     const int type = 3678494232;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<std::variant<IfcConnectionGeometry>> ConnectionGeometry;
-    std::variant<IfcElement> RelatingElement;
-    std::variant<IfcElement> RelatedElement;
     std::vector<std::variant<IfcElement>> RealizingElements;
     std::optional<IfcLabel> ConnectionType;
 
@@ -57575,10 +50316,6 @@ public:
     const int type = 3242617779;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcProduct>> RelatedElements;
     std::variant<IfcSpatialElement> RelatingStructure;
 
@@ -57597,10 +50334,6 @@ public:
     const int type = 886880790;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcElement> RelatingBuildingElement;
     std::vector<std::variant<IfcCovering>> RelatedCoverings;
 
@@ -57619,10 +50352,6 @@ public:
     const int type = 2802773753;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcSpace> RelatingSpace;
     std::vector<std::variant<IfcCovering>> RelatedCoverings;
 
@@ -57641,10 +50370,6 @@ public:
     const int type = 2565941209;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcContext> RelatingContext;
     std::vector<IfcDefinitionSelect> RelatedDefinitions;
 
@@ -57663,10 +50388,6 @@ public:
     const int type = 2551354335;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcRelDecomposes(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -57681,10 +50402,6 @@ public:
     const int type = 693640335;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
 
     // Constructor
     explicit IfcRelDefines(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_)
@@ -57699,10 +50416,6 @@ public:
     const int type = 1462361463;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcObject>> RelatedObjects;
     std::variant<IfcObject> RelatingObject;
 
@@ -57721,10 +50434,6 @@ public:
     const int type = 4186316022;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
     IfcPropertySetDefinitionSelect RelatingPropertyDefinition;
 
@@ -57743,10 +50452,6 @@ public:
     const int type = 307848117;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcPropertySetDefinition>> RelatedPropertySets;
     std::variant<IfcPropertySetTemplate> RelatingTemplate;
 
@@ -57765,10 +50470,6 @@ public:
     const int type = 781010003;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcObject>> RelatedObjects;
     std::variant<IfcTypeObject> RelatingType;
 
@@ -57787,10 +50488,6 @@ public:
     const int type = 3940055652;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcOpeningElement> RelatingOpeningElement;
     std::variant<IfcElement> RelatedBuildingElement;
 
@@ -57809,10 +50506,6 @@ public:
     const int type = 279856033;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<std::variant<IfcDistributionControlElement>> RelatedControlElements;
     std::variant<IfcDistributionFlowElement> RelatingFlowElement;
 
@@ -57831,10 +50524,6 @@ public:
     const int type = 427948657;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     IfcInterferenceSelect RelatingElement;
     IfcInterferenceSelect RelatedElement;
     std::optional<std::variant<IfcConnectionGeometry>> InterferenceGeometry;
@@ -57861,10 +50550,6 @@ public:
     const int type = 3268803585;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcObjectDefinition> RelatingObject;
     std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
 
@@ -57883,10 +50568,6 @@ public:
     const int type = 1441486842;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcPositioningElement> RelatingPositioningElement;
     std::vector<std::variant<IfcProduct>> RelatedProducts;
 
@@ -57905,10 +50586,6 @@ public:
     const int type = 750771296;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcElement> RelatingElement;
     std::variant<IfcFeatureElementAddition> RelatedFeatureElement;
 
@@ -57927,10 +50604,6 @@ public:
     const int type = 1245217292;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::vector<IfcSpatialReferenceSelect> RelatedElements;
     std::variant<IfcSpatialElement> RelatingStructure;
 
@@ -57949,10 +50622,6 @@ public:
     const int type = 4122056220;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcProcess> RelatingProcess;
     std::variant<IfcProcess> RelatedProcess;
     std::optional<std::variant<IfcLagTime>> TimeLag;
@@ -57977,10 +50646,6 @@ public:
     const int type = 366585022;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcSystem> RelatingSystem;
     std::vector<std::variant<IfcSpatialElement>> RelatedBuildings;
 
@@ -57999,10 +50664,6 @@ public:
     const int type = 3451746338;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     IfcSpaceBoundarySelect RelatingSpace;
     std::variant<IfcElement> RelatedBuildingElement;
     std::optional<std::variant<IfcConnectionGeometry>> ConnectionGeometry;
@@ -58028,15 +50689,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelSpaceBoundary1stLevel>>> InnerBoundaries;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    IfcSpaceBoundarySelect RelatingSpace;
-    std::variant<IfcElement> RelatedBuildingElement;
-    std::optional<std::variant<IfcConnectionGeometry>> ConnectionGeometry;
-    IfcPhysicalOrVirtualEnum PhysicalOrVirtualBoundary;
-    IfcInternalOrExternalEnum InternalOrExternalBoundary;
     std::optional<std::variant<IfcRelSpaceBoundary1stLevel>> ParentBoundary;
 
     // Constructor
@@ -58054,16 +50706,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelSpaceBoundary2ndLevel>>> Corresponds;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    IfcSpaceBoundarySelect RelatingSpace;
-    std::variant<IfcElement> RelatedBuildingElement;
-    std::optional<std::variant<IfcConnectionGeometry>> ConnectionGeometry;
-    IfcPhysicalOrVirtualEnum PhysicalOrVirtualBoundary;
-    IfcInternalOrExternalEnum InternalOrExternalBoundary;
-    std::optional<std::variant<IfcRelSpaceBoundary1stLevel>> ParentBoundary;
     std::optional<std::variant<IfcRelSpaceBoundary2ndLevel>> CorrespondingBoundary;
 
     // Constructor
@@ -58080,10 +50722,6 @@ public:
     const int type = 1401173127;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcElement> RelatingBuildingElement;
     std::variant<IfcFeatureElementSubtraction> RelatedOpeningElement;
 
@@ -58102,9 +50740,6 @@ public:
     const int type = 816062949;
 
 
-    IfcTransitionCode Transition;
-    IfcBoolean SameSense;
-    std::variant<IfcCurve> ParentCurve;
     IfcParameterValue ParamLength;
 
     // Constructor
@@ -58122,11 +50757,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelAssignsToResource>>> ResourceOf;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<IfcIdentifier> Identification;
     std::optional<IfcText> LongDescription;
 
@@ -58145,8 +50775,6 @@ public:
     const int type = 1856042241;
 
 
-    std::variant<IfcProfileDef> SweptArea;
-    std::optional<std::variant<IfcAxis2Placement3D>> Position;
     std::variant<IfcAxis1Placement> Axis;
     IfcPlaneAngleMeasure Angle;
 
@@ -58165,10 +50793,6 @@ public:
     const int type = 3243963512;
 
 
-    std::variant<IfcProfileDef> SweptArea;
-    std::optional<std::variant<IfcAxis2Placement3D>> Position;
-    std::variant<IfcAxis1Placement> Axis;
-    IfcPlaneAngleMeasure Angle;
     std::variant<IfcProfileDef> EndSweptArea;
 
     // Constructor
@@ -58185,7 +50809,6 @@ public:
     const int type = 4158566097;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
     IfcPositiveLengthMeasure Height;
     IfcPositiveLengthMeasure BottomRadius;
 
@@ -58204,7 +50827,6 @@ public:
     const int type = 3626867408;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
     IfcPositiveLengthMeasure Height;
     IfcPositiveLengthMeasure Radius;
 
@@ -58241,8 +50863,6 @@ public:
     const int type = 1290935644;
 
 
-    std::variant<IfcCurve> Directrix;
-    std::vector<std::variant<IfcProfileDef>> CrossSections;
     std::vector<std::variant<IfcAxis2PlacementLinear>> CrossSectionPositions;
 
     // Constructor
@@ -58279,10 +50899,6 @@ public:
     const int type = 3663146110;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcSimplePropertyTemplateTypeEnum> TemplateType;
     std::optional<IfcLabel> PrimaryMeasureType;
     std::optional<IfcLabel> SecondaryMeasureType;
@@ -58318,13 +50934,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelInterferesElements>>> IsInterferedByElements;
     std::optional<std::vector<std::variant<IfcRelInterferesElements>>> InterferesElements;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     std::optional<IfcLabel> LongName;
 
     // Constructor
@@ -58341,14 +50950,6 @@ public:
     const int type = 710998568;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
     std::optional<IfcLabel> ElementType;
 
     // Constructor
@@ -58365,14 +50966,6 @@ public:
     const int type = 2706606064;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
     std::optional<IfcElementCompositionEnum> CompositionType;
 
     // Constructor
@@ -58389,15 +50982,6 @@ public:
     const int type = 3893378262;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcSpatialStructureElementType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -58412,14 +50996,6 @@ public:
     const int type = 463610769;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
     std::optional<IfcSpatialZoneTypeEnum> PredefinedType;
 
     // Constructor
@@ -58436,15 +51012,6 @@ public:
     const int type = 2481509218;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSpatialZoneTypeEnum PredefinedType;
     std::optional<IfcLabel> LongName;
 
@@ -58463,7 +51030,6 @@ public:
     const int type = 451544542;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
     IfcPositiveLengthMeasure Radius;
 
     // Constructor
@@ -58480,7 +51046,6 @@ public:
     const int type = 4015995234;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
     IfcPositiveLengthMeasure Radius;
 
     // Constructor
@@ -58514,13 +51079,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelConnectsStructuralActivity>>> AssignedToStructuralItem;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     std::variant<IfcStructuralLoad> AppliedLoad;
     IfcGlobalOrLocalEnum GlobalOrLocal;
 
@@ -58540,13 +51098,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelConnectsStructuralActivity>>> AssignedStructuralActivity;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
 
     // Constructor
     explicit IfcStructuralItem(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_)
@@ -58562,13 +51113,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelConnectsStructuralMember>>> ConnectedBy;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
 
     // Constructor
     explicit IfcStructuralMember(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_)
@@ -58583,15 +51127,6 @@ public:
     const int type = 3689010777;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
 
     // Constructor
     explicit IfcStructuralReaction(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_)
@@ -58606,13 +51141,6 @@ public:
     const int type = 3979015343;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     IfcStructuralSurfaceMemberTypeEnum PredefinedType;
     std::optional<IfcPositiveLengthMeasure> Thickness;
 
@@ -58631,15 +51159,6 @@ public:
     const int type = 2218152070;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    IfcStructuralSurfaceMemberTypeEnum PredefinedType;
-    std::optional<IfcPositiveLengthMeasure> Thickness;
 
     // Constructor
     explicit IfcStructuralSurfaceMemberVarying(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, IfcStructuralSurfaceMemberTypeEnum PredefinedType_, const std::optional<IfcPositiveLengthMeasure>& Thickness_)
@@ -58654,15 +51173,6 @@ public:
     const int type = 603775116;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
     IfcStructuralSurfaceActivityTypeEnum PredefinedType;
 
     // Constructor
@@ -58679,17 +51189,6 @@ public:
     const int type = 4095615324;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<IfcLabel> ResourceType;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     IfcSubContractResourceTypeEnum PredefinedType;
 
     // Constructor
@@ -58726,11 +51225,6 @@ public:
     const int type = 2028607225;
 
 
-    std::variant<IfcProfileDef> SweptArea;
-    std::optional<std::variant<IfcAxis2Placement3D>> Position;
-    std::variant<IfcCurve> Directrix;
-    std::optional<IfcCurveMeasureSelect> StartParam;
-    std::optional<IfcCurveMeasureSelect> EndParam;
     std::variant<IfcSurface> ReferenceSurface;
 
     // Constructor
@@ -58747,8 +51241,6 @@ public:
     const int type = 2809605785;
 
 
-    std::variant<IfcProfileDef> SweptCurve;
-    std::optional<std::variant<IfcAxis2Placement3D>> Position;
     std::variant<IfcDirection> ExtrudedDirection;
     IfcLengthMeasure Depth;
 
@@ -58767,8 +51259,6 @@ public:
     const int type = 4124788165;
 
 
-    std::variant<IfcProfileDef> SweptCurve;
-    std::optional<std::variant<IfcAxis2Placement3D>> Position;
     std::variant<IfcAxis1Placement> AxisPosition;
 
     // Constructor
@@ -58785,15 +51275,6 @@ public:
     const int type = 1580310250;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     std::optional<IfcSystemFurnitureElementTypeEnum> PredefinedType;
 
     // Constructor
@@ -58810,13 +51291,6 @@ public:
     const int type = 3473067441;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
     std::optional<IfcLabel> Status;
     std::optional<IfcLabel> WorkMethod;
     IfcBoolean IsMilestone;
@@ -58843,15 +51317,6 @@ public:
     const int type = 3206491090;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<IfcLabel> ProcessType;
     IfcTaskTypeEnum PredefinedType;
     std::optional<IfcLabel> WorkMethod;
 
@@ -58888,7 +51353,6 @@ public:
     const int type = 782932809;
 
 
-    IfcAxis2Placement Position;
     IfcLengthMeasure CubicTerm;
     std::optional<IfcLengthMeasure> QuadraticTerm;
     std::optional<IfcLengthMeasure> LinearTerm;
@@ -58911,7 +51375,6 @@ public:
     const int type = 1935646853;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
     IfcPositiveLengthMeasure MajorRadius;
     IfcPositiveLengthMeasure MinorRadius;
 
@@ -58930,15 +51393,6 @@ public:
     const int type = 3665877780;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcTransportationDeviceType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -58953,7 +51407,6 @@ public:
     const int type = 2916149573;
 
 
-    std::variant<IfcCartesianPointList3D> Coordinates;
     std::optional<std::vector<std::vector<IfcParameterValue>>> Normals;
     std::optional<IfcBoolean> Closed;
     std::vector<std::vector<IfcPositiveInteger>> CoordIndex;
@@ -58976,11 +51429,6 @@ public:
     const int type = 1229763772;
 
 
-    std::variant<IfcCartesianPointList3D> Coordinates;
-    std::optional<std::vector<std::vector<IfcParameterValue>>> Normals;
-    std::optional<IfcBoolean> Closed;
-    std::vector<std::vector<IfcPositiveInteger>> CoordIndex;
-    std::optional<std::vector<IfcPositiveInteger>> PnIndex;
     std::vector<IfcInteger> Flags;
 
     // Constructor
@@ -58997,15 +51445,6 @@ public:
     const int type = 3651464721;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcVehicleTypeEnum PredefinedType;
 
     // Constructor
@@ -59022,10 +51461,6 @@ public:
     const int type = 336235671;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcPositiveLengthMeasure> LiningDepth;
     std::optional<IfcNonNegativeLengthMeasure> LiningThickness;
     std::optional<IfcNonNegativeLengthMeasure> TransomThickness;
@@ -59064,10 +51499,6 @@ public:
     const int type = 512836454;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     IfcWindowPanelOperationEnum OperationType;
     IfcWindowPanelPositionEnum PanelPosition;
     std::optional<IfcPositiveLengthMeasure> FrameDepth;
@@ -59093,11 +51524,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelAssignsToActor>>> IsActingUpon;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcActorSelect TheActor;
 
     // Constructor
@@ -59114,7 +51540,6 @@ public:
     const int type = 1635779807;
 
 
-    std::variant<IfcClosedShell> Outer;
 
     // Constructor
     explicit IfcAdvancedBrep(const std::variant<IfcClosedShell>& Outer_)
@@ -59129,7 +51554,6 @@ public:
     const int type = 2603310189;
 
 
-    std::variant<IfcClosedShell> Outer;
     std::vector<std::variant<IfcClosedShell>> Voids;
 
     // Constructor
@@ -59147,13 +51571,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelContainedInSpatialStructure>>> ContainedInStructure;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     std::optional<IfcAnnotationTypeEnum> PredefinedType;
 
     // Constructor
@@ -59198,13 +51615,6 @@ public:
     const int type = 167062518;
 
 
-    IfcInteger UDegree;
-    IfcInteger VDegree;
-    std::vector<std::vector<std::variant<IfcCartesianPoint>>> ControlPointsList;
-    IfcBSplineSurfaceForm SurfaceForm;
-    IfcLogical UClosed;
-    IfcLogical VClosed;
-    IfcLogical SelfIntersect;
     std::vector<IfcInteger> UMultiplicities;
     std::vector<IfcInteger> VMultiplicities;
     std::vector<IfcParameterValue> UKnots;
@@ -59229,7 +51639,6 @@ public:
     const int type = 1334484129;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
     IfcPositiveLengthMeasure XLength;
     IfcPositiveLengthMeasure YLength;
     IfcPositiveLengthMeasure ZLength;
@@ -59250,9 +51659,6 @@ public:
     const int type = 3649129432;
 
 
-    IfcBooleanOperator Operator;
-    IfcBooleanOperand FirstOperand;
-    IfcBooleanOperand SecondOperand;
 
     // Constructor
     explicit IfcBooleanClippingResult(IfcBooleanOperator Operator_, IfcBooleanOperand FirstOperand_, IfcBooleanOperand SecondOperand_)
@@ -59281,15 +51687,6 @@ public:
     const int type = 3124254112;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcElementCompositionEnum> CompositionType;
     std::optional<IfcLengthMeasure> Elevation;
 
     // Constructor
@@ -59306,15 +51703,6 @@ public:
     const int type = 1626504194;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcBuiltElementType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -59329,15 +51717,6 @@ public:
     const int type = 2197970202;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcChimneyTypeEnum PredefinedType;
 
     // Constructor
@@ -59354,10 +51733,6 @@ public:
     const int type = 2937912522;
 
 
-    IfcProfileTypeEnum ProfileType;
-    std::optional<IfcLabel> ProfileName;
-    std::optional<std::variant<IfcAxis2Placement2D>> Position;
-    IfcPositiveLengthMeasure Radius;
     IfcPositiveLengthMeasure WallThickness;
 
     // Constructor
@@ -59374,15 +51749,6 @@ public:
     const int type = 3893394355;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcCivilElementType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -59397,7 +51763,6 @@ public:
     const int type = 3497074424;
 
 
-    IfcAxis2Placement Position;
     IfcLengthMeasure ClothoidConstant;
 
     // Constructor
@@ -59414,15 +51779,6 @@ public:
     const int type = 300633059;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcColumnTypeEnum PredefinedType;
 
     // Constructor
@@ -59439,10 +51795,6 @@ public:
     const int type = 3875453745;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcLabel> UsageName;
     std::optional<IfcComplexPropertyTemplateTypeEnum> TemplateType;
     std::optional<std::vector<std::variant<IfcPropertyTemplate>>> HasPropertyTemplates;
@@ -59481,8 +51833,6 @@ public:
     const int type = 15328376;
 
 
-    std::vector<std::variant<IfcSegment>> Segments;
-    IfcLogical SelfIntersect;
 
     // Constructor
     explicit IfcCompositeCurveOnSurface(const std::vector<std::variant<IfcSegment>>& Segments_, IfcLogical SelfIntersect_)
@@ -59513,17 +51863,6 @@ public:
     const int type = 2185764099;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<IfcLabel> ResourceType;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     IfcConstructionEquipmentResourceTypeEnum PredefinedType;
 
     // Constructor
@@ -59540,17 +51879,6 @@ public:
     const int type = 4105962743;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<IfcLabel> ResourceType;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     IfcConstructionMaterialResourceTypeEnum PredefinedType;
 
     // Constructor
@@ -59567,17 +51895,6 @@ public:
     const int type = 1525564444;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<IfcLabel> ResourceType;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     IfcConstructionProductResourceTypeEnum PredefinedType;
 
     // Constructor
@@ -59594,13 +51911,6 @@ public:
     const int type = 2559216714;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
     std::optional<std::variant<IfcResourceTime>> Usage;
     std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
     std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
@@ -59622,11 +51932,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelAssignsToControl>>> Controls;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<IfcIdentifier> Identification;
 
     // Constructor
@@ -59643,7 +51948,6 @@ public:
     const int type = 2000195564;
 
 
-    IfcAxis2Placement Position;
     IfcLengthMeasure CosineTerm;
     std::optional<IfcLengthMeasure> ConstantTerm;
 
@@ -59662,12 +51966,6 @@ public:
     const int type = 3895139033;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
     std::optional<IfcCostItemTypeEnum> PredefinedType;
     std::optional<std::vector<std::variant<IfcCostValue>>> CostValues;
     std::optional<std::vector<std::variant<IfcPhysicalQuantity>>> CostQuantities;
@@ -59688,12 +51986,6 @@ public:
     const int type = 1419761937;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
     std::optional<IfcCostScheduleTypeEnum> PredefinedType;
     std::optional<IfcLabel> Status;
     std::optional<IfcDateTime> SubmittedOn;
@@ -59716,15 +52008,6 @@ public:
     const int type = 4189326743;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCourseTypeEnum PredefinedType;
 
     // Constructor
@@ -59741,15 +52024,6 @@ public:
     const int type = 1916426348;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCoveringTypeEnum PredefinedType;
 
     // Constructor
@@ -59766,16 +52040,6 @@ public:
     const int type = 3295246426;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<std::variant<IfcResourceTime>> Usage;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     std::optional<IfcCrewResourceTypeEnum> PredefinedType;
 
     // Constructor
@@ -59792,15 +52056,6 @@ public:
     const int type = 1457835157;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCurtainWallTypeEnum PredefinedType;
 
     // Constructor
@@ -59817,7 +52072,6 @@ public:
     const int type = 1213902940;
 
 
-    std::variant<IfcAxis2Placement3D> Position;
     IfcPositiveLengthMeasure Radius;
 
     // Constructor
@@ -59834,15 +52088,6 @@ public:
     const int type = 1306400036;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcDeepFoundationType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -59857,12 +52102,6 @@ public:
     const int type = 4234616927;
 
 
-    std::variant<IfcProfileDef> SweptArea;
-    std::optional<std::variant<IfcAxis2Placement3D>> Position;
-    std::variant<IfcCurve> Directrix;
-    std::optional<IfcCurveMeasureSelect> StartParam;
-    std::optional<IfcCurveMeasureSelect> EndParam;
-    std::variant<IfcDirection> FixedReference;
 
     // Constructor
     explicit IfcDirectrixDerivedReferenceSweptAreaSolid(const std::variant<IfcProfileDef>& SweptArea_, const std::optional<std::variant<IfcAxis2Placement3D>>& Position_, const std::variant<IfcCurve>& Directrix_, const std::optional<IfcCurveMeasureSelect>& StartParam_, const std::optional<IfcCurveMeasureSelect>& EndParam_, const std::variant<IfcDirection>& FixedReference_)
@@ -59877,15 +52116,6 @@ public:
     const int type = 3256556792;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcDistributionElementType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -59900,15 +52130,6 @@ public:
     const int type = 3849074793;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcDistributionFlowElementType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -59923,10 +52144,6 @@ public:
     const int type = 2963535650;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcPositiveLengthMeasure> LiningDepth;
     std::optional<IfcNonNegativeLengthMeasure> LiningThickness;
     std::optional<IfcPositiveLengthMeasure> ThresholdDepth;
@@ -59967,10 +52184,6 @@ public:
     const int type = 1714330368;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::optional<IfcPositiveLengthMeasure> PanelDepth;
     IfcDoorPanelOperationEnum PanelOperation;
     std::optional<IfcNormalisedRatioMeasure> PanelWidth;
@@ -59995,15 +52208,6 @@ public:
     const int type = 2323601079;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcDoorTypeEnum PredefinedType;
     IfcDoorTypeOperationEnum OperationType;
     std::optional<IfcBoolean> ParameterTakesPrecedence;
@@ -60026,7 +52230,6 @@ public:
     const int type = 445594917;
 
 
-    IfcLabel Name;
 
     // Constructor
     explicit IfcDraughtingPreDefinedColour(IfcLabel Name_)
@@ -60041,7 +52244,6 @@ public:
     const int type = 4006246654;
 
 
-    IfcLabel Name;
 
     // Constructor
     explicit IfcDraughtingPreDefinedCurveFont(IfcLabel Name_)
@@ -60068,13 +52270,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelCoversBldgElements>>> HasCoverings;
     std::optional<std::vector<std::variant<IfcRelAdheresToElement>>> HasSurfaceFeatures;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     std::optional<IfcIdentifier> Tag;
 
     // Constructor
@@ -60091,14 +52286,6 @@ public:
     const int type = 4123344466;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcAssemblyPlaceEnum> AssemblyPlace;
     std::optional<IfcElementAssemblyTypeEnum> PredefinedType;
 
@@ -60117,15 +52304,6 @@ public:
     const int type = 2397081782;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcElementAssemblyTypeEnum PredefinedType;
 
     // Constructor
@@ -60142,14 +52320,6 @@ public:
     const int type = 1623761950;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcElementComponent(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -60164,15 +52334,6 @@ public:
     const int type = 2590856083;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcElementComponentType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -60187,7 +52348,6 @@ public:
     const int type = 1704287377;
 
 
-    IfcAxis2Placement Position;
     IfcPositiveLengthMeasure SemiAxis1;
     IfcPositiveLengthMeasure SemiAxis2;
 
@@ -60206,15 +52366,6 @@ public:
     const int type = 2107101300;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcEnergyConversionDeviceType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -60229,15 +52380,6 @@ public:
     const int type = 132023988;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcEngineTypeEnum PredefinedType;
 
     // Constructor
@@ -60254,15 +52396,6 @@ public:
     const int type = 3174744832;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcEvaporativeCoolerTypeEnum PredefinedType;
 
     // Constructor
@@ -60279,15 +52412,6 @@ public:
     const int type = 3390157468;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcEvaporatorTypeEnum PredefinedType;
 
     // Constructor
@@ -60304,13 +52428,6 @@ public:
     const int type = 4148101412;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
     std::optional<IfcEventTypeEnum> PredefinedType;
     std::optional<IfcEventTriggerTypeEnum> EventTriggerType;
     std::optional<IfcLabel> UserDefinedEventTriggerType;
@@ -60333,14 +52450,6 @@ public:
     const int type = 2853485674;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
 
     // Constructor
     explicit IfcExternalSpatialStructureElement(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcLabel>& LongName_)
@@ -60355,7 +52464,6 @@ public:
     const int type = 807026263;
 
 
-    std::variant<IfcClosedShell> Outer;
 
     // Constructor
     explicit IfcFacetedBrep(const std::variant<IfcClosedShell>& Outer_)
@@ -60370,7 +52478,6 @@ public:
     const int type = 3737207727;
 
 
-    std::variant<IfcClosedShell> Outer;
     std::vector<std::variant<IfcClosedShell>> Voids;
 
     // Constructor
@@ -60387,15 +52494,6 @@ public:
     const int type = 24185140;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcElementCompositionEnum> CompositionType;
 
     // Constructor
     explicit IfcFacility(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcLabel>& LongName_, const std::optional<IfcElementCompositionEnum>& CompositionType_)
@@ -60410,15 +52508,6 @@ public:
     const int type = 1310830890;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcElementCompositionEnum> CompositionType;
     IfcFacilityUsageEnum UsageType;
 
     // Constructor
@@ -60435,16 +52524,6 @@ public:
     const int type = 4228831410;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcElementCompositionEnum> CompositionType;
-    IfcFacilityUsageEnum UsageType;
     std::optional<IfcFacilityPartCommonTypeEnum> PredefinedType;
 
     // Constructor
@@ -60461,14 +52540,6 @@ public:
     const int type = 647756555;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcFastenerTypeEnum> PredefinedType;
 
     // Constructor
@@ -60485,15 +52556,6 @@ public:
     const int type = 2489546625;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcFastenerTypeEnum PredefinedType;
 
     // Constructor
@@ -60510,14 +52572,6 @@ public:
     const int type = 2827207264;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFeatureElement(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -60533,14 +52587,6 @@ public:
 
     std::optional<std::variant<IfcRelProjectsElement>> ProjectsElements;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFeatureElementAddition(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -60556,14 +52602,6 @@ public:
 
     std::optional<std::variant<IfcRelVoidsElement>> VoidsElements;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFeatureElementSubtraction(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -60578,15 +52616,6 @@ public:
     const int type = 3907093117;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFlowControllerType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -60601,15 +52630,6 @@ public:
     const int type = 3198132628;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFlowFittingType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -60624,15 +52644,6 @@ public:
     const int type = 3815607619;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcFlowMeterTypeEnum PredefinedType;
 
     // Constructor
@@ -60649,15 +52660,6 @@ public:
     const int type = 1482959167;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFlowMovingDeviceType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -60672,15 +52674,6 @@ public:
     const int type = 1834744321;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFlowSegmentType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -60695,15 +52688,6 @@ public:
     const int type = 1339347760;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFlowStorageDeviceType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -60718,15 +52702,6 @@ public:
     const int type = 2297155007;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFlowTerminalType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -60741,15 +52716,6 @@ public:
     const int type = 3009222698;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcFlowTreatmentDeviceType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -60764,15 +52730,6 @@ public:
     const int type = 1893162501;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcFootingTypeEnum PredefinedType;
 
     // Constructor
@@ -60789,14 +52746,6 @@ public:
     const int type = 263784265;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFurnishingElement(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -60811,14 +52760,6 @@ public:
     const int type = 1509553395;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcFurnitureTypeEnum> PredefinedType;
 
     // Constructor
@@ -60835,14 +52776,6 @@ public:
     const int type = 3493046030;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcGeographicElementTypeEnum> PredefinedType;
 
     // Constructor
@@ -60859,14 +52792,6 @@ public:
     const int type = 4230923436;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcGeotechnicalElement(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -60881,14 +52806,6 @@ public:
     const int type = 1594536857;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcGeotechnicalStratumTypeEnum> PredefinedType;
 
     // Constructor
@@ -60905,8 +52822,6 @@ public:
     const int type = 2898700619;
 
 
-    std::vector<std::variant<IfcSegment>> Segments;
-    IfcLogical SelfIntersect;
     std::variant<IfcBoundedCurve> BaseCurve;
     std::optional<std::variant<IfcPlacement>> EndPoint;
 
@@ -60927,11 +52842,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelAssignsToGroup>>> IsGroupedBy;
     std::optional<std::vector<std::variant<IfcRelReferencedInSpatialStructure>>> ReferencedInStructures;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
 
     // Constructor
     explicit IfcGroup(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_)
@@ -60946,15 +52856,6 @@ public:
     const int type = 1251058090;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcHeatExchangerTypeEnum PredefinedType;
 
     // Constructor
@@ -60971,15 +52872,6 @@ public:
     const int type = 1806887404;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcHumidifierTypeEnum PredefinedType;
 
     // Constructor
@@ -60996,14 +52888,6 @@ public:
     const int type = 2568555532;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcImpactProtectionDeviceTypeEnum> PredefinedType;
 
     // Constructor
@@ -61020,15 +52904,6 @@ public:
     const int type = 3948183225;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcImpactProtectionDeviceTypeEnum PredefinedType;
 
     // Constructor
@@ -61065,15 +52940,6 @@ public:
     const int type = 3946677679;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcInterceptorTypeEnum PredefinedType;
 
     // Constructor
@@ -61090,9 +52956,6 @@ public:
     const int type = 3113134337;
 
 
-    std::variant<IfcCurve> Curve3D;
-    std::vector<std::variant<IfcPcurve>> AssociatedGeometry;
-    IfcPreferredSurfaceCurveRepresentation MasterRepresentation;
 
     // Constructor
     explicit IfcIntersectionCurve(const std::variant<IfcCurve>& Curve3D_, const std::vector<std::variant<IfcPcurve>>& AssociatedGeometry_, IfcPreferredSurfaceCurveRepresentation MasterRepresentation_)
@@ -61107,11 +52970,6 @@ public:
     const int type = 2391368822;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<IfcInventoryTypeEnum> PredefinedType;
     std::optional<IfcActorSelect> Jurisdiction;
     std::optional<std::vector<std::variant<IfcPerson>>> ResponsiblePersons;
@@ -61138,15 +52996,6 @@ public:
     const int type = 4288270099;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcJunctionBoxTypeEnum PredefinedType;
 
     // Constructor
@@ -61163,15 +53012,6 @@ public:
     const int type = 679976338;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcKerbTypeEnum PredefinedType;
 
     // Constructor
@@ -61188,16 +53028,6 @@ public:
     const int type = 3827777499;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<std::variant<IfcResourceTime>> Usage;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     std::optional<IfcLaborResourceTypeEnum> PredefinedType;
 
     // Constructor
@@ -61214,15 +53044,6 @@ public:
     const int type = 1051575348;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcLampTypeEnum PredefinedType;
 
     // Constructor
@@ -61239,15 +53060,6 @@ public:
     const int type = 1161773419;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcLightFixtureTypeEnum PredefinedType;
 
     // Constructor
@@ -61264,13 +53076,6 @@ public:
     const int type = 2176059722;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
 
     // Constructor
     explicit IfcLinearElement(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_)
@@ -61285,15 +53090,6 @@ public:
     const int type = 1770583370;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcLiquidTerminalTypeEnum PredefinedType;
 
     // Constructor
@@ -61310,15 +53106,6 @@ public:
     const int type = 525669439;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcElementCompositionEnum> CompositionType;
     std::optional<IfcMarineFacilityTypeEnum> PredefinedType;
 
     // Constructor
@@ -61335,16 +53122,6 @@ public:
     const int type = 976884017;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcElementCompositionEnum> CompositionType;
-    IfcFacilityUsageEnum UsageType;
     std::optional<IfcMarinePartTypeEnum> PredefinedType;
 
     // Constructor
@@ -61361,14 +53138,6 @@ public:
     const int type = 377706215;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcPositiveLengthMeasure> NominalDiameter;
     std::optional<IfcPositiveLengthMeasure> NominalLength;
     std::optional<IfcMechanicalFastenerTypeEnum> PredefinedType;
@@ -61389,15 +53158,6 @@ public:
     const int type = 2108223431;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcMechanicalFastenerTypeEnum PredefinedType;
     std::optional<IfcPositiveLengthMeasure> NominalDiameter;
     std::optional<IfcPositiveLengthMeasure> NominalLength;
@@ -61418,15 +53178,6 @@ public:
     const int type = 1114901282;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcMedicalDeviceTypeEnum PredefinedType;
 
     // Constructor
@@ -61443,15 +53194,6 @@ public:
     const int type = 3181161470;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcMemberTypeEnum PredefinedType;
 
     // Constructor
@@ -61468,15 +53210,6 @@ public:
     const int type = 1950438474;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcMobileTelecommunicationsApplianceTypeEnum PredefinedType;
 
     // Constructor
@@ -61493,15 +53226,6 @@ public:
     const int type = 710110818;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcMooringDeviceTypeEnum PredefinedType;
 
     // Constructor
@@ -61518,15 +53242,6 @@ public:
     const int type = 977012517;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcMotorConnectionTypeEnum PredefinedType;
 
     // Constructor
@@ -61543,15 +53258,6 @@ public:
     const int type = 506776471;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcNavigationElementTypeEnum PredefinedType;
 
     // Constructor
@@ -61568,12 +53274,6 @@ public:
     const int type = 4143007308;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    IfcActorSelect TheActor;
     std::optional<IfcOccupantTypeEnum> PredefinedType;
 
     // Constructor
@@ -61591,14 +53291,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelFillsElement>>> HasFillings;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcOpeningElementTypeEnum> PredefinedType;
 
     // Constructor
@@ -61615,15 +53307,6 @@ public:
     const int type = 2837617999;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcOutletTypeEnum PredefinedType;
 
     // Constructor
@@ -61640,15 +53323,6 @@ public:
     const int type = 514975943;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcPavementTypeEnum PredefinedType;
 
     // Constructor
@@ -61665,12 +53339,6 @@ public:
     const int type = 2382730787;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
     IfcLabel LifeCyclePhase;
     std::optional<IfcPerformanceHistoryTypeEnum> PredefinedType;
 
@@ -61689,10 +53357,6 @@ public:
     const int type = 3566463478;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     IfcPermeableCoveringOperationEnum OperationType;
     IfcWindowPanelPositionEnum PanelPosition;
     std::optional<IfcPositiveLengthMeasure> FrameDepth;
@@ -61717,12 +53381,6 @@ public:
     const int type = 3327091369;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
     std::optional<IfcPermitTypeEnum> PredefinedType;
     std::optional<IfcLabel> Status;
     std::optional<IfcText> LongDescription;
@@ -61743,15 +53401,6 @@ public:
     const int type = 1158309216;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcPileTypeEnum PredefinedType;
 
     // Constructor
@@ -61768,15 +53417,6 @@ public:
     const int type = 804291784;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcPipeFittingTypeEnum PredefinedType;
 
     // Constructor
@@ -61793,15 +53433,6 @@ public:
     const int type = 4231323485;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcPipeSegmentTypeEnum PredefinedType;
 
     // Constructor
@@ -61818,15 +53449,6 @@ public:
     const int type = 4017108033;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcPlateTypeEnum PredefinedType;
 
     // Constructor
@@ -61843,7 +53465,6 @@ public:
     const int type = 2839578677;
 
 
-    std::variant<IfcCartesianPointList3D> Coordinates;
     std::optional<IfcBoolean> Closed;
     std::vector<std::variant<IfcIndexedPolygonalFace>> Faces;
     std::optional<std::vector<IfcPositiveInteger>> PnIndex;
@@ -61883,13 +53504,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelConnectsPorts>>> ConnectedFrom;
     std::optional<std::vector<std::variant<IfcRelConnectsPorts>>> ConnectedTo;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
 
     // Constructor
     explicit IfcPort(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_)
@@ -61906,13 +53520,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelContainedInSpatialStructure>>> ContainedInStructure;
     std::optional<std::vector<std::variant<IfcRelPositions>>> Positions;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
 
     // Constructor
     explicit IfcPositioningElement(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_)
@@ -61927,13 +53534,6 @@ public:
     const int type = 2744685151;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
     std::optional<IfcProcedureTypeEnum> PredefinedType;
 
     // Constructor
@@ -61950,12 +53550,6 @@ public:
     const int type = 2904328755;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
     std::optional<IfcProjectOrderTypeEnum> PredefinedType;
     std::optional<IfcLabel> Status;
     std::optional<IfcText> LongDescription;
@@ -61976,14 +53570,6 @@ public:
     const int type = 3651124850;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcProjectionElementTypeEnum> PredefinedType;
 
     // Constructor
@@ -62000,15 +53586,6 @@ public:
     const int type = 1842657554;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcProtectiveDeviceTypeEnum PredefinedType;
 
     // Constructor
@@ -62025,15 +53602,6 @@ public:
     const int type = 2250791053;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcPumpTypeEnum PredefinedType;
 
     // Constructor
@@ -62050,15 +53618,6 @@ public:
     const int type = 1763565496;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcRailTypeEnum PredefinedType;
 
     // Constructor
@@ -62075,15 +53634,6 @@ public:
     const int type = 2893384427;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcRailingTypeEnum PredefinedType;
 
     // Constructor
@@ -62100,15 +53650,6 @@ public:
     const int type = 3992365140;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcElementCompositionEnum> CompositionType;
     std::optional<IfcRailwayTypeEnum> PredefinedType;
 
     // Constructor
@@ -62125,16 +53666,6 @@ public:
     const int type = 1891881377;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcElementCompositionEnum> CompositionType;
-    IfcFacilityUsageEnum UsageType;
     std::optional<IfcRailwayPartTypeEnum> PredefinedType;
 
     // Constructor
@@ -62151,15 +53682,6 @@ public:
     const int type = 2324767716;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcRampFlightTypeEnum PredefinedType;
 
     // Constructor
@@ -62176,15 +53698,6 @@ public:
     const int type = 1469900589;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcRampTypeEnum PredefinedType;
 
     // Constructor
@@ -62201,18 +53714,6 @@ public:
     const int type = 683857671;
 
 
-    IfcInteger UDegree;
-    IfcInteger VDegree;
-    std::vector<std::vector<std::variant<IfcCartesianPoint>>> ControlPointsList;
-    IfcBSplineSurfaceForm SurfaceForm;
-    IfcLogical UClosed;
-    IfcLogical VClosed;
-    IfcLogical SelfIntersect;
-    std::vector<IfcInteger> UMultiplicities;
-    std::vector<IfcInteger> VMultiplicities;
-    std::vector<IfcParameterValue> UKnots;
-    std::vector<IfcParameterValue> VKnots;
-    IfcKnotType KnotSpec;
     std::vector<std::vector<IfcReal>> WeightsData;
 
     // Constructor
@@ -62229,13 +53730,6 @@ public:
     const int type = 4021432810;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     std::optional<IfcReferentTypeEnum> PredefinedType;
 
     // Constructor
@@ -62252,14 +53746,6 @@ public:
     const int type = 3027567501;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcLabel> SteelGrade;
 
     // Constructor
@@ -62276,15 +53762,6 @@ public:
     const int type = 964333572;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcReinforcingElementType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -62299,15 +53776,6 @@ public:
     const int type = 2320036040;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcLabel> SteelGrade;
     std::optional<IfcPositiveLengthMeasure> MeshLength;
     std::optional<IfcPositiveLengthMeasure> MeshWidth;
     std::optional<IfcPositiveLengthMeasure> LongitudinalBarNominalDiameter;
@@ -62340,15 +53808,6 @@ public:
     const int type = 2310774935;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcReinforcingMeshTypeEnum PredefinedType;
     std::optional<IfcPositiveLengthMeasure> MeshLength;
     std::optional<IfcPositiveLengthMeasure> MeshWidth;
@@ -62385,10 +53844,6 @@ public:
     const int type = 3818125796;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcElement> RelatingElement;
     std::vector<std::variant<IfcSurfaceFeature>> RelatedSurfaceFeatures;
 
@@ -62407,10 +53862,6 @@ public:
     const int type = 160246688;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
     std::variant<IfcObjectDefinition> RelatingObject;
     std::vector<std::variant<IfcObjectDefinition>> RelatedObjects;
 
@@ -62429,15 +53880,6 @@ public:
     const int type = 146592293;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcElementCompositionEnum> CompositionType;
     std::optional<IfcRoadTypeEnum> PredefinedType;
 
     // Constructor
@@ -62454,16 +53896,6 @@ public:
     const int type = 550521510;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcElementCompositionEnum> CompositionType;
-    IfcFacilityUsageEnum UsageType;
     std::optional<IfcRoadPartTypeEnum> PredefinedType;
 
     // Constructor
@@ -62480,15 +53912,6 @@ public:
     const int type = 2781568857;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcRoofTypeEnum PredefinedType;
 
     // Constructor
@@ -62505,15 +53928,6 @@ public:
     const int type = 1768891740;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSanitaryTerminalTypeEnum PredefinedType;
 
     // Constructor
@@ -62530,9 +53944,6 @@ public:
     const int type = 2157484638;
 
 
-    std::variant<IfcCurve> Curve3D;
-    std::vector<std::variant<IfcPcurve>> AssociatedGeometry;
-    IfcPreferredSurfaceCurveRepresentation MasterRepresentation;
 
     // Constructor
     explicit IfcSeamCurve(const std::variant<IfcCurve>& Curve3D_, const std::vector<std::variant<IfcPcurve>>& AssociatedGeometry_, IfcPreferredSurfaceCurveRepresentation MasterRepresentation_)
@@ -62547,7 +53958,6 @@ public:
     const int type = 3649235739;
 
 
-    IfcAxis2Placement Position;
     IfcLengthMeasure QuadraticTerm;
     std::optional<IfcLengthMeasure> LinearTerm;
     std::optional<IfcLengthMeasure> ConstantTerm;
@@ -62568,8 +53978,6 @@ public:
     const int type = 544395925;
 
 
-    std::vector<std::variant<IfcSegment>> Segments;
-    IfcLogical SelfIntersect;
     std::variant<IfcBoundedCurve> BaseCurve;
     std::optional<std::variant<IfcPlacement>> EndPoint;
 
@@ -62588,7 +53996,6 @@ public:
     const int type = 1027922057;
 
 
-    IfcAxis2Placement Position;
     IfcLengthMeasure SepticTerm;
     std::optional<IfcLengthMeasure> SexticTerm;
     std::optional<IfcLengthMeasure> QuinticTerm;
@@ -62619,15 +54026,6 @@ public:
     const int type = 4074543187;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcShadingDeviceTypeEnum PredefinedType;
 
     // Constructor
@@ -62644,14 +54042,6 @@ public:
     const int type = 33720170;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcSignTypeEnum> PredefinedType;
 
     // Constructor
@@ -62668,15 +54058,6 @@ public:
     const int type = 3599934289;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSignTypeEnum PredefinedType;
 
     // Constructor
@@ -62693,15 +54074,6 @@ public:
     const int type = 1894708472;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSignalTypeEnum PredefinedType;
 
     // Constructor
@@ -62718,7 +54090,6 @@ public:
     const int type = 42703149;
 
 
-    IfcAxis2Placement Position;
     IfcLengthMeasure SineTerm;
     std::optional<IfcLengthMeasure> LinearTerm;
     std::optional<IfcLengthMeasure> ConstantTerm;
@@ -62739,15 +54110,6 @@ public:
     const int type = 4097777520;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcElementCompositionEnum> CompositionType;
     std::optional<IfcCompoundPlaneAngleMeasure> RefLatitude;
     std::optional<IfcCompoundPlaneAngleMeasure> RefLongitude;
     std::optional<IfcLengthMeasure> RefElevation;
@@ -62772,15 +54134,6 @@ public:
     const int type = 2533589738;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSlabTypeEnum PredefinedType;
 
     // Constructor
@@ -62797,15 +54150,6 @@ public:
     const int type = 1072016465;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSolarDeviceTypeEnum PredefinedType;
 
     // Constructor
@@ -62824,15 +54168,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelCoversSpaces>>> HasCoverings;
     std::optional<std::vector<std::variant<IfcRelSpaceBoundary>>> BoundedBy;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcElementCompositionEnum> CompositionType;
     std::optional<IfcSpaceTypeEnum> PredefinedType;
     std::optional<IfcLengthMeasure> ElevationWithFlooring;
 
@@ -62851,15 +54186,6 @@ public:
     const int type = 1305183839;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSpaceHeaterTypeEnum PredefinedType;
 
     // Constructor
@@ -62876,15 +54202,6 @@ public:
     const int type = 3812236995;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSpaceTypeEnum PredefinedType;
     std::optional<IfcLabel> LongName;
 
@@ -62903,15 +54220,6 @@ public:
     const int type = 3112655638;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcStackTerminalTypeEnum PredefinedType;
 
     // Constructor
@@ -62928,15 +54236,6 @@ public:
     const int type = 1039846685;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcStairFlightTypeEnum PredefinedType;
 
     // Constructor
@@ -62953,15 +54252,6 @@ public:
     const int type = 338393293;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcStairTypeEnum PredefinedType;
 
     // Constructor
@@ -62978,15 +54268,6 @@ public:
     const int type = 682877961;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
     std::optional<IfcBoolean> DestabilizingLoad;
 
     // Constructor
@@ -63004,13 +54285,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelConnectsStructuralMember>>> ConnectsStructuralMembers;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     std::optional<std::variant<IfcBoundaryCondition>> AppliedCondition;
 
     // Constructor
@@ -63027,16 +54301,6 @@ public:
     const int type = 1004757350;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
-    std::optional<IfcBoolean> DestabilizingLoad;
     std::optional<IfcProjectedOrTrueLengthEnum> ProjectedOrTrue;
     IfcStructuralCurveActivityTypeEnum PredefinedType;
 
@@ -63055,14 +54319,6 @@ public:
     const int type = 4243806635;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<std::variant<IfcBoundaryCondition>> AppliedCondition;
     std::variant<IfcDirection> AxisDirection;
 
     // Constructor
@@ -63079,13 +54335,6 @@ public:
     const int type = 214636428;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     IfcStructuralCurveMemberTypeEnum PredefinedType;
     std::variant<IfcDirection> Axis;
 
@@ -63104,15 +54353,6 @@ public:
     const int type = 2445595289;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    IfcStructuralCurveMemberTypeEnum PredefinedType;
-    std::variant<IfcDirection> Axis;
 
     // Constructor
     explicit IfcStructuralCurveMemberVarying(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, IfcStructuralCurveMemberTypeEnum PredefinedType_, const std::variant<IfcDirection>& Axis_)
@@ -63127,15 +54367,6 @@ public:
     const int type = 2757150158;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
     IfcStructuralCurveActivityTypeEnum PredefinedType;
 
     // Constructor
@@ -63152,18 +54383,6 @@ public:
     const int type = 1807405624;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
-    std::optional<IfcBoolean> DestabilizingLoad;
-    std::optional<IfcProjectedOrTrueLengthEnum> ProjectedOrTrue;
-    IfcStructuralCurveActivityTypeEnum PredefinedType;
 
     // Constructor
     explicit IfcStructuralLinearAction(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_, const std::optional<IfcBoolean>& DestabilizingLoad_, const std::optional<IfcProjectedOrTrueLengthEnum>& ProjectedOrTrue_, IfcStructuralCurveActivityTypeEnum PredefinedType_)
@@ -63180,11 +54399,6 @@ public:
     std::optional<std::vector<std::variant<IfcStructuralResultGroup>>> SourceOfResultGroup;
     std::optional<std::vector<std::variant<IfcStructuralAnalysisModel>>> LoadGroupFor;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcLoadGroupTypeEnum PredefinedType;
     IfcActionTypeEnum ActionType;
     IfcActionSourceTypeEnum ActionSource;
@@ -63209,16 +54423,6 @@ public:
     const int type = 2082059205;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
-    std::optional<IfcBoolean> DestabilizingLoad;
 
     // Constructor
     explicit IfcStructuralPointAction(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_, const std::optional<IfcBoolean>& DestabilizingLoad_)
@@ -63233,14 +54437,6 @@ public:
     const int type = 734778138;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<std::variant<IfcBoundaryCondition>> AppliedCondition;
     std::optional<std::variant<IfcAxis2Placement3D>> ConditionCoordinateSystem;
 
     // Constructor
@@ -63257,15 +54453,6 @@ public:
     const int type = 1235345126;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
 
     // Constructor
     explicit IfcStructuralPointReaction(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_)
@@ -63281,11 +54468,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcStructuralAnalysisModel>>> ResultGroupFor;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcAnalysisTheoryTypeEnum TheoryType;
     std::optional<std::variant<IfcStructuralLoadGroup>> ResultForLoadGroup;
     IfcBoolean IsLinear;
@@ -63306,16 +54488,6 @@ public:
     const int type = 3657597509;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
-    std::optional<IfcBoolean> DestabilizingLoad;
     std::optional<IfcProjectedOrTrueLengthEnum> ProjectedOrTrue;
     IfcStructuralSurfaceActivityTypeEnum PredefinedType;
 
@@ -63334,14 +54506,6 @@ public:
     const int type = 1975003073;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<std::variant<IfcBoundaryCondition>> AppliedCondition;
 
     // Constructor
     explicit IfcStructuralSurfaceConnection(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<std::variant<IfcBoundaryCondition>>& AppliedCondition_)
@@ -63356,16 +54520,6 @@ public:
     const int type = 148013059;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<std::variant<IfcResourceTime>> Usage;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     std::optional<IfcSubContractResourceTypeEnum> PredefinedType;
 
     // Constructor
@@ -63383,14 +54537,6 @@ public:
 
     std::optional<std::variant<IfcRelAdheresToElement>> AdheresToElement;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcSurfaceFeatureTypeEnum> PredefinedType;
 
     // Constructor
@@ -63407,15 +54553,6 @@ public:
     const int type = 2315554128;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSwitchingDeviceTypeEnum PredefinedType;
 
     // Constructor
@@ -63434,11 +54571,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelServicesBuildings>>> ServicesBuildings;
     std::optional<std::vector<std::variant<IfcRelReferencedInSpatialStructure>>> ServicesFacilities;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
 
     // Constructor
     explicit IfcSystem(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_)
@@ -63453,14 +54585,6 @@ public:
     const int type = 413509423;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcSystemFurnitureElementTypeEnum> PredefinedType;
 
     // Constructor
@@ -63477,15 +54601,6 @@ public:
     const int type = 5716631;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcTankTypeEnum PredefinedType;
 
     // Constructor
@@ -63502,15 +54617,6 @@ public:
     const int type = 3824725483;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcLabel> SteelGrade;
     std::optional<IfcTendonTypeEnum> PredefinedType;
     std::optional<IfcPositiveLengthMeasure> NominalDiameter;
     std::optional<IfcAreaMeasure> CrossSectionArea;
@@ -63541,15 +54647,6 @@ public:
     const int type = 2347447852;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcLabel> SteelGrade;
     std::optional<IfcTendonAnchorTypeEnum> PredefinedType;
 
     // Constructor
@@ -63566,15 +54663,6 @@ public:
     const int type = 3081323446;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcTendonAnchorTypeEnum PredefinedType;
 
     // Constructor
@@ -63591,15 +54679,6 @@ public:
     const int type = 3663046924;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcLabel> SteelGrade;
     std::optional<IfcTendonConduitTypeEnum> PredefinedType;
 
     // Constructor
@@ -63616,15 +54695,6 @@ public:
     const int type = 2281632017;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcTendonConduitTypeEnum PredefinedType;
 
     // Constructor
@@ -63641,15 +54711,6 @@ public:
     const int type = 2415094496;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcTendonTypeEnum PredefinedType;
     std::optional<IfcPositiveLengthMeasure> NominalDiameter;
     std::optional<IfcAreaMeasure> CrossSectionArea;
@@ -63672,15 +54733,6 @@ public:
     const int type = 618700268;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcTrackElementTypeEnum PredefinedType;
 
     // Constructor
@@ -63697,15 +54749,6 @@ public:
     const int type = 1692211062;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcTransformerTypeEnum PredefinedType;
 
     // Constructor
@@ -63722,15 +54765,6 @@ public:
     const int type = 2097647324;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcTransportElementTypeEnum PredefinedType;
 
     // Constructor
@@ -63747,14 +54781,6 @@ public:
     const int type = 1953115116;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcTransportationDevice(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -63793,15 +54819,6 @@ public:
     const int type = 1600972822;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcTubeBundleTypeEnum PredefinedType;
 
     // Constructor
@@ -63818,15 +54835,6 @@ public:
     const int type = 1911125066;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcUnitaryEquipmentTypeEnum PredefinedType;
 
     // Constructor
@@ -63843,15 +54851,6 @@ public:
     const int type = 728799441;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcValveTypeEnum PredefinedType;
 
     // Constructor
@@ -63868,14 +54867,6 @@ public:
     const int type = 840318589;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcVehicleTypeEnum> PredefinedType;
 
     // Constructor
@@ -63892,14 +54883,6 @@ public:
     const int type = 1530820697;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcVibrationDamperTypeEnum> PredefinedType;
 
     // Constructor
@@ -63916,15 +54899,6 @@ public:
     const int type = 3956297820;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcVibrationDamperTypeEnum PredefinedType;
 
     // Constructor
@@ -63941,14 +54915,6 @@ public:
     const int type = 2391383451;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcVibrationIsolatorTypeEnum> PredefinedType;
 
     // Constructor
@@ -63965,15 +54931,6 @@ public:
     const int type = 3313531582;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcVibrationIsolatorTypeEnum PredefinedType;
 
     // Constructor
@@ -63990,14 +54947,6 @@ public:
     const int type = 2769231204;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcVirtualElementTypeEnum> PredefinedType;
 
     // Constructor
@@ -64014,14 +54963,6 @@ public:
     const int type = 926996030;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcVoidingFeatureTypeEnum> PredefinedType;
 
     // Constructor
@@ -64038,15 +54979,6 @@ public:
     const int type = 1898987631;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcWallTypeEnum PredefinedType;
 
     // Constructor
@@ -64063,15 +54995,6 @@ public:
     const int type = 1133259667;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcWasteTerminalTypeEnum PredefinedType;
 
     // Constructor
@@ -64088,15 +55011,6 @@ public:
     const int type = 4009809668;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcWindowTypeEnum PredefinedType;
     IfcWindowTypePartitioningEnum PartitioningType;
     std::optional<IfcBoolean> ParameterTakesPrecedence;
@@ -64119,12 +55033,6 @@ public:
     const int type = 4088093105;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
     std::optional<std::vector<std::variant<IfcWorkTime>>> WorkingTimes;
     std::optional<std::vector<std::variant<IfcWorkTime>>> ExceptionTimes;
     std::optional<IfcWorkCalendarTypeEnum> PredefinedType;
@@ -64145,12 +55053,6 @@ public:
     const int type = 1028945134;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
     IfcDateTime CreationDate;
     std::optional<std::vector<std::variant<IfcPerson>>> Creators;
     std::optional<IfcLabel> Purpose;
@@ -64179,19 +55081,6 @@ public:
     const int type = 4218914973;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    IfcDateTime CreationDate;
-    std::optional<std::vector<std::variant<IfcPerson>>> Creators;
-    std::optional<IfcLabel> Purpose;
-    std::optional<IfcDuration> Duration;
-    std::optional<IfcDuration> TotalFloat;
-    IfcDateTime StartTime;
-    std::optional<IfcDateTime> FinishTime;
     std::optional<IfcWorkPlanTypeEnum> PredefinedType;
 
     // Constructor
@@ -64208,19 +55097,6 @@ public:
     const int type = 3342526732;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    IfcDateTime CreationDate;
-    std::optional<std::vector<std::variant<IfcPerson>>> Creators;
-    std::optional<IfcLabel> Purpose;
-    std::optional<IfcDuration> Duration;
-    std::optional<IfcDuration> TotalFloat;
-    IfcDateTime StartTime;
-    std::optional<IfcDateTime> FinishTime;
     std::optional<IfcWorkScheduleTypeEnum> PredefinedType;
 
     // Constructor
@@ -64237,11 +55113,6 @@ public:
     const int type = 1033361043;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<IfcLabel> LongName;
 
     // Constructor
@@ -64258,12 +55129,6 @@ public:
     const int type = 3821786052;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
     std::optional<IfcActionRequestTypeEnum> PredefinedType;
     std::optional<IfcLabel> Status;
     std::optional<IfcText> LongDescription;
@@ -64284,15 +55149,6 @@ public:
     const int type = 1411407467;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcAirTerminalBoxTypeEnum PredefinedType;
 
     // Constructor
@@ -64309,15 +55165,6 @@ public:
     const int type = 3352864051;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcAirTerminalTypeEnum PredefinedType;
 
     // Constructor
@@ -64334,15 +55181,6 @@ public:
     const int type = 1871374353;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcAirToAirHeatRecoveryTypeEnum PredefinedType;
 
     // Constructor
@@ -64359,13 +55197,6 @@ public:
     const int type = 4266260250;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     IfcPositiveLengthMeasure RailHeadDistance;
 
     // Constructor
@@ -64382,13 +55213,6 @@ public:
     const int type = 1545765605;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
 
     // Constructor
     explicit IfcAlignmentHorizontal(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_)
@@ -64403,13 +55227,6 @@ public:
     const int type = 317615605;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     std::variant<IfcAlignmentParameterSegment> DesignParameters;
 
     // Constructor
@@ -64426,13 +55243,6 @@ public:
     const int type = 1662888072;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
 
     // Constructor
     explicit IfcAlignmentVertical(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_)
@@ -64447,11 +55257,6 @@ public:
     const int type = 3460190687;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<IfcIdentifier> Identification;
     std::optional<std::variant<IfcCostValue>> OriginalValue;
     std::optional<std::variant<IfcCostValue>> CurrentValue;
@@ -64484,15 +55289,6 @@ public:
     const int type = 1532957894;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcAudioVisualApplianceTypeEnum PredefinedType;
 
     // Constructor
@@ -64533,11 +55329,6 @@ public:
     const int type = 2461110595;
 
 
-    IfcInteger Degree;
-    std::vector<std::variant<IfcCartesianPoint>> ControlPointsList;
-    IfcBSplineCurveForm CurveForm;
-    IfcLogical ClosedCurve;
-    IfcLogical SelfIntersect;
     std::vector<IfcInteger> KnotMultiplicities;
     std::vector<IfcParameterValue> Knots;
     IfcKnotType KnotSpec;
@@ -64558,15 +55349,6 @@ public:
     const int type = 819618141;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcBeamTypeEnum PredefinedType;
 
     // Constructor
@@ -64583,15 +55365,6 @@ public:
     const int type = 3649138523;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcBearingTypeEnum PredefinedType;
 
     // Constructor
@@ -64608,15 +55381,6 @@ public:
     const int type = 231477066;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcBoilerTypeEnum PredefinedType;
 
     // Constructor
@@ -64633,8 +55397,6 @@ public:
     const int type = 1136057603;
 
 
-    std::vector<std::variant<IfcSegment>> Segments;
-    IfcLogical SelfIntersect;
 
     // Constructor
     explicit IfcBoundaryCurve(const std::vector<std::variant<IfcSegment>>& Segments_, IfcLogical SelfIntersect_)
@@ -64649,15 +55411,6 @@ public:
     const int type = 644574406;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcElementCompositionEnum> CompositionType;
     std::optional<IfcBridgeTypeEnum> PredefinedType;
 
     // Constructor
@@ -64674,16 +55427,6 @@ public:
     const int type = 963979645;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcElementCompositionEnum> CompositionType;
-    IfcFacilityUsageEnum UsageType;
     std::optional<IfcBridgePartTypeEnum> PredefinedType;
 
     // Constructor
@@ -64700,15 +55443,6 @@ public:
     const int type = 4031249490;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcElementCompositionEnum> CompositionType;
     std::optional<IfcLengthMeasure> ElevationOfRefHeight;
     std::optional<IfcLengthMeasure> ElevationOfTerrain;
     std::optional<std::variant<IfcPostalAddress>> BuildingAddress;
@@ -64729,14 +55463,6 @@ public:
     const int type = 2979338954;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcBuildingElementPartTypeEnum> PredefinedType;
 
     // Constructor
@@ -64753,15 +55479,6 @@ public:
     const int type = 39481116;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcBuildingElementPartTypeEnum PredefinedType;
 
     // Constructor
@@ -64778,15 +55495,6 @@ public:
     const int type = 1909888760;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcBuildingElementProxyTypeEnum PredefinedType;
 
     // Constructor
@@ -64803,11 +55511,6 @@ public:
     const int type = 1177604601;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<IfcBuildingSystemTypeEnum> PredefinedType;
     std::optional<IfcLabel> LongName;
 
@@ -64826,14 +55529,6 @@ public:
     const int type = 1876633798;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcBuiltElement(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -64848,11 +55543,6 @@ public:
     const int type = 3862327254;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<IfcBuiltSystemTypeEnum> PredefinedType;
     std::optional<IfcLabel> LongName;
 
@@ -64871,15 +55561,6 @@ public:
     const int type = 2188180465;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcBurnerTypeEnum PredefinedType;
 
     // Constructor
@@ -64896,15 +55577,6 @@ public:
     const int type = 395041908;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCableCarrierFittingTypeEnum PredefinedType;
 
     // Constructor
@@ -64921,15 +55593,6 @@ public:
     const int type = 3293546465;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCableCarrierSegmentTypeEnum PredefinedType;
 
     // Constructor
@@ -64946,15 +55609,6 @@ public:
     const int type = 2674252688;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCableFittingTypeEnum PredefinedType;
 
     // Constructor
@@ -64971,15 +55625,6 @@ public:
     const int type = 1285652485;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCableSegmentTypeEnum PredefinedType;
 
     // Constructor
@@ -64996,15 +55641,6 @@ public:
     const int type = 3203706013;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCaissonFoundationTypeEnum PredefinedType;
 
     // Constructor
@@ -65021,15 +55657,6 @@ public:
     const int type = 2951183804;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcChillerTypeEnum PredefinedType;
 
     // Constructor
@@ -65046,14 +55673,6 @@ public:
     const int type = 3296154744;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcChimneyTypeEnum> PredefinedType;
 
     // Constructor
@@ -65070,7 +55689,6 @@ public:
     const int type = 2611217952;
 
 
-    IfcAxis2Placement Position;
     IfcPositiveLengthMeasure Radius;
 
     // Constructor
@@ -65087,14 +55705,6 @@ public:
     const int type = 1677625105;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcCivilElement(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -65109,15 +55719,6 @@ public:
     const int type = 2301859152;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCoilTypeEnum PredefinedType;
 
     // Constructor
@@ -65134,14 +55735,6 @@ public:
     const int type = 843113511;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcColumnTypeEnum> PredefinedType;
 
     // Constructor
@@ -65158,15 +55751,6 @@ public:
     const int type = 400855858;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCommunicationsApplianceTypeEnum PredefinedType;
 
     // Constructor
@@ -65183,15 +55767,6 @@ public:
     const int type = 3850581409;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCompressorTypeEnum PredefinedType;
 
     // Constructor
@@ -65208,15 +55783,6 @@ public:
     const int type = 2816379211;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCondenserTypeEnum PredefinedType;
 
     // Constructor
@@ -65233,16 +55799,6 @@ public:
     const int type = 3898045240;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<std::variant<IfcResourceTime>> Usage;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     std::optional<IfcConstructionEquipmentResourceTypeEnum> PredefinedType;
 
     // Constructor
@@ -65259,16 +55815,6 @@ public:
     const int type = 1060000209;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<std::variant<IfcResourceTime>> Usage;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     std::optional<IfcConstructionMaterialResourceTypeEnum> PredefinedType;
 
     // Constructor
@@ -65285,16 +55831,6 @@ public:
     const int type = 488727124;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcIdentifier> Identification;
-    std::optional<IfcText> LongDescription;
-    std::optional<std::variant<IfcResourceTime>> Usage;
-    std::optional<std::vector<std::variant<IfcAppliedValue>>> BaseCosts;
-    std::optional<std::variant<IfcPhysicalQuantity>> BaseQuantity;
     std::optional<IfcConstructionProductResourceTypeEnum> PredefinedType;
 
     // Constructor
@@ -65311,15 +55847,6 @@ public:
     const int type = 2940368186;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcConveyorSegmentTypeEnum PredefinedType;
 
     // Constructor
@@ -65336,15 +55863,6 @@ public:
     const int type = 335055490;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCooledBeamTypeEnum PredefinedType;
 
     // Constructor
@@ -65361,15 +55879,6 @@ public:
     const int type = 2954562838;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcCoolingTowerTypeEnum PredefinedType;
 
     // Constructor
@@ -65386,14 +55895,6 @@ public:
     const int type = 1502416096;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCourseTypeEnum> PredefinedType;
 
     // Constructor
@@ -65412,14 +55913,6 @@ public:
     std::optional<std::vector<std::variant<IfcRelCoversSpaces>>> CoversSpaces;
     std::optional<std::vector<std::variant<IfcRelCoversBldgElements>>> CoversElements;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCoveringTypeEnum> PredefinedType;
 
     // Constructor
@@ -65436,14 +55929,6 @@ public:
     const int type = 3495092785;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCurtainWallTypeEnum> PredefinedType;
 
     // Constructor
@@ -65460,15 +55945,6 @@ public:
     const int type = 3961806047;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcDamperTypeEnum PredefinedType;
 
     // Constructor
@@ -65485,14 +55961,6 @@ public:
     const int type = 3426335179;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcDeepFoundation(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -65507,14 +55975,6 @@ public:
     const int type = 1335981549;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcDiscreteAccessoryTypeEnum> PredefinedType;
 
     // Constructor
@@ -65531,15 +55991,6 @@ public:
     const int type = 2635815018;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcDiscreteAccessoryTypeEnum PredefinedType;
 
     // Constructor
@@ -65556,15 +56007,6 @@ public:
     const int type = 479945903;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcDistributionBoardTypeEnum PredefinedType;
 
     // Constructor
@@ -65581,15 +56023,6 @@ public:
     const int type = 1599208980;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcDistributionChamberElementTypeEnum PredefinedType;
 
     // Constructor
@@ -65606,15 +56039,6 @@ public:
     const int type = 2063403501;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
 
     // Constructor
     explicit IfcDistributionControlElementType(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcIdentifier>& ApplicableOccurrence_, const std::optional<std::vector<std::variant<IfcPropertySetDefinition>>>& HasPropertySets_, const std::optional<std::vector<std::variant<IfcRepresentationMap>>>& RepresentationMaps_, const std::optional<IfcLabel>& Tag_, const std::optional<IfcLabel>& ElementType_)
@@ -65630,14 +56054,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelConnectsPortToElement>>> HasPorts;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcDistributionElement(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -65653,14 +56069,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelFlowControlElements>>> HasControlElements;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcDistributionFlowElement(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -65675,13 +56083,6 @@ public:
     const int type = 3041715199;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     std::optional<IfcFlowDirectionEnum> FlowDirection;
     std::optional<IfcDistributionPortTypeEnum> PredefinedType;
     std::optional<IfcDistributionSystemEnum> SystemType;
@@ -65702,11 +56103,6 @@ public:
     const int type = 3205830791;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     std::optional<IfcLabel> LongName;
     std::optional<IfcDistributionSystemEnum> PredefinedType;
 
@@ -65725,14 +56121,6 @@ public:
     const int type = 395920057;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcPositiveLengthMeasure> OverallHeight;
     std::optional<IfcPositiveLengthMeasure> OverallWidth;
     std::optional<IfcDoorTypeEnum> PredefinedType;
@@ -65757,15 +56145,6 @@ public:
     const int type = 869906466;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcDuctFittingTypeEnum PredefinedType;
 
     // Constructor
@@ -65782,15 +56161,6 @@ public:
     const int type = 3760055223;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcDuctSegmentTypeEnum PredefinedType;
 
     // Constructor
@@ -65807,15 +56177,6 @@ public:
     const int type = 2030761528;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcDuctSilencerTypeEnum PredefinedType;
 
     // Constructor
@@ -65832,14 +56193,6 @@ public:
     const int type = 3071239417;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcEarthworksCutTypeEnum> PredefinedType;
 
     // Constructor
@@ -65856,14 +56209,6 @@ public:
     const int type = 1077100507;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcEarthworksElement(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -65878,14 +56223,6 @@ public:
     const int type = 3376911765;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcEarthworksFillTypeEnum> PredefinedType;
 
     // Constructor
@@ -65902,15 +56239,6 @@ public:
     const int type = 663422040;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcElectricApplianceTypeEnum PredefinedType;
 
     // Constructor
@@ -65927,15 +56255,6 @@ public:
     const int type = 2417008758;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcElectricDistributionBoardTypeEnum PredefinedType;
 
     // Constructor
@@ -65952,15 +56271,6 @@ public:
     const int type = 3277789161;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcElectricFlowStorageDeviceTypeEnum PredefinedType;
 
     // Constructor
@@ -65977,15 +56287,6 @@ public:
     const int type = 2142170206;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcElectricFlowTreatmentDeviceTypeEnum PredefinedType;
 
     // Constructor
@@ -66002,15 +56303,6 @@ public:
     const int type = 1534661035;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcElectricGeneratorTypeEnum PredefinedType;
 
     // Constructor
@@ -66027,15 +56319,6 @@ public:
     const int type = 1217240411;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcElectricMotorTypeEnum PredefinedType;
 
     // Constructor
@@ -66052,15 +56335,6 @@ public:
     const int type = 712377611;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcElectricTimeControlTypeEnum PredefinedType;
 
     // Constructor
@@ -66077,14 +56351,6 @@ public:
     const int type = 1658829314;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcEnergyConversionDevice(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -66099,14 +56365,6 @@ public:
     const int type = 2814081492;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcEngineTypeEnum> PredefinedType;
 
     // Constructor
@@ -66123,14 +56381,6 @@ public:
     const int type = 3747195512;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcEvaporativeCoolerTypeEnum> PredefinedType;
 
     // Constructor
@@ -66147,14 +56397,6 @@ public:
     const int type = 484807127;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcEvaporatorTypeEnum> PredefinedType;
 
     // Constructor
@@ -66172,14 +56414,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelSpaceBoundary>>> BoundedBy;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcLabel> LongName;
     std::optional<IfcExternalSpatialElementTypeEnum> PredefinedType;
 
     // Constructor
@@ -66196,15 +56430,6 @@ public:
     const int type = 346874300;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcFanTypeEnum PredefinedType;
 
     // Constructor
@@ -66221,15 +56446,6 @@ public:
     const int type = 1810631287;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcFilterTypeEnum PredefinedType;
 
     // Constructor
@@ -66246,15 +56462,6 @@ public:
     const int type = 4222183408;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcFireSuppressionTerminalTypeEnum PredefinedType;
 
     // Constructor
@@ -66271,14 +56478,6 @@ public:
     const int type = 2058353004;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFlowController(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -66293,14 +56492,6 @@ public:
     const int type = 4278956645;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFlowFitting(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -66315,15 +56506,6 @@ public:
     const int type = 4037862832;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcFlowInstrumentTypeEnum PredefinedType;
 
     // Constructor
@@ -66340,14 +56522,6 @@ public:
     const int type = 2188021234;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcFlowMeterTypeEnum> PredefinedType;
 
     // Constructor
@@ -66364,14 +56538,6 @@ public:
     const int type = 3132237377;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFlowMovingDevice(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -66386,14 +56552,6 @@ public:
     const int type = 987401354;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFlowSegment(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -66408,14 +56566,6 @@ public:
     const int type = 707683696;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFlowStorageDevice(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -66430,14 +56580,6 @@ public:
     const int type = 2223149337;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFlowTerminal(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -66452,14 +56594,6 @@ public:
     const int type = 3508470533;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcFlowTreatmentDevice(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -66474,14 +56608,6 @@ public:
     const int type = 900683007;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcFootingTypeEnum> PredefinedType;
 
     // Constructor
@@ -66498,14 +56624,6 @@ public:
     const int type = 2713699986;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcGeotechnicalAssembly(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -66520,13 +56638,6 @@ public:
     const int type = 3009204131;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     std::vector<std::variant<IfcGridAxis>> UAxes;
     std::vector<std::variant<IfcGridAxis>> VAxes;
     std::optional<std::vector<std::variant<IfcGridAxis>>> WAxes;
@@ -66549,14 +56660,6 @@ public:
     const int type = 3319311131;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcHeatExchangerTypeEnum> PredefinedType;
 
     // Constructor
@@ -66573,14 +56676,6 @@ public:
     const int type = 2068733104;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcHumidifierTypeEnum> PredefinedType;
 
     // Constructor
@@ -66597,14 +56692,6 @@ public:
     const int type = 4175244083;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcInterceptorTypeEnum> PredefinedType;
 
     // Constructor
@@ -66621,14 +56708,6 @@ public:
     const int type = 2176052936;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcJunctionBoxTypeEnum> PredefinedType;
 
     // Constructor
@@ -66645,14 +56724,6 @@ public:
     const int type = 2696325953;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcKerbTypeEnum> PredefinedType;
 
     // Constructor
@@ -66669,14 +56740,6 @@ public:
     const int type = 76236018;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcLampTypeEnum> PredefinedType;
 
     // Constructor
@@ -66693,14 +56756,6 @@ public:
     const int type = 629592764;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcLightFixtureTypeEnum> PredefinedType;
 
     // Constructor
@@ -66717,13 +56772,6 @@ public:
     const int type = 1154579445;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
 
     // Constructor
     explicit IfcLinearPositioningElement(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_)
@@ -66738,14 +56786,6 @@ public:
     const int type = 1638804497;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcLiquidTerminalTypeEnum> PredefinedType;
 
     // Constructor
@@ -66762,14 +56802,6 @@ public:
     const int type = 1437502449;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcMedicalDeviceTypeEnum> PredefinedType;
 
     // Constructor
@@ -66786,14 +56818,6 @@ public:
     const int type = 1073191201;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcMemberTypeEnum> PredefinedType;
 
     // Constructor
@@ -66810,14 +56834,6 @@ public:
     const int type = 2078563270;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcMobileTelecommunicationsApplianceTypeEnum> PredefinedType;
 
     // Constructor
@@ -66834,14 +56850,6 @@ public:
     const int type = 234836483;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcMooringDeviceTypeEnum> PredefinedType;
 
     // Constructor
@@ -66858,14 +56866,6 @@ public:
     const int type = 2474470126;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcMotorConnectionTypeEnum> PredefinedType;
 
     // Constructor
@@ -66882,14 +56882,6 @@ public:
     const int type = 2182337498;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcNavigationElementTypeEnum> PredefinedType;
 
     // Constructor
@@ -66906,8 +56898,6 @@ public:
     const int type = 144952367;
 
 
-    std::vector<std::variant<IfcSegment>> Segments;
-    IfcLogical SelfIntersect;
 
     // Constructor
     explicit IfcOuterBoundaryCurve(const std::vector<std::variant<IfcSegment>>& Segments_, IfcLogical SelfIntersect_)
@@ -66922,14 +56912,6 @@ public:
     const int type = 3694346114;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcOutletTypeEnum> PredefinedType;
 
     // Constructor
@@ -66946,14 +56928,6 @@ public:
     const int type = 1383356374;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcPavementTypeEnum> PredefinedType;
 
     // Constructor
@@ -66970,14 +56944,6 @@ public:
     const int type = 1687234759;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcPileTypeEnum> PredefinedType;
     std::optional<IfcPileConstructionEnum> ConstructionType;
 
@@ -66996,14 +56962,6 @@ public:
     const int type = 310824031;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcPipeFittingTypeEnum> PredefinedType;
 
     // Constructor
@@ -67020,14 +56978,6 @@ public:
     const int type = 3612865200;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcPipeSegmentTypeEnum> PredefinedType;
 
     // Constructor
@@ -67044,14 +56994,6 @@ public:
     const int type = 3171933400;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcPlateTypeEnum> PredefinedType;
 
     // Constructor
@@ -67068,14 +57010,6 @@ public:
     const int type = 738039164;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcProtectiveDeviceTypeEnum> PredefinedType;
 
     // Constructor
@@ -67092,15 +57026,6 @@ public:
     const int type = 655969474;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcProtectiveDeviceTrippingUnitTypeEnum PredefinedType;
 
     // Constructor
@@ -67117,14 +57042,6 @@ public:
     const int type = 90941305;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcPumpTypeEnum> PredefinedType;
 
     // Constructor
@@ -67141,14 +57058,6 @@ public:
     const int type = 3290496277;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcRailTypeEnum> PredefinedType;
 
     // Constructor
@@ -67165,14 +57074,6 @@ public:
     const int type = 2262370178;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcRailingTypeEnum> PredefinedType;
 
     // Constructor
@@ -67189,14 +57090,6 @@ public:
     const int type = 3024970846;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcRampTypeEnum> PredefinedType;
 
     // Constructor
@@ -67213,14 +57106,6 @@ public:
     const int type = 3283111854;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcRampFlightTypeEnum> PredefinedType;
 
     // Constructor
@@ -67237,14 +57122,6 @@ public:
     const int type = 1232101972;
 
 
-    IfcInteger Degree;
-    std::vector<std::variant<IfcCartesianPoint>> ControlPointsList;
-    IfcBSplineCurveForm CurveForm;
-    IfcLogical ClosedCurve;
-    IfcLogical SelfIntersect;
-    std::vector<IfcInteger> KnotMultiplicities;
-    std::vector<IfcParameterValue> Knots;
-    IfcKnotType KnotSpec;
     std::vector<IfcReal> WeightsData;
 
     // Constructor
@@ -67261,14 +57138,6 @@ public:
     const int type = 3798194928;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcReinforcedSoilTypeEnum> PredefinedType;
 
     // Constructor
@@ -67285,15 +57154,6 @@ public:
     const int type = 979691226;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcLabel> SteelGrade;
     std::optional<IfcPositiveLengthMeasure> NominalDiameter;
     std::optional<IfcAreaMeasure> CrossSectionArea;
     std::optional<IfcPositiveLengthMeasure> BarLength;
@@ -67318,15 +57178,6 @@ public:
     const int type = 2572171363;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcReinforcingBarTypeEnum PredefinedType;
     std::optional<IfcPositiveLengthMeasure> NominalDiameter;
     std::optional<IfcAreaMeasure> CrossSectionArea;
@@ -67355,14 +57206,6 @@ public:
     const int type = 2016517767;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcRoofTypeEnum> PredefinedType;
 
     // Constructor
@@ -67379,14 +57222,6 @@ public:
     const int type = 3053780830;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcSanitaryTerminalTypeEnum> PredefinedType;
 
     // Constructor
@@ -67403,15 +57238,6 @@ public:
     const int type = 1783015770;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcSensorTypeEnum PredefinedType;
 
     // Constructor
@@ -67428,14 +57254,6 @@ public:
     const int type = 1329646415;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcShadingDeviceTypeEnum> PredefinedType;
 
     // Constructor
@@ -67452,14 +57270,6 @@ public:
     const int type = 991950508;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcSignalTypeEnum> PredefinedType;
 
     // Constructor
@@ -67476,14 +57286,6 @@ public:
     const int type = 1529196076;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcSlabTypeEnum> PredefinedType;
 
     // Constructor
@@ -67500,14 +57302,6 @@ public:
     const int type = 3420628829;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcSolarDeviceTypeEnum> PredefinedType;
 
     // Constructor
@@ -67524,14 +57318,6 @@ public:
     const int type = 1999602285;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcSpaceHeaterTypeEnum> PredefinedType;
 
     // Constructor
@@ -67548,14 +57334,6 @@ public:
     const int type = 1404847402;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcStackTerminalTypeEnum> PredefinedType;
 
     // Constructor
@@ -67572,14 +57350,6 @@ public:
     const int type = 331165859;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcStairTypeEnum> PredefinedType;
 
     // Constructor
@@ -67596,14 +57366,6 @@ public:
     const int type = 4252922144;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcInteger> NumberOfRisers;
     std::optional<IfcInteger> NumberOfTreads;
     std::optional<IfcPositiveLengthMeasure> RiserHeight;
@@ -67628,11 +57390,6 @@ public:
     const int type = 2515109513;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
     IfcAnalysisModelTypeEnum PredefinedType;
     std::optional<std::variant<IfcAxis2Placement3D>> OrientationOf2DPlane;
     std::optional<std::vector<std::variant<IfcStructuralLoadGroup>>> LoadedBy;
@@ -67657,16 +57414,6 @@ public:
     const int type = 385403989;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    IfcLoadGroupTypeEnum PredefinedType;
-    IfcActionTypeEnum ActionType;
-    IfcActionSourceTypeEnum ActionSource;
-    std::optional<IfcRatioMeasure> Coefficient;
-    std::optional<IfcLabel> Purpose;
     std::optional<std::vector<IfcRatioMeasure>> SelfWeightCoefficients;
 
     // Constructor
@@ -67683,18 +57430,6 @@ public:
     const int type = 1621171031;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::variant<IfcStructuralLoad> AppliedLoad;
-    IfcGlobalOrLocalEnum GlobalOrLocal;
-    std::optional<IfcBoolean> DestabilizingLoad;
-    std::optional<IfcProjectedOrTrueLengthEnum> ProjectedOrTrue;
-    IfcStructuralSurfaceActivityTypeEnum PredefinedType;
 
     // Constructor
     explicit IfcStructuralPlanarAction(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::variant<IfcStructuralLoad>& AppliedLoad_, IfcGlobalOrLocalEnum GlobalOrLocal_, const std::optional<IfcBoolean>& DestabilizingLoad_, const std::optional<IfcProjectedOrTrueLengthEnum>& ProjectedOrTrue_, IfcStructuralSurfaceActivityTypeEnum PredefinedType_)
@@ -67709,14 +57444,6 @@ public:
     const int type = 1162798199;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcSwitchingDeviceTypeEnum> PredefinedType;
 
     // Constructor
@@ -67733,14 +57460,6 @@ public:
     const int type = 812556717;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcTankTypeEnum> PredefinedType;
 
     // Constructor
@@ -67757,14 +57476,6 @@ public:
     const int type = 3425753595;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcTrackElementTypeEnum> PredefinedType;
 
     // Constructor
@@ -67781,14 +57492,6 @@ public:
     const int type = 3825984169;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcTransformerTypeEnum> PredefinedType;
 
     // Constructor
@@ -67805,14 +57508,6 @@ public:
     const int type = 1620046519;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcTransportElementTypeEnum> PredefinedType;
 
     // Constructor
@@ -67829,14 +57524,6 @@ public:
     const int type = 3026737570;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcTubeBundleTypeEnum> PredefinedType;
 
     // Constructor
@@ -67853,15 +57540,6 @@ public:
     const int type = 3179687236;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcUnitaryControlElementTypeEnum PredefinedType;
 
     // Constructor
@@ -67878,14 +57556,6 @@ public:
     const int type = 4292641817;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcUnitaryEquipmentTypeEnum> PredefinedType;
 
     // Constructor
@@ -67902,14 +57572,6 @@ public:
     const int type = 4207607924;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcValveTypeEnum> PredefinedType;
 
     // Constructor
@@ -67926,14 +57588,6 @@ public:
     const int type = 2391406946;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcWallTypeEnum> PredefinedType;
 
     // Constructor
@@ -67950,15 +57604,6 @@ public:
     const int type = 3512223829;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
-    std::optional<IfcWallTypeEnum> PredefinedType;
 
     // Constructor
     explicit IfcWallStandardCase(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_, const std::optional<IfcWallTypeEnum>& PredefinedType_)
@@ -67973,14 +57618,6 @@ public:
     const int type = 4237592921;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcWasteTerminalTypeEnum> PredefinedType;
 
     // Constructor
@@ -67997,14 +57634,6 @@ public:
     const int type = 3304561284;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcPositiveLengthMeasure> OverallHeight;
     std::optional<IfcPositiveLengthMeasure> OverallWidth;
     std::optional<IfcWindowTypeEnum> PredefinedType;
@@ -68029,15 +57658,6 @@ public:
     const int type = 2874132201;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcActuatorTypeEnum PredefinedType;
 
     // Constructor
@@ -68054,14 +57674,6 @@ public:
     const int type = 1634111441;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcAirTerminalTypeEnum> PredefinedType;
 
     // Constructor
@@ -68078,14 +57690,6 @@ public:
     const int type = 177149247;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcAirTerminalBoxTypeEnum> PredefinedType;
 
     // Constructor
@@ -68102,14 +57706,6 @@ public:
     const int type = 2056796094;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcAirToAirHeatRecoveryTypeEnum> PredefinedType;
 
     // Constructor
@@ -68126,15 +57722,6 @@ public:
     const int type = 3001207471;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcAlarmTypeEnum PredefinedType;
 
     // Constructor
@@ -68151,13 +57738,6 @@ public:
     const int type = 325726236;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
     std::optional<IfcAlignmentTypeEnum> PredefinedType;
 
     // Constructor
@@ -68174,14 +57754,6 @@ public:
     const int type = 277319702;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcAudioVisualApplianceTypeEnum> PredefinedType;
 
     // Constructor
@@ -68198,14 +57770,6 @@ public:
     const int type = 753842376;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcBeamTypeEnum> PredefinedType;
 
     // Constructor
@@ -68222,14 +57786,6 @@ public:
     const int type = 4196446775;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcBearingTypeEnum> PredefinedType;
 
     // Constructor
@@ -68246,14 +57802,6 @@ public:
     const int type = 32344328;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcBoilerTypeEnum> PredefinedType;
 
     // Constructor
@@ -68270,14 +57818,6 @@ public:
     const int type = 3314249567;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcBorehole(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -68292,14 +57832,6 @@ public:
     const int type = 1095909175;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcBuildingElementProxyTypeEnum> PredefinedType;
 
     // Constructor
@@ -68316,14 +57848,6 @@ public:
     const int type = 2938176219;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcBurnerTypeEnum> PredefinedType;
 
     // Constructor
@@ -68340,14 +57864,6 @@ public:
     const int type = 635142910;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCableCarrierFittingTypeEnum> PredefinedType;
 
     // Constructor
@@ -68364,14 +57880,6 @@ public:
     const int type = 3758799889;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCableCarrierSegmentTypeEnum> PredefinedType;
 
     // Constructor
@@ -68388,14 +57896,6 @@ public:
     const int type = 1051757585;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCableFittingTypeEnum> PredefinedType;
 
     // Constructor
@@ -68412,14 +57912,6 @@ public:
     const int type = 4217484030;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCableSegmentTypeEnum> PredefinedType;
 
     // Constructor
@@ -68436,14 +57928,6 @@ public:
     const int type = 3999819293;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCaissonFoundationTypeEnum> PredefinedType;
 
     // Constructor
@@ -68460,14 +57944,6 @@ public:
     const int type = 3902619387;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcChillerTypeEnum> PredefinedType;
 
     // Constructor
@@ -68484,14 +57960,6 @@ public:
     const int type = 639361253;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCoilTypeEnum> PredefinedType;
 
     // Constructor
@@ -68508,14 +57976,6 @@ public:
     const int type = 3221913625;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCommunicationsApplianceTypeEnum> PredefinedType;
 
     // Constructor
@@ -68532,14 +57992,6 @@ public:
     const int type = 3571504051;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCompressorTypeEnum> PredefinedType;
 
     // Constructor
@@ -68556,14 +58008,6 @@ public:
     const int type = 2272882330;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCondenserTypeEnum> PredefinedType;
 
     // Constructor
@@ -68580,15 +58024,6 @@ public:
     const int type = 578613899;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcIdentifier> ApplicableOccurrence;
-    std::optional<std::vector<std::variant<IfcPropertySetDefinition>>> HasPropertySets;
-    std::optional<std::vector<std::variant<IfcRepresentationMap>>> RepresentationMaps;
-    std::optional<IfcLabel> Tag;
-    std::optional<IfcLabel> ElementType;
     IfcControllerTypeEnum PredefinedType;
 
     // Constructor
@@ -68605,14 +58040,6 @@ public:
     const int type = 3460952963;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcConveyorSegmentTypeEnum> PredefinedType;
 
     // Constructor
@@ -68629,14 +58056,6 @@ public:
     const int type = 4136498852;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCooledBeamTypeEnum> PredefinedType;
 
     // Constructor
@@ -68653,14 +58072,6 @@ public:
     const int type = 3640358203;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcCoolingTowerTypeEnum> PredefinedType;
 
     // Constructor
@@ -68677,14 +58088,6 @@ public:
     const int type = 4074379575;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcDamperTypeEnum> PredefinedType;
 
     // Constructor
@@ -68701,14 +58104,6 @@ public:
     const int type = 3693000487;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcDistributionBoardTypeEnum> PredefinedType;
 
     // Constructor
@@ -68725,14 +58120,6 @@ public:
     const int type = 1052013943;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcDistributionChamberElementTypeEnum> PredefinedType;
 
     // Constructor
@@ -68749,13 +58136,6 @@ public:
     const int type = 562808652;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<IfcLabel> LongName;
-    std::optional<IfcDistributionSystemEnum> PredefinedType;
 
     // Constructor
     explicit IfcDistributionCircuit(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<IfcLabel>& LongName_, const std::optional<IfcDistributionSystemEnum>& PredefinedType_)
@@ -68771,14 +58151,6 @@ public:
 
     std::optional<std::vector<std::variant<IfcRelFlowControlElements>>> AssignedToFlowElement;
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcDistributionControlElement(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -68793,14 +58165,6 @@ public:
     const int type = 342316401;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcDuctFittingTypeEnum> PredefinedType;
 
     // Constructor
@@ -68817,14 +58181,6 @@ public:
     const int type = 3518393246;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcDuctSegmentTypeEnum> PredefinedType;
 
     // Constructor
@@ -68841,14 +58197,6 @@ public:
     const int type = 1360408905;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcDuctSilencerTypeEnum> PredefinedType;
 
     // Constructor
@@ -68865,14 +58213,6 @@ public:
     const int type = 1904799276;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcElectricApplianceTypeEnum> PredefinedType;
 
     // Constructor
@@ -68889,14 +58229,6 @@ public:
     const int type = 862014818;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcElectricDistributionBoardTypeEnum> PredefinedType;
 
     // Constructor
@@ -68913,14 +58245,6 @@ public:
     const int type = 3310460725;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcElectricFlowStorageDeviceTypeEnum> PredefinedType;
 
     // Constructor
@@ -68937,14 +58261,6 @@ public:
     const int type = 24726584;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcElectricFlowTreatmentDeviceTypeEnum> PredefinedType;
 
     // Constructor
@@ -68961,14 +58277,6 @@ public:
     const int type = 264262732;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcElectricGeneratorTypeEnum> PredefinedType;
 
     // Constructor
@@ -68985,14 +58293,6 @@ public:
     const int type = 402227799;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcElectricMotorTypeEnum> PredefinedType;
 
     // Constructor
@@ -69009,14 +58309,6 @@ public:
     const int type = 1003880860;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcElectricTimeControlTypeEnum> PredefinedType;
 
     // Constructor
@@ -69033,14 +58325,6 @@ public:
     const int type = 3415622556;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcFanTypeEnum> PredefinedType;
 
     // Constructor
@@ -69057,14 +58341,6 @@ public:
     const int type = 819412036;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcFilterTypeEnum> PredefinedType;
 
     // Constructor
@@ -69081,14 +58357,6 @@ public:
     const int type = 1426591983;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcFireSuppressionTerminalTypeEnum> PredefinedType;
 
     // Constructor
@@ -69105,14 +58373,6 @@ public:
     const int type = 182646315;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcFlowInstrumentTypeEnum> PredefinedType;
 
     // Constructor
@@ -69129,14 +58389,6 @@ public:
     const int type = 2680139844;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcGeomodel(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -69151,14 +58403,6 @@ public:
     const int type = 1971632696;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
 
     // Constructor
     explicit IfcGeoslice(IfcGloballyUniqueId GlobalId_, const std::optional<std::variant<IfcOwnerHistory>>& OwnerHistory_, const std::optional<IfcLabel>& Name_, const std::optional<IfcText>& Description_, const std::optional<IfcLabel>& ObjectType_, const std::optional<std::variant<IfcObjectPlacement>>& ObjectPlacement_, const std::optional<std::variant<IfcProductRepresentation>>& Representation_, const std::optional<IfcIdentifier>& Tag_)
@@ -69173,14 +58417,6 @@ public:
     const int type = 2295281155;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcProtectiveDeviceTrippingUnitTypeEnum> PredefinedType;
 
     // Constructor
@@ -69197,14 +58433,6 @@ public:
     const int type = 4086658281;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcSensorTypeEnum> PredefinedType;
 
     // Constructor
@@ -69221,14 +58449,6 @@ public:
     const int type = 630975310;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcUnitaryControlElementTypeEnum> PredefinedType;
 
     // Constructor
@@ -69245,14 +58465,6 @@ public:
     const int type = 4288193352;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcActuatorTypeEnum> PredefinedType;
 
     // Constructor
@@ -69269,14 +58481,6 @@ public:
     const int type = 3087945054;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcAlarmTypeEnum> PredefinedType;
 
     // Constructor
@@ -69293,14 +58497,6 @@ public:
     const int type = 25142252;
 
 
-    IfcGloballyUniqueId GlobalId;
-    std::optional<std::variant<IfcOwnerHistory>> OwnerHistory;
-    std::optional<IfcLabel> Name;
-    std::optional<IfcText> Description;
-    std::optional<IfcLabel> ObjectType;
-    std::optional<std::variant<IfcObjectPlacement>> ObjectPlacement;
-    std::optional<std::variant<IfcProductRepresentation>> Representation;
-    std::optional<IfcIdentifier> Tag;
     std::optional<IfcControllerTypeEnum> PredefinedType;
 
     // Constructor

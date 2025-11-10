@@ -164,7 +164,19 @@ function getCppType(p: { type: string, primitive: boolean, set: boolean, dimensi
             // TS: (NumberHandle | number)
             // Assuming 'number' maps to 'double' and 'NumberHandle' is a defined class
             baseType = "std::variant<double>"; 
-        } else {
+        } 
+        else if (p.primitive && p.type === "boolean") {
+            // TS: (NumberHandle | number)
+            // Assuming 'number' maps to 'double' and 'NumberHandle' is a defined class
+            baseType = "std::variant<bool>"; 
+        } 
+        else if (p.primitive && p.type === "string") {
+            // TS: (NumberHandle | number)
+            // Assuming 'number' maps to 'double' and 'NumberHandle' is a defined class
+            baseType = "std::variant<std::string>"; 
+        } 
+        
+        else {
             // TS: (Handle<T> | T)
             baseType = `std::variant<${p.type}>`;
         }
@@ -175,7 +187,6 @@ function getCppType(p: { type: string, primitive: boolean, set: boolean, dimensi
         else if (p.type === "boolean") baseType = "bool";
         else baseType = p.type; // Assumes it's a class type like 'IfcLabel'
     }
-
     // 2. Wrap in collections (vector)
     let collectionType = baseType;
     if (p.set) {
@@ -196,6 +207,7 @@ function getCppType(p: { type: string, primitive: boolean, set: boolean, dimensi
 
 export function generateCppClass(entity: Entity, classBuffer: Array<string>, types: Type[], crcTable: any) 
 {
+    
     // 1. Class Declaration and Inheritance
     if (!entity.parent) {
         classBuffer.push(`class ${entity.name} : public IfcLineObject {`);
@@ -223,10 +235,11 @@ export function generateCppClass(entity: Entity, classBuffer: Array<string>, typ
 
     // 4. Constructor Properties (as member declarations)
     // In C++, we must declare members *before* the constructor.
-    const ctorProps = entity.derivedProps.filter(i => !entity.ifcDerivedProps.includes(i.name) );
+    const ctorProps = entity.derivedProps.filter(i => !entity.ifcDerivedProps.includes(i.name));
 
-    
-    ctorProps.forEach((p) => {
+    const childProps = entity.derivedProps.filter(i => !entity.ifcDerivedProps.includes(i.name) && entity.props.includes(i));
+
+    childProps.forEach((p) => {
         let cppType = getCppType(p, types);
         classBuffer.push(`    ${cppType} ${p.name};`);
     });
