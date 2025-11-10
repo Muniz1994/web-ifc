@@ -1,5 +1,5 @@
 import {Entity} from "./gen_functional_types_interfaces";
-import {generatePropAssignment,generateTapeAssignment,generateInitialiser,findSubClasses,sortEntities,generateClass,crc32,makeCRCTable, parseElements, walkParents} from "./gen_functional_types_helpers"
+import {generatePropAssignment,generateTapeAssignment,generateInitialiser,findSubClasses,sortEntities,generateClass,generateCppClass,crc32,makeCRCTable, parseElements, walkParents} from "./gen_functional_types_helpers"
 
 import schemaAliases from "./schema_aliases";
 
@@ -10,6 +10,9 @@ let crcTable = makeCRCTable();
 console.log("Starting...");
 
 let tsSchema: Array<string> = [];
+
+let cppnewSchema: Array<string> = [];
+
 let cppSchema: Array<string> = [];
 let cppPropertyNames: Array<string> = [];
 let cppPropertyNamesList: Array<String> = [];
@@ -46,6 +49,7 @@ tsSchema.push(`type: number=5;`);
 tsSchema.push(`constructor(public value: number, schema: number = 2, tapeItem?: any) {`);
 tsSchema.push(`if (tapeItem&&tapeItem?.type === 2) return TypeInitialiser(schema, tapeItem)`);
 tsSchema.push(`}}`);
+
 
 // preserve double(64bit) number
 tsSchema.push(`export class NumberHandle {`);
@@ -207,6 +211,204 @@ for (var i = 0; i < files.length; i++) {
   });
   tsSchema.push(`};`)
 
+
+  // -------------------------------------------------------------------------------------------------------------------------------
+
+  //generate Classes
+// --- C++ Header Preamble ---
+// Add necessary C++ includes and helper types first
+cppnewSchema.push("// Generated C++ header file");
+cppnewSchema.push("#pragma once");
+cppnewSchema.push("");
+cppnewSchema.push("#include <string>");
+cppnewSchema.push("#include <vector>");
+cppnewSchema.push("#include <variant>");
+cppnewSchema.push("#include <memory>");
+cppnewSchema.push("#include <optional>");
+cppnewSchema.push("");
+cppnewSchema.push("// --- Helper type aliases (assumptions) ---");
+cppnewSchema.push("template<typename T> using Handle = std::shared_ptr<T>;");
+cppnewSchema.push("using logical = bool; // Or define as your custom logical type");
+cppnewSchema.push("// Assuming NumberHandle is a base class defined elsewhere");
+// cppnewSchema.push("#include \"NumberHandle.hpp\""); // If it's in another file
+cppnewSchema.push("");
+
+cppnewSchema.push(`class IfcLineObject {`);
+cppnewSchema.push(`public:`);
+cppnewSchema.push(`    const int type=0;`);
+cppnewSchema.push(`    const uint32_t ID;`);
+cppnewSchema.push(`    IfcLineObject(uint32_t expressID=-1) : ID(std::move(expressID)) {};`);
+cppnewSchema.push(`};`);
+
+// --- Start of generated schema ---
+cppnewSchema.push("namespace " + schemaNameClean + " {");
+cppnewSchema.push("");
+
+types.forEach((type) => {
+
+    if (type.isList)
+    {
+        let cppTypeName: string;
+        if (type.typeName == "boolean") {
+            cppTypeName = "bool";
+        } else if (type.typeName == "logical") {
+            cppTypeName = "logical"; // Assumes 'logical' is a type alias
+        } else if (type.typeName == "number") {
+            cppTypeName = "double"; // Default for TS 'number'
+        } else if (type.typeName == "string") { // Assuming 'string' is a possible typeName
+            cppTypeName = "std::string";
+        } else {
+
+            cppTypeName = type.typeName; // Assumes it's another class/struct name
+        }
+        // TS: export class ${type.name} { type: number=${typeNum}; constructor(public value: Array<${type.typeName}>) {} };
+        // C++:
+        let typeNum = type.typeNum;
+        cppnewSchema.push(`/**`);
+        cppnewSchema.push(` * @brief C++ class for ${type.name} (isList)`);
+        cppnewSchema.push(` */`);
+        cppnewSchema.push(`class ${type.name} {`);
+        cppnewSchema.push(`public:`);
+        cppnewSchema.push(`    const int type = ${typeNum};`);
+        if (type.typeName == "number")
+        {
+          cppnewSchema.push(`    std::vector<double> value;`);
+          cppnewSchema.push(``);
+          cppnewSchema.push(`    // Constructor`);
+          cppnewSchema.push(`    explicit ${type.name}(std::vector<double> val) : value(std::move(val)) {}`);
+        }
+        else
+        {
+          cppnewSchema.push(`    std::vector<${cppTypeName}> value;`);
+          cppnewSchema.push(``);
+          cppnewSchema.push(`    // Constructor`);
+          cppnewSchema.push(`    explicit ${type.name}(std::vector<${cppTypeName}> val) : value(std::move(val)) {}`);
+        }
+        
+        cppnewSchema.push(`};`);
+        cppnewSchema.push(``);
+        typeList.add(type.name);
+    }
+    else if (type.isSelect)
+    {
+        // TS: export type ${type.name} = ... | ...;
+        // C++: using ${type.name} = std::variant<...>;
+        let variantTypes: string[] = [];
+        type.values.forEach(refType => {
+            let isType: boolean = types.some( x => x.name == refType);
+            if (isType)
+            { 
+                variantTypes.push(refType);
+            }
+            else
+            {
+                // TS (Handle<T> | T) becomes two types in C++ variant
+                // variantTypes.push(`Handle<${refType}>`);
+                variantTypes.push(refType);
+            }
+        });
+        
+        cppnewSchema.push(`/**`);
+        cppnewSchema.push(` * @brief C++ type alias for ${type.name} (isSelect)`);
+        cppnewSchema.push(` */`);
+        cppnewSchema.push(`using ${type.name} = std::variant<${variantTypes.join(', ')}>;`);
+        cppnewSchema.push(``);
+    }
+    else if (type.isEnum)
+    {
+        // TS: export class ${type.name} { static ${v} : any =  { type:3, value:'${v}'}; ... }
+        // C++: struct with static constexpr members
+        cppnewSchema.push(`/**`);
+        cppnewSchema.push(` * @brief C++ struct for ${type.name} (isEnum)`);
+        cppnewSchema.push(` */`);
+        cppnewSchema.push(`struct ${type.name} {`);
+        cppnewSchema.push(`    struct Value {`);
+        cppnewSchema.push(`        const int type = 3;`);
+        cppnewSchema.push(`        const char* value;`);
+        cppnewSchema.push(`    };`);
+        cppnewSchema.push(``);
+        type.values.forEach(v => {
+            cppnewSchema.push(`    static constexpr Value ${v} = { 3, "${v}" };`);
+        });
+        cppnewSchema.push(`};`);
+        cppnewSchema.push(``);
+    }
+    else
+    {
+        // TS: export class ${type.name} ... { ... }
+        // C++: class ${type.name} ... { ... }
+        let typeName = type.typeName;
+        let typeNum = type.typeNum;
+        if (type.typeName.search('Ifc') != -1) 
+        {
+            let rawType = types.find(x=> x.name == type.typeName);
+            typeName = rawType!.typeName;
+            typeNum = rawType!.typeNum;
+        } 
+
+        typeList.add(type.name);
+
+        // Map TS simple types to C++ types
+        let cppTypeName: string;
+        if (typeName == "boolean") {
+            cppTypeName = "bool";
+        } else if (typeName == "logical") {
+            cppTypeName = "logical"; // Assumes 'logical' is a type alias
+        } else if (typeName == "number") {
+            cppTypeName = "double"; // Default for TS 'number'
+        } else if (typeName == "string") { // Assuming 'string' is a possible typeName
+            cppTypeName = "std::string";
+        } else {
+            console.log(typeName);
+            cppTypeName = typeName; // Assumes it's another class/struct name
+        }
+
+        cppnewSchema.push(`/**`);
+        cppnewSchema.push(` * @brief C++ class for ${type.name}`);
+        cppnewSchema.push(` */`);
+        // C++ inheritance uses ' : public BaseClass'
+        cppnewSchema.push(`class ${type.name}${typeName=="number" ?"":""} {`);
+        cppnewSchema.push(`public:`);
+        
+        cppnewSchema.push(`    const int type = ${typeNum};`);
+        cppnewSchema.push(`    const std::string name = "${type.name.toUpperCase()}";`);
+        if (typeName="number")
+        {
+          cppnewSchema.push(`    const ${cppTypeName} value;`);
+          cppnewSchema.push(`    ${type.name}(${cppTypeName} v) : value(v) {}`);
+        }
+    
+        // Add value member and constructor ONLY if it's not a 'number' type
+        // (This matches your original TS logic where 'number' types extended
+        // NumberHandle and got no constructor)
+        if (typeName!="number") {
+            cppnewSchema.push(`    ${cppTypeName} value;`);
+            cppnewSchema.push(``);
+            
+            // Use std::move for non-primitive types (like std::string or other classes)
+            // This is a C++ optimization.
+            if (cppTypeName == "std::string" || !["bool", "logical", "double", "int", "float"].includes(cppTypeName)) {
+                 cppnewSchema.push(`    explicit ${type.name}(${cppTypeName} v) : value(std::move(v)) {}`);
+            } else {
+                 cppnewSchema.push(`    explicit ${type.name}(${cppTypeName} v) : value(v) {}`);
+            }
+        }
+        
+        cppnewSchema.push(`};`);
+        cppnewSchema.push(``);
+    }
+});
+ 
+// This function call remains the same.
+// You will need to modify the 'generateClass' function itself
+// to also output C++ code for the 'entities'.
+for (var x=0; x < entities.length; x++) generateCppClass(entities[x], cppnewSchema,types,crcTable);
+
+// Close the C++ namespace
+cppnewSchema.push("} // namespace " + schemaNameClean);
+
+  //------------------------------------------------------------------------------------------------------------------------------------------
+
   //generate Classes
   tsSchema.push("export namespace "+schemaNameClean+" {")
   types.forEach((type) => {
@@ -230,7 +432,7 @@ for (var i = 0; i < files.length; i++) {
               }
               else
               {
-                selectOutput+=`(Handle<${refType}> | ${refType})`;
+                selectOutput+=`${refType}`;
               }
               first = false;
 
@@ -406,5 +608,6 @@ fs.writeFileSync("../cpp/web-ifc/schema/ifc-schema.h", chSchema.join("\n"));
 fs.writeFileSync("../cpp/web-ifc/schema/schema-functions.cpp", cppSchema.join("\n")); 
 fs.writeFileSync("../cpp/web-ifc/schema/schema-names.h", [ ...cppPropertyNames, ...cppPropertyTypes, ...cppPropertyCounts].join("\n")); 
 fs.writeFileSync("../ts/ifc-schema.ts", tsSchema.join("\n")); 
+fs.writeFileSync("../ts/cpp-new-ifc-schema.cpp", cppnewSchema.join("\n"));
 
 console.log(`...Done!`);

@@ -17,6 +17,69 @@
 
 using namespace webifc::io;
 
+
+// ---------------------------------------------------------------------- Process values 
+
+template<class... Ts>
+struct overloaded : Ts... { using Ts::operator()...; };
+
+// Visitor for the innermost IfcSimpleValueVariant
+// This is where you decide what to do with the data.
+auto printIfcSimpleValue = overloaded{
+    [](const std::string& val) { std::cout << "String: " << val << "\n"; },
+    [](bool val) { std::cout << "Bool: " << val << "\n"; },
+    [](long val) { std::cout << "Long: " << val << "\n"; },
+    [](uint32_t val) { std::cout << "uint32_t: " << val << "\n"; },
+    [](double val) { std::cout << "Double: " << val << "\n"; },
+    [](std::monostate) { /* Do nothing for null/empty */ }
+};
+
+auto getIfcSimpleValue = overloaded{
+    [](const std::string& val) { return val; },
+    [](bool val) { return val; },
+    [](long val) { return val; },
+    [](uint32_t val) { return val; },
+    [](double val) { return val; },
+    [](std::monostate) { /* Do nothing for null/empty */ }
+};
+
+// We must forward-declare the function so it can call itself in the lambda
+void processArgument(const IfcArgument& arg);
+
+// The main recursive visitor
+auto processArgumentVisitor = overloaded{
+    // Base Case: We found a simple value.
+    [&](const IfcSimpleValueVariant& simpleVal) {
+        // Use the other visitor to handle the simple types
+        std::visit(getIfcSimpleValue, simpleVal);
+    },
+
+    // Recursive Case 1: We found a list.
+    [&](const IfcArgumentList& list) {
+        // Loop through the list and call the main function recursively
+        for (const IfcArgument& childArg : list) {
+            processArgument(childArg);
+        }
+    },
+
+    // Recursive Case 2: We found an object (map).
+    [&](const IfcArgumentObject& obj) {
+        // Loop through the map and call the main function recursively
+        for (const auto& [key, childArg] : obj) {
+            // You could also print the key: std::cout << "Key: " << key << "\n";
+            processArgument(childArg);
+        }
+    }
+};
+
+// Definition of the function that uses the visitor
+void processArgument(const IfcArgument& arg)
+{
+    std::visit(processArgumentVisitor, arg.value);
+}
+
+// --------------------------------------------------------------------- END process values
+
 long long ms()
 {
     using namespace std::chrono;
@@ -463,7 +526,7 @@ int main()
 {
     std::cout << "Hello web IFC test!" << std::endl;
 
-    std::string path= "C:/Ifc4_Revit_ARC.ifc";
+    std::string path= "C:/Users/engbr/Documents/GitHub/IFcFiles/Example_Georeferenced.ifc";
 
     struct LoaderSettings
     {
@@ -506,17 +569,22 @@ int main()
         std::cout << "Error: Could not read ifc file";
     }
 
-    auto time = ms() - start;
-
-    std::cout << "Reading took " << time << "ms" << std::endl;
-
-    auto walls = loader.GetExpressIDsWithType(schemaManager.IfcTypeToTypeCode("IfcWall"));
+    auto walls = loader.GetExpressIDsWithType(schemaManager.IfcTypeToTypeCode("IFCELEMENTQUANTITY"));
 
     for (auto i : walls)
-    {  
-        GetRawLineData(&loader, &manager, i).arguments;
+    {
+        // Assuming GetRawLineData returns an IfcRawLine or similar
+        // and .arguments IS the IfcArgument struct.
+        const IfcArgument& root_argument = GetRawLineData(&loader, &manager, i).arguments;
+
+        // Just call the recursive function.
+        // It will handle everything, no matter how nested.
+        processArgument(root_argument);
     }
-   
+
+    auto time = ms() - start;
+
+    std::cout << "Process took " << time << "ms" << std::endl;
 
     std::cout << "Done" << std::endl;
 }

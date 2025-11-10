@@ -153,6 +153,138 @@ export function generateSuperAssignment(p:Prop, ifcDerivedProps: string[],types:
     }
 }
 
+function getCppType(p: { type: string, primitive: boolean, set: boolean, dimensions: number, optional: boolean }, types: Type[]): string {
+    
+    let isKnownType = types.some(x => x.name == p.type);
+    let baseType: string;
+
+    // 1. Determine the base C++ type
+    if (!isKnownType || (p.primitive && p.type !== "number")) {
+        if (p.primitive && p.type === "number") {
+            // TS: (NumberHandle | number)
+            // Assuming 'number' maps to 'double' and 'NumberHandle' is a defined class
+            baseType = "std::variant<double>"; 
+        } else {
+            // TS: (Handle<T> | T)
+            baseType = `std::variant<${p.type}>`;
+        }
+    } else {
+        // It's a known type (like 'IfcBoolean') or it's the primitive 'number'
+        if (p.type === "number") baseType = "double";
+        else if (p.type === "string") baseType = "std::string";
+        else if (p.type === "boolean") baseType = "bool";
+        else baseType = p.type; // Assumes it's a class type like 'IfcLabel'
+    }
+
+    // 2. Wrap in collections (vector)
+    let collectionType = baseType;
+    if (p.set) {
+        collectionType = `std::vector<${collectionType}>`;
+    }
+    // TS: p.dimensions>1 ? "[]" : "" -> Another array level
+    if (p.dimensions > 1) {
+        collectionType = `std::vector<${collectionType}>`; 
+    }
+
+    // 3. Wrap in optional for nullability
+    if (p.optional) {
+        return `std::optional<${collectionType}>`;
+    } else {
+        return collectionType;
+    }
+}
+
+export function generateCppClass(entity: Entity, classBuffer: Array<string>, types: Type[], crcTable: any) 
+{
+    // 1. Class Declaration and Inheritance
+    if (!entity.parent) {
+        classBuffer.push(`class ${entity.name} : public IfcLineObject {`);
+    } else {
+        classBuffer.push(`class ${entity.name} : public ${entity.parent} {`);
+    }
+    classBuffer.push(`public:`); // C++ members are private by default
+
+    // 2. Type ID Member
+    classBuffer.push(`    const int type = ${crc32(entity.name.toUpperCase(), crcTable)};`);
+    classBuffer.push(``);
+
+    // 3. Inverse Properties (as member declarations)
+    entity.inverseProps.forEach((prop) => {
+        // TS: (Handle<T>|T)[] | null
+        // C++: std::optional<std::vector<std::variant<Handle<T>, T>>>
+        let baseType = `std::variant<${prop.type}>`;
+        let finalType = prop.set 
+            ? `std::optional<std::vector<${baseType}>>` 
+            : `std::optional<${baseType}>`;
+        
+        classBuffer.push(`    ${finalType} ${prop.name};`);
+    });
+    classBuffer.push(``);
+
+    // 4. Constructor Properties (as member declarations)
+    // In C++, we must declare members *before* the constructor.
+    const ctorProps = entity.derivedProps.filter(i => !entity.ifcDerivedProps.includes(i.name) );
+
+    
+    ctorProps.forEach((p) => {
+        let cppType = getCppType(p, types);
+        classBuffer.push(`    ${cppType} ${p.name};`);
+    });
+    classBuffer.push(``);
+
+    // 5. Constructor
+    classBuffer.push(`    // Constructor`);
+    
+    // 5.1. Generate Parameter List
+    const paramList = ctorProps.map((p) => {
+        let cppType = getCppType(p, types);
+        let paramType = cppType;
+
+        // Pass primitives by value, complex types by const reference
+        if (cppType.includes("<") || cppType.includes("::") || cppType === "std::string") {
+             paramType = `const ${cppType}&`;
+        }
+        
+        // Add a suffix to parameters to avoid name collision with members (e.g., this->name = name;)
+        return `${paramType} ${p.name}_`; 
+    }).join(", ");
+
+    classBuffer.push(`    explicit ${entity.name}(${paramList})`);
+
+    // 5.2. Generate Initializer List (Super-call and Member Init)
+    
+    // Find parameters that need to be passed to the super() call
+    const nonLocalProps = entity.derivedProps.filter(n => !entity.props.includes(n));
+    // We assume the super call takes the same props, so we pass our new suffixed parameter names
+    const superParams = nonLocalProps.map((p) => `${p.name}_`).join(", ");
+
+    let superCall: string;
+    if (entity.parent) {
+        superCall = `${entity.parent}(${superParams})`;
+    } else {
+        superCall = `IfcLineObject()`; // Call base default constructor
+    }
+
+    classBuffer.push(`        : ${superCall}`);
+
+    // Find parameters that initialize members of *this* class
+    const localProps = ctorProps.filter(p => entity.props.includes(p));
+    
+    localProps.forEach((p) => {
+        // Init member `p.name` with parameter `p.name_`
+        classBuffer.push(`        , ${p.name}(${p.name}_)`);
+    });
+
+    // 5.3. Constructor Body (empty)
+    classBuffer.push(`    {`);
+    classBuffer.push(`        // Constructor body (if needed)`);
+    classBuffer.push(`    }`);
+
+    // 6. Class End
+    classBuffer.push(`};`);
+    classBuffer.push(``); // Add a newline for nice formatting
+}
+
 export function generateClass(entity:Entity, classBuffer: Array<string>, types:Type[],crcTable:any) 
 {
 
@@ -168,7 +300,7 @@ export function generateClass(entity:Entity, classBuffer: Array<string>, types:T
   
 
   entity.inverseProps.forEach((prop) => {
-    let type = `${"(Handle<" + prop.type + `>|${prop.type})` }${prop.set ? "[]" : ""} ${"| null"}`;
+    let type = `${"${prop.type})" }${prop.set ? "[]" : ""} ${"| null"}`;
     classBuffer.push(`${prop.name}!: ${type};`);
   });
 
