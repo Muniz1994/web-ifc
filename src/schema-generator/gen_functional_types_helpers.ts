@@ -235,9 +235,9 @@ export function generateCppClass(entity: Entity, classBuffer: Array<string>, typ
 
     // 4. Constructor Properties (as member declarations)
     // In C++, we must declare members *before* the constructor.
-    const ctorProps = entity.derivedProps.filter(i => !entity.ifcDerivedProps.includes(i.name));
+    const ctorProps = entity.derivedProps;
 
-    const childProps = entity.derivedProps.filter(i => !entity.ifcDerivedProps.includes(i.name) && entity.props.includes(i));
+    const childProps = entity.derivedProps.filter(i => entity.props.includes(i));
 
     childProps.forEach((p) => {
         let cppType = getCppType(p, types);

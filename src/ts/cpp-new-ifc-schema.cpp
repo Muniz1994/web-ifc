@@ -6928,7 +6928,7 @@ public:
     IfcSIUnitName Name;
 
     // Constructor
-    explicit IfcSIUnit(IfcUnitEnum UnitType_, const std::optional<IfcSIPrefix>& Prefix_, IfcSIUnitName Name_)
+    explicit IfcSIUnit(const std::variant<IfcDimensionalExponents>& Dimensions_, IfcUnitEnum UnitType_, const std::optional<IfcSIPrefix>& Prefix_, IfcSIUnitName Name_)
         : IfcNamedUnit(Dimensions_, UnitType_)
         , Prefix(Prefix_)
         , Name(Name_)
@@ -8430,7 +8430,7 @@ public:
     std::optional<IfcLabel> UserDefinedTargetView;
 
     // Constructor
-    explicit IfcGeometricRepresentationSubContext(const std::optional<IfcLabel>& ContextIdentifier_, const std::optional<IfcLabel>& ContextType_, const std::variant<IfcGeometricRepresentationContext>& ParentContext_, const std::optional<IfcPositiveRatioMeasure>& TargetScale_, IfcGeometricProjectionEnum TargetView_, const std::optional<IfcLabel>& UserDefinedTargetView_)
+    explicit IfcGeometricRepresentationSubContext(const std::optional<IfcLabel>& ContextIdentifier_, const std::optional<IfcLabel>& ContextType_, IfcDimensionCount CoordinateSpaceDimension_, const std::optional<std::variant<double>>& Precision_, IfcAxis2Placement WorldCoordinateSystem_, const std::optional<std::variant<IfcDirection>>& TrueNorth_, const std::variant<IfcGeometricRepresentationContext>& ParentContext_, const std::optional<IfcPositiveRatioMeasure>& TargetScale_, IfcGeometricProjectionEnum TargetView_, const std::optional<IfcLabel>& UserDefinedTargetView_)
         : IfcGeometricRepresentationContext(ContextIdentifier_, ContextType_, CoordinateSpaceDimension_, Precision_, WorldCoordinateSystem_, TrueNorth_)
         , ParentContext(ParentContext_)
         , TargetScale(TargetScale_)
@@ -8822,7 +8822,7 @@ public:
     std::variant<bool> Orientation;
 
     // Constructor
-    explicit IfcOrientedEdge(const std::variant<IfcEdge>& EdgeElement_, const std::variant<bool>& Orientation_)
+    explicit IfcOrientedEdge(const std::variant<IfcVertex>& EdgeStart_, const std::variant<IfcVertex>& EdgeEnd_, const std::variant<IfcEdge>& EdgeElement_, const std::variant<bool>& Orientation_)
         : IfcEdge(EdgeStart_, EdgeEnd_)
         , EdgeElement(EdgeElement_)
         , Orientation(Orientation_)
@@ -23867,7 +23867,7 @@ public:
     IfcSIUnitName Name;
 
     // Constructor
-    explicit IfcSIUnit(IfcUnitEnum UnitType_, const std::optional<IfcSIPrefix>& Prefix_, IfcSIUnitName Name_)
+    explicit IfcSIUnit(const std::variant<IfcDimensionalExponents>& Dimensions_, IfcUnitEnum UnitType_, const std::optional<IfcSIPrefix>& Prefix_, IfcSIUnitName Name_)
         : IfcNamedUnit(Dimensions_, UnitType_)
         , Prefix(Prefix_)
         , Name(Name_)
@@ -25491,7 +25491,7 @@ public:
     std::optional<IfcLabel> UserDefinedTargetView;
 
     // Constructor
-    explicit IfcGeometricRepresentationSubContext(const std::optional<IfcLabel>& ContextIdentifier_, const std::optional<IfcLabel>& ContextType_, const std::variant<IfcGeometricRepresentationContext>& ParentContext_, const std::optional<IfcPositiveRatioMeasure>& TargetScale_, IfcGeometricProjectionEnum TargetView_, const std::optional<IfcLabel>& UserDefinedTargetView_)
+    explicit IfcGeometricRepresentationSubContext(const std::optional<IfcLabel>& ContextIdentifier_, const std::optional<IfcLabel>& ContextType_, IfcDimensionCount CoordinateSpaceDimension_, const std::optional<IfcReal>& Precision_, IfcAxis2Placement WorldCoordinateSystem_, const std::optional<std::variant<IfcDirection>>& TrueNorth_, const std::variant<IfcGeometricRepresentationContext>& ParentContext_, const std::optional<IfcPositiveRatioMeasure>& TargetScale_, IfcGeometricProjectionEnum TargetView_, const std::optional<IfcLabel>& UserDefinedTargetView_)
         : IfcGeometricRepresentationContext(ContextIdentifier_, ContextType_, CoordinateSpaceDimension_, Precision_, WorldCoordinateSystem_, TrueNorth_)
         , ParentContext(ParentContext_)
         , TargetScale(TargetScale_)
@@ -26023,7 +26023,7 @@ public:
 
 
     // Constructor
-    explicit IfcMirroredProfileDef(IfcProfileTypeEnum ProfileType_, const std::optional<IfcLabel>& ProfileName_, const std::variant<IfcProfileDef>& ParentProfile_, const std::optional<IfcLabel>& Label_)
+    explicit IfcMirroredProfileDef(IfcProfileTypeEnum ProfileType_, const std::optional<IfcLabel>& ProfileName_, const std::variant<IfcProfileDef>& ParentProfile_, const std::variant<IfcCartesianTransformationOperator2D>& Operator_, const std::optional<IfcLabel>& Label_)
         : IfcDerivedProfileDef(ProfileType_, ProfileName_, ParentProfile_, Operator_, Label_)
     {
         // Constructor body (if needed)
@@ -26092,7 +26092,7 @@ public:
     IfcBoolean Orientation;
 
     // Constructor
-    explicit IfcOrientedEdge(const std::variant<IfcEdge>& EdgeElement_, IfcBoolean Orientation_)
+    explicit IfcOrientedEdge(const std::variant<IfcVertex>& EdgeStart_, const std::variant<IfcVertex>& EdgeEnd_, const std::variant<IfcEdge>& EdgeElement_, IfcBoolean Orientation_)
         : IfcEdge(EdgeStart_, EdgeEnd_)
         , EdgeElement(EdgeElement_)
         , Orientation(Orientation_)
@@ -44554,7 +44554,7 @@ public:
     IfcSIUnitName Name;
 
     // Constructor
-    explicit IfcSIUnit(IfcUnitEnum UnitType_, const std::optional<IfcSIPrefix>& Prefix_, IfcSIUnitName Name_)
+    explicit IfcSIUnit(const std::variant<IfcDimensionalExponents>& Dimensions_, IfcUnitEnum UnitType_, const std::optional<IfcSIPrefix>& Prefix_, IfcSIUnitName Name_)
         : IfcNamedUnit(Dimensions_, UnitType_)
         , Prefix(Prefix_)
         , Name(Name_)
@@ -46288,7 +46288,7 @@ public:
     std::optional<IfcLabel> UserDefinedTargetView;
 
     // Constructor
-    explicit IfcGeometricRepresentationSubContext(const std::optional<IfcLabel>& ContextIdentifier_, const std::optional<IfcLabel>& ContextType_, const std::variant<IfcGeometricRepresentationContext>& ParentContext_, const std::optional<IfcPositiveRatioMeasure>& TargetScale_, IfcGeometricProjectionEnum TargetView_, const std::optional<IfcLabel>& UserDefinedTargetView_)
+    explicit IfcGeometricRepresentationSubContext(const std::optional<IfcLabel>& ContextIdentifier_, const std::optional<IfcLabel>& ContextType_, IfcDimensionCount CoordinateSpaceDimension_, const std::optional<IfcReal>& Precision_, IfcAxis2Placement WorldCoordinateSystem_, const std::optional<std::variant<IfcDirection>>& TrueNorth_, const std::variant<IfcGeometricRepresentationContext>& ParentContext_, const std::optional<IfcPositiveRatioMeasure>& TargetScale_, IfcGeometricProjectionEnum TargetView_, const std::optional<IfcLabel>& UserDefinedTargetView_)
         : IfcGeometricRepresentationContext(ContextIdentifier_, ContextType_, CoordinateSpaceDimension_, Precision_, WorldCoordinateSystem_, TrueNorth_)
         , ParentContext(ParentContext_)
         , TargetScale(TargetScale_)
@@ -46836,7 +46836,7 @@ public:
 
 
     // Constructor
-    explicit IfcMirroredProfileDef(IfcProfileTypeEnum ProfileType_, const std::optional<IfcLabel>& ProfileName_, const std::variant<IfcProfileDef>& ParentProfile_, const std::optional<IfcLabel>& Label_)
+    explicit IfcMirroredProfileDef(IfcProfileTypeEnum ProfileType_, const std::optional<IfcLabel>& ProfileName_, const std::variant<IfcProfileDef>& ParentProfile_, const std::variant<IfcCartesianTransformationOperator2D>& Operator_, const std::optional<IfcLabel>& Label_)
         : IfcDerivedProfileDef(ProfileType_, ProfileName_, ParentProfile_, Operator_, Label_)
     {
         // Constructor body (if needed)
@@ -46929,7 +46929,7 @@ public:
     IfcBoolean Orientation;
 
     // Constructor
-    explicit IfcOrientedEdge(const std::variant<IfcEdge>& EdgeElement_, IfcBoolean Orientation_)
+    explicit IfcOrientedEdge(const std::variant<IfcVertex>& EdgeStart_, const std::variant<IfcVertex>& EdgeEnd_, const std::variant<IfcEdge>& EdgeElement_, IfcBoolean Orientation_)
         : IfcEdge(EdgeStart_, EdgeEnd_)
         , EdgeElement(EdgeElement_)
         , Orientation(Orientation_)
