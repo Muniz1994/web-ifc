@@ -221,10 +221,11 @@ export function generateCppClass(entity: Entity, classBuffer: Array<string>, typ
     classBuffer.push(``);
 
     // 3. Inverse Properties (as member declarations)
+    classBuffer.push(`    // Inverse Properties`);
     entity.inverseProps.forEach((prop) => {
         // TS: (Handle<T>|T)[] | null
         // C++: std::optional<std::vector<std::variant<Handle<T>, T>>>
-        let baseType = `std::variant<${prop.type}>`;
+        let baseType = `std::variant<std::shared_ptr<${prop.type}>>`;
         let finalType = prop.set 
             ? `std::optional<std::vector<${baseType}>>` 
             : `std::optional<${baseType}>`;
@@ -239,6 +240,7 @@ export function generateCppClass(entity: Entity, classBuffer: Array<string>, typ
 
     const childProps = entity.derivedProps.filter(i => entity.props.includes(i));
 
+    classBuffer.push(`    // Entity props`);
     childProps.forEach((p) => {
         let cppType = getCppType(p, types);
         classBuffer.push(`    ${cppType} ${p.name};`);
