@@ -70,3 +70,9 @@ src/cpp/_deps/glm-src/
 src/cpp/_deps/spdlog-src/
 src/cpp/_deps/tinycpptest-src/
 src/cpp/_deps/tinynurbs-src/
+src/cpp/web-ifc/schema/ifc-schema.h
+src/cpp/web-ifc/schema/cpp-new-ifc-schema.cpp
+src/ts/ifc-schema.ts
+src/cpp/web-ifc/schema/ifc-schema.h
+src/cpp/web-ifc/schema/schema-functions.cpp
+src/cpp/web-ifc/schema/schema-names.h
