@@ -329,7 +329,7 @@ types.forEach((type) => {
         cppnewSchema.push(`    };`);
         cppnewSchema.push(``);
         type.values.forEach(v => {
-            cppnewSchema.push(`    static constexpr Value ${v} = { 3, "${v}" };`);
+          v == "NULL" ? cppnewSchema.push(`    static constexpr Value NULLO = { 3, "${v}" };`) : cppnewSchema.push(`    static constexpr Value ${v} = { 3, "${v}" };`);
         });
         cppnewSchema.push(`};`);
         cppnewSchema.push(``);
