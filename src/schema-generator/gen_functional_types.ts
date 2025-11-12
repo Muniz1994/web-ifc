@@ -95,7 +95,7 @@ tsSchema.push('const _valueName = tapeItem.type === 4 ? "internalValue" : "value
 tsSchema.push('return {[_valueName]:tapeItem[_valueName],valueType:tapeItem.type,type:2,label:tapeItem.name};');
 tsSchema.push('}')
 
-var files = fs.readdirSync("./");
+var files = fs.readdirSync("./supported-schemas/");
 tsSchema.push("// supported ifc schemas");
   tsSchema.push(`export enum Schemas {`);
   for (var i = 0; i < files.length; i++) {
@@ -118,7 +118,7 @@ for (var i = 0; i < files.length; i++) {
   schemaAssignments+='];'
   tsSchema.push(schemaAssignments);
 
-  let schemaData = fs.readFileSync("./"+files[i]).toString();
+  let schemaData = fs.readFileSync("./supported-schemas/"+files[i]).toString();
   let parsed = parseElements(schemaData);
   let entities: Array<Entity> = sortEntities(parsed.entities);
   let types = parsed.types;
@@ -609,6 +609,6 @@ fs.writeFileSync("../cpp/web-ifc/schema/ifc-schema.h", chSchema.join("\n"));
 fs.writeFileSync("../cpp/web-ifc/schema/schema-functions.cpp", cppSchema.join("\n")); 
 fs.writeFileSync("../cpp/web-ifc/schema/schema-names.h", [ ...cppPropertyNames, ...cppPropertyTypes, ...cppPropertyCounts].join("\n")); 
 fs.writeFileSync("../ts/ifc-schema.ts", tsSchema.join("\n")); 
-fs.writeFileSync("../ts/cpp-new-ifc-schema.cpp", cppnewSchema.join("\n"));
+fs.writeFileSync("../cpp/web-ifc/schema/cpp-new-ifc-schema.cpp", cppnewSchema.join("\n"));
 
 console.log(`...Done!`);
